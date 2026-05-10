@@ -1,0 +1,900 @@
+{
+  "weeks": [
+    {
+      "week": 1,
+      "title": "Python Setup & Basics",
+      "totalHours": 15,
+      "days": [
+        {
+          "day": 1,
+          "title": "Environment Setup & First Python",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w1d1-1",
+              "title": "Install Python 3.12",
+              "description": "Download from python.org, install with 'Add to PATH' checked",
+              "time": "15 min",
+              "url": "https://www.python.org/downloads/",
+              "type": "setup"
+            },
+            {
+              "id": "w1d1-2",
+              "title": "Install VS Code",
+              "description": "Download VS Code and install Python extension",
+              "time": "15 min",
+              "url": "https://code.visualstudio.com/",
+              "type": "setup"
+            },
+            {
+              "id": "w1d1-3",
+              "title": "Python Official Tutorial - Chapter 1",
+              "description": "Read 'Whetting Your Appetite' and 'Using the Python Interpreter'",
+              "time": "30 min",
+              "url": "https://docs.python.org/3/tutorial/appetite.html",
+              "type": "reading"
+            },
+            {
+              "id": "w1d1-4",
+              "title": "Python Official Tutorial - Chapter 2",
+              "description": "Read 'An Informal Introduction to Python' - learn about numbers, strings",
+              "time": "45 min",
+              "url": "https://docs.python.org/3/tutorial/introduction.html",
+              "type": "reading"
+            },
+            {
+              "id": "w1d1-5",
+              "title": "Write Your First Script",
+              "description": "Create hello.py with print('Hello World') and run it",
+              "time": "15 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Python Control Flow",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w1d2-1",
+              "title": "Python Official Tutorial - Chapter 3",
+              "description": "Read 'An Informal Introduction to Python' continued - lists",
+              "time": "45 min",
+              "url": "https://docs.python.org/3/tutorial/introduction.html",
+              "type": "reading"
+            },
+            {
+              "id": "w1d2-2",
+              "title": "Python Official Tutorial - Chapter 4",
+              "description": "Read 'More Control Flow Tools' - if, for, while, range",
+              "time": "45 min",
+              "url": "https://docs.python.org/3/tutorial/controlflow.html",
+              "type": "reading"
+            },
+            {
+              "id": "w1d2-3",
+              "title": "Practice: Loops Exercise",
+              "description": "Write a program that prints numbers 1-10 using a for loop",
+              "time": "30 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Functions & Modules",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w1d3-1",
+              "title": "Python Official Tutorial - Chapter 5",
+              "description": "Read 'Data Structures' - lists, tuples, dictionaries, sets",
+              "time": "45 min",
+              "url": "https://docs.python.org/3/tutorial/datastructures.html",
+              "type": "reading"
+            },
+            {
+              "id": "w1d3-2",
+              "title": "Python Official Tutorial - Chapter 6",
+              "description": "Read 'Modules' - import, packages",
+              "time": "30 min",
+              "url": "https://docs.python.org/3/tutorial/modules.html",
+              "type": "reading"
+            },
+            {
+              "id": "w1d3-3",
+              "title": "Python Official Tutorial - Chapter 7",
+              "description": "Read 'Input and Output' - formatting, files",
+              "time": "30 min",
+              "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+              "type": "reading"
+            },
+            {
+              "id": "w1d3-4",
+              "title": "Practice: Write 3 Functions",
+              "description": "Create functions for: add(a,b), is_even(n), factorial(n)",
+              "time": "15 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Automate the Boring Stuff - Chapter 1",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w1d4-1",
+              "title": "Read Chapter 1 - Python Basics",
+              "description": "Learn about expressions, data types, string concatenation",
+              "time": "60 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter1/",
+              "type": "reading"
+            },
+            {
+              "id": "w1d4-2",
+              "title": "Practice Chapter 1 Exercises",
+              "description": "Complete the practice projects at end of chapter",
+              "time": "45 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter1/",
+              "type": "practice"
+            },
+            {
+              "id": "w1d4-3",
+              "title": "Watch MIT 6.0001 Lecture 1",
+              "description": "Watch 'What is Computation?' - intro to CS concepts",
+              "time": "45 min",
+              "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lecture-1-what-is-computation/",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Flow Control Deep Dive",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w1d5-1",
+              "title": "Read Chapter 2 - Flow Control",
+              "description": "Learn about if/else, while loops, for loops, break/continue",
+              "time": "60 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter2/",
+              "type": "reading"
+            },
+            {
+              "id": "w1d5-2",
+              "title": "Practice: Collatz Sequence",
+              "description": "Write the Collatz sequence program from chapter 2",
+              "time": "30 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter2/",
+              "type": "practice"
+            },
+            {
+              "id": "w1d5-3",
+              "title": "LeetCode: Two Sum (Easy)",
+              "description": "Solve your first LeetCode problem",
+              "time": "30 min",
+              "url": "https://leetcode.com/problems/two-sum/",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Functions Deep Dive",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w1d6-1",
+              "title": "Read Chapter 3 - Functions",
+              "description": "Learn about def, parameters, return values, scope",
+              "time": "60 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter3/",
+              "type": "reading"
+            },
+            {
+              "id": "w1d6-2",
+              "title": "Read Chapter 4 - Lists",
+              "description": "Learn about list methods, slicing, copying",
+              "time": "45 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter4/",
+              "type": "reading"
+            },
+            {
+              "id": "w1d6-3",
+              "title": "Practice: List Manipulation",
+              "description": "Write functions that manipulate lists (sort, filter, map)",
+              "time": "30 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Review & Mini Project",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w1d7-1",
+              "title": "Review Week 1 Concepts",
+              "description": "Go through notes, review unclear topics",
+              "time": "30 min",
+              "url": null,
+              "type": "review"
+            },
+            {
+              "id": "w1d7-2",
+              "title": "Mini Project: Number Guessing Game",
+              "description": "Build a number guessing game using what you learned",
+              "time": "60 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter3/",
+              "type": "project"
+            },
+            {
+              "id": "w1d7-3",
+              "title": "Plan Week 2",
+              "description": "Preview Week 2 materials, set goals",
+              "time": "30 min",
+              "url": null,
+              "type": "planning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "title": "Python Proficiency",
+      "totalHours": 15,
+      "days": [
+        {
+          "day": 1,
+          "title": "Dictionaries & Structured Data",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w2d1-1",
+              "title": "Read Chapter 5 - Dictionaries and Structuring Data",
+              "description": "Learn about dictionaries, pretty printing, data structures",
+              "time": "60 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter5/",
+              "type": "reading"
+            },
+            {
+              "id": "w2d1-2",
+              "title": "Practice: Word Counter",
+              "description": "Write a program that counts word frequency in a text",
+              "time": "30 min",
+              "url": null,
+              "type": "practice"
+            },
+            {
+              "id": "w2d1-3",
+              "title": "LeetCode: Valid Parentheses (Easy)",
+              "description": "Practice using stacks/dictionaries",
+              "time": "30 min",
+              "url": "https://leetcode.com/problems/valid-parentheses/",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "String Manipulation",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w2d2-1",
+              "title": "Read Chapter 6 - String Manipulation",
+              "description": "Learn about string methods, regex basics",
+              "time": "60 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter6/",
+              "type": "reading"
+            },
+            {
+              "id": "w2d2-2",
+              "title": "Practice: Email Extractor",
+              "description": "Write a program that extracts emails from text using regex",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            },
+            {
+              "id": "w2d2-3",
+              "title": "Watch MIT 6.0001 Lecture 2",
+              "description": "Watch 'Branching and Iteration'",
+              "time": "45 min",
+              "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lecture-2-branching-and-iteration/",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "File I/O & Automation",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w2d3-1",
+              "title": "Read Chapter 9 - Reading and Writing Files",
+              "description": "Learn about file paths, reading/writing, shelve module",
+              "time": "60 min",
+              "url": "https://automatetheboringstuff.com/2e/chapter9/",
+              "type": "reading"
+            },
+            {
+              "id": "w2d3-2",
+              "title": "Practice: File Processor",
+              "description": "Write a program that reads a file and counts lines/words",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            },
+            {
+              "id": "w2d3-3",
+              "title": "Git Basics Setup",
+              "description": "Install Git, create GitHub account, make first commit",
+              "time": "30 min",
+              "url": "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git",
+              "type": "setup"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Object-Oriented Programming",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w2d4-1",
+              "title": "Python OOP Tutorial",
+              "description": "Learn about classes, objects, methods, __init__",
+              "time": "60 min",
+              "url": "https://docs.python.org/3/tutorial/classes.html",
+              "type": "reading"
+            },
+            {
+              "id": "w2d4-2",
+              "title": "Practice: Bank Account Class",
+              "description": "Create a BankAccount class with deposit, withdraw, balance",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            },
+            {
+              "id": "w2d4-3",
+              "title": "Watch MIT 6.0001 Lecture 3",
+              "description": "Watch 'String Manipulation, Guess and Check, Approximations, Bisection'",
+              "time": "45 min",
+              "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lecture-3-string-manipulation-guess-and-check-approximations-and-bisection/",
+              "type": "video"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Error Handling & Debugging",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w2d5-1",
+              "title": "Exception Handling Tutorial",
+              "description": "Learn about try/except, raising exceptions, finally",
+              "time": "45 min",
+              "url": "https://docs.python.org/3/tutorial/errors.html",
+              "type": "reading"
+            },
+            {
+              "id": "w2d5-2",
+              "title": "Debugging Practice",
+              "description": "Learn to use print debugging and pdb",
+              "time": "30 min",
+              "url": "https://docs.python.org/3/library/pdb.html",
+              "type": "practice"
+            },
+            {
+              "id": "w2d5-3",
+              "title": "LeetCode: Merge Two Sorted Lists (Easy)",
+              "description": "Practice linked lists and error handling",
+              "time": "45 min",
+              "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Algorithms Basics",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w2d6-1",
+              "title": "Big O Notation Tutorial",
+              "description": "Learn about time complexity, space complexity",
+              "time": "45 min",
+              "url": "https://www.bigocheatsheet.com/",
+              "type": "reading"
+            },
+            {
+              "id": "w2d6-2",
+              "title": "Implement Binary Search",
+              "description": "Write binary search algorithm from scratch",
+              "time": "45 min",
+              "url": "https://leetcode.com/problems/binary-search/",
+              "type": "practice"
+            },
+            {
+              "id": "w2d6-3",
+              "title": "Sorting Algorithms Visualizer",
+              "description": "Watch sorting algorithm visualizations, implement bubble sort",
+              "time": "30 min",
+              "url": "https://visualgo.net/en/sorting",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Week 2 Project & Review",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w2d7-1",
+              "title": "Mini Project: Contact Book",
+              "description": "Build a contact book with save/load functionality",
+              "time": "60 min",
+              "url": null,
+              "type": "project"
+            },
+            {
+              "id": "w2d7-2",
+              "title": "Review & Git Practice",
+              "description": "Commit project to GitHub, review week's concepts",
+              "time": "30 min",
+              "url": "https://github.com",
+              "type": "review"
+            },
+            {
+              "id": "w2d7-3",
+              "title": "Plan Week 3",
+              "description": "Preview Linear Algebra materials",
+              "time": "30 min",
+              "url": null,
+              "type": "planning"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "title": "Linear Algebra Foundations",
+      "totalHours": 15,
+      "days": [
+        {
+          "day": 1,
+          "title": "Vectors & Spaces",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w3d1-1",
+              "title": "3Blue1Brown: Essence of Linear Algebra Ch.1-3",
+              "description": "Watch Vectors, Linear Combinations, Span, Linear Transformations",
+              "time": "45 min",
+              "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+              "type": "video"
+            },
+            {
+              "id": "w3d1-2",
+              "title": "MIT 18.06 Lecture 1",
+              "description": "Watch 'The Geometry of Linear Equations'",
+              "time": "60 min",
+              "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/",
+              "type": "video"
+            },
+            {
+              "id": "w3d1-3",
+              "title": "Practice: Vector Operations",
+              "description": "Implement vector addition, scalar multiplication in Python",
+              "time": "30 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Matrix Operations",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w3d2-1",
+              "title": "3Blue1Brown: Essence of Linear Algebra Ch.4",
+              "description": "Watch 'Matrix Multiplication as Composition'",
+              "time": "15 min",
+              "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+              "type": "video"
+            },
+            {
+              "id": "w3d2-2",
+              "title": "MIT 18.06 Lecture 2",
+              "description": "Watch 'Elimination with Matrices'",
+              "time": "60 min",
+              "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-2-elimination-with-matrices/",
+              "type": "video"
+            },
+            {
+              "id": "w3d2-3",
+              "title": "NumPy Matrix Operations",
+              "description": "Learn numpy arrays, matrix multiplication, transpose",
+              "time": "45 min",
+              "url": "https://numpy.org/doc/stable/reference/routines.linalg.html",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Inverse & Column Space",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w3d3-1",
+              "title": "MIT 18.06 Lecture 3",
+              "description": "Watch 'Multiplication and Inverse Matrices'",
+              "time": "60 min",
+              "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-3-multiplication-and-inverse-matrices/",
+              "type": "video"
+            },
+            {
+              "id": "w3d3-2",
+              "title": "MIT 18.06 Problem Set 1",
+              "description": "Complete Problem Set 1 from course page",
+              "time": "60 min",
+              "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/problem-sets/",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Determinants",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w3d4-1",
+              "title": "3Blue1Brown: Essence of Linear Algebra Ch.6",
+              "description": "Watch 'The Determinant'",
+              "time": "15 min",
+              "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+              "type": "video"
+            },
+            {
+              "id": "w3d4-2",
+              "title": "MIT 18.06 Lecture 18",
+              "description": "Watch 'Properties of Determinants'",
+              "time": "60 min",
+              "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-18-properties-of-determinants/",
+              "type": "video"
+            },
+            {
+              "id": "w3d4-3",
+              "title": "Practice: Determinant Calculator",
+              "description": "Implement determinant calculation using NumPy",
+              "time": "30 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Eigenvalues & Eigenvectors",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w3d5-1",
+              "title": "3Blue1Brown: Essence of Linear Algebra Ch.14",
+              "description": "Watch 'Eigenvectors and Eigenvalues'",
+              "time": "15 min",
+              "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+              "type": "video"
+            },
+            {
+              "id": "w3d5-2",
+              "title": "MIT 18.06 Lecture 21",
+              "description": "Watch 'Eigenvalues and Eigenvectors'",
+              "time": "60 min",
+              "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-21-eigenvalues-and-eigenvectors/",
+              "type": "video"
+            },
+            {
+              "id": "w3d5-3",
+              "title": "Practice: Eigen Calculation",
+              "description": "Calculate eigenvalues/eigenvectors using NumPy",
+              "time": "30 min",
+              "url": "https://numpy.org/doc/stable/reference/generated/numpy.linalg.eig.html",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Applications to Finance",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w3d6-1",
+              "title": "Covariance Matrix Tutorial",
+              "description": "Learn how linear algebra is used in portfolio theory",
+              "time": "45 min",
+              "url": "https://www.investopedia.com/terms/c/covariance.asp",
+              "type": "reading"
+            },
+            {
+              "id": "w3d6-2",
+              "title": "Practice: Portfolio Covariance",
+              "description": "Calculate covariance matrix for 3 stocks using Python",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            },
+            {
+              "id": "w3d6-3",
+              "title": "LeetCode: Rotate Image (Medium)",
+              "description": "Apply matrix transformation knowledge",
+              "time": "30 min",
+              "url": "https://leetcode.com/problems/rotate-image/",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Review & Mini Project",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w3d7-1",
+              "title": "Review: Khan Academy Linear Algebra",
+              "description": "Review key concepts with interactive exercises",
+              "time": "45 min",
+              "url": "https://www.khanacademy.org/math/linear-algebra",
+              "type": "review"
+            },
+            {
+              "id": "w3d7-2",
+              "title": "Mini Project: Stock Correlation Visualizer",
+              "description": "Build a tool that visualizes stock correlations using matplotlib",
+              "time": "60 min",
+              "url": null,
+              "type": "project"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "title": "Calculus & Optimization",
+      "totalHours": 15,
+      "days": [
+        {
+          "day": 1,
+          "title": "Derivatives Review",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w4d1-1",
+              "title": "3Blue1Brown: Essence of Calculus Ch.1-3",
+              "description": "Watch The Essence of Calculus, The Paradox of the Derivative, Derivative Formulas",
+              "time": "45 min",
+              "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr",
+              "type": "video"
+            },
+            {
+              "id": "w4d1-2",
+              "title": "Khan Academy: Derivatives",
+              "description": "Review derivative rules and applications",
+              "time": "45 min",
+              "url": "https://www.khanacademy.org/math/calculus-1/cs1-derivatives-definition-and-basic-rules",
+              "type": "practice"
+            },
+            {
+              "id": "w4d1-3",
+              "title": "Practice: Derivative Calculator",
+              "description": "Implement numerical derivatives in Python",
+              "time": "30 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "title": "Integrals & Area",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w4d2-1",
+              "title": "3Blue1Brown: Essence of Calculus Ch.8",
+              "description": "Watch 'Integration and the Fundamental Theorem'",
+              "time": "20 min",
+              "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr",
+              "type": "video"
+            },
+            {
+              "id": "w4d2-2",
+              "title": "Numerical Integration",
+              "description": "Implement trapezoidal rule and Simpson's rule",
+              "time": "45 min",
+              "url": "https://en.wikipedia.org/wiki/Trapezoidal_rule",
+              "type": "practice"
+            },
+            {
+              "id": "w4d2-3",
+              "title": "Scipy Integration",
+              "description": "Learn scipy.integrate module",
+              "time": "30 min",
+              "url": "https://docs.scipy.org/doc/scipy/tutorial/integrate.html",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "title": "Multivariable Calculus",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w4d3-1",
+              "title": "Partial Derivatives Tutorial",
+              "description": "Learn partial derivatives and gradient",
+              "time": "45 min",
+              "url": "https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivatives/v/partial-derivatives",
+              "type": "reading"
+            },
+            {
+              "id": "w4d3-2",
+              "title": "Gradient Descent Introduction",
+              "description": "Learn the foundation of optimization in ML",
+              "time": "45 min",
+              "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w",
+              "type": "video"
+            },
+            {
+              "id": "w4d3-3",
+              "title": "Practice: Gradient Descent",
+              "description": "Implement simple gradient descent in Python",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "title": "Optimization Basics",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w4d4-1",
+              "title": "Linear Programming Tutorial",
+              "description": "Learn linear programming fundamentals",
+              "time": "45 min",
+              "url": "https://www.youtube.com/watch?v=E72DWgKP6Yc",
+              "type": "video"
+            },
+            {
+              "id": "w4d4-2",
+              "title": "Scipy Optimize",
+              "description": "Learn scipy.optimize module for optimization",
+              "time": "45 min",
+              "url": "https://docs.scipy.org/doc/scipy/tutorial/optimize.html",
+              "type": "practice"
+            },
+            {
+              "id": "w4d4-3",
+              "title": "Practice: Portfolio Optimization",
+              "description": "Optimize a simple portfolio using scipy",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "title": "Markowitz Portfolio Theory",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w4d5-1",
+              "title": "Markowitz Theory Explained",
+              "description": "Learn Modern Portfolio Theory fundamentals",
+              "time": "45 min",
+              "url": "https://www.investopedia.com/terms/m/modernportfoliotheory.asp",
+              "type": "reading"
+            },
+            {
+              "id": "w4d5-2",
+              "title": "Efficient Frontier Tutorial",
+              "description": "Understand efficient frontier and optimal portfolios",
+              "time": "45 min",
+              "url": "https://www.youtube.com/watch?v=6mNGT8X8bHc",
+              "type": "video"
+            },
+            {
+              "id": "w4d5-3",
+              "title": "Practice: Efficient Frontier",
+              "description": "Plot efficient frontier using Python",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "title": "Calculus in Finance",
+          "hours": 2.5,
+          "tasks": [
+            {
+              "id": "w4d6-1",
+              "title": "Black-Scholes Introduction",
+              "description": "Learn how calculus is used in options pricing",
+              "time": "45 min",
+              "url": "https://www.investopedia.com/terms/b/blackscholes.asp",
+              "type": "reading"
+            },
+            {
+              "id": "w4d6-2",
+              "title": "Derivatives in Python",
+              "description": "Implement numerical derivatives for finance",
+              "time": "45 min",
+              "url": null,
+              "type": "practice"
+            },
+            {
+              "id": "w4d6-3",
+              "title": "LeetCode: Best Time to Buy/Sell Stock (Easy)",
+              "description": "Apply calculus concepts to trading",
+              "time": "30 min",
+              "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+              "type": "practice"
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "title": "Week 4 Project",
+          "hours": 2,
+          "tasks": [
+            {
+              "id": "w4d7-1",
+              "title": "Project: Portfolio Optimizer",
+              "description": "Build a Markowitz portfolio optimizer from scratch",
+              "time": "90 min",
+              "url": null,
+              "type": "project"
+            },
+            {
+              "id": "w4d7-2",
+              "title": "Review & Documentation",
+              "description": "Document project, add to GitHub portfolio",
+              "time": "30 min",
+              "url": "https://github.com",
+              "type": "review"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
