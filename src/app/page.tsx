@@ -6,10 +6,8 @@ import { QuickStats } from '@/components/dashboard/QuickStats';
 import { SkillRadar } from '@/components/dashboard/SkillRadar';
 import { UpcomingCompetitions } from '@/components/dashboard/UpcomingCompetitions';
 import { RecommendedNext } from '@/components/dashboard/RecommendedNext';
-import { WeeklyProgress } from '@/components/dashboard/WeeklyProgress';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
 import { 
   BookOpen, 
   ExternalLink, 
@@ -82,60 +80,29 @@ function getCurrentWeek(startDate: string): number {
 function generateRecommendations(progress: Progress) {
   const recommendations = [];
   const completedResourceIds = new Set(progress.resourcesCompleted);
-  const completedProjectIds = new Set(progress.projectsCompleted);
 
   if (progress.resourcesCompleted.length === 0) {
     recommendations.push({
       type: 'resource' as const,
       title: 'Start with Python Basics',
       description: 'Begin your quant journey with Python fundamentals.',
-      href: '/resources?skill=python',
+      href: '/resources',
       priority: 'high' as const,
     });
   }
 
   const incompleteResources = resourcesData.resources.filter(
-    (r) => !completedResourceIds.has(r.id)
+    (r) => !completedResourceIds.has(r.id) && r.difficulty === 'beginner'
   );
 
-  const beginnerResources = incompleteResources.filter((r) => r.difficulty === 'beginner');
-  if (beginnerResources.length > 0) {
-    const next = beginnerResources[0];
+  if (incompleteResources.length > 0) {
+    const next = incompleteResources[0];
     recommendations.push({
       type: 'resource' as const,
-      title: `Complete: ${next.title}`,
+      title: `Next: ${next.title}`,
       description: next.description,
-      href: `/resources`,
+      href: '/resources',
       priority: 'high' as const,
-    });
-  }
-
-  const incompleteProjects = projectsData.projects.filter(
-    (p) => !completedProjectIds.has(p.id)
-  );
-  const beginnerProjects = incompleteProjects.filter((p) => p.difficulty === 'beginner');
-  if (beginnerProjects.length > 0 && progress.resourcesCompleted.length >= 3) {
-    const next = beginnerProjects[0];
-    recommendations.push({
-      type: 'project' as const,
-      title: `Build: ${next.title}`,
-      description: next.description,
-      href: `/projects`,
-      priority: 'medium' as const,
-    });
-  }
-
-  const upcomingComps = competitionsData.competitions.filter(
-    (c) => !progress.competitions[c.id]
-  );
-  if (upcomingComps.length > 0 && progress.resourcesCompleted.length >= 5) {
-    const next = upcomingComps[0];
-    recommendations.push({
-      type: 'skill' as const,
-      title: `Join: ${next.name}`,
-      description: next.description,
-      href: `/competitions`,
-      priority: 'low' as const,
     });
   }
 
@@ -171,14 +138,6 @@ const week1Resources = [
     description: 'Complete beginner Python course',
     time: '30 hours',
   },
-];
-
-const week1Tasks = [
-  { task: 'Install Python 3.x and VS Code', done: false },
-  { task: 'Complete Python Official Tutorial (Chapters 1-5)', done: false },
-  { task: 'Start Automate the Boring Stuff (Chapters 1-3)', done: false },
-  { task: 'Watch MIT 6.0001 Lecture 1', done: false },
-  { task: 'Write your first Python script', done: false },
 ];
 
 export default function Dashboard() {
@@ -242,13 +201,6 @@ export default function Dashboard() {
     (w) => w.week === progress.currentWeek
   );
 
-  const milestones = roadmapData.milestones.map((m) => ({
-    week: m.week,
-    title: m.title,
-    completed: progress.currentWeek >= m.week,
-    current: progress.currentWeek >= m.week - 4 && progress.currentWeek < m.week,
-  }));
-
   if (!mounted) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -261,7 +213,6 @@ export default function Dashboard() {
     <div className="space-y-6">
       {/* Welcome Header */}
       <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 p-6 md:p-8">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
         <div className="relative z-10">
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
             Welcome to QuantPath
@@ -274,14 +225,14 @@ export default function Dashboard() {
       </div>
 
       {/* Today's Focus - Most Important */}
-      <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+      <Card className="border-2 border-primary/20">
         <CardHeader className="pb-3">
           <div className="flex items-center justify-between">
             <CardTitle className="text-lg font-bold flex items-center gap-2">
               <Zap className="h-5 w-5 text-primary" />
-              Today&apos;s Focus
+              This Week&apos;s Focus
             </CardTitle>
-            <Badge variant="secondary" className="bg-primary/10 text-primary">
+            <Badge variant="secondary" className="bg-primary/10 text-primary font-bold">
               Week {progress.currentWeek}
             </Badge>
           </div>
@@ -290,14 +241,14 @@ export default function Dashboard() {
           {todayTasks ? (
             <div className="space-y-4">
               <div>
-                <h3 className="font-semibold text-foreground mb-2">{todayTasks.focus}</h3>
+                <h3 className="font-semibold text-foreground text-lg mb-1">{todayTasks.focus}</h3>
                 <p className="text-sm text-muted-foreground">
-                  Estimated time: {todayTasks.hours} hours this week
+                  Estimated: {todayTasks.hours} hours this week
                 </p>
               </div>
               
               <div className="space-y-2">
-                <p className="text-sm font-medium text-foreground">Tasks to complete:</p>
+                <p className="text-sm font-semibold text-foreground">Tasks:</p>
                 {todayTasks.tasks.map((task, i) => {
                   const isDone = progress.dailyTasks[today]?.includes(task);
                   return (
@@ -320,7 +271,7 @@ export default function Dashboard() {
                           }
                           setProgress({ ...progress, dailyTasks: newDailyTasks });
                         }}
-                        className="mt-0.5 rounded border-slate-600"
+                        className="mt-0.5 rounded"
                       />
                       <span className={`text-sm ${isDone ? 'text-green-400 line-through' : 'text-foreground'}`}>
                         {task}
@@ -331,7 +282,7 @@ export default function Dashboard() {
               </div>
             </div>
           ) : (
-            <p className="text-muted-foreground">No tasks for this week</p>
+            <p className="text-muted-foreground">No tasks scheduled for this week</p>
           )}
         </CardContent>
       </Card>
@@ -352,16 +303,16 @@ export default function Dashboard() {
                 href={resource.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all duration-200 hover:shadow-md"
+                className="group flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all duration-200"
               >
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
                   <ExternalLink className="h-5 w-5 text-blue-500" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h4 className="font-medium text-foreground text-sm group-hover:text-primary transition-colors">
+                  <h4 className="font-semibold text-foreground text-sm group-hover:text-primary transition-colors">
                     {resource.title}
                   </h4>
-                  <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
+                  <p className="text-xs text-muted-foreground mt-1">
                     {resource.description}
                   </p>
                   <div className="flex items-center gap-2 mt-2">
@@ -392,18 +343,67 @@ export default function Dashboard() {
         {/* Skill Radar */}
         <SkillRadar skills={skills} />
 
-        {/* Weekly Progress */}
-        <WeeklyProgress 
-          currentWeek={progress.currentWeek}
-          totalWeeks={roadmapData.weeks}
-          milestones={milestones}
-        />
-
         {/* Upcoming Competitions */}
         <UpcomingCompetitions competitions={upcomingCompetitions} />
 
         {/* Recommended Next Steps */}
         <RecommendedNext recommendations={recommendations} />
+
+        {/* 24-Week Overview */}
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg font-bold flex items-center gap-2">
+              <Calendar className="h-5 w-5 text-purple-500" />
+              24-Week Program
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-3">
+              {roadmapData.milestones.map((milestone) => {
+                const isCompleted = progress.currentWeek > milestone.week;
+                const isCurrent = progress.currentWeek >= milestone.week - 3 && progress.currentWeek <= milestone.week;
+                
+                return (
+                  <div 
+                    key={milestone.week}
+                    className={`flex items-center gap-3 p-3 rounded-lg border ${
+                      isCurrent 
+                        ? 'bg-primary/10 border-primary/20' 
+                        : isCompleted 
+                          ? 'bg-green-500/10 border-green-500/20' 
+                          : 'bg-muted/30 border-border'
+                    }`}
+                  >
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold ${
+                      isCurrent 
+                        ? 'bg-primary text-primary-foreground' 
+                        : isCompleted 
+                          ? 'bg-green-500 text-white' 
+                          : 'bg-muted text-muted-foreground'
+                    }`}>
+                      {isCompleted ? (
+                        <CheckCircle className="h-4 w-4" />
+                      ) : (
+                        milestone.week
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <p className={`text-sm font-semibold ${isCurrent ? 'text-primary' : 'text-foreground'}`}>
+                        Week {milestone.week}: {milestone.title}
+                      </p>
+                      <p className="text-xs text-muted-foreground">{milestone.description}</p>
+                    </div>
+                    {isCurrent && (
+                      <Badge variant="secondary" className="bg-primary/10 text-primary text-xs">
+                        Current
+                      </Badge>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Quick Links */}
@@ -416,7 +416,7 @@ export default function Dashboard() {
             <Link href="/roadmap" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
               <Calendar className="h-5 w-5 text-purple-500" />
               <div>
-                <p className="font-medium text-sm">Learning Roadmap</p>
+                <p className="font-semibold text-sm">Learning Roadmap</p>
                 <p className="text-xs text-muted-foreground">View skill tree</p>
               </div>
               <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
@@ -424,7 +424,7 @@ export default function Dashboard() {
             <Link href="/resources" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
               <BookOpen className="h-5 w-5 text-green-500" />
               <div>
-                <p className="font-medium text-sm">Resources</p>
+                <p className="font-semibold text-sm">Resources</p>
                 <p className="text-xs text-muted-foreground">200+ learning materials</p>
               </div>
               <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
@@ -432,7 +432,7 @@ export default function Dashboard() {
             <Link href="/projects" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
               <Zap className="h-5 w-5 text-yellow-500" />
               <div>
-                <p className="font-medium text-sm">Projects</p>
+                <p className="font-semibold text-sm">Projects</p>
                 <p className="text-xs text-muted-foreground">Build your CV</p>
               </div>
               <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
