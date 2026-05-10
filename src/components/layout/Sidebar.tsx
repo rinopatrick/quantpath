@@ -50,24 +50,35 @@ const navItems = [
   },
 ];
 
+const skillCategories = [
+  { name: 'Mathematics', icon: Sigma, color: 'text-blue-400' },
+  { name: 'Programming', icon: Code, color: 'text-green-400' },
+  { name: 'Finance', icon: DollarSign, color: 'text-yellow-400' },
+  { name: 'Machine Learning', icon: Brain, color: 'text-purple-400' },
+  { name: 'Tools', icon: Wrench, color: 'text-orange-400' },
+];
+
 export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <div className="hidden md:flex w-64 flex-col fixed inset-y-0 z-50 bg-slate-900 border-r border-slate-800">
+    <div className="hidden md:flex w-64 flex-col fixed inset-y-0 z-50 bg-card border-r border-border">
       <div className="flex flex-col h-full">
         {/* Logo */}
-        <div className="flex items-center h-16 px-6 border-b border-slate-800">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+        <div className="flex items-center h-16 px-6 border-b border-border">
+          <Link href="/" className="flex items-center gap-3">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/25">
               <span className="text-white font-bold text-lg">Q</span>
             </div>
-            <span className="text-xl font-bold text-white">QuantPath</span>
+            <div>
+              <span className="text-lg font-bold text-foreground">QuantPath</span>
+              <p className="text-[10px] text-muted-foreground -mt-0.5">Nuclear → Quant</p>
+            </div>
           </Link>
         </div>
 
         {/* Navigation */}
-        <nav className="flex-1 px-4 py-6 space-y-1">
+        <nav className="flex-1 px-3 py-4 space-y-1">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -75,10 +86,10 @@ export function Sidebar() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  'flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+                  'flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200',
                   isActive
-                    ? 'bg-blue-600 text-white'
-                    : 'text-slate-400 hover:text-white hover:bg-slate-800'
+                    ? 'bg-primary text-primary-foreground shadow-md shadow-primary/25'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 )}
               >
                 <item.icon className="w-5 h-5" />
@@ -89,37 +100,28 @@ export function Sidebar() {
         </nav>
 
         {/* Skill Categories Legend */}
-        <div className="px-4 py-4 border-t border-slate-800">
-          <p className="text-xs font-medium text-slate-500 mb-3">SKILL CATEGORIES</p>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-xs text-slate-400">
-              <Sigma className="w-4 h-4 text-blue-400" />
-              <span>Mathematics</span>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-slate-400">
-              <Code className="w-4 h-4 text-green-400" />
-              <span>Programming</span>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-slate-400">
-              <DollarSign className="w-4 h-4 text-yellow-400" />
-              <span>Finance</span>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-slate-400">
-              <Brain className="w-4 h-4 text-purple-400" />
-              <span>Machine Learning</span>
-            </div>
-            <div className="flex items-center gap-2 text-xs text-slate-400">
-              <Wrench className="w-4 h-4 text-orange-400" />
-              <span>Tools</span>
-            </div>
+        <div className="px-3 py-4 border-t border-border">
+          <p className="text-xs font-semibold text-muted-foreground mb-3 px-3 uppercase tracking-wider">
+            Skill Categories
+          </p>
+          <div className="space-y-1.5">
+            {skillCategories.map((cat) => (
+              <div key={cat.name} className="flex items-center gap-2.5 px-3 py-1.5 text-xs text-muted-foreground">
+                <cat.icon className={cn("w-4 h-4", cat.color)} />
+                <span>{cat.name}</span>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Footer */}
-        <div className="px-4 py-4 border-t border-slate-800">
-          <p className="text-xs text-slate-500 text-center">
-            Nuclear Engineering → Quant
-          </p>
+        <div className="px-3 py-4 border-t border-border">
+          <div className="px-3 py-3 rounded-xl bg-muted/50">
+            <p className="text-xs font-medium text-foreground">24-Week Program</p>
+            <p className="text-[10px] text-muted-foreground mt-0.5">
+              Structured path to quant career
+            </p>
+          </div>
         </div>
       </div>
     </div>

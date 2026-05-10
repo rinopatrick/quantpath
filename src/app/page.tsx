@@ -1,11 +1,24 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import Link from 'next/link';
 import { QuickStats } from '@/components/dashboard/QuickStats';
 import { SkillRadar } from '@/components/dashboard/SkillRadar';
 import { UpcomingCompetitions } from '@/components/dashboard/UpcomingCompetitions';
 import { RecommendedNext } from '@/components/dashboard/RecommendedNext';
 import { WeeklyProgress } from '@/components/dashboard/WeeklyProgress';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { 
+  BookOpen, 
+  ExternalLink, 
+  CheckCircle, 
+  Clock, 
+  ArrowRight,
+  Zap,
+  Calendar
+} from 'lucide-react';
 import resourcesData from '@/data/resources.json';
 import projectsData from '@/data/projects.json';
 import competitionsData from '@/data/competitions.json';
@@ -129,6 +142,45 @@ function generateRecommendations(progress: Progress) {
   return recommendations.slice(0, 3);
 }
 
+const week1Resources = [
+  {
+    id: 'python-official',
+    title: 'Python Official Tutorial',
+    url: 'https://docs.python.org/3/tutorial/',
+    description: 'Start here - learn Python basics',
+    time: '2-3 hours',
+  },
+  {
+    id: 'automate-boring-stuff',
+    title: 'Automate the Boring Stuff with Python',
+    url: 'https://automatetheboringstuff.com/',
+    description: 'Practical Python programming',
+    time: '10-15 hours',
+  },
+  {
+    id: 'mit-60001',
+    title: 'MIT 6.0001 Introduction to CS',
+    url: 'https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/',
+    description: 'MIT\'s intro CS course with Python',
+    time: '30-40 hours',
+  },
+  {
+    id: 'python-for-everybody',
+    title: 'Python for Everybody',
+    url: 'https://www.py4e.com/',
+    description: 'Complete beginner Python course',
+    time: '30 hours',
+  },
+];
+
+const week1Tasks = [
+  { task: 'Install Python 3.x and VS Code', done: false },
+  { task: 'Complete Python Official Tutorial (Chapters 1-5)', done: false },
+  { task: 'Start Automate the Boring Stuff (Chapters 1-3)', done: false },
+  { task: 'Watch MIT 6.0001 Lecture 1', done: false },
+  { task: 'Write your first Python script', done: false },
+];
+
 export default function Dashboard() {
   const [progress, setProgress] = useState<Progress>({
     resourcesCompleted: [],
@@ -198,54 +250,132 @@ export default function Dashboard() {
   }));
 
   if (!mounted) {
-    return <div className="text-white">Loading...</div>;
+    return (
+      <div className="flex items-center justify-center h-64">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+      </div>
+    );
   }
 
   return (
     <div className="space-y-6">
-      <div className="p-6 rounded-lg bg-gradient-to-r from-blue-900 to-slate-900 border border-blue-800">
-        <h1 className="text-2xl font-bold text-white">Welcome to QuantPath</h1>
-        <p className="text-slate-300 mt-2">
-          Your personal learning companion for transitioning from Nuclear Engineering to Quantitative Finance.
-          Week {progress.currentWeek} of 24.
-        </p>
+      {/* Welcome Header */}
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 p-6 md:p-8">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+        <div className="relative z-10">
+          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
+            Welcome to QuantPath
+          </h1>
+          <p className="text-blue-100 text-sm md:text-base max-w-2xl">
+            Your personal learning companion for transitioning from Nuclear Engineering to Quantitative Finance. 
+            You&apos;re on <span className="font-semibold text-white">Week {progress.currentWeek}</span> of 24.
+          </p>
+        </div>
       </div>
 
-      {todayTasks && (
-        <div className="p-4 rounded-lg bg-slate-900 border border-slate-800">
-          <h2 className="text-lg font-semibold text-white mb-2">
-            Today&apos;s Focus: {todayTasks.focus}
-          </h2>
-          <ul className="space-y-2">
-            {todayTasks.tasks.map((task, i) => {
-              const isDone = progress.dailyTasks[today]?.includes(task);
-              return (
-                <li key={i} className="flex items-center gap-2">
-                  <input
-                    type="checkbox"
-                    checked={isDone || false}
-                    onChange={() => {
-                      const newDailyTasks = { ...progress.dailyTasks };
-                      if (!newDailyTasks[today]) newDailyTasks[today] = [];
-                      if (isDone) {
-                        newDailyTasks[today] = newDailyTasks[today].filter((t) => t !== task);
-                      } else {
-                        newDailyTasks[today].push(task);
-                      }
-                      setProgress({ ...progress, dailyTasks: newDailyTasks });
-                    }}
-                    className="rounded border-slate-600"
-                  />
-                  <span className={`text-sm ${isDone ? 'text-green-400 line-through' : 'text-slate-300'}`}>
-                    {task}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
+      {/* Today's Focus - Most Important */}
+      <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+        <CardHeader className="pb-3">
+          <div className="flex items-center justify-between">
+            <CardTitle className="text-lg font-bold flex items-center gap-2">
+              <Zap className="h-5 w-5 text-primary" />
+              Today&apos;s Focus
+            </CardTitle>
+            <Badge variant="secondary" className="bg-primary/10 text-primary">
+              Week {progress.currentWeek}
+            </Badge>
+          </div>
+        </CardHeader>
+        <CardContent>
+          {todayTasks ? (
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-semibold text-foreground mb-2">{todayTasks.focus}</h3>
+                <p className="text-sm text-muted-foreground">
+                  Estimated time: {todayTasks.hours} hours this week
+                </p>
+              </div>
+              
+              <div className="space-y-2">
+                <p className="text-sm font-medium text-foreground">Tasks to complete:</p>
+                {todayTasks.tasks.map((task, i) => {
+                  const isDone = progress.dailyTasks[today]?.includes(task);
+                  return (
+                    <label 
+                      key={i} 
+                      className={`flex items-start gap-3 p-3 rounded-lg cursor-pointer transition-colors ${
+                        isDone ? 'bg-green-500/10 border border-green-500/20' : 'bg-muted/50 hover:bg-muted'
+                      }`}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={isDone || false}
+                        onChange={() => {
+                          const newDailyTasks = { ...progress.dailyTasks };
+                          if (!newDailyTasks[today]) newDailyTasks[today] = [];
+                          if (isDone) {
+                            newDailyTasks[today] = newDailyTasks[today].filter((t) => t !== task);
+                          } else {
+                            newDailyTasks[today].push(task);
+                          }
+                          setProgress({ ...progress, dailyTasks: newDailyTasks });
+                        }}
+                        className="mt-0.5 rounded border-slate-600"
+                      />
+                      <span className={`text-sm ${isDone ? 'text-green-400 line-through' : 'text-foreground'}`}>
+                        {task}
+                      </span>
+                    </label>
+                  );
+                })}
+              </div>
+            </div>
+          ) : (
+            <p className="text-muted-foreground">No tasks for this week</p>
+          )}
+        </CardContent>
+      </Card>
 
+      {/* Quick Access Resources */}
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-lg font-bold flex items-center gap-2">
+            <BookOpen className="h-5 w-5 text-blue-500" />
+            Start Learning Now
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {week1Resources.map((resource) => (
+              <a
+                key={resource.id}
+                href={resource.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all duration-200 hover:shadow-md"
+              >
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
+                  <ExternalLink className="h-5 w-5 text-blue-500" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h4 className="font-medium text-foreground text-sm group-hover:text-primary transition-colors">
+                    {resource.title}
+                  </h4>
+                  <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
+                    {resource.description}
+                  </p>
+                  <div className="flex items-center gap-2 mt-2">
+                    <Clock className="h-3 w-3 text-muted-foreground" />
+                    <span className="text-xs text-muted-foreground">{resource.time}</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Stats Grid */}
       <QuickStats
         resourcesCompleted={progress.resourcesCompleted.length}
         totalResources={resourcesData.resources.length}
@@ -257,16 +387,59 @@ export default function Dashboard() {
         totalWeeks={roadmapData.weeks}
       />
 
-      <div className="grid gap-6 md:grid-cols-2">
+      {/* Main Content Grid */}
+      <div className="grid gap-6 lg:grid-cols-2">
+        {/* Skill Radar */}
         <SkillRadar skills={skills} />
+
+        {/* Weekly Progress */}
         <WeeklyProgress 
           currentWeek={progress.currentWeek}
           totalWeeks={roadmapData.weeks}
           milestones={milestones}
         />
+
+        {/* Upcoming Competitions */}
         <UpcomingCompetitions competitions={upcomingCompetitions} />
+
+        {/* Recommended Next Steps */}
         <RecommendedNext recommendations={recommendations} />
       </div>
+
+      {/* Quick Links */}
+      <Card>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-lg font-bold">Quick Navigation</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid gap-3 sm:grid-cols-3">
+            <Link href="/roadmap" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
+              <Calendar className="h-5 w-5 text-purple-500" />
+              <div>
+                <p className="font-medium text-sm">Learning Roadmap</p>
+                <p className="text-xs text-muted-foreground">View skill tree</p>
+              </div>
+              <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
+            </Link>
+            <Link href="/resources" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
+              <BookOpen className="h-5 w-5 text-green-500" />
+              <div>
+                <p className="font-medium text-sm">Resources</p>
+                <p className="text-xs text-muted-foreground">200+ learning materials</p>
+              </div>
+              <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
+            </Link>
+            <Link href="/projects" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
+              <Zap className="h-5 w-5 text-yellow-500" />
+              <div>
+                <p className="font-medium text-sm">Projects</p>
+                <p className="text-xs text-muted-foreground">Build your CV</p>
+              </div>
+              <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
+            </Link>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }
