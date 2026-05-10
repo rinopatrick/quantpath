@@ -5,12 +5,12 @@ import { Menu, Bell } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Sidebar } from './Sidebar';
-import { Badge } from '@/components/ui/badge';
 
 const pageTitles: Record<string, { title: string; description: string }> = {
   '/': { title: 'Dashboard', description: 'Overview of your learning progress' },
   '/roadmap': { title: 'Learning Roadmap', description: 'Visual skill tree and learning path' },
   '/resources': { title: 'Resource Library', description: '200+ free learning resources' },
+  '/certifications': { title: 'Certifications', description: 'Industry-recognized credentials' },
   '/projects': { title: 'Project Ideas', description: 'CV-worthy projects to build' },
   '/competitions': { title: 'Competition Tracker', description: 'Quant finance competitions' },
   '/profile': { title: 'Profile & Skills', description: 'Track your progress and skills' },

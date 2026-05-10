@@ -9,6 +9,7 @@ import {
   Lightbulb, 
   Trophy, 
   User,
+  Award,
   Sigma,
   Code,
   DollarSign,
@@ -32,6 +33,11 @@ const navItems = [
     title: 'Resources',
     href: '/resources',
     icon: BookOpen,
+  },
+  {
+    title: 'Certifications',
+    href: '/certifications',
+    icon: Award,
   },
   {
     title: 'Projects',
