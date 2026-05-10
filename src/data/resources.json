@@ -1979,6 +1979,262 @@
       ],
       "nuclearRelevance": "Community and learning",
       "specificLinks": {}
+    },
+    {
+      "id": "cfa-investment-foundations",
+      "title": "CFA Institute Investment Foundations Certificate",
+      "url": "https://www.cfainstitute.org/programs/investment-foundations",
+      "type": "certification",
+      "difficulty": "beginner",
+      "skills": ["financial-markets", "portfolio-theory"],
+      "estimatedHours": 60,
+      "free": true,
+      "description": "Free self-study program covering investment fundamentals - recognized globally",
+      "actionSteps": [
+        "Register for free on CFA Institute website",
+        "Complete all 20 modules",
+        "Pass the final assessment",
+        "Add certificate to LinkedIn and CV"
+      ],
+      "nuclearRelevance": "Industry-recognized credential for finance career",
+      "specificLinks": {
+        "registration": "https://www.cfainstitute.org/programs/investment-foundations",
+        "curriculum": "https://www.cfainstitute.org/programs/investment-foundations/curriculum"
+      }
+    },
+    {
+      "id": "google-ai-for-everyone",
+      "title": "Google AI for Everyone",
+      "url": "https://www.coursera.org/learn/ai-for-everyone",
+      "type": "certification",
+      "difficulty": "beginner",
+      "skills": ["supervised-learning"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Free Coursera course by Andrew Ng - perfect introduction to AI concepts",
+      "actionSteps": [
+        "Enroll in audit mode (free)",
+        "Watch all videos",
+        "Complete all quizzes",
+        "Get certificate of completion"
+      ],
+      "nuclearRelevance": "AI fundamentals applicable to nuclear data analysis",
+      "specificLinks": {
+        "enroll": "https://www.coursera.org/learn/ai-for-everyone"
+      }
+    },
+    {
+      "id": "ibm-ai-engineering",
+      "title": "IBM AI Engineering Professional Certificate",
+      "url": "https://www.coursera.org/professional-certificates/ai-engineer",
+      "type": "certification",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning", "supervised-learning", "python"],
+      "estimatedHours": 120,
+      "free": true,
+      "description": "Comprehensive AI engineering program - audit individual courses for free",
+      "actionSteps": [
+        "Audit each course individually (free)",
+        "Complete Machine Learning with Python",
+        "Complete Deep Learning with Keras",
+        "Complete AI Capstone Project",
+        "Add to resume"
+      ],
+      "nuclearRelevance": "ML engineering skills for quantitative work",
+      "specificLinks": {
+        "courses": "https://www.coursera.org/professional-certificates/ai-engineer"
+      }
+    },
+    {
+      "id": "tensorflow-developer",
+      "title": "TensorFlow Developer Certificate Prep",
+      "url": "https://www.coursera.org/professional-certificates/tensorflow-in-practice",
+      "type": "certification",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning", "pytorch"],
+      "estimatedHours": 60,
+      "free": true,
+      "description": "Free TensorFlow practice course - prepare for official certification",
+      "actionSteps": [
+        "Enroll in audit mode (free)",
+        "Complete all 4 courses",
+        "Practice with TensorFlow exercises",
+        "Prepare for official certification exam"
+      ],
+      "nuclearRelevance": "Deep learning for complex pattern recognition",
+      "specificLinks": {
+        "enroll": "https://www.coursera.org/professional-certificates/tensorflow-in-practice"
+      }
+    },
+    {
+      "id": "deeplearning-ai-specialization",
+      "title": "DeepLearning.AI Deep Learning Specialization",
+      "url": "https://www.coursera.org/specializations/deep-learning",
+      "type": "certification",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning", "neural-networks"],
+      "estimatedHours": 100,
+      "free": true,
+      "description": "Andrew Ng's deep learning specialization - audit for free",
+      "actionSteps": [
+        "Audit each course individually",
+        "Complete Neural Networks and Deep Learning",
+        "Complete Structuring ML Projects",
+        "Complete Convolutional Neural Networks",
+        "Complete Sequence Models"
+      ],
+      "nuclearRelevance": "Advanced ML for financial modeling",
+      "specificLinks": {
+        "courses": "https://www.coursera.org/specializations/deep-learning"
+      }
+    },
+    {
+      "id": "iaea-nuclear-fundamentals",
+      "title": "IAEA Nuclear Fundamentals Online Course",
+      "url": "https://www.iaea.org/services/training",
+      "type": "certification",
+      "difficulty": "beginner",
+      "skills": ["numerical-methods"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "IAEA free online courses on nuclear science and technology",
+      "actionSteps": [
+        "Browse available courses",
+        "Enroll in Nuclear Fundamentals",
+        "Complete all modules",
+        "Get IAEA certificate"
+      ],
+      "nuclearRelevance": "Official nuclear engineering credential",
+      "specificLinks": {
+        "courses": "https://www.iaea.org/services/training"
+      }
+    },
+    {
+      "id": "ans-nuclear-basics",
+      "title": "American Nuclear Society Nuclear Basics",
+      "url": "https://www.ans.org/education/",
+      "type": "certification",
+      "difficulty": "beginner",
+      "skills": ["numerical-methods"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "ANS free educational resources on nuclear science",
+      "actionSteps": [
+        "Browse educational resources",
+        "Complete nuclear basics modules",
+        "Study reactor physics fundamentals",
+        "Apply to quant career"
+      ],
+      "nuclearRelevance": "Nuclear engineering fundamentals",
+      "specificLinks": {
+        "education": "https://www.ans.org/education/"
+      }
+    },
+    {
+      "id": "nrc-training",
+      "title": "NRC Training Materials",
+      "url": "https://www.nrc.gov/reading-rm/basic-ref/students.html",
+      "type": "certification",
+      "difficulty": "beginner",
+      "skills": ["risk-management", "probability"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "NRC free training materials on nuclear safety and risk",
+      "actionSteps": [
+        "Browse student resources",
+        "Study nuclear safety fundamentals",
+        "Learn about probabilistic risk assessment",
+        "Apply to financial risk modeling"
+      ],
+      "nuclearRelevance": "Risk assessment skills transferable to finance",
+      "specificLinks": {
+        "students": "https://www.nrc.gov/reading-rm/basic-ref/students.html"
+      }
+    },
+    {
+      "id": "kaggle-certificates",
+      "title": "Kaggle Learn Certificates",
+      "url": "https://www.kaggle.com/learn",
+      "type": "certification",
+      "difficulty": "beginner",
+      "skills": ["python", "supervised-learning", "deep-learning"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Free micro-courses with certificates - Python, ML, Deep Learning, SQL, Pandas",
+      "actionSteps": [
+        "Complete Python course",
+        "Complete Intro to ML course",
+        "Complete Intermediate ML course",
+        "Complete Deep Learning course",
+        "Earn all certificates"
+      ],
+      "nuclearRelevance": "Practical data science skills",
+      "specificLinks": {
+        "courses": "https://www.kaggle.com/learn"
+      }
+    },
+    {
+      "id": "quantconnect-bootcamp",
+      "title": "QuantConnect Bootcamp",
+      "url": "https://www.quantconnect.com/bootcamp",
+      "type": "certification",
+      "difficulty": "intermediate",
+      "skills": ["python", "financial-markets"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Free algorithmic trading bootcamp with certificate",
+      "actionSteps": [
+        "Register for free",
+        "Complete all bootcamp lessons",
+        "Build trading algorithms",
+        "Get completion certificate"
+      ],
+      "nuclearRelevance": "Algorithmic trading skills",
+      "specificLinks": {
+        "bootcamp": "https://www.quantconnect.com/bootcamp"
+      }
+    },
+    {
+      "id": "coursera-financial-markets",
+      "title": "Coursera Financial Markets Certificate",
+      "url": "https://www.coursera.org/learn/financial-markets-global",
+      "type": "certification",
+      "difficulty": "beginner",
+      "skills": ["financial-markets"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Yale's Financial Markets course with free certificate in audit mode",
+      "actionSteps": [
+        "Enroll in audit mode (free)",
+        "Watch all lectures",
+        "Complete all quizzes",
+        "Get certificate of completion"
+      ],
+      "nuclearRelevance": "Financial markets fundamentals",
+      "specificLinks": {
+        "enroll": "https://www.coursera.org/learn/financial-markets-global"
+      }
+    },
+    {
+      "id": "stanford-cs229-certificate",
+      "title": "Stanford CS229 Machine Learning Certificate",
+      "url": "https://online.stanford.edu/courses/cs229-machine-learning",
+      "type": "certification",
+      "difficulty": "intermediate",
+      "skills": ["supervised-learning"],
+      "estimatedHours": 60,
+      "free": true,
+      "description": "Stanford's ML course available free online",
+      "actionSteps": [
+        "Access free course materials",
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Build ML foundation"
+      ],
+      "nuclearRelevance": "Rigorous ML theory for quantitative work",
+      "specificLinks": {
+        "course": "https://online.stanford.edu/courses/cs229-machine-learning"
+      }
     }
   ]
 }
