@@ -1,0 +1,282 @@
+{
+  "categories": [
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "icon": "Sigma",
+      "skills": [
+        {
+          "id": "linear-algebra",
+          "name": "Linear Algebra",
+          "difficulty": "beginner",
+          "estimatedHours": 40,
+          "prerequisites": [],
+          "nuclearStrength": true,
+          "description": "Vectors, matrices, eigenvalues, SVD - fundamental to all quantitative fields"
+        },
+        {
+          "id": "calculus",
+          "name": "Calculus",
+          "difficulty": "beginner",
+          "estimatedHours": 40,
+          "prerequisites": [],
+          "nuclearStrength": true,
+          "description": "Derivatives, integrals, multivariate calculus - foundation for optimization"
+        },
+        {
+          "id": "probability",
+          "name": "Probability",
+          "difficulty": "intermediate",
+          "estimatedHours": 30,
+          "prerequisites": ["calculus"],
+          "nuclearStrength": false,
+          "description": "Random variables, distributions, expected values - core to risk modeling"
+        },
+        {
+          "id": "statistics",
+          "name": "Statistics",
+          "difficulty": "intermediate",
+          "estimatedHours": 30,
+          "prerequisites": ["probability"],
+          "nuclearStrength": false,
+          "description": "Hypothesis testing, regression, Bayesian methods - data analysis foundation"
+        },
+        {
+          "id": "stochastic-calculus",
+          "name": "Stochastic Calculus",
+          "difficulty": "advanced",
+          "estimatedHours": 50,
+          "prerequisites": ["calculus", "probability"],
+          "nuclearStrength": false,
+          "description": "Ito calculus, Brownian motion, SDEs - essential for derivatives pricing"
+        },
+        {
+          "id": "optimization",
+          "name": "Optimization",
+          "difficulty": "intermediate",
+          "estimatedHours": 30,
+          "prerequisites": ["linear-algebra", "calculus"],
+          "nuclearStrength": false,
+          "description": "Linear programming, convex optimization, gradient descent - portfolio optimization"
+        },
+        {
+          "id": "numerical-methods",
+          "name": "Numerical Methods",
+          "difficulty": "intermediate",
+          "estimatedHours": 30,
+          "prerequisites": ["calculus", "linear-algebra"],
+          "nuclearStrength": true,
+          "description": "Finite difference, Monte Carlo, numerical integration - simulation methods"
+        }
+      ]
+    },
+    {
+      "id": "programming",
+      "name": "Programming",
+      "icon": "Code",
+      "skills": [
+        {
+          "id": "python",
+          "name": "Python",
+          "difficulty": "beginner",
+          "estimatedHours": 60,
+          "prerequisites": [],
+          "nuclearStrength": false,
+          "description": "Primary language for quant work - data analysis, ML, scripting"
+        },
+        {
+          "id": "cpp",
+          "name": "C++",
+          "difficulty": "intermediate",
+          "estimatedHours": 80,
+          "prerequisites": ["python"],
+          "nuclearStrength": false,
+          "description": "Performance-critical systems, low-latency trading, HFT"
+        },
+        {
+          "id": "sql",
+          "name": "SQL",
+          "difficulty": "beginner",
+          "estimatedHours": 20,
+          "prerequisites": [],
+          "nuclearStrength": false,
+          "description": "Database queries, data extraction, relational databases"
+        },
+        {
+          "id": "git",
+          "name": "Git",
+          "difficulty": "beginner",
+          "estimatedHours": 10,
+          "prerequisites": [],
+          "nuclearStrength": false,
+          "description": "Version control, collaboration, code management"
+        },
+        {
+          "id": "data-structures",
+          "name": "Data Structures",
+          "difficulty": "intermediate",
+          "estimatedHours": 40,
+          "prerequisites": ["python"],
+          "nuclearStrength": false,
+          "description": "Arrays, trees, graphs, hash maps - algorithm efficiency"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "icon": "DollarSign",
+      "skills": [
+        {
+          "id": "financial-markets",
+          "name": "Financial Markets",
+          "difficulty": "beginner",
+          "estimatedHours": 20,
+          "prerequisites": [],
+          "nuclearStrength": false,
+          "description": "Stocks, bonds, forex, commodities - market structure"
+        },
+        {
+          "id": "derivatives",
+          "name": "Derivatives",
+          "difficulty": "intermediate",
+          "estimatedHours": 30,
+          "prerequisites": ["probability", "financial-markets"],
+          "nuclearStrength": false,
+          "description": "Options, futures, swaps - pricing and hedging"
+        },
+        {
+          "id": "portfolio-theory",
+          "name": "Portfolio Theory",
+          "difficulty": "intermediate",
+          "estimatedHours": 25,
+          "prerequisites": ["statistics", "financial-markets"],
+          "nuclearStrength": false,
+          "description": "Markowitz, CAPM, factor models - portfolio construction"
+        },
+        {
+          "id": "risk-management",
+          "name": "Risk Management",
+          "difficulty": "intermediate",
+          "estimatedHours": 25,
+          "prerequisites": ["statistics", "derivatives"],
+          "nuclearStrength": false,
+          "description": "VaR, CVaR, stress testing - risk measurement"
+        },
+        {
+          "id": "market-microstructure",
+          "name": "Market Microstructure",
+          "difficulty": "advanced",
+          "estimatedHours": 30,
+          "prerequisites": ["financial-markets", "derivatives"],
+          "nuclearStrength": false,
+          "description": "Order books, market making, execution - trading mechanics"
+        }
+      ]
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning",
+      "icon": "Brain",
+      "skills": [
+        {
+          "id": "supervised-learning",
+          "name": "Supervised Learning",
+          "difficulty": "intermediate",
+          "estimatedHours": 40,
+          "prerequisites": ["python", "statistics"],
+          "nuclearStrength": false,
+          "description": "Regression, classification, tree models - predictive modeling"
+        },
+        {
+          "id": "deep-learning",
+          "name": "Deep Learning",
+          "difficulty": "advanced",
+          "estimatedHours": 50,
+          "prerequisites": ["supervised-learning"],
+          "nuclearStrength": false,
+          "description": "Neural networks, CNNs, RNNs, transformers - complex pattern recognition"
+        },
+        {
+          "id": "reinforcement-learning",
+          "name": "Reinforcement Learning",
+          "difficulty": "advanced",
+          "estimatedHours": 50,
+          "prerequisites": ["supervised-learning"],
+          "nuclearStrength": false,
+          "description": "Q-learning, policy gradient, RLHF - sequential decision making"
+        },
+        {
+          "id": "time-series",
+          "name": "Time Series",
+          "difficulty": "intermediate",
+          "estimatedHours": 30,
+          "prerequisites": ["statistics", "supervised-learning"],
+          "nuclearStrength": false,
+          "description": "ARIMA, GARCH, LSTM for sequences - temporal patterns"
+        },
+        {
+          "id": "nlp",
+          "name": "NLP",
+          "difficulty": "advanced",
+          "estimatedHours": 40,
+          "prerequisites": ["deep-learning"],
+          "nuclearStrength": false,
+          "description": "Text analysis, sentiment, language models - unstructured data"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Tools & Libraries",
+      "icon": "Wrench",
+      "skills": [
+        {
+          "id": "pandas-numpy",
+          "name": "Pandas/NumPy",
+          "difficulty": "beginner",
+          "estimatedHours": 20,
+          "prerequisites": ["python"],
+          "nuclearStrength": false,
+          "description": "Data manipulation, numerical computing - essential Python libraries"
+        },
+        {
+          "id": "scipy-scikit",
+          "name": "SciPy/Scikit-learn",
+          "difficulty": "intermediate",
+          "estimatedHours": 25,
+          "prerequisites": ["pandas-numpy"],
+          "nuclearStrength": false,
+          "description": "Scientific computing, ML algorithms - Python ecosystem"
+        },
+        {
+          "id": "matplotlib-seaborn",
+          "name": "Matplotlib/Seaborn",
+          "difficulty": "beginner",
+          "estimatedHours": 10,
+          "prerequisites": ["python"],
+          "nuclearStrength": false,
+          "description": "Data visualization, plotting - communication of results"
+        },
+        {
+          "id": "pytorch",
+          "name": "PyTorch",
+          "difficulty": "advanced",
+          "estimatedHours": 40,
+          "prerequisites": ["deep-learning"],
+          "nuclearStrength": false,
+          "description": "Deep learning framework - model development and training"
+        },
+        {
+          "id": "excel",
+          "name": "Excel/VBA",
+          "difficulty": "beginner",
+          "estimatedHours": 15,
+          "prerequisites": [],
+          "nuclearStrength": false,
+          "description": "Spreadsheet analysis, VBA automation - industry standard"
+        }
+      ]
+    }
+  ]
+}

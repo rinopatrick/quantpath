@@ -1,0 +1,1984 @@
+{
+  "resources": [
+    {
+      "id": "mit-1806",
+      "title": "MIT 18.06 Linear Algebra (Gilbert Strang)",
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["linear-algebra"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "The legendary MIT linear algebra course by Gilbert Strang",
+      "actionSteps": [
+        "Watch all 35 lectures on OCW",
+        "Complete all problem sets from the course page",
+        "Focus on: eigenvalues/eigenvectors, SVD, matrix decomposition",
+        "Practice with portfolio covariance matrix examples"
+      ],
+      "nuclearRelevance": "Core math you already use in nuclear engineering - eigenvalue problems are fundamental to reactor physics",
+      "specificLinks": {
+        "lectures": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/",
+        "problemSets": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/problem-sets/",
+        "exams": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/exams/"
+      }
+    },
+    {
+      "id": "mit-1801",
+      "title": "MIT 18.01 Single Variable Calculus",
+      "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["calculus"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "MIT's introductory calculus course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete problem sets",
+        "Focus on: derivatives, integrals, series",
+        "Apply to optimization problems"
+      ],
+      "nuclearRelevance": "Foundation for all quantitative analysis",
+      "specificLinks": {
+        "lectures": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/syllabus/",
+        "problemSets": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/problem-sets/"
+      }
+    },
+    {
+      "id": "mit-1802",
+      "title": "MIT 18.02 Multivariable Calculus",
+      "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["calculus"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Multivariable calculus - gradients, divergence, Stokes' theorem",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete problem sets",
+        "Focus on: partial derivatives, multiple integrals, vector calculus",
+        "Apply to optimization in multiple dimensions"
+      ],
+      "nuclearRelevance": "Essential for understanding multivariate models",
+      "specificLinks": {
+        "lectures": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/syllabus/",
+        "problemSets": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/problem-sets/"
+      }
+    },
+    {
+      "id": "khan-linear-algebra",
+      "title": "Khan Academy Linear Algebra",
+      "url": "https://www.khanacademy.org/math/linear-algebra",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["linear-algebra"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Interactive linear algebra course with practice problems",
+      "actionSteps": [
+        "Complete all units",
+        "Do all practice exercises",
+        "Focus on: vectors, matrices, transformations",
+        "Use for quick review and practice"
+      ],
+      "nuclearRelevance": "Good supplement to MIT course",
+      "specificLinks": {}
+    },
+    {
+      "id": "khan-calculus",
+      "title": "Khan Academy Calculus",
+      "url": "https://www.khanacademy.org/math/calculus-1",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["calculus"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Interactive calculus course with practice problems",
+      "actionSteps": [
+        "Complete all units",
+        "Do all practice exercises",
+        "Focus on: limits, derivatives, integrals",
+        "Use for quick review and practice"
+      ],
+      "nuclearRelevance": "Good supplement to MIT course",
+      "specificLinks": {}
+    },
+    {
+      "id": "khan-probability",
+      "title": "Khan Academy Probability & Statistics",
+      "url": "https://www.khanacademy.org/math/statistics-probability",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["probability", "statistics"],
+      "estimatedHours": 25,
+      "free": true,
+      "description": "Interactive probability and statistics course",
+      "actionSteps": [
+        "Complete all units",
+        "Do all practice exercises",
+        "Focus on: distributions, hypothesis testing, regression",
+        "Use for quick review and practice"
+      ],
+      "nuclearRelevance": "Foundation for risk modeling",
+      "specificLinks": {}
+    },
+    {
+      "id": "3b1b-linear-algebra",
+      "title": "3Blue1Brown Essence of Linear Algebra",
+      "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+      "type": "video",
+      "difficulty": "beginner",
+      "skills": ["linear-algebra"],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Visual intuition for linear algebra concepts",
+      "actionSteps": [
+        "Watch all 16 videos",
+        "Take notes on geometric interpretations",
+        "Visualize matrix transformations",
+        "Build intuition before formal proofs"
+      ],
+      "nuclearRelevance": "Builds geometric intuition for vector spaces",
+      "specificLinks": {}
+    },
+    {
+      "id": "3b1b-calculus",
+      "title": "3Blue1Brown Essence of Calculus",
+      "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr",
+      "type": "video",
+      "difficulty": "beginner",
+      "skills": ["calculus"],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Visual intuition for calculus concepts",
+      "actionSteps": [
+        "Watch all 12 videos",
+        "Take notes on geometric interpretations",
+        "Visualize derivatives and integrals",
+        "Build intuition before formal proofs"
+      ],
+      "nuclearRelevance": "Builds geometric intuition for continuous mathematics",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-6041",
+      "title": "MIT 6.041 Probabilistic Systems Analysis",
+      "url": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["probability"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "MIT's probability course - rigorous treatment",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: random variables, distributions, conditioning",
+        "Apply to financial modeling"
+      ],
+      "nuclearRelevance": "Rigorous probability theory for risk modeling",
+      "specificLinks": {
+        "lectures": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/pages/video-lectures/",
+        "problemSets": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/pages/assignments/"
+      }
+    },
+    {
+      "id": "harvard-stat110",
+      "title": "Harvard Stat 110 Probability",
+      "url": "https://projects.iq.harvard.edu/stat110",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["probability"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Joe Blitzstein's famous probability course",
+      "actionSteps": [
+        "Watch all lectures on YouTube",
+        "Complete all homework problems",
+        "Focus on: conditional probability, distributions, expectation",
+        "Read the textbook (free PDF available)"
+      ],
+      "nuclearRelevance": "Excellent probability foundation",
+      "specificLinks": {
+        "youtube": "https://www.youtube.com/playlist?list=PLLVplP8M_VPYK63J7jyHHQr428_SS360N",
+        "textbook": "https://projects.iq.harvard.edu/files/stat110/files/selected_solutions_blitzstein_hwang.pdf"
+      }
+    },
+    {
+      "id": "mit-1805",
+      "title": "MIT 18.05 Introduction to Probability and Statistics",
+      "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["probability", "statistics"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "MIT's probability and statistics course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: Bayesian statistics, regression, hypothesis testing",
+        "Apply to data analysis"
+      ],
+      "nuclearRelevance": "Foundation for statistical modeling",
+      "specificLinks": {}
+    },
+    {
+      "id": "statquest",
+      "title": "StatQuest YouTube Channel",
+      "url": "https://www.youtube.com/@statquest",
+      "type": "video",
+      "difficulty": "beginner",
+      "skills": ["statistics", "supervised-learning"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Clear explanations of statistics and ML concepts",
+      "actionSteps": [
+        "Watch videos on key topics",
+        "Focus on: p-values, regression, decision trees, random forests",
+        "Use as supplement to formal courses",
+        "Practice with examples"
+      ],
+      "nuclearRelevance": "Clear explanations build strong intuition",
+      "specificLinks": {
+        "playlists": "https://www.youtube.com/@statquest/playlists"
+      }
+    },
+    {
+      "id": "mit-18065",
+      "title": "MIT 18.065 Matrix Methods in Data Analysis",
+      "url": "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["linear-algebra", "optimization"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Gilbert Strang's course on matrix methods for data science",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete problem sets",
+        "Focus on: SVD, PCA, matrix factorization",
+        "Apply to dimensionality reduction"
+      ],
+      "nuclearRelevance": "Advanced linear algebra for data analysis",
+      "specificLinks": {}
+    },
+    {
+      "id": "convex-optimization",
+      "title": "Convex Optimization (Stanford)",
+      "url": "https://web.stanford.edu/~boyd/cvxbook/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["optimization"],
+      "estimatedHours": 50,
+      "free": true,
+      "description": "Boyd's legendary convex optimization course",
+      "actionSteps": [
+        "Read the textbook (free PDF)",
+        "Watch Stanford lectures on YouTube",
+        "Complete exercises",
+        "Apply to portfolio optimization"
+      ],
+      "nuclearRelevance": "Optimization techniques for resource allocation",
+      "specificLinks": {
+        "textbook": "https://stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+        "lectures": "https://www.youtube.com/playlist?list=PL3940DD956CDF0622"
+      }
+    },
+    {
+      "id": "mit-numerical-methods",
+      "title": "MIT 18.330 Introduction to Numerical Methods",
+      "url": "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["numerical-methods"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Numerical methods for scientific computing",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete problem sets",
+        "Focus on: root finding, interpolation, integration",
+        "Apply to financial calculations"
+      ],
+      "nuclearRelevance": "Core numerical methods you use in nuclear engineering",
+      "specificLinks": {}
+    },
+    {
+      "id": "stochastic-calculus-mit",
+      "title": "MIT 18.S096 Topics in Mathematics with Applications in Finance",
+      "url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["stochastic-calculus"],
+      "estimatedHours": 50,
+      "free": true,
+      "description": "Stochastic calculus applied to finance",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete problem sets",
+        "Focus on: Brownian motion, Ito calculus, Black-Scholes",
+        "Apply to options pricing"
+      ],
+      "nuclearRelevance": "Monte Carlo methods familiar from nuclear engineering",
+      "specificLinks": {}
+    },
+    {
+      "id": "linear-algebra-done-right",
+      "title": "Linear Algebra Done Right (Free Online)",
+      "url": "https://linear.axler.net/",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": ["linear-algebra"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Axler's approach to linear algebra - proof-based",
+      "actionSteps": [
+        "Read chapters systematically",
+        "Do all exercises",
+        "Focus on: vector spaces, linear maps, eigenvalues",
+        "Build mathematical maturity"
+      ],
+      "nuclearRelevance": "Rigorous mathematical thinking",
+      "specificLinks": {}
+    },
+    {
+      "id": "think-stats",
+      "title": "Think Stats (Free Book)",
+      "url": "https://greenteapress.com/thinkstats2/",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": ["statistics"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Statistics for Python programmers",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete all exercises in Python",
+        "Focus on: exploratory data analysis, hypothesis testing",
+        "Apply to real data sets"
+      ],
+      "nuclearRelevance": "Practical statistics with Python",
+      "specificLinks": {
+        "pdf": "https://greenteapress.com/thinkstats2/thinkstats2.pdf"
+      }
+    },
+    {
+      "id": "think-bayes",
+      "title": "Think Bayes (Free Book)",
+      "url": "https://greenteapress.com/thinkbayes/",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": ["probability", "statistics"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Bayesian statistics for Python programmers",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete all exercises in Python",
+        "Focus on: Bayesian inference, posterior distributions",
+        "Apply to updating beliefs with data"
+      ],
+      "nuclearRelevance": "Bayesian methods for uncertainty quantification",
+      "specificLinks": {
+        "pdf": "https://greenteapress.com/thinkbayes/thinkbayes.pdf"
+      }
+    },
+    {
+      "id": "math-for-ml",
+      "title": "Mathematics for Machine Learning (Free Book)",
+      "url": "https://mml-book.github.io/",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": ["linear-algebra", "calculus", "probability"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Mathematical foundations for ML",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete exercises",
+        "Focus on: linear algebra, calculus, probability for ML",
+        "Build mathematical foundation for ML"
+      ],
+      "nuclearRelevance": "Bridge between engineering math and ML math",
+      "specificLinks": {
+        "pdf": "https://mml-book.github.io/book/mml-book.pdf"
+      }
+    },
+    {
+      "id": "pauls-math-notes",
+      "title": "Paul's Online Math Notes",
+      "url": "https://tutorial.math.lamar.edu/",
+      "type": "reference",
+      "difficulty": "beginner",
+      "skills": ["calculus", "linear-algebra"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Quick reference for calculus and algebra",
+      "actionSteps": [
+        "Use as reference when stuck",
+        "Review key concepts",
+        "Practice with examples",
+        "Supplement main courses"
+      ],
+      "nuclearRelevance": "Quick reference for math review",
+      "specificLinks": {}
+    },
+    {
+      "id": "python-official",
+      "title": "Python Official Tutorial",
+      "url": "https://docs.python.org/3/tutorial/",
+      "type": "documentation",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Official Python documentation and tutorial",
+      "actionSteps": [
+        "Read through all sections",
+        "Try all examples",
+        "Focus on: data structures, functions, modules",
+        "Use as reference"
+      ],
+      "nuclearRelevance": "Official reference for Python",
+      "specificLinks": {}
+    },
+    {
+      "id": "automate-boring-stuff",
+      "title": "Automate the Boring Stuff with Python (Free)",
+      "url": "https://automatetheboringstuff.com/",
+      "type": "book",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Practical Python programming for beginners",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete all projects",
+        "Focus on: file handling, web scraping, automation",
+        "Build practical scripts"
+      ],
+      "nuclearRelevance": "Practical Python skills for data processing",
+      "specificLinks": {}
+    },
+    {
+      "id": "python-for-everybody",
+      "title": "Python for Everybody (Free Course)",
+      "url": "https://www.py4e.com/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Complete Python course for beginners",
+      "actionSteps": [
+        "Watch all video lectures",
+        "Complete all assignments",
+        "Focus on: data structures, web services, databases",
+        "Build complete applications"
+      ],
+      "nuclearRelevance": "Solid Python foundation",
+      "specificLinks": {
+        "lectures": "https://www.py4e.com/lectures"
+      }
+    },
+    {
+      "id": "real-python",
+      "title": "Real Python Tutorials",
+      "url": "https://realpython.com/",
+      "type": "tutorial",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "High-quality Python tutorials and articles",
+      "actionSteps": [
+        "Browse tutorials by topic",
+        "Follow along with examples",
+        "Focus on: data science, web development, best practices",
+        "Apply to real projects"
+      ],
+      "nuclearRelevance": "Practical Python skills",
+      "specificLinks": {}
+    },
+    {
+      "id": "corey-schafer",
+      "title": "Corey Schafer Python YouTube",
+      "url": "https://www.youtube.com/user/schaaborern",
+      "type": "video",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Clear Python tutorials on YouTube",
+      "actionSteps": [
+        "Watch key playlists",
+        "Follow along with code",
+        "Focus on: OOP, decorators, generators",
+        "Build solid Python skills"
+      ],
+      "nuclearRelevance": "Clear explanations build strong foundation",
+      "specificLinks": {
+        "playlists": "https://www.youtube.com/@coreyms/playlists"
+      }
+    },
+    {
+      "id": "mit-60001",
+      "title": "MIT 6.0001 Introduction to CS and Programming in Python",
+      "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "MIT's introductory CS course with Python",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: data structures, algorithms, recursion",
+        "Build programming foundation"
+      ],
+      "nuclearRelevance": "Solid CS foundation",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-60002",
+      "title": "MIT 6.0002 Computational Thinking and Data Science",
+      "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["python", "optimization"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Data science and computational thinking with Python",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: optimization, simulation, data analysis",
+        "Apply to real problems"
+      ],
+      "nuclearRelevance": "Computational thinking for engineering problems",
+      "specificLinks": {}
+    },
+    {
+      "id": "cs50",
+      "title": "CS50 Introduction to Computer Science",
+      "url": "https://cs50.harvard.edu/x/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["python", "data-structures"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Harvard's famous CS course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets and final project",
+        "Focus on: algorithms, data structures, web development",
+        "Build complete applications"
+      ],
+      "nuclearRelevance": "Comprehensive CS foundation",
+      "specificLinks": {}
+    },
+    {
+      "id": "leetcode",
+      "title": "LeetCode",
+      "url": "https://leetcode.com/",
+      "type": "practice",
+      "difficulty": "intermediate",
+      "skills": ["python", "data-structures"],
+      "estimatedHours": 50,
+      "free": true,
+      "description": "Coding interview preparation platform",
+      "actionSteps": [
+        "Start with Easy problems",
+        "Progress to Medium problems",
+        "Focus on: arrays, strings, trees, dynamic programming",
+        "Practice 2-3 problems daily"
+      ],
+      "nuclearRelevance": "Essential for coding interviews",
+      "specificLinks": {
+        "studyPlans": "https://leetcode.com/study-plan/"
+      }
+    },
+    {
+      "id": "hackerrank",
+      "title": "HackerRank",
+      "url": "https://www.hackerrank.com/",
+      "type": "practice",
+      "difficulty": "beginner",
+      "skills": ["python", "sql"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Coding practice and interview preparation",
+      "actionSteps": [
+        "Complete Python and SQL tracks",
+        "Practice interview preparation kits",
+        "Focus on: problem solving, SQL queries",
+        "Build profile with certifications"
+      ],
+      "nuclearRelevance": "Good for building coding confidence",
+      "specificLinks": {}
+    },
+    {
+      "id": "codewars",
+      "title": "CodeWars",
+      "url": "https://www.codewars.com/",
+      "type": "practice",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Coding challenges in multiple languages",
+      "actionSteps": [
+        "Start with 8kyu problems",
+        "Progress to higher kyu levels",
+        "Focus on: problem solving, Python idioms",
+        "Practice regularly"
+      ],
+      "nuclearRelevance": "Build coding fluency",
+      "specificLinks": {}
+    },
+    {
+      "id": "exercism-python",
+      "title": "Exercism Python Track",
+      "url": "https://exercism.org/tracks/python",
+      "type": "practice",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Mentored Python learning with exercises",
+      "actionSteps": [
+        "Complete all core exercises",
+        "Get mentor feedback",
+        "Focus on: Python idioms, testing, clean code",
+        "Build strong Python habits"
+      ],
+      "nuclearRelevance": "High-quality Python learning",
+      "specificLinks": {}
+    },
+    {
+      "id": "learncpp",
+      "title": "learncpp.com",
+      "url": "https://www.learncpp.com/",
+      "type": "tutorial",
+      "difficulty": "beginner",
+      "skills": ["cpp"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Comprehensive C++ tutorial",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete all quizzes",
+        "Focus on: memory management, templates, STL",
+        "Build solid C++ foundation"
+      ],
+      "nuclearRelevance": "C++ for performance-critical systems",
+      "specificLinks": {}
+    },
+    {
+      "id": "cppreference",
+      "title": "C++ Reference",
+      "url": "https://en.cppreference.com/",
+      "type": "reference",
+      "difficulty": "intermediate",
+      "skills": ["cpp"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Official C++ reference documentation",
+      "actionSteps": [
+        "Use as reference when coding",
+        "Look up standard library functions",
+        "Focus on: STL containers, algorithms",
+        "Keep bookmarked for quick access"
+      ],
+      "nuclearRelevance": "Essential C++ reference",
+      "specificLinks": {}
+    },
+    {
+      "id": "cppcon",
+      "title": "CppCon YouTube Channel",
+      "url": "https://www.youtube.com/@CppCon",
+      "type": "video",
+      "difficulty": "intermediate",
+      "skills": ["cpp"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "C++ conference talks and tutorials",
+      "actionSteps": [
+        "Watch key talks on modern C++",
+        "Focus on: C++17/20 features, best practices",
+        "Learn from industry experts",
+        "Apply to your code"
+      ],
+      "nuclearRelevance": "Modern C++ practices",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-6172",
+      "title": "MIT 6.172 Performance Engineering of Software Systems",
+      "url": "https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["cpp", "data-structures"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Performance optimization and systems programming",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all projects",
+        "Focus on: memory hierarchy, parallelism, optimization",
+        "Build high-performance code"
+      ],
+      "nuclearRelevance": "Performance engineering for trading systems",
+      "specificLinks": {}
+    },
+    {
+      "id": "sqlbolt",
+      "title": "SQLBolt",
+      "url": "https://sqlbolt.com/",
+      "type": "interactive",
+      "difficulty": "beginner",
+      "skills": ["sql"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Interactive SQL tutorial",
+      "actionSteps": [
+        "Complete all lessons",
+        "Practice all exercises",
+        "Focus on: SELECT, JOIN, GROUP BY",
+        "Build SQL fluency"
+      ],
+      "nuclearRelevance": "Essential for data extraction",
+      "specificLinks": {}
+    },
+    {
+      "id": "mode-sql",
+      "title": "Mode Analytics SQL Tutorial",
+      "url": "https://mode.com/sql-tutorial/",
+      "type": "tutorial",
+      "difficulty": "beginner",
+      "skills": ["sql"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Practical SQL tutorial with real data",
+      "actionSteps": [
+        "Complete all sections",
+        "Practice with interactive examples",
+        "Focus on: advanced queries, window functions",
+        "Apply to real datasets"
+      ],
+      "nuclearRelevance": "Practical SQL for data analysis",
+      "specificLinks": {}
+    },
+    {
+      "id": "sqlzoo",
+      "title": "SQLZoo",
+      "url": "https://sqlzoo.net/",
+      "type": "interactive",
+      "difficulty": "beginner",
+      "skills": ["sql"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Interactive SQL exercises",
+      "actionSteps": [
+        "Complete all tutorials",
+        "Practice all exercises",
+        "Focus on: JOINs, subqueries, aggregations",
+        "Build SQL confidence"
+      ],
+      "nuclearRelevance": "SQL practice for data work",
+      "specificLinks": {}
+    },
+    {
+      "id": "postgresql-tutorial",
+      "title": "PostgreSQL Tutorial",
+      "url": "https://www.postgresqltutorial.com/",
+      "type": "tutorial",
+      "difficulty": "beginner",
+      "skills": ["sql"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Complete PostgreSQL tutorial",
+      "actionSteps": [
+        "Read all sections",
+        "Practice all examples",
+        "Focus on: administration, performance, advanced features",
+        "Build production SQL skills"
+      ],
+      "nuclearRelevance": "Production database skills",
+      "specificLinks": {}
+    },
+    {
+      "id": "git-immersion",
+      "title": "Git Immersion",
+      "url": "https://gitimmersion.com/",
+      "type": "tutorial",
+      "difficulty": "beginner",
+      "skills": ["git"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Hands-on Git tutorial",
+      "actionSteps": [
+        "Complete all labs",
+        "Practice all commands",
+        "Focus on: branching, merging, rebasing",
+        "Build Git fluency"
+      ],
+      "nuclearRelevance": "Version control for all projects",
+      "specificLinks": {}
+    },
+    {
+      "id": "pro-git",
+      "title": "Pro Git Book (Free)",
+      "url": "https://git-scm.com/book/en/v2",
+      "type": "book",
+      "difficulty": "beginner",
+      "skills": ["git"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Comprehensive Git reference",
+      "actionSteps": [
+        "Read key chapters",
+        "Focus on: branching, remote repositories, workflows",
+        "Use as reference",
+        "Build Git mastery"
+      ],
+      "nuclearRelevance": "Complete Git reference",
+      "specificLinks": {}
+    },
+    {
+      "id": "github-skills",
+      "title": "GitHub Skills",
+      "url": "https://skills.github.com/",
+      "type": "interactive",
+      "difficulty": "beginner",
+      "skills": ["git"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Interactive GitHub tutorials",
+      "actionSteps": [
+        "Complete all courses",
+        "Practice with real repositories",
+        "Focus on: pull requests, collaboration",
+        "Build GitHub workflow"
+      ],
+      "nuclearRelevance": "GitHub for collaboration",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-6006",
+      "title": "MIT 6.006 Introduction to Algorithms",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["data-structures"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "MIT's algorithms course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: sorting, searching, graph algorithms",
+        "Build algorithmic thinking"
+      ],
+      "nuclearRelevance": "Algorithmic thinking for problem solving",
+      "specificLinks": {}
+    },
+    {
+      "id": "algorithms-princeton",
+      "title": "Algorithms Part I & II (Princeton)",
+      "url": "https://www.coursera.org/learn/algorithms-part1",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["data-structures"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Robert Sedgewick's algorithms course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all programming assignments",
+        "Focus on: data structures, sorting, graph algorithms",
+        "Build algorithmic foundation"
+      ],
+      "nuclearRelevance": "Essential algorithms for technical interviews",
+      "specificLinks": {
+        "part2": "https://www.coursera.org/learn/algorithms-part2"
+      }
+    },
+    {
+      "id": "visualgo",
+      "title": "VisuAlgo",
+      "url": "https://visualgo.net/",
+      "type": "interactive",
+      "difficulty": "beginner",
+      "skills": ["data-structures"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Visualize algorithms and data structures",
+      "actionSteps": [
+        "Explore all visualizations",
+        "Understand algorithm behavior",
+        "Focus on: sorting, searching, graph algorithms",
+        "Build visual intuition"
+      ],
+      "nuclearRelevance": "Visual learning for algorithms",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-15401",
+      "title": "MIT 15.401 Finance Theory",
+      "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["financial-markets"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "MIT's finance theory course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: present value, risk and return, CAPM",
+        "Build finance foundation"
+      ],
+      "nuclearRelevance": "Introduction to financial thinking",
+      "specificLinks": {}
+    },
+    {
+      "id": "yale-financial-markets",
+      "title": "Yale Financial Markets (Robert Shiller)",
+      "url": "https://www.coursera.org/learn/financial-markets-global",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["financial-markets"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Comprehensive overview of financial markets",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all quizzes",
+        "Focus on: market structure, instruments, regulation",
+        "Build market knowledge"
+      ],
+      "nuclearRelevance": "Broad market understanding",
+      "specificLinks": {}
+    },
+    {
+      "id": "khan-finance",
+      "title": "Khan Academy Finance & Capital Markets",
+      "url": "https://www.khanacademy.org/economics-finance-domain",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["financial-markets"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Finance fundamentals on Khan Academy",
+      "actionSteps": [
+        "Complete all units",
+        "Do all practice exercises",
+        "Focus on: stocks, bonds, interest rates",
+        "Build finance basics"
+      ],
+      "nuclearRelevance": "Quick finance fundamentals",
+      "specificLinks": {}
+    },
+    {
+      "id": "investopedia",
+      "title": "Investopedia",
+      "url": "https://www.investopedia.com/",
+      "type": "reference",
+      "difficulty": "beginner",
+      "skills": ["financial-markets", "derivatives"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Financial education and dictionary",
+      "actionSteps": [
+        "Look up terms as needed",
+        "Read educational articles",
+        "Focus on: definitions, tutorials, market concepts",
+        "Use as reference"
+      ],
+      "nuclearRelevance": "Quick reference for financial terms",
+      "specificLinks": {}
+    },
+    {
+      "id": "bloomberg-mc",
+      "title": "Bloomberg Market Concepts (Free)",
+      "url": "https://www.bloomberg.com/professional/product/bloomberg-market-concepts/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["financial-markets"],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Free Bloomberg certification course",
+      "actionSteps": [
+        "Complete all modules",
+        "Pass all quizzes",
+        "Get certification",
+        "Add to resume"
+      ],
+      "nuclearRelevance": "Industry-recognized certification",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-15433",
+      "title": "MIT 15.433 Investments",
+      "url": "https://ocw.mit.edu/courses/15-433-investments-spring-2003/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["portfolio-theory"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "MIT's investments course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: portfolio theory, asset pricing",
+        "Apply to portfolio construction"
+      ],
+      "nuclearRelevance": "Portfolio theory fundamentals",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-15450",
+      "title": "MIT 15.450 Analytics of Finance",
+      "url": "https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["derivatives", "risk-management"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Quantitative finance analytics",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: derivatives pricing, risk measures",
+        "Apply to financial engineering"
+      ],
+      "nuclearRelevance": "Quantitative finance methods",
+      "specificLinks": {}
+    },
+    {
+      "id": "coursera-fe-1",
+      "title": "Coursera Financial Engineering and Risk Management",
+      "url": "https://www.coursera.org/learn/financial-engineering-1",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["derivatives"],
+      "estimatedHours": 25,
+      "free": true,
+      "description": "Columbia's financial engineering course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: options pricing, fixed income",
+        "Apply to derivatives"
+      ],
+      "nuclearRelevance": "Financial engineering fundamentals",
+      "specificLinks": {}
+    },
+    {
+      "id": "coursera-portfolio",
+      "title": "Coursera Portfolio Selection and Risk Management",
+      "url": "https://www.coursera.org/learn/portfolio-selection-risk-management",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["portfolio-theory", "risk-management"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Portfolio construction and risk management",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: Markowitz, factor models, risk measures",
+        "Apply to portfolio optimization"
+      ],
+      "nuclearRelevance": "Portfolio optimization methods",
+      "specificLinks": {}
+    },
+    {
+      "id": "coursera-risk-mgmt",
+      "title": "Coursera Financial Risk Management",
+      "url": "https://www.coursera.org/learn/financial-risk-management",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["risk-management"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Risk management with R",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: VaR, CVaR, stress testing",
+        "Apply to risk measurement"
+      ],
+      "nuclearRelevance": "Risk management methods",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-15480",
+      "title": "MIT 15.480 Quantitative Finance",
+      "url": "https://ocw.mit.edu/courses/15-480-quantitative-finance-spring-2013/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["stochastic-calculus", "derivatives"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Advanced quantitative finance",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: stochastic calculus, derivatives pricing",
+        "Apply to complex derivatives"
+      ],
+      "nuclearRelevance": "Advanced quantitative methods",
+      "specificLinks": {}
+    },
+    {
+      "id": "quantconnect-tutorials",
+      "title": "QuantConnect Tutorials",
+      "url": "https://www.quantconnect.com/tutorials/",
+      "type": "tutorial",
+      "difficulty": "intermediate",
+      "skills": ["financial-markets", "python"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Algorithmic trading tutorials",
+      "actionSteps": [
+        "Follow all tutorials",
+        "Build trading algorithms",
+        "Focus on: backtesting, strategy development",
+        "Apply to paper trading"
+      ],
+      "nuclearRelevance": "Practical trading skills",
+      "specificLinks": {}
+    },
+    {
+      "id": "yfinance",
+      "title": "Yahoo Finance API (yfinance)",
+      "url": "https://pypi.org/project/yfinance/",
+      "type": "api",
+      "difficulty": "beginner",
+      "skills": ["python", "financial-markets"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Python library for Yahoo Finance data",
+      "actionSteps": [
+        "Install: pip install yfinance",
+        "Download historical stock data",
+        "Create financial analyses",
+        "Build data pipelines"
+      ],
+      "nuclearRelevance": "Free financial data access",
+      "specificLinks": {
+        "documentation": "https://pypi.org/project/yfinance/",
+        "github": "https://github.com/ranaroussi/yfinance"
+      }
+    },
+    {
+      "id": "alpha-vantage",
+      "title": "Alpha Vantage API",
+      "url": "https://www.alphavantage.co/",
+      "type": "api",
+      "difficulty": "beginner",
+      "skills": ["python", "financial-markets"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Free stock market data API",
+      "actionSteps": [
+        "Get free API key",
+        "Access stock data",
+        "Build financial applications",
+        "Create visualizations"
+      ],
+      "nuclearRelevance": "Free market data for analysis",
+      "specificLinks": {
+        "documentation": "https://www.alphavantage.co/documentation/"
+      }
+    },
+    {
+      "id": "fred-api",
+      "title": "FRED API",
+      "url": "https://fred.stlouisfed.org/",
+      "type": "api",
+      "difficulty": "beginner",
+      "skills": ["python", "financial-markets"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Federal Reserve Economic Data API",
+      "actionSteps": [
+        "Get free API key",
+        "Access economic data",
+        "Build economic analyses",
+        "Create visualizations"
+      ],
+      "nuclearRelevance": "Economic data for macro analysis",
+      "specificLinks": {
+        "api": "https://fred.stlouisfed.org/docs/api/fred/"
+      }
+    },
+    {
+      "id": "andrew-ng-ml",
+      "title": "Andrew Ng Machine Learning Specialization",
+      "url": "https://www.coursera.org/learn/machine-learning",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["supervised-learning"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "The legendary ML course by Andrew Ng",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: regression, classification, neural networks",
+        "Build ML foundation"
+      ],
+      "nuclearRelevance": "ML fundamentals for quantitative work",
+      "specificLinks": {}
+    },
+    {
+      "id": "andrew-ng-dl",
+      "title": "Andrew Ng Deep Learning Specialization",
+      "url": "https://www.coursera.org/specializations/deep-learning",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning"],
+      "estimatedHours": 50,
+      "free": true,
+      "description": "Comprehensive deep learning course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: CNNs, RNNs, transformers",
+        "Build deep learning skills"
+      ],
+      "nuclearRelevance": "Deep learning for complex patterns",
+      "specificLinks": {}
+    },
+    {
+      "id": "fast-ai",
+      "title": "Fast.ai Practical Deep Learning",
+      "url": "https://course.fast.ai/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Top-down approach to deep learning",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all notebooks",
+        "Focus on: practical applications, transfer learning",
+        "Build real projects"
+      ],
+      "nuclearRelevance": "Practical deep learning skills",
+      "specificLinks": {}
+    },
+    {
+      "id": "stanford-cs229",
+      "title": "Stanford CS229 Machine Learning",
+      "url": "https://cs229.stanford.edu/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["supervised-learning"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Stanford's machine learning course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all problem sets",
+        "Focus on: SVMs, kernel methods, learning theory",
+        "Build theoretical foundation"
+      ],
+      "nuclearRelevance": "Rigorous ML theory",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-6036",
+      "title": "MIT 6.036 Introduction to Machine Learning",
+      "url": "https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["supervised-learning"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "MIT's introductory ML course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: classification, regression, neural networks",
+        "Build ML foundation"
+      ],
+      "nuclearRelevance": "ML fundamentals",
+      "specificLinks": {}
+    },
+    {
+      "id": "kaggle-learn",
+      "title": "Kaggle Learn",
+      "url": "https://www.kaggle.com/learn",
+      "type": "interactive",
+      "difficulty": "beginner",
+      "skills": ["python", "supervised-learning"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Free micro-courses on data science",
+      "actionSteps": [
+        "Complete all courses",
+        "Earn all certificates",
+        "Focus on: Python, Pandas, ML, Deep Learning",
+        "Build practical skills"
+      ],
+      "nuclearRelevance": "Practical data science skills",
+      "specificLinks": {}
+    },
+    {
+      "id": "kaggle-competitions",
+      "title": "Kaggle Competitions",
+      "url": "https://www.kaggle.com/competitions",
+      "type": "practice",
+      "difficulty": "intermediate",
+      "skills": ["supervised-learning", "deep-learning"],
+      "estimatedHours": 50,
+      "free": true,
+      "description": "Data science competitions",
+      "actionSteps": [
+        "Join beginner competitions",
+        "Build baseline models",
+        "Iterate and improve",
+        "Learn from top solutions"
+      ],
+      "nuclearRelevance": "Real-world ML practice",
+      "specificLinks": {}
+    },
+    {
+      "id": "scikit-learn-docs",
+      "title": "Scikit-learn Documentation",
+      "url": "https://scikit-learn.org/stable/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": ["supervised-learning"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Official scikit-learn documentation",
+      "actionSteps": [
+        "Read user guide",
+        "Try all examples",
+        "Focus on: algorithms, preprocessing, model selection",
+        "Use as reference"
+      ],
+      "nuclearRelevance": "Essential ML library reference",
+      "specificLinks": {
+        "userGuide": "https://scikit-learn.org/stable/user_guide.html",
+        "tutorials": "https://scikit-learn.org/stable/tutorial/"
+      }
+    },
+    {
+      "id": "pytorch-tutorials",
+      "title": "PyTorch Tutorials",
+      "url": "https://pytorch.org/tutorials/",
+      "type": "tutorial",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning", "pytorch"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Official PyTorch tutorials",
+      "actionSteps": [
+        "Follow beginner tutorials",
+        "Build first neural network",
+        "Focus on: tensors, autograd, models",
+        "Apply to real problems"
+      ],
+      "nuclearRelevance": "Deep learning framework",
+      "specificLinks": {}
+    },
+    {
+      "id": "pytorch-docs",
+      "title": "PyTorch Documentation",
+      "url": "https://pytorch.org/docs/stable/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning", "pytorch"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Official PyTorch documentation",
+      "actionSteps": [
+        "Use as reference",
+        "Look up API details",
+        "Focus on: modules, functions",
+        "Keep bookmarked"
+      ],
+      "nuclearRelevance": "Essential PyTorch reference",
+      "specificLinks": {}
+    },
+    {
+      "id": "tensorflow-tutorials",
+      "title": "TensorFlow Tutorials",
+      "url": "https://www.tensorflow.org/tutorials",
+      "type": "tutorial",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Official TensorFlow tutorials",
+      "actionSteps": [
+        "Follow beginner tutorials",
+        "Build first model",
+        "Focus on: Keras API, training, deployment",
+        "Apply to real problems"
+      ],
+      "nuclearRelevance": "Alternative deep learning framework",
+      "specificLinks": {}
+    },
+    {
+      "id": "huggingface-courses",
+      "title": "Hugging Face Courses",
+      "url": "https://huggingface.co/learn",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["nlp", "deep-learning"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "NLP and transformer courses",
+      "actionSteps": [
+        "Complete NLP course",
+        "Complete transformer course",
+        "Focus on: text classification, generation",
+        "Apply to text analysis"
+      ],
+      "nuclearRelevance": "NLP for sentiment analysis",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-6s191",
+      "title": "MIT 6.S191 Introduction to Deep Learning",
+      "url": "https://introtodeeplearning.com/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "MIT's deep learning course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all labs",
+        "Focus on: neural networks, RNNs, CNNs, generative models",
+        "Build DL foundation"
+      ],
+      "nuclearRelevance": "Deep learning fundamentals",
+      "specificLinks": {}
+    },
+    {
+      "id": "stanford-cs231n",
+      "title": "Stanford CS231n CNN for Visual Recognition",
+      "url": "http://cs231n.stanford.edu/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["deep-learning"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Stanford's computer vision course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: CNNs, object detection, segmentation",
+        "Build CV skills"
+      ],
+      "nuclearRelevance": "Computer vision for image analysis",
+      "specificLinks": {}
+    },
+    {
+      "id": "stanford-cs224n",
+      "title": "Stanford CS224n NLP with Deep Learning",
+      "url": "http://web.stanford.edu/class/cs224n/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["nlp", "deep-learning"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Stanford's NLP course",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: word vectors, transformers, language models",
+        "Build NLP skills"
+      ],
+      "nuclearRelevance": "NLP for text analysis",
+      "specificLinks": {}
+    },
+    {
+      "id": "sutton-barto",
+      "title": "Reinforcement Learning: An Introduction (Free)",
+      "url": "http://incompleteideas.net/book/the-book-2nd.html",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": ["reinforcement-learning"],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "The RL bible by Sutton and Barto",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete all exercises",
+        "Focus on: MDPs, value functions, policy gradient",
+        "Build RL foundation"
+      ],
+      "nuclearRelevance": "Sequential decision making",
+      "specificLinks": {
+        "pdf": "http://incompleteideas.net/book/RLbook2020.pdf"
+      }
+    },
+    {
+      "id": "mit-6s094",
+      "title": "Deep Reinforcement Learning (UC Berkeley)",
+      "url": "https://rail.eecs.berkeley.edu/deeprlcourse/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": ["reinforcement-learning"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Deep RL course from UC Berkeley",
+      "actionSteps": [
+        "Watch all lectures",
+        "Complete all assignments",
+        "Focus on: deep Q-learning, policy gradient, actor-critic",
+        "Apply to trading"
+      ],
+      "nuclearRelevance": "RL for sequential decisions",
+      "specificLinks": {}
+    },
+    {
+      "id": "statsmodels-ts",
+      "title": "Statsmodels Time Series",
+      "url": "https://www.statsmodels.org/stable/tsa.html",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": ["time-series"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Statsmodels time series documentation",
+      "actionSteps": [
+        "Read documentation",
+        "Try all examples",
+        "Focus on: ARIMA, VAR, state space models",
+        "Apply to financial time series"
+      ],
+      "nuclearRelevance": "Time series for financial data",
+      "specificLinks": {}
+    },
+    {
+      "id": "prophet",
+      "title": "Prophet (Facebook/Meta)",
+      "url": "https://facebook.github.io/prophet/",
+      "type": "tool",
+      "difficulty": "intermediate",
+      "skills": ["time-series"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Time series forecasting library",
+      "actionSteps": [
+        "Read documentation",
+        "Try quick start guide",
+        "Forecast financial data",
+        "Build forecasting models"
+      ],
+      "nuclearRelevance": "Easy time series forecasting",
+      "specificLinks": {}
+    },
+    {
+      "id": "machinelearningmastery",
+      "title": "Machine Learning Mastery",
+      "url": "https://machinelearningmastery.com/",
+      "type": "tutorial",
+      "difficulty": "beginner",
+      "skills": ["supervised-learning", "time-series"],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Practical ML tutorials and guides",
+      "actionSteps": [
+        "Browse tutorials by topic",
+        "Follow step-by-step guides",
+        "Focus on: time series, deep learning, Python",
+        "Apply to real problems"
+      ],
+      "nuclearRelevance": "Practical ML guides",
+      "specificLinks": {}
+    },
+    {
+      "id": "jalammar-transformer",
+      "title": "The Illustrated Transformer",
+      "url": "https://jalammar.github.io/illustrated-transformer/",
+      "type": "article",
+      "difficulty": "intermediate",
+      "skills": ["deep-learning", "nlp"],
+      "estimatedHours": 2,
+      "free": true,
+      "description": "Visual explanation of transformers",
+      "actionSteps": [
+        "Read the full article",
+        "Study all diagrams",
+        "Understand attention mechanism",
+        "Apply to NLP tasks"
+      ],
+      "nuclearRelevance": "Understanding modern AI",
+      "specificLinks": {}
+    },
+    {
+      "id": "pandas-docs",
+      "title": "Pandas Documentation",
+      "url": "https://pandas.pydata.org/docs/",
+      "type": "documentation",
+      "difficulty": "beginner",
+      "skills": ["pandas-numpy"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Official Pandas documentation",
+      "actionSteps": [
+        "Read getting started guide",
+        "Try all tutorials",
+        "Focus on: DataFrames, data manipulation",
+        "Use as reference"
+      ],
+      "nuclearRelevance": "Essential data library",
+      "specificLinks": {
+        "gettingStarted": "https://pandas.pydata.org/docs/getting_started/index.html"
+      }
+    },
+    {
+      "id": "numpy-docs",
+      "title": "NumPy Documentation",
+      "url": "https://numpy.org/doc/",
+      "type": "documentation",
+      "difficulty": "beginner",
+      "skills": ["pandas-numpy"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Official NumPy documentation",
+      "actionSteps": [
+        "Read user guide",
+        "Try all examples",
+        "Focus on: arrays, operations, broadcasting",
+        "Use as reference"
+      ],
+      "nuclearRelevance": "Numerical computing foundation",
+      "specificLinks": {
+        "userGuide": "https://numpy.org/doc/stable/user/index.html"
+      }
+    },
+    {
+      "id": "matplotlib-docs",
+      "title": "Matplotlib Documentation",
+      "url": "https://matplotlib.org/stable/",
+      "type": "documentation",
+      "difficulty": "beginner",
+      "skills": ["matplotlib-seaborn"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Official Matplotlib documentation",
+      "actionSteps": [
+        "Read tutorials",
+        "Try all examples",
+        "Focus on: line plots, scatter plots, histograms",
+        "Build visualizations"
+      ],
+      "nuclearRelevance": "Data visualization",
+      "specificLinks": {
+        "tutorials": "https://matplotlib.org/stable/tutorials/index.html"
+      }
+    },
+    {
+      "id": "seaborn-docs",
+      "title": "Seaborn Documentation",
+      "url": "https://seaborn.pydata.org/",
+      "type": "documentation",
+      "difficulty": "beginner",
+      "skills": ["matplotlib-seaborn"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Official Seaborn documentation",
+      "actionSteps": [
+        "Read tutorial",
+        "Try all examples",
+        "Focus on: statistical visualizations",
+        "Build beautiful plots"
+      ],
+      "nuclearRelevance": "Statistical visualization",
+      "specificLinks": {
+        "tutorial": "https://seaborn.pydata.org/tutorial.html"
+      }
+    },
+    {
+      "id": "plotly-docs",
+      "title": "Plotly Documentation",
+      "url": "https://plotly.com/python/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": ["matplotlib-seaborn"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Interactive visualization library",
+      "actionSteps": [
+        "Read tutorials",
+        "Try all examples",
+        "Focus on: interactive plots, dashboards",
+        "Build interactive visualizations"
+      ],
+      "nuclearRelevance": "Interactive data visualization",
+      "specificLinks": {}
+    },
+    {
+      "id": "jupyter-docs",
+      "title": "Jupyter Documentation",
+      "url": "https://jupyter.readthedocs.io/",
+      "type": "documentation",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 3,
+      "free": true,
+      "description": "Jupyter notebook documentation",
+      "actionSteps": [
+        "Read getting started",
+        "Install and configure",
+        "Create notebooks",
+        "Use for data analysis"
+      ],
+      "nuclearRelevance": "Essential data science tool",
+      "specificLinks": {}
+    },
+    {
+      "id": "google-colab",
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "type": "tool",
+      "difficulty": "beginner",
+      "skills": ["python", "deep-learning"],
+      "estimatedHours": 2,
+      "free": true,
+      "description": "Free cloud Jupyter notebooks with GPU",
+      "actionSteps": [
+        "Create account",
+        "Try sample notebooks",
+        "Use for ML projects",
+        "Access free GPU"
+      ],
+      "nuclearRelevance": "Free GPU for deep learning",
+      "specificLinks": {}
+    },
+    {
+      "id": "vscode-python",
+      "title": "VS Code Python",
+      "url": "https://code.visualstudio.com/docs/python/python-tutorial",
+      "type": "tool",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 3,
+      "free": true,
+      "description": "Python development in VS Code",
+      "actionSteps": [
+        "Install VS Code",
+        "Install Python extension",
+        "Configure Python environment",
+        "Use for all Python work"
+      ],
+      "nuclearRelevance": "Primary development environment",
+      "specificLinks": {}
+    },
+    {
+      "id": "streamlit",
+      "title": "Streamlit",
+      "url": "https://streamlit.io/",
+      "type": "tool",
+      "difficulty": "beginner",
+      "skills": ["python"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Build data apps quickly",
+      "actionSteps": [
+        "Follow quick start",
+        "Build first app",
+        "Create dashboards",
+        "Deploy for free"
+      ],
+      "nuclearRelevance": "Quick dashboard creation",
+      "specificLinks": {
+        "docs": "https://docs.streamlit.io/"
+      }
+    },
+    {
+      "id": "docker-tutorial",
+      "title": "Docker Tutorial",
+      "url": "https://docs.docker.com/get-started/",
+      "type": "tutorial",
+      "difficulty": "intermediate",
+      "skills": ["python"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Docker containerization tutorial",
+      "actionSteps": [
+        "Read getting started guide",
+        "Build first container",
+        "Learn Docker Compose",
+        "Containerize applications"
+      ],
+      "nuclearRelevance": "Deployment and reproducibility",
+      "specificLinks": {}
+    },
+    {
+      "id": "mit-2201",
+      "title": "MIT 22.01 Introduction to Nuclear Engineering",
+      "url": "https://ocw.mit.edu/courses/22-01-introduction-to-nuclear-engineering-and-ionizing-radiation-fall-2016/",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": ["numerical-methods"],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "MIT's nuclear engineering introduction",
+      "actionSteps": [
+        "Review nuclear engineering concepts",
+        "Connect to quantitative methods",
+        "Focus on: reactor physics, radiation transport",
+        "Bridge to quant finance"
+      ],
+      "nuclearRelevance": "Your core background - leverage it",
+      "specificLinks": {}
+    },
+    {
+      "id": "openmc",
+      "title": "OpenMC Documentation",
+      "url": "https://openmc.org/",
+      "type": "tool",
+      "difficulty": "advanced",
+      "skills": ["numerical-methods"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Open-source Monte Carlo particle transport",
+      "actionSteps": [
+        "Read documentation",
+        "Run example simulations",
+        "Understand Monte Carlo methods",
+        "Apply to financial modeling"
+      ],
+      "nuclearRelevance": "Monte Carlo methods you know",
+      "specificLinks": {
+        "docs": "https://docs.openmc.org/"
+      }
+    },
+    {
+      "id": "pymc",
+      "title": "PyMC (Probabilistic Programming)",
+      "url": "https://pymc.io/",
+      "type": "tool",
+      "difficulty": "intermediate",
+      "skills": ["probability", "statistics"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Bayesian modeling in Python",
+      "actionSteps": [
+        "Read quick start",
+        "Try all examples",
+        "Build Bayesian models",
+        "Apply to uncertainty quantification"
+      ],
+      "nuclearRelevance": "Bayesian methods for uncertainty",
+      "specificLinks": {
+        "docs": "https://www.pymc.io/projects/docs/en/stable/"
+      }
+    },
+    {
+      "id": "quantguide",
+      "title": "QuantGuide Interview Questions",
+      "url": "https://www.quantguide.io/",
+      "type": "practice",
+      "difficulty": "intermediate",
+      "skills": ["probability", "statistics"],
+      "estimatedHours": 20,
+      "free": true,
+      "description": "Quant interview preparation",
+      "actionSteps": [
+        "Practice probability questions",
+        "Practice statistics questions",
+        "Practice brain teasers",
+        "Prepare for interviews"
+      ],
+      "nuclearRelevance": "Interview preparation",
+      "specificLinks": {}
+    },
+    {
+      "id": "quantstart",
+      "title": "QuantStart Articles",
+      "url": "https://www.quantstart.com/articles/",
+      "type": "reference",
+      "difficulty": "intermediate",
+      "skills": ["financial-markets", "python"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Quantitative finance articles and guides",
+      "actionSteps": [
+        "Read career guides",
+        "Read technical articles",
+        "Focus on: career paths, algorithmic trading",
+        "Apply to your journey"
+      ],
+      "nuclearRelevance": "Career guidance for quants",
+      "specificLinks": {}
+    },
+    {
+      "id": "arxiv-qfin",
+      "title": "arXiv Quantitative Finance",
+      "url": "https://arxiv.org/list/q-fin/recent",
+      "type": "reference",
+      "difficulty": "advanced",
+      "skills": ["financial-markets"],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Latest quant finance research papers",
+      "actionSteps": [
+        "Browse recent papers",
+        "Read abstracts of interest",
+        "Focus on: trading strategies, risk management",
+        "Stay current with research"
+      ],
+      "nuclearRelevance": "Research awareness",
+      "specificLinks": {}
+    },
+    {
+      "id": "risk-net",
+      "title": "Risk.net",
+      "url": "https://www.risk.net/",
+      "type": "reference",
+      "difficulty": "intermediate",
+      "skills": ["risk-management"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Risk management news and analysis",
+      "actionSteps": [
+        "Read daily articles",
+        "Focus on: market risk, credit risk, regulation",
+        "Stay current with industry",
+        "Build industry knowledge"
+      ],
+      "nuclearRelevance": "Industry awareness",
+      "specificLinks": {}
+    },
+    {
+      "id": "quantocracy",
+      "title": "Quantocracy",
+      "url": "https://quantocracy.com/",
+      "type": "reference",
+      "difficulty": "intermediate",
+      "skills": ["financial-markets"],
+      "estimatedHours": 5,
+      "free": true,
+      "description": "Quant finance blog aggregator",
+      "actionSteps": [
+        "Browse daily posts",
+        "Read interesting articles",
+        "Focus on: trading, research, career",
+        "Stay informed"
+      ],
+      "nuclearRelevance": "Community and learning",
+      "specificLinks": {}
+    }
+  ]
+}

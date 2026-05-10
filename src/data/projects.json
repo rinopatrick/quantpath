@@ -1,0 +1,404 @@
+{
+  "projects": [
+    {
+      "id": "stock-price-predictor",
+      "title": "Stock Price Predictor",
+      "difficulty": "beginner",
+      "cvImpact": 3,
+      "skills": ["python", "supervised-learning", "pandas-numpy"],
+      "estimatedHours": 20,
+      "description": "Build a machine learning model to predict stock prices using historical data",
+      "actionSteps": [
+        "Download stock data using yfinance",
+        "Perform exploratory data analysis",
+        "Engineer features (moving averages, RSI, MACD)",
+        "Train regression models (Linear, Random Forest, XGBoost)",
+        "Evaluate with proper time series cross-validation",
+        "Create visualizations of predictions vs actual"
+      ],
+      "starterResources": ["yfinance", "scikit-learn-docs", "pandas-docs"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "portfolio-optimizer",
+      "title": "Portfolio Optimizer (Markowitz)",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "optimization", "portfolio-theory"],
+      "estimatedHours": 25,
+      "description": "Implement Markowitz portfolio optimization with efficient frontier visualization",
+      "actionSteps": [
+        "Download historical returns for multiple assets",
+        "Calculate covariance matrix and expected returns",
+        "Implement mean-variance optimization",
+        "Plot efficient frontier",
+        "Add constraints (max allocation, sector limits)",
+        "Compare with equal-weight portfolio"
+      ],
+      "starterResources": ["yfinance", "scipy-docs", "coursera-portfolio"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "options-pricing",
+      "title": "Options Pricing Calculator (Black-Scholes)",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "probability", "derivatives"],
+      "estimatedHours": 20,
+      "description": "Implement Black-Scholes model and compare with Monte Carlo simulation",
+      "actionSteps": [
+        "Implement Black-Scholes formula",
+        "Calculate Greeks (Delta, Gamma, Theta, Vega, Rho)",
+        "Implement Monte Carlo simulation for option pricing",
+        "Compare analytical vs numerical results",
+        "Build interactive visualization",
+        "Extend to American options"
+      ],
+      "starterResources": ["mit-15480", "scipy-docs", "coursera-fe-1"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "trading-backtester",
+      "title": "Algorithmic Trading Backtester",
+      "difficulty": "intermediate",
+      "cvImpact": 5,
+      "skills": ["python", "financial-markets", "pandas-numpy"],
+      "estimatedHours": 30,
+      "description": "Build a backtesting framework to test trading strategies",
+      "actionSteps": [
+        "Design backtesting engine architecture",
+        "Implement data handling and order management",
+        "Create common strategy templates (moving average, momentum)",
+        "Add performance metrics (Sharpe, drawdown, win rate)",
+        "Visualize equity curve and trade analysis",
+        "Compare multiple strategies"
+      ],
+      "starterResources": ["quantconnect-tutorials", "yfinance", "pandas-docs"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "risk-dashboard",
+      "title": "Risk Management Dashboard",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "risk-management", "matplotlib-seaborn"],
+      "estimatedHours": 25,
+      "description": "Build a risk dashboard with VaR, CVaR, and stress testing",
+      "actionSteps": [
+        "Download portfolio data",
+        "Calculate VaR (Historical, Parametric, Monte Carlo)",
+        "Calculate CVaR/Expected Shortfall",
+        "Implement stress testing scenarios",
+        "Create interactive dashboard with Streamlit",
+        "Add risk decomposition by asset"
+      ],
+      "starterResources": ["coursera-risk-mgmt", "streamlit", "yfinance"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "energy-market-analyzer",
+      "title": "Energy Market Analyzer (Nuclear Niche)",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "financial-markets", "time-series"],
+      "estimatedHours": 35,
+      "description": "Analyze energy markets with focus on nuclear power economics",
+      "actionSteps": [
+        "Collect energy market data (electricity, natural gas, uranium)",
+        "Analyze price correlations and seasonality",
+        "Build time series forecasting models",
+        "Model nuclear plant economics",
+        "Create energy market dashboard",
+        "Write analysis report"
+      ],
+      "starterResources": ["fred-api", "yfinance", "prophet"],
+      "nuclearNiche": true,
+      "githubTemplate": null
+    },
+    {
+      "id": "sentiment-analysis",
+      "title": "Sentiment Analysis for Trading",
+      "difficulty": "advanced",
+      "cvImpact": 4,
+      "skills": ["python", "nlp", "supervised-learning"],
+      "estimatedHours": 30,
+      "description": "Build sentiment analysis model for financial news and social media",
+      "actionSteps": [
+        "Collect financial news data (RSS, APIs)",
+        "Preprocess text data",
+        "Train sentiment classification model",
+        "Analyze sentiment trends",
+        "Backtest sentiment-based trading strategy",
+        "Create sentiment dashboard"
+      ],
+      "starterResources": ["huggingface-courses", "nlp-docs", "stanford-cs224n"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "time-series-forecasting",
+      "title": "Time Series Forecasting",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "time-series", "supervised-learning"],
+      "estimatedHours": 25,
+      "description": "Compare multiple time series forecasting methods on financial data",
+      "actionSteps": [
+        "Download financial time series data",
+        "Implement ARIMA/SARIMA models",
+        "Implement Prophet model",
+        "Implement LSTM model",
+        "Compare forecasting accuracy",
+        "Create visualization of forecasts"
+      ],
+      "starterResources": ["statsmodels-ts", "prophet", "machinelearningmastery"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "monte-carlo-radiation",
+      "title": "Monte Carlo Radiation Transport Simulator (Nuclear Niche)",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "numerical-methods", "probability"],
+      "estimatedHours": 40,
+      "description": "Build simplified Monte Carlo particle transport code - same math as options pricing",
+      "actionSteps": [
+        "Implement 1D neutron transport",
+        "Extend to 2D/3D geometry",
+        "Add material cross-sections",
+        "Implement variance reduction techniques",
+        "Visualize particle tracks",
+        "Compare with deterministic methods"
+      ],
+      "starterResources": ["openmc", "mit-numerical-methods", "pymc"],
+      "nuclearNiche": true,
+      "githubTemplate": null
+    },
+    {
+      "id": "nuclear-reactor-sim",
+      "title": "Nuclear Reactor Simulation (Nuclear Niche)",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "numerical-methods", "calculus"],
+      "estimatedHours": 35,
+      "description": "Simulate nuclear reactor using point kinetics equations",
+      "actionSteps": [
+        "Implement point kinetics equations",
+        "Add temperature feedback",
+        "Model control rod insertion",
+        "Simulate transient scenarios",
+        "Visualize power and temperature evolution",
+        "Apply to reactor safety analysis"
+      ],
+      "starterResources": ["mit-2201", "scipy-docs", "matplotlib-docs"],
+      "nuclearNiche": true,
+      "githubTemplate": null
+    },
+    {
+      "id": "thermal-hydraulics",
+      "title": "Thermal Hydraulics Modeling (Nuclear Niche)",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "numerical-methods", "calculus"],
+      "estimatedHours": 35,
+      "description": "Model heat transfer and fluid flow in nuclear reactor core",
+      "actionSteps": [
+        "Implement 1D heat conduction",
+        "Add convective heat transfer",
+        "Model single-phase flow",
+        "Implement simple CFD solver",
+        "Visualize temperature and velocity profiles",
+        "Apply to reactor cooling analysis"
+      ],
+      "starterResources": ["mit-2201", "scipy-docs", "numpy-docs"],
+      "nuclearNiche": true,
+      "githubTemplate": null
+    },
+    {
+      "id": "fuel-cycle-optimizer",
+      "title": "Nuclear Fuel Cycle Optimizer (Nuclear Niche)",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "optimization", "linear-algebra"],
+      "estimatedHours": 30,
+      "description": "Optimize nuclear fuel cycle using linear programming",
+      "actionSteps": [
+        "Model fuel cycle stages",
+        "Define objective function (minimize waste, maximize utilization)",
+        "Add constraints (safety, economics, logistics)",
+        "Implement optimization solver",
+        "Analyze optimal fuel cycle configurations",
+        "Apply to portfolio optimization (same math)"
+      ],
+      "starterResources": ["convex-optimization", "scipy-docs", "pandas-docs"],
+      "nuclearNiche": true,
+      "githubTemplate": null
+    },
+    {
+      "id": "nuclear-risk-dashboard",
+      "title": "Nuclear Risk Assessment Dashboard (Nuclear Niche)",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "risk-management", "matplotlib-seaborn"],
+      "estimatedHours": 25,
+      "description": "Build risk dashboard for nuclear plant operations",
+      "actionSteps": [
+        "Define risk metrics for nuclear operations",
+        "Collect/simulate failure probability data",
+        "Calculate risk measures (probability of accident, consequence)",
+        "Create risk visualization dashboard",
+        "Add safety margin indicators",
+        "Apply to financial risk management"
+      ],
+      "starterResources": ["streamlit", "pandas-docs", "coursera-risk-mgmt"],
+      "nuclearNiche": true,
+      "githubTemplate": null
+    },
+    {
+      "id": "ml-trading-strategy",
+      "title": "ML-Based Trading Strategy",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "supervised-learning", "financial-markets"],
+      "estimatedHours": 40,
+      "description": "Build and backtest a machine learning trading strategy",
+      "actionSteps": [
+        "Collect and preprocess market data",
+        "Engineer alpha features",
+        "Train ML models for signal generation",
+        "Implement position sizing and risk management",
+        "Backtest with realistic assumptions",
+        "Analyze performance and optimize"
+      ],
+      "starterResources": ["quantconnect-tutorials", "kaggle-competitions", "scikit-learn-docs"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "market-microstructure",
+      "title": "Market Microstructure Simulator",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "market-microstructure", "probability"],
+      "estimatedHours": 35,
+      "description": "Simulate order book dynamics and market making",
+      "actionSteps": [
+        "Implement order book data structure",
+        "Simulate order matching engine",
+        "Model market maker strategies",
+        "Analyze spread and liquidity dynamics",
+        "Visualize order flow",
+        "Apply to HFT strategies"
+      ],
+      "starterResources": ["mit-15433", "pandas-docs", "matplotlib-docs"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "correlation-visualizer",
+      "title": "Correlation Matrix Visualizer",
+      "difficulty": "beginner",
+      "cvImpact": 3,
+      "skills": ["python", "pandas-numpy", "matplotlib-seaborn"],
+      "estimatedHours": 10,
+      "description": "Build interactive correlation matrix visualization for financial assets",
+      "actionSteps": [
+        "Download returns data for multiple assets",
+        "Calculate correlation matrix",
+        "Create heatmap visualization",
+        "Add interactive features",
+        "Analyze rolling correlations",
+        "Identify diversification opportunities"
+      ],
+      "starterResources": ["yfinance", "seaborn-docs", "pandas-docs"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "var-calculator",
+      "title": "VaR Calculator",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "risk-management", "probability"],
+      "estimatedHours": 15,
+      "description": "Implement multiple VaR calculation methods",
+      "actionSteps": [
+        "Implement Historical VaR",
+        "Implement Parametric VaR",
+        "Implement Monte Carlo VaR",
+        "Compare methods and accuracy",
+        "Add backtesting framework",
+        "Create visualization dashboard"
+      ],
+      "starterResources": ["coursera-risk-mgmt", "scipy-docs", "yfinance"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "greeks-calculator",
+      "title": "Options Greeks Calculator",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "derivatives", "probability"],
+      "estimatedHours": 15,
+      "description": "Calculate and visualize options Greeks",
+      "actionSteps": [
+        "Implement Black-Scholes Greeks",
+        "Calculate Delta, Gamma, Theta, Vega, Rho",
+        "Visualize Greeks vs spot price",
+        "Add implied volatility calculator",
+        "Create interactive dashboard",
+        "Apply to hedging strategies"
+      ],
+      "starterResources": ["options-pricing", "scipy-docs", "streamlit"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "regime-detector",
+      "title": "Market Regime Detector",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": ["python", "supervised-learning", "time-series"],
+      "estimatedHours": 30,
+      "description": "Detect market regimes (bull, bear, sideways) using ML",
+      "actionSteps": [
+        "Download market data",
+        "Implement Hidden Markov Models",
+        "Implement clustering-based regime detection",
+        "Compare methods",
+        "Analyze regime transitions",
+        "Apply to adaptive trading strategies"
+      ],
+      "starterResources": ["scikit-learn-docs", "statsmodels-ts", "pandas-docs"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    },
+    {
+      "id": "rebalancing-engine",
+      "title": "Portfolio Rebalancing Engine",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": ["python", "portfolio-theory", "optimization"],
+      "estimatedHours": 20,
+      "description": "Build automated portfolio rebalancing system",
+      "actionSteps": [
+        "Define target portfolio allocation",
+        "Implement rebalancing triggers (calendar, threshold)",
+        "Calculate transaction costs",
+        "Optimize rebalancing trades",
+        "Backtest rebalancing strategies",
+        "Create monitoring dashboard"
+      ],
+      "starterResources": ["coursera-portfolio", "scipy-docs", "yfinance"],
+      "nuclearNiche": false,
+      "githubTemplate": null
+    }
+  ]
+}
