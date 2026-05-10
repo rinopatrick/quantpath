@@ -1,0 +1,205 @@
+{
+  "weeks": 24,
+  "milestones": [
+    {
+      "week": 4,
+      "title": "Python & Math Fundamentals",
+      "description": "Master Python basics and review essential mathematics",
+      "skills": ["python", "linear-algebra", "calculus"],
+      "resources": ["mit-60001", "mit-1806", "mit-1801", "3b1b-linear-algebra"],
+      "projects": ["correlation-visualizer"],
+      "competitions": ["alpaca-paper-trading"]
+    },
+    {
+      "week": 8,
+      "title": "Finance & Statistics",
+      "description": "Learn financial markets and statistical methods",
+      "skills": ["financial-markets", "probability", "statistics"],
+      "resources": ["mit-15401", "yale-financial-markets", "harvard-stat110", "khan-probability"],
+      "projects": ["stock-price-predictor", "var-calculator"],
+      "competitions": ["kaggle-march-mania"]
+    },
+    {
+      "week": 12,
+      "title": "Data Analysis & ML Basics",
+      "description": "Master data analysis tools and introductory machine learning",
+      "skills": ["pandas-numpy", "matplotlib-seaborn", "supervised-learning"],
+      "resources": ["kaggle-learn", "scikit-learn-docs", "andrew-ng-ml", "pandas-docs"],
+      "projects": ["portfolio-optimizer", "time-series-forecasting"],
+      "competitions": ["numerai", "kaggle-financial-engineering"]
+    },
+    {
+      "week": 16,
+      "title": "Derivatives & Advanced Topics",
+      "description": "Learn derivatives pricing and advanced quantitative methods",
+      "skills": ["derivatives", "risk-management", "optimization"],
+      "resources": ["coursera-fe-1", "coursera-risk-mgmt", "convex-optimization", "mit-15480"],
+      "projects": ["options-pricing", "risk-dashboard", "greeks-calculator"],
+      "competitions": ["worldquant-brain", "quantconnect-alpha"]
+    },
+    {
+      "week": 20,
+      "title": "Deep Learning & Advanced Projects",
+      "description": "Deep learning for finance and building advanced projects",
+      "skills": ["deep-learning", "time-series", "nlp"],
+      "resources": ["fast-ai", "andrew-ng-dl", "huggingface-courses", "mit-6s191"],
+      "projects": ["trading-backtester", "sentiment-analysis", "energy-market-analyzer"],
+      "competitions": ["kaggle-jane-street", "kaggle-two-sigma"]
+    },
+    {
+      "week": 24,
+      "title": "Competitions & Job Applications",
+      "description": "Enter competitions, complete portfolio, and apply for jobs",
+      "skills": ["market-microstructure", "reinforcement-learning"],
+      "resources": ["stanford-cs224n", "sutton-barto", "quantguide"],
+      "projects": ["monte-carlo-radiation", "nuclear-reactor-sim", "thermal-hydraulics", "fuel-cycle-optimizer", "ml-trading-strategy"],
+      "competitions": ["optiver-trading", "imc-prosperity", "citadel-datathon"]
+    }
+  ],
+  "weeklySchedule": [
+    {
+      "week": 1,
+      "focus": "Python Setup & Basics",
+      "tasks": ["Set up Python environment", "Complete Python tutorial", "Start MIT 6.0001"],
+      "hours": 15
+    },
+    {
+      "week": 2,
+      "focus": "Python Proficiency",
+      "tasks": ["Continue MIT 6.0001", "Practice on LeetCode", "Learn Git basics"],
+      "hours": 15
+    },
+    {
+      "week": 3,
+      "focus": "Linear Algebra",
+      "tasks": ["Start MIT 18.06", "Watch 3Blue1Brown", "Practice matrix operations"],
+      "hours": 15
+    },
+    {
+      "week": 4,
+      "focus": "Calculus Review",
+      "tasks": ["Start MIT 18.01", "Review derivatives and integrals", "Build correlation visualizer"],
+      "hours": 15
+    },
+    {
+      "week": 5,
+      "focus": "Probability Foundations",
+      "tasks": ["Start Harvard Stat 110", "Learn probability distributions", "Practice problems"],
+      "hours": 15
+    },
+    {
+      "week": 6,
+      "focus": "Statistics Methods",
+      "tasks": ["Continue Stat 110", "Learn hypothesis testing", "Start Khan Academy Statistics"],
+      "hours": 15
+    },
+    {
+      "week": 7,
+      "focus": "Financial Markets",
+      "tasks": ["Start MIT 15.401", "Learn market structure", "Explore Investopedia"],
+      "hours": 15
+    },
+    {
+      "week": 8,
+      "focus": "Finance & Data",
+      "tasks": ["Continue MIT 15.401", "Learn Pandas/NumPy", "Build stock predictor"],
+      "hours": 15
+    },
+    {
+      "week": 9,
+      "focus": "Data Visualization",
+      "tasks": ["Learn Matplotlib/Seaborn", "Create financial charts", "Download market data"],
+      "hours": 15
+    },
+    {
+      "week": 10,
+      "focus": "ML Fundamentals",
+      "tasks": ["Start Andrew Ng ML", "Learn regression", "Learn classification"],
+      "hours": 15
+    },
+    {
+      "week": 11,
+      "focus": "ML Practice",
+      "tasks": ["Continue ML course", "Practice on Kaggle", "Build portfolio optimizer"],
+      "hours": 15
+    },
+    {
+      "week": 12,
+      "focus": "Time Series",
+      "tasks": ["Learn time series basics", "Implement ARIMA", "Build forecasting model"],
+      "hours": 15
+    },
+    {
+      "week": 13,
+      "focus": "Derivatives Introduction",
+      "tasks": ["Start Coursera FE", "Learn options basics", "Understand Black-Scholes"],
+      "hours": 15
+    },
+    {
+      "week": 14,
+      "focus": "Options Pricing",
+      "tasks": ["Implement Black-Scholes", "Calculate Greeks", "Build options pricer"],
+      "hours": 15
+    },
+    {
+      "week": 15,
+      "focus": "Risk Management",
+      "tasks": ["Start risk management course", "Learn VaR", "Build risk dashboard"],
+      "hours": 15
+    },
+    {
+      "week": 16,
+      "focus": "Optimization",
+      "tasks": ["Learn convex optimization", "Apply to portfolio", "Build optimizer"],
+      "hours": 15
+    },
+    {
+      "week": 17,
+      "focus": "Deep Learning Basics",
+      "tasks": ["Start Fast.ai course", "Build first neural network", "Learn PyTorch"],
+      "hours": 15
+    },
+    {
+      "week": 18,
+      "focus": "Deep Learning Practice",
+      "tasks": ["Continue DL course", "Apply to financial data", "Build trading backtester"],
+      "hours": 15
+    },
+    {
+      "week": 19,
+      "focus": "NLP for Finance",
+      "tasks": ["Learn NLP basics", "Build sentiment analyzer", "Process financial news"],
+      "hours": 15
+    },
+    {
+      "week": 20,
+      "focus": "Advanced Projects",
+      "tasks": ["Build energy market analyzer", "Work on nuclear projects", "Enter Kaggle competition"],
+      "hours": 15
+    },
+    {
+      "week": 21,
+      "focus": "Nuclear Niche Projects",
+      "tasks": ["Build Monte Carlo simulator", "Apply to finance", "Document projects"],
+      "hours": 15
+    },
+    {
+      "week": 22,
+      "focus": "Trading Strategies",
+      "tasks": ["Build ML trading strategy", "Backtest thoroughly", "Analyze performance"],
+      "hours": 15
+    },
+    {
+      "week": 23,
+      "focus": "Competition Preparation",
+      "tasks": ["Enter Numerai/Kaggle", "Optimize submissions", "Practice interview questions"],
+      "hours": 15
+    },
+    {
+      "week": 24,
+      "focus": "Portfolio & Applications",
+      "tasks": ["Complete all projects", "Polish CV", "Apply for quant jobs"],
+      "hours": 15
+    }
+  ]
+}
