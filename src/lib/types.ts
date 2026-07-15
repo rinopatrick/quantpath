@@ -32,6 +32,9 @@ export interface Resource {
   actionSteps: string[];
   nuclearRelevance: string;
   specificLinks: Record<string, string>;
+  verified?: boolean;
+  curriculumRole: 'core' | 'supplemental' | 'reference' | 'specialization';
+  scheduledWeeks: number[];
 }
 
 export interface Project {
@@ -46,6 +49,8 @@ export interface Project {
   starterResources: string[];
   nuclearNiche: boolean;
   githubTemplate: string | null;
+  portfolioRole: 'flagship' | 'supporting' | 'specialization';
+  scheduledWeeks: number[];
 }
 
 export interface Competition {
@@ -79,6 +84,13 @@ export interface WeeklySchedule {
   focus: string;
   tasks: string[];
   hours: number;
+  tracks: string[];
+  deliverable: string;
+  resourceIds: string[];
+  projectIds: string[];
+  paperIds: string[];
+  competitionIds: string[];
+  leetcodeIds: string[];
 }
 
 export interface UserProgress {

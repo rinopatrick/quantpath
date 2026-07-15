@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ProjectCard } from '@/components/projects/ProjectCard';
+import { ProjectGenerator } from '@/components/ai/ProjectGenerator';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -17,7 +18,8 @@ import {
   Filter, 
   Star,
   Clock,
-  Zap
+  Zap,
+  Sparkles
 } from 'lucide-react';
 import projectsData from '@/data/projects.json';
 
@@ -87,8 +89,7 @@ export default function ProjectsPage() {
       <div className="p-6 rounded-lg bg-gradient-to-r from-blue-900 to-slate-900 border border-blue-800">
         <h1 className="text-2xl font-bold text-white">Project Ideas</h1>
         <p className="text-slate-300 mt-2">
-          CV-worthy projects to build your quantitative finance portfolio.
-          Projects range from beginner to advanced, with nuclear engineering niche options.
+          Three flagship projects form the required portfolio. Supporting and specialization projects are optional — choose them only for your target role.
         </p>
       </div>
 
@@ -214,6 +215,11 @@ export default function ProjectsPage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* AI Project Generator */}
+      <ProjectGenerator 
+        currentSkills={['python', 'statistics', 'linear-algebra']}
+      />
 
       {/* Projects Grid */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">

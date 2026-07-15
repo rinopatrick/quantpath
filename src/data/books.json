@@ -1,0 +1,154 @@
+{
+  "books": [
+    {
+      "id": "hull-options",
+      "title": "Options, Futures, and Other Derivatives",
+      "author": "John C. Hull",
+      "difficulty": "beginner",
+      "category": "derivatives",
+      "description": "The definitive introduction to derivatives pricing, covering options, futures, swaps, and risk management. Known as the 'bible' of derivatives.",
+      "whyImportant": "Foundation for understanding derivative instruments. Every quant interviews expects knowledge of Black-Scholes, Greeks, and hedging — this book covers all of it.",
+      "url": "https://www.amazon.com/Options-Futures-Other-Derivatives-11th/dp/0136879896"
+    },
+    {
+      "id": "shreve-vol1",
+      "title": "Stochastic Calculus for Finance I: The Binomial Asset Pricing Model",
+      "author": "Steven E. Shreve",
+      "difficulty": "intermediate",
+      "category": "mathematics",
+      "description": "Builds option pricing from discrete binomial trees, establishing the probabilistic foundations needed for continuous-time finance.",
+      "whyImportant": "Carnegie Mellon's legendary quant curriculum starts here. Teaches risk-neutral pricing rigorously but accessibly — the bridge between intuition and formal math.",
+      "url": "https://www.amazon.com/Stochastic-Calculus-Finance-Binomial-Pricing/dp/0387249680"
+    },
+    {
+      "id": "shreve-vol2",
+      "title": "Stochastic Calculus for Finance II: Continuous-Time Models",
+      "author": "Steven E. Shreve",
+      "difficulty": "advanced",
+      "category": "mathematics",
+      "description": "Covers Brownian motion, Itô calculus, Black-Scholes PDE, martingale methods, and term structure models in continuous time.",
+      "whyImportant": "The graduate-level standard for stochastic calculus in finance. Required reading for anyone serious about derivatives pricing or rates modeling.",
+      "url": "https://www.amazon.com/Stochastic-Calculus-Finance-Continuous-Time/dp/0387401016"
+    },
+    {
+      "id": "green-book",
+      "title": "Heard on the Street: Quantitative Questions from Wall Street Job Interviews",
+      "author": "Timothy Falcon Crack",
+      "difficulty": "beginner",
+      "category": "interview",
+      "description": "Collection of brainteasers, probability puzzles, and finance questions actually asked in quant interviews at top firms.",
+      "whyImportant": "The most widely referenced quant interview prep book. Covers the exact question types firms like Citadel, Jane Street, and DE Shaw ask.",
+      "url": "https://www.amazon.com/Heard-Street-Quantitative-Questions-Interviews/dp/0994103864"
+    },
+    {
+      "id": "joshi-concepts",
+      "title": "The Concepts and Practice of Mathematical Finance",
+      "author": "Mark S. Joshi",
+      "difficulty": "intermediate",
+      "category": "derivatives",
+      "description": "Covers derivatives pricing from both PDE and martingale perspectives, with emphasis on practical implementation and exotic options.",
+      "whyImportant": "Bridges theory and practice better than most textbooks. Strong on Monte Carlo methods and calibration — skills directly used on the job.",
+      "url": "https://www.amazon.com/Concepts-Practice-Mathematical-Finance-Mathematics/dp/0521514088"
+    },
+    {
+      "id": "chan-trading",
+      "title": "Quantitative Trading: How to Build Your Own Algorithmic Trading Business",
+      "author": "Ernie Chan",
+      "difficulty": "beginner",
+      "category": "trading",
+      "description": "Practical guide to building algorithmic trading strategies, covering data sources, backtesting, execution, and risk management for retail and small institutional traders.",
+      "whyImportant": "Best starting point for understanding how quant strategies work in practice. Covers the full pipeline from idea to live trading.",
+      "url": "https://www.amazon.com/Quantitative-Trading-Algorithmic-Business-Traders/dp/1119800064"
+    },
+    {
+      "id": "deprado-advances",
+      "title": "Advances in Financial Machine Learning",
+      "author": "Marcos López de Prado",
+      "difficulty": "advanced",
+      "category": "machine-learning",
+      "description": "Applies machine learning to finance with rigorous treatment of backtesting pitfalls, feature engineering, meta-labeling, and fractional differentiation.",
+      "whyImportant": "The most important book on ML for finance. Addresses the unique challenges of financial data (non-stationarity, low signal-to-noise) that generic ML books ignore.",
+      "url": "https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482084"
+    },
+    {
+      "id": "deprado-ml-asset",
+      "title": "Machine Learning for Asset Managers",
+      "author": "Marcos López de Prado",
+      "difficulty": "advanced",
+      "category": "machine-learning",
+      "description": "Concise companion to Advances in Financial Machine Learning, focusing on practical ML techniques for portfolio construction and asset allocation.",
+      "whyImportant": "Distills the key ML techniques for asset management into a focused, implementable format. Strong on feature importance and portfolio optimization.",
+      "url": "https://www.amazon.com/Machine-Learning-Asset-Managers-Patterns/dp/1119777003"
+    },
+    {
+      "id": "stefanica-primer",
+      "title": "A Primer for the Mathematics of Financial Engineering",
+      "author": "Dan Stefanica",
+      "difficulty": "intermediate",
+      "category": "mathematics",
+      "description": "Covers the essential math for MFE programs: calculus, linear algebra, probability, and ODEs, all motivated by financial engineering applications.",
+      "whyImportant": "The standard prep book for Baruch MFE and similar programs. Fills math gaps efficiently with finance-specific examples and exercises.",
+      "url": "https://www.amazon.com/Primer-Mathematics-Financial-Engineering/dp/0979757622"
+    },
+    {
+      "id": "meucci-risk",
+      "title": "Risk and Asset Allocation",
+      "author": "Attilio Meucci",
+      "difficulty": "advanced",
+      "category": "risk-management",
+      "description": "Comprehensive treatment of portfolio construction and risk management using Bayesian methods, copulas, and robust optimization.",
+      "whyImportant": "The most rigorous modern treatment of portfolio allocation. Essential for risk roles at hedge funds and asset managers.",
+      "url": "https://www.amazon.com/Risk-Asset-Allocation-Attilio-Meucci/dp/3642009649"
+    },
+    {
+      "id": "taleb-hedging",
+      "title": "Dynamic Hedging: Managing Vanilla and Exotic Options",
+      "author": "Nassim Nicholas Taleb",
+      "difficulty": "advanced",
+      "category": "derivatives",
+      "description": "Practical guide to options trading and hedging from a practitioner's perspective, covering Greeks, exotic options, and real-world trading pitfalls.",
+      "whyImportant": "Written by a former market maker, this book teaches the practical side of options that textbooks miss. Essential for anyone going into options trading.",
+      "url": "https://www.amazon.com/Dynamic-Hedging-Managing-Volatility-Exotic/dp/0471152803"
+    },
+    {
+      "id": "gatheral-volatility",
+      "title": "The Volatility Surface: A Practitioner's Guide",
+      "author": "Jim Gatheral",
+      "difficulty": "advanced",
+      "category": "derivatives",
+      "description": "Covers the volatility smile, local volatility, stochastic volatility models (Heston, SABR), and variance swaps from a practitioner's perspective.",
+      "whyImportant": "The standard reference for volatility modeling. Essential for anyone working in options market making or volatility trading.",
+      "url": "https://www.amazon.com/Volatility-Surface-Practitioners-Guide/dp/0471792519"
+    },
+    {
+      "id": "wilmott-quant",
+      "title": "Paul Wilmott on Quantitative Finance",
+      "author": "Paul Wilmott",
+      "difficulty": "advanced",
+      "category": "derivatives",
+      "description": "Three-volume comprehensive reference covering PDE methods, exotic derivatives, credit risk, and numerical methods for derivatives pricing.",
+      "whyImportant": "Encyclopedic reference for derivatives pricing. Covers topics most books skip — credit derivatives, real options, and advanced numerical methods.",
+      "url": "https://www.amazon.com/Paul-Wilmott-Quantitative-Finance-Volume/dp/0470018704"
+    },
+    {
+      "id": "bjork-arbitrage",
+      "title": "Arbitrage Theory in Continuous Time",
+      "author": "Tomas Björk",
+      "difficulty": "advanced",
+      "category": "mathematics",
+      "description": "Rigorous treatment of asset pricing theory using martingale methods, covering the fundamental theorems of asset pricing, term structure models, and incomplete markets.",
+      "whyImportant": "The most mathematically rigorous asset pricing textbook. Essential for PhD-level quant work and understanding the theoretical foundations of pricing.",
+      "url": "https://www.amazon.com/Arbitrage-Theory-Continuous-Time-Oxford/dp/0198775180"
+    },
+    {
+      "id": "glasserman-monte-carlo",
+      "title": "Monte Carlo Methods in Financial Engineering",
+      "author": "Paul Glasserman",
+      "difficulty": "advanced",
+      "category": "mathematics",
+      "description": "Definitive reference on Monte Carlo simulation for derivatives pricing, covering variance reduction, path generation, and sensitivity estimation.",
+      "whyImportant": "The gold standard for Monte Carlo methods in finance. Nuclear engineers will find familiar ground — the same simulation techniques used in radiation transport apply here.",
+      "url": "https://www.amazon.com/Monte-Carlo-Methods-Financial-Engineering/dp/0387212047"
+    }
+  ]
+}

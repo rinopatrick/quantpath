@@ -1,0 +1,422 @@
+[
+  {
+    "id": "prob-01",
+    "category": "probability",
+    "front": "State the Central Limit Theorem.",
+    "back": "Given n i.i.d. random variables with mean μ and finite variance σ², the sample mean converges in distribution to N(μ, σ²/n) as n → ∞.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-02",
+    "category": "probability",
+    "front": "State Bayes' Theorem.",
+    "back": "P(A|B) = P(B|A) · P(A) / P(B). It relates posterior probability to prior probability and likelihood.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-03",
+    "category": "probability",
+    "front": "What is the difference between a PDF and a CDF?",
+    "back": "PDF f(x) gives the relative likelihood of a continuous random variable taking value x. CDF F(x) = P(X ≤ x) gives the cumulative probability up to x.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-04",
+    "category": "probability",
+    "front": "What is the expected value of a standard normal distribution?",
+    "back": "E[X] = 0. The standard normal N(0,1) has mean 0 and variance 1.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-05",
+    "category": "probability",
+    "front": "Define conditional probability.",
+    "back": "P(A|B) = P(A ∩ B) / P(B), provided P(B) > 0. It measures the probability of A given that B has occurred.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-06",
+    "category": "probability",
+    "front": "What is the law of total probability?",
+    "back": "If {B₁, B₂, …, Bₙ} is a partition of the sample space, then P(A) = Σ P(A|Bᵢ)·P(Bᵢ).",
+    "difficulty": "medium"
+  },
+  {
+    "id": "prob-07",
+    "category": "probability",
+    "front": "What does it mean for two random variables to be independent?",
+    "back": "X and Y are independent if P(X ∈ A, Y ∈ B) = P(X ∈ A)·P(Y ∈ B) for all measurable sets A, B. Equivalently, their joint PDF factors: f(x,y) = fₓ(x)·fᵧ(y).",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-08",
+    "category": "probability",
+    "front": "What is the variance of a sum of independent random variables?",
+    "back": "Var(X + Y) = Var(X) + Var(Y) when X and Y are independent. In general, Var(X+Y) = Var(X) + Var(Y) + 2·Cov(X,Y).",
+    "difficulty": "medium"
+  },
+  {
+    "id": "prob-09",
+    "category": "probability",
+    "front": "What is the moment generating function (MGF)?",
+    "back": "Mₓ(t) = E[e^(tX)]. It uniquely determines the distribution. The n-th moment is Mₓ⁽ⁿ⁾(0) = E[Xⁿ].",
+    "difficulty": "medium"
+  },
+  {
+    "id": "prob-10",
+    "category": "probability",
+    "front": "State Markov's inequality.",
+    "back": "For a non-negative random variable X and a > 0: P(X ≥ a) ≤ E[X] / a.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "prob-11",
+    "category": "probability",
+    "front": "State Chebyshev's inequality.",
+    "back": "P(|X - μ| ≥ kσ) ≤ 1/k². It bounds the probability of deviating more than k standard deviations from the mean.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "prob-12",
+    "category": "probability",
+    "front": "What is the Poisson distribution and when is it used?",
+    "back": "P(X = k) = e^(-λ) · λᵏ / k!. Models the number of events in a fixed interval when events occur at a constant average rate λ independently.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-13",
+    "category": "probability",
+    "front": "What is the difference between covariance and correlation?",
+    "back": "Cov(X,Y) = E[(X-μₓ)(Y-μᵧ)] measures linear association. Correlation ρ = Cov(X,Y)/(σₓσᵧ) normalizes to [-1, 1].",
+    "difficulty": "easy"
+  },
+  {
+    "id": "prob-14",
+    "category": "probability",
+    "front": "What is Jensen's inequality?",
+    "back": "For a convex function φ: E[φ(X)] ≥ φ(E[X]). For concave functions, the inequality reverses.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "prob-15",
+    "category": "probability",
+    "front": "What is the log-normal distribution?",
+    "back": "If ln(X) ~ N(μ, σ²), then X is log-normal. E[X] = exp(μ + σ²/2), Var(X) = [exp(σ²) - 1]·exp(2μ + σ²).",
+    "difficulty": "hard"
+  },
+  {
+    "id": "fin-01",
+    "category": "finance",
+    "front": "What is the Sharpe ratio?",
+    "back": "Sharpe = (Rₚ - R_f) / σₚ. Measures excess return per unit of total risk. Higher is better.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "fin-02",
+    "category": "finance",
+    "front": "State the CAPM equation.",
+    "back": "E[Rᵢ] = R_f + βᵢ · (E[Rₘ] - R_f). Expected return equals risk-free rate plus beta times market risk premium.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "fin-03",
+    "category": "finance",
+    "front": "What is the Black-Scholes formula for a European call?",
+    "back": "C = S·N(d₁) - K·e^(-rT)·N(d₂), where d₁ = [ln(S/K) + (r + σ²/2)T] / (σ√T) and d₂ = d₁ - σ√T.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "fin-04",
+    "category": "finance",
+    "front": "What are the Greeks in options pricing?",
+    "back": "Delta (∂V/∂S), Gamma (∂²V/∂S²), Theta (∂V/∂t), Vega (∂V/∂σ), Rho (∂V/∂r). They measure sensitivity of option price to underlying parameters.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fin-05",
+    "category": "finance",
+    "front": "State put-call parity.",
+    "back": "C - P = S - K·e^(-rT). European call price minus put price equals spot minus discounted strike.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fin-06",
+    "category": "finance",
+    "front": "What is Value at Risk (VaR)?",
+    "back": "VaR at confidence level α is the loss threshold L such that P(Loss > L) = 1 - α. E.g., 95% VaR = the 5th percentile loss.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fin-07",
+    "category": "finance",
+    "front": "What is the difference between systematic and unsystematic risk?",
+    "back": "Systematic risk (market risk) cannot be diversified away — it's captured by beta. Unsystematic risk is firm-specific and can be eliminated through diversification.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "fin-08",
+    "category": "finance",
+    "front": "What is arbitrage?",
+    "back": "A risk-free profit with zero net investment. In efficient markets, arbitrage opportunities are quickly eliminated by traders.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "fin-09",
+    "category": "finance",
+    "front": "What is the efficient frontier?",
+    "back": "The set of portfolios offering the highest expected return for each level of risk (standard deviation). No rational investor chooses a portfolio below it.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fin-10",
+    "category": "finance",
+    "front": "What is a risk-neutral measure?",
+    "back": "A probability measure under which all assets earn the risk-free rate. Option prices are discounted expected payoffs under this measure. Used extensively in derivatives pricing.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "fin-11",
+    "category": "finance",
+    "front": "What is the Sortino ratio?",
+    "back": "Sortino = (Rₚ - R_f) / σ_downside. Like Sharpe but uses downside deviation instead of total standard deviation, penalizing only negative returns.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fin-12",
+    "category": "finance",
+    "front": "What is duration and convexity in bond pricing?",
+    "back": "Duration measures sensitivity of bond price to yield changes (first derivative). Convexity measures the curvature (second derivative). Together: ΔP/P ≈ -D·Δy + ½·C·(Δy)².",
+    "difficulty": "hard"
+  },
+  {
+    "id": "fin-13",
+    "category": "finance",
+    "front": "What is the difference between American and European options?",
+    "back": "European options can only be exercised at expiration. American options can be exercised at any time before expiration. American ≥ European in value.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "fin-14",
+    "category": "finance",
+    "front": "What is implied volatility?",
+    "back": "The volatility value σ that, when plugged into Black-Scholes, produces the observed market price of the option. It reflects the market's expectation of future volatility.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "fin-15",
+    "category": "finance",
+    "front": "What is the Fama-French three-factor model?",
+    "back": "E[Rᵢ] - R_f = αᵢ + βₘₖₜ(Rₘ - R_f) + βₛₘₗ·SMB + βₕₘₗ·HML. Adds size (SMB) and value (HML) factors to CAPM.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-01",
+    "category": "formulas",
+    "front": "Write the stochastic differential equation for Geometric Brownian Motion (GBM).",
+    "back": "dS = μS dt + σS dW, where μ is drift, σ is volatility, and dW is a Wiener process increment.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "form-02",
+    "category": "formulas",
+    "front": "State Itô's Lemma for a function f(t, X) where dX = μ dt + σ dW.",
+    "back": "df = (∂f/∂t + μ·∂f/∂X + ½σ²·∂²f/∂X²) dt + σ·∂f/∂X dW. The extra ½σ²·∂²f/∂X² term is the Itô correction.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-03",
+    "category": "formulas",
+    "front": "What is the formula for Delta of a European call option?",
+    "back": "Δ_call = N(d₁), where d₁ = [ln(S/K) + (r + σ²/2)T] / (σ√T). For a put: Δ_put = N(d₁) - 1.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-04",
+    "category": "formulas",
+    "front": "What is the formula for Gamma of a European option?",
+    "back": "Γ = N'(d₁) / (S·σ·√T), where N'(x) = (1/√2π)·e^(-x²/2) is the standard normal PDF. Same for calls and puts.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-05",
+    "category": "formulas",
+    "front": "Write the bond pricing formula.",
+    "back": "P = Σ [C / (1+y)ᵗ] + [F / (1+y)ⁿ], where C = coupon, y = yield, F = face value, n = periods. Or continuously: P = Σ C·e^(-y·t) + F·e^(-y·n).",
+    "difficulty": "medium"
+  },
+  {
+    "id": "form-06",
+    "category": "formulas",
+    "front": "What is the mean-variance optimization (Markowitz) objective?",
+    "back": "Minimize w'Σw subject to w'μ = target return and w'1 = 1, where w = weights, Σ = covariance matrix, μ = expected returns vector.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-07",
+    "category": "formulas",
+    "front": "What is the formula for portfolio variance?",
+    "back": "σₚ² = Σᵢ Σⱼ wᵢ wⱼ σᵢⱼ = w'Σw, where Σ is the covariance matrix and w is the weight vector.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "form-08",
+    "category": "formulas",
+    "front": "What is the continuous compounding formula?",
+    "back": "A = P·e^(rt), where P = principal, r = rate, t = time. Conversely, present value: PV = FV·e^(-rt).",
+    "difficulty": "easy"
+  },
+  {
+    "id": "form-09",
+    "category": "formulas",
+    "front": "Write the formula for Theta of a European call option.",
+    "back": "Θ = -[S·N'(d₁)·σ] / (2√T) - r·K·e^(-rT)·N(d₂). Time decay is always negative for long options.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-10",
+    "category": "formulas",
+    "front": "What is the formula for Vega of a European option?",
+    "back": "V = S·√T·N'(d₁). Same for calls and puts. Vega measures sensitivity to a 1-unit change in volatility.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-11",
+    "category": "formulas",
+    "front": "What is the Kelly criterion for optimal bet sizing?",
+    "back": "f* = (p·b - q) / b, where p = win probability, q = 1-p, b = win/loss ratio. Maximizes expected log wealth.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-12",
+    "category": "formulas",
+    "front": "Write the Vasicek model for interest rates.",
+    "back": "dr = κ(θ - r) dt + σ dW. Mean-reverting model: κ = speed of reversion, θ = long-run mean, σ = volatility.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-13",
+    "category": "formulas",
+    "front": "What is the formula for the information ratio?",
+    "back": "IR = (Rₚ - R_b) / σ(Rₚ - R_b) = α / σ(ε). Active return over tracking error.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "form-14",
+    "category": "formulas",
+    "front": "What is the formula for Rho of a European call?",
+    "back": "ρ_call = K·T·e^(-rT)·N(d₂). For a put: ρ_put = -K·T·e^(-rT)·N(-d₂).",
+    "difficulty": "hard"
+  },
+  {
+    "id": "form-15",
+    "category": "formulas",
+    "front": "What is the Black-Scholes PDE?",
+    "back": "∂V/∂t + ½σ²S²·∂²V/∂S² + rS·∂V/∂S - rV = 0. The fundamental PDE for derivative pricing under the risk-neutral measure.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "bt-01",
+    "category": "brainteasers",
+    "front": "You flip a fair coin until you get heads. What is the expected number of flips?",
+    "back": "E = 2. This is a geometric distribution with p = 0.5, so E = 1/p = 2.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "bt-02",
+    "category": "brainteasers",
+    "front": "Two trains 100 miles apart approach each other at 50 mph each. A fly travels at 75 mph between them. How far does the fly travel before the trains collide?",
+    "back": "75 miles. Trains collide in 1 hour (100/(50+50)). Fly travels 75 mph × 1 hour = 75 miles.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bt-03",
+    "category": "brainteasers",
+    "front": "You have 100 balls (50 red, 50 blue) and two urns. Maximize the probability of drawing a red ball (random urn, then random ball).",
+    "back": "Put 1 red ball in urn 1, the rest (49 red + 50 blue) in urn 2. P(red) = 0.5·1 + 0.5·(49/99) ≈ 74.7%.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "bt-04",
+    "category": "brainteasers",
+    "front": "What is the expected value of rolling a fair six-sided die?",
+    "back": "E[X] = (1+2+3+4+5+6)/6 = 3.5.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "bt-05",
+    "category": "brainteasers",
+    "front": "You have 3 doors. One has a car, two have goats. You pick door 1, the host opens door 3 (goat). Should you switch to door 2?",
+    "back": "Yes. Switching gives 2/3 probability of winning. Staying gives 1/3. This is the Monty Hall problem.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bt-06",
+    "category": "brainteasers",
+    "front": "A card is drawn from a standard 52-card deck. Given it's a heart, what's the probability it's the ace of hearts?",
+    "back": "1/13. There are 13 hearts and exactly 1 is the ace. P = 1/13 ≈ 7.7%.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "bt-07",
+    "category": "brainteasers",
+    "front": "You have a 3-gallon jug and a 5-gallon jug. How do you measure exactly 4 gallons?",
+    "back": "Fill 5-gallon, pour into 3-gallon (2 left in 5). Empty 3-gallon. Pour 2 into 3-gallon. Fill 5-gallon. Pour into 3-gallon (1 space). 5-gallon now has 4.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bt-08",
+    "category": "brainteasers",
+    "front": "What is the expected number of coin flips to get two consecutive heads?",
+    "back": "E = 6. Using states: E₀ = 1 + 0.5·E₁ + 0.5·E₀, E₁ = 1 + 0.5·0 + 0.5·E₀. Solving: E₀ = 6.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "bt-09",
+    "category": "brainteasers",
+    "front": "100 prisoners each put their name in one of 100 boxes randomly. Each can open 50 boxes. What strategy maximizes survival probability?",
+    "back": "Follow the cycle strategy: open the box with your number, then follow the chain. Survival ≈ 1 - ln(2) ≈ 31% (vs (1/2)^100 randomly).",
+    "difficulty": "hard"
+  },
+  {
+    "id": "bt-10",
+    "category": "brainteasers",
+    "front": "You roll two dice. What is the probability the sum is 7?",
+    "back": "6/36 = 1/6. The favorable pairs: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) = 6 outcomes out of 36.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "bt-11",
+    "category": "brainteasers",
+    "front": "A stick is broken at two random points. What is the probability the three pieces form a triangle?",
+    "back": "1/4. The triangle inequality requires all pieces < 1/2. The region satisfying this in the unit square has area 1/4.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "bt-12",
+    "category": "brainteasers",
+    "front": "What is the expected number of rolls to see all 6 faces of a fair die?",
+    "back": "E = 6(1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 14.7. This is the coupon collector problem.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "bt-13",
+    "category": "brainteasers",
+    "front": "You have 8 coins, one is lighter. Using a balance scale, what is the minimum number of weighings to find it?",
+    "back": "2 weighings. Split into groups of 3-3-2. Weigh 3 vs 3. If equal, weigh the remaining 2. If unequal, weigh 2 of the lighter 3.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bt-14",
+    "category": "brainteasers",
+    "front": "What is the probability that at least 2 people in a room of 23 share a birthday?",
+    "back": "≈ 50.7%. P(at least one match) = 1 - 365!/(365²³ · (365-23)!) ≈ 0.507.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bt-15",
+    "category": "brainteasers",
+    "front": "You have a fair coin. You win $1 for heads, lose $1 for tails. You play until you either gain $10 or lose $10. What is the probability you gain $10?",
+    "back": "50%. By the optional stopping theorem (or Gambler's ruin with equal probabilities), P(gain $10) = 10/20 = 0.5.",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,502 @@
+{
+  "categories": [
+    {
+      "id": "probability",
+      "title": "Probability & Statistics",
+      "icon": "TrendingUp",
+      "color": "text-blue-500",
+      "questions": [
+        {
+          "question": "What is the expected value of a fair dice roll?",
+          "answer": "E[X] = (1+2+3+4+5+6)/6 = 3.5",
+          "hint": "Sum of all outcomes divided by number of outcomes"
+        },
+        {
+          "question": "What is the variance of a Bernoulli distribution?",
+          "answer": "Var(X) = p(1-p) where p is probability of success",
+          "hint": "Bernoulli has only two outcomes: success (p) or failure (1-p)"
+        },
+        {
+          "question": "What is the Central Limit Theorem?",
+          "answer": "The sum of many independent random variables tends toward a normal distribution, regardless of the original distribution.",
+          "hint": "This is why normal distribution appears everywhere in nature"
+        },
+        {
+          "question": "Explain Type I and Type II errors",
+          "answer": "Type I: False positive (reject true null). Type II: False negative (fail to reject false null).",
+          "hint": "Type I = convicting innocent, Type II = letting guilty go free"
+        },
+        {
+          "question": "What is Bayes' theorem?",
+          "answer": "P(A|B) = P(B|A) * P(A) / P(B). Updates prior beliefs with new evidence.",
+          "hint": "Posterior = Likelihood × Prior / Evidence"
+        },
+        {
+          "question": "What is the difference between correlation and covariance?",
+          "answer": "Covariance measures joint variability (units matter). Correlation normalizes covariance to [-1,1] by dividing by product of standard deviations.",
+          "hint": "Correlation = Cov(X,Y) / (σ_X × σ_Y)"
+        },
+        {
+          "question": "What is the law of total expectation?",
+          "answer": "E[X] = E[E[X|Y]]. The unconditional expectation equals the expectation of conditional expectations.",
+          "hint": "Also called iterated expectation or tower property"
+        },
+        {
+          "question": "What is the PDF of a standard normal distribution?",
+          "answer": "f(x) = (1/√(2π)) × e^(-x²/2). Mean 0, variance 1.",
+          "hint": "The famous bell curve, centered at zero"
+        },
+        {
+          "question": "What is a Poisson distribution and when is it used?",
+          "answer": "P(X=k) = (λ^k × e^(-λ)) / k!. Models number of events in fixed interval. Used for rare events, arrivals, counts.",
+          "hint": "Limit of binomial when n→∞, p→0, np=λ"
+        },
+        {
+          "question": "State the Markov property.",
+          "answer": "P(X_{n+1}|X_n, X_{n-1}, ..., X_0) = P(X_{n+1}|X_n). Future depends only on the present state, not history.",
+          "hint": "Memoryless property of stochastic processes"
+        },
+        {
+          "question": "What is the expected value of the max of two uniform [0,1] random variables?",
+          "answer": "E[max(X,Y)] = 2/3. F(z) = z² for z∈[0,1], so E = ∫₀¹ (1-z²)dz = 2/3.",
+          "hint": "Find CDF of max first, then integrate 1 - CDF"
+        },
+        {
+          "question": "What is Jensen's inequality?",
+          "answer": "For convex f: E[f(X)] ≥ f(E[X]). For concave f: E[f(X)] ≤ f(E[X]).",
+          "hint": "Think of the shape of convex functions and where the mean lies"
+        },
+        {
+          "question": "What is the moment generating function and why is it useful?",
+          "answer": "M_X(t) = E[e^(tX)]. Useful because derivatives at t=0 give moments: M'(0)=E[X], M''(0)=E[X²].",
+          "hint": "Laplace transform of the PDF"
+        },
+        {
+          "question": "What is the difference between IID and stationary?",
+          "answer": "IID: independent and identically distributed. Stationary: joint distribution is time-shift invariant. IID implies stationary but not vice versa.",
+          "hint": "Stationarity is about distribution shape over time, not independence"
+        },
+        {
+          "question": "What is Chebyshev's inequality?",
+          "answer": "P(|X-μ| ≥ kσ) ≤ 1/k². At least 1-1/k² of data falls within k standard deviations.",
+          "hint": "Works for any distribution, not just normal"
+        },
+        {
+          "question": "What is the multivariate normal distribution?",
+          "answer": "Generalization of normal to d dimensions, parameterized by mean vector μ and covariance matrix Σ. Density: f(x) ∝ exp(-½(x-μ)ᵀΣ⁻¹(x-μ)).",
+          "hint": "Marginals and conditionals are also normal"
+        },
+        {
+          "question": "What is the log-normal distribution?",
+          "answer": "If ln(X) ~ N(μ,σ²), then X is log-normal. Always positive, right-skewed. Used for stock prices.",
+          "hint": "Central limit theorem applied to multiplicative processes"
+        },
+        {
+          "question": "What is the beta distribution?",
+          "answer": "Distribution on [0,1] parameterized by α, β. PDF ∝ x^(α-1)(1-x)^(β-1). Conjugate prior for Bernoulli/binomial.",
+          "hint": "Uniform is Beta(1,1). Used for modeling probabilities."
+        },
+        {
+          "question": "What is a copula in probability?",
+          "answer": "A function that joins marginal distributions to form a multivariate distribution. Captures dependency structure separately from marginals.",
+          "hint": "Sklar's theorem: any joint CDF can be decomposed into marginals + copula"
+        },
+        {
+          "question": "What is the delta method?",
+          "answer": "If √n(X̄ - μ) → N(0,σ²), then √n(g(X̄) - g(μ)) → N(0, [g'(μ)]²σ²). Approximates variance of transformed estimators.",
+          "hint": "First-order Taylor expansion of g around μ"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "Finance & Markets",
+      "icon": "DollarSign",
+      "color": "text-yellow-500",
+      "questions": [
+        {
+          "question": "What is the Sharpe ratio?",
+          "answer": "Sharpe = (E[R] - R_f) / σ. Measures excess return per unit of risk.",
+          "hint": "Higher is better. Risk-adjusted return metric."
+        },
+        {
+          "question": "Explain CAPM",
+          "answer": "E(R_i) = R_f + β_i(E(R_m) - R_f). Expected return = risk-free + beta × market premium.",
+          "hint": "Capital Asset Pricing Model - relates risk to expected return"
+        },
+        {
+          "question": "What is a call option?",
+          "answer": "Right (not obligation) to buy an asset at strike price K before expiry T.",
+          "hint": "Call = right to buy. Put = right to sell."
+        },
+        {
+          "question": "What is delta hedging?",
+          "answer": "Holding delta shares of underlying to make portfolio delta-neutral, eliminating small price movement risk.",
+          "hint": "Delta = rate of change of option price with respect to underlying"
+        },
+        {
+          "question": "Explain put-call parity",
+          "answer": "C - P = S - K*e^(-rT). Relationship between European call and put prices.",
+          "hint": "No-arbitrage condition linking calls and puts"
+        },
+        {
+          "question": "What are the Greeks in options pricing?",
+          "answer": "Delta (Δ=dV/dS), Gamma (Γ=d²V/dS²), Theta (Θ=dV/dt), Vega (ν=dV/dσ), Rho (ρ=dV/dr). Measures of sensitivity to underlying, time, volatility, and rate.",
+          "hint": "Delta and gamma for price, theta for time decay, vega for volatility"
+        },
+        {
+          "question": "What is the Black-Scholes formula for a European call?",
+          "answer": "C = S·N(d₁) - K·e^(-rT)·N(d₂), where d₁ = [ln(S/K) + (r+σ²/2)T] / (σ√T), d₂ = d₁ - σ√T.",
+          "hint": "N(·) is the standard normal CDF"
+        },
+        {
+          "question": "What is Value at Risk (VaR)?",
+          "answer": "Maximum loss over a time horizon at a given confidence level. E.g., 1-day 95% VaR = loss exceeded only 5% of the time.",
+          "hint": "Quantile of the P&L distribution. Does not measure tail severity."
+        },
+        {
+          "question": "What is the difference between systematic and unsystematic risk?",
+          "answer": "Systematic risk affects entire market (non-diversifiable, measured by beta). Unsystematic risk is company-specific (diversifiable).",
+          "hint": "CAPM only compensates systematic risk"
+        },
+        {
+          "question": "What is the efficient frontier?",
+          "answer": "Set of portfolios offering maximum expected return for each level of risk. Optimal portfolios lie on this curve.",
+          "hint": "From Markowitz portfolio theory. Above the frontier is impossible."
+        },
+        {
+          "question": "What is the risk-neutral measure?",
+          "answer": "A probability measure where all assets earn the risk-free rate. Option prices are discounted expected payoffs under this measure.",
+          "hint": "Not real-world probabilities — adjusted so investors are indifferent to risk"
+        },
+        {
+          "question": "What is gamma scalping?",
+          "answer": "Delta-hedging a long gamma position. Profit from realized volatility exceeding implied volatility by rebalancing delta as price moves.",
+          "hint": "Long gamma = profit from large moves when delta-hedging"
+        },
+        {
+          "question": "What is the difference between American and European options?",
+          "answer": "European: exercise only at expiry. American: exercise any time before expiry. American ≥ European price due to early exercise premium.",
+          "hint": "Early exercise matters for puts and dividend-paying calls"
+        },
+        {
+          "question": "What is the bid-ask spread and what does it represent?",
+          "answer": "Difference between best ask and best bid. Compensation for market makers' inventory risk and adverse selection.",
+          "hint": "Wider spread = less liquid market"
+        },
+        {
+          "question": "What is volatility smile/skew?",
+          "answer": "Implied volatility varies by strike. Equity options typically show skew (higher IV for low strikes). Smile if both wings have higher IV.",
+          "hint": "Black-Scholes assumes constant vol — reality disagrees"
+        },
+        {
+          "question": "What is the Sortino ratio?",
+          "answer": "Sortino = (R - R_target) / σ_downside. Like Sharpe but penalizes only downside volatility.",
+          "hint": "More relevant when returns are asymmetric"
+        },
+        {
+          "question": "What is the Kelly criterion?",
+          "answer": "f* = (bp - q) / b where b=odds, p=win prob, q=1-p. Fraction of bankroll to bet to maximize long-run growth.",
+          "hint": "Maximizes expected log wealth. Half-Kelly is common in practice."
+        },
+        {
+          "question": "What is a swap?",
+          "answer": "Contract to exchange cash flows. E.g., interest rate swap: fixed rate payments exchanged for floating rate payments.",
+          "hint": "Most common: interest rate swaps, currency swaps, CDS"
+        },
+        {
+          "question": "What is convexity in fixed income?",
+          "answer": "Second-order sensitivity of bond price to yield changes. Positive convexity means price rises more for yield drops than it falls for yield rises.",
+          "hint": "Convexity adjustment: ΔP/P ≈ -D·Δy + ½·C·(Δy)²"
+        },
+        {
+          "question": "What is adverse selection in market microstructure?",
+          "answer": "Informed traders exploit uninformed market makers. Makers widen spreads to compensate for trading against better-informed counterparties.",
+          "hint": "Glosten-Milgrom model: spreads arise from information asymmetry"
+        }
+      ]
+    },
+    {
+      "id": "programming",
+      "title": "Programming & Algorithms",
+      "icon": "Code",
+      "color": "text-green-500",
+      "questions": [
+        {
+          "question": "What is the time complexity of binary search?",
+          "answer": "O(log n). Halves search space each step.",
+          "hint": "Requires sorted array. Compare with middle element."
+        },
+        {
+          "question": "Explain dynamic programming",
+          "answer": "Breaking problems into overlapping subproblems, storing results to avoid redundant computation.",
+          "hint": "Think: memoization + optimal substructure"
+        },
+        {
+          "question": "What is a hash table?",
+          "answer": "Data structure mapping keys to values via hash function. O(1) average lookup.",
+          "hint": "Handles collisions via chaining or open addressing"
+        },
+        {
+          "question": "Difference between stack and queue?",
+          "answer": "Stack: LIFO (Last In First Out). Queue: FIFO (First In First Out).",
+          "hint": "Stack = plates. Queue = line at store."
+        },
+        {
+          "question": "What is recursion?",
+          "answer": "Function calling itself with smaller input until base case is reached.",
+          "hint": "Every recursive solution can be written iteratively"
+        },
+        {
+          "question": "What is the difference between a vector and a linked list?",
+          "answer": "Vector: contiguous memory, O(1) access, O(n) insert. Linked list: scattered memory, O(n) access, O(1) insert at known position.",
+          "hint": "Cache locality favors vectors in practice"
+        },
+        {
+          "question": "What is a smart pointer in C++?",
+          "answer": "RAII wrapper for heap memory. unique_ptr (exclusive ownership), shared_ptr (reference counted), weak_ptr (non-owning observer).",
+          "hint": "Prefer unique_ptr by default, shared_ptr when ownership is shared"
+        },
+        {
+          "question": "What is RAII in C++?",
+          "answer": "Resource Acquisition Is Initialization. Tie resource lifetime to object scope — constructor acquires, destructor releases.",
+          "hint": "Prevents leaks. Basis of smart pointers, lock guards, file handles."
+        },
+        {
+          "question": "What is the difference between BFS and DFS?",
+          "answer": "BFS explores level by level (queue), finds shortest path in unweighted graph. DFS goes deep first (stack/recursion), useful for topological sort, cycle detection.",
+          "hint": "BFS uses more memory, DFS may not find shortest path"
+        },
+        {
+          "question": "Explain Big O, Big Omega, and Big Theta.",
+          "answer": "O: upper bound. Ω: lower bound. Θ: tight bound (both). O(n²) means at most quadratic growth.",
+          "hint": "In interviews, Big O usually means tight bound"
+        },
+        {
+          "question": "What is a priority queue and its typical implementation?",
+          "answer": "Always serves the highest-priority element. Implemented as a binary heap: O(log n) insert/extract, O(1) peek.",
+          "hint": "C++ std::priority_queue, Python heapq"
+        },
+        {
+          "question": "What are the ACID properties of databases?",
+          "answer": "Atomicity (all or nothing), Consistency (valid state transitions), Isolation (concurrent transactions don't interfere), Durability (committed data persists).",
+          "hint": "Foundation of reliable transaction processing"
+        },
+        {
+          "question": "Write a SQL query to find the 2nd highest salary.",
+          "answer": "SELECT MAX(salary) FROM employees WHERE salary < (SELECT MAX(salary) FROM employees). Or use DENSE_RANK() OVER (ORDER BY salary DESC).",
+          "hint": "DENSE_RANK handles ties better than LIMIT/OFFSET approaches"
+        },
+        {
+          "question": "What is the difference between a map and an unordered_map in C++?",
+          "answer": "map: red-black tree, O(log n) operations, ordered keys. unordered_map: hash table, O(1) average, O(n) worst case, unordered.",
+          "hint": "Use map when you need ordering, unordered_map for speed"
+        },
+        {
+          "question": "What is a deadlock and how to prevent it?",
+          "answer": "Two or more threads waiting for each other's locks forever. Prevention: lock ordering, timeouts, or avoid multiple locks.",
+          "hint": "Four conditions: mutual exclusion, hold-and-wait, no preemption, circular wait"
+        }
+      ]
+    },
+    {
+      "id": "brainteasers",
+      "title": "Brain Teasers",
+      "icon": "Brain",
+      "color": "text-purple-500",
+      "questions": [
+        {
+          "question": "How many golf balls fit in a school bus?",
+          "answer": "~500,000. Bus volume ~50 m³, golf ball ~40 cm³.",
+          "hint": "Estimate bus dimensions, divide by ball volume"
+        },
+        {
+          "question": "You have 8 balls, one heavier. Find it in 2 weighings.",
+          "answer": "Split 3-3-2. Weigh 3 vs 3. If equal, weigh the 2. If not, weigh 2 from heavy side.",
+          "hint": "Divide and conquer with balance scale"
+        },
+        {
+          "question": "What is the expected number of coin flips to get two heads in a row?",
+          "answer": "6 flips. Uses Markov chain: E = 1 + 0.5(E+1) + 0.5(1 + 0.5(E+1) + 0.5(1))",
+          "hint": "Set up states: start, got one H, got HH"
+        },
+        {
+          "question": "A card is drawn from 52 cards. It's red. What's P(it's a heart)?",
+          "answer": "1/2. 26 red cards, 13 hearts. 13/26 = 1/2.",
+          "hint": "Conditional probability: P(Heart|Red) = P(Heart ∩ Red)/P(Red)"
+        },
+        {
+          "question": "You flip a fair coin 10 times. What's P(exactly 5 heads)?",
+          "answer": "C(10,5) × (0.5)^10 = 252/1024 ≈ 24.6%",
+          "hint": "Binomial distribution: C(n,k) × p^k × (1-p)^(n-k)"
+        },
+        {
+          "question": "How many trailing zeros in 100!?",
+          "answer": "24. Count factors of 5: ⌊100/5⌋ + ⌊100/25⌋ + ⌊100/125⌋ = 20 + 4 + 0 = 24.",
+          "hint": "Trailing zeros come from 10 = 2×5. Factors of 2 are more abundant."
+        },
+        {
+          "question": "Monty Hall problem: should you switch doors?",
+          "answer": "Yes. Switching gives 2/3 probability of winning vs 1/3 for staying.",
+          "hint": "Host's action provides information. Original choice stays at 1/3."
+        },
+        {
+          "question": "Estimate the number of piano tuners in Chicago.",
+          "answer": "~200. Population ~2.7M, ~1M households, ~1 in 20 has piano, tuned 1-2x/year, ~2 hours per tuning, tuner works ~2000 hours/year.",
+          "hint": "Classic Fermi estimation: chain of reasonable assumptions"
+        },
+        {
+          "question": "You have 100 lockers, all closed. 100 students toggle lockers divisible by their number. Which lockers are open?",
+          "answer": "Perfect squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100. They have an odd number of factors.",
+          "hint": "A locker toggles once per factor. Only perfect squares have odd factors."
+        },
+        {
+          "question": "What is the expected number of rolls to see all 6 faces of a die?",
+          "answer": "6(1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 14.7. Coupon collector problem.",
+          "hint": "Each new face takes geometric waiting time"
+        },
+        {
+          "question": "Two trains 100 miles apart head toward each other at 50 mph. A fly goes back and forth at 75 mph. How far does the fly travel?",
+          "answer": "75 miles. Trains meet in 1 hour (100/(50+50)). Fly travels 75×1 = 75 miles.",
+          "hint": "Don't sum the infinite series — just find total time"
+        },
+        {
+          "question": "You have 2 ropes, each burns in 1 hour but unevenly. Measure 45 minutes.",
+          "answer": "Light rope 1 from both ends and rope 2 from one end. Rope 1 burns out in 30 min. Light rope 2's other end. It burns out in 15 more min.",
+          "hint": "Lighting both ends halves the burn time"
+        },
+        {
+          "question": "A box has 3 coins: fair, double-heads, double-tails. Pick one at random, flip it — it's heads. What's P(other side is heads)?",
+          "answer": "2/3. Given heads, it's either fair or double-heads. P(DH|H) = P(H|DH)P(DH)/P(H) = (1×1/3)/(1/2) = 2/3.",
+          "hint": "Use Bayes' theorem. Eliminate the double-tails coin."
+        },
+        {
+          "question": "How many handshakes at a party of 10 people where everyone shakes hands once?",
+          "answer": "C(10,2) = 45. Each pair shakes once.",
+          "hint": "n(n-1)/2 for n people"
+        },
+        {
+          "question": "You roll two dice. What's P(sum = 7)?",
+          "answer": "6/36 = 1/6. Outcomes: (1,6),(2,5),(3,4),(4,3),(5,2),(6,1).",
+          "hint": "Count favorable outcomes out of 36 total"
+        }
+      ]
+    },
+    {
+      "id": "stochastic-calculus",
+      "title": "Stochastic Calculus",
+      "icon": "Activity",
+      "color": "text-red-500",
+      "questions": [
+        {
+          "question": "What is Brownian motion (Wiener process)?",
+          "answer": "Continuous-time stochastic process with: W(0)=0, independent increments, W(t)-W(s)~N(0,t-s), continuous paths.",
+          "hint": "Building block of stochastic calculus. Paths are continuous but nowhere differentiable."
+        },
+        {
+          "question": "State Itô's lemma.",
+          "answer": "For f(t,X) where dX = μdt + σdW: df = (∂f/∂t + μ∂f/∂X + ½σ²∂²f/∂X²)dt + σ(∂f/∂X)dW. Extra ½σ²f'' term vs ordinary calculus.",
+          "hint": "The correction term comes from (dW)² = dt"
+        },
+        {
+          "question": "What is Girsanov's theorem?",
+          "answer": "Changing the drift of a Brownian motion by changing the probability measure. Under new measure Q: dW^Q = dW^P + θdt for some process θ.",
+          "hint": "Foundation of risk-neutral pricing: remove drift by changing measure"
+        },
+        {
+          "question": "What is geometric Brownian motion?",
+          "answer": "dS = μS dt + σS dW. Solution: S(t) = S(0)exp((μ-σ²/2)t + σW(t)). Used to model stock prices.",
+          "hint": "Log-returns are normally distributed"
+        },
+        {
+          "question": "What is Itô's isometry?",
+          "answer": "E[(∫₀ᵀ f(t)dW(t))²] = ∫₀ᵀ E[f(t)²]dt. Expected square of Itô integral equals integral of expected squared integrand.",
+          "hint": "Analogous to Parseval's theorem in Fourier analysis"
+        },
+        {
+          "question": "What is a stochastic differential equation (SDE)?",
+          "answer": "Differential equation with a stochastic term: dX = a(X,t)dt + b(X,t)dW. a is drift, b is diffusion coefficient.",
+          "hint": "Short-hand for integral equation. Solutions are stochastic processes."
+        },
+        {
+          "question": "What is the Feynman-Kac theorem?",
+          "answer": "Links SDEs to PDEs. Solution to certain PDEs can be written as expectation of functionals of diffusions.",
+          "hint": "Black-Scholes PDE can be solved as a risk-neutral expectation"
+        },
+        {
+          "question": "What is the quadratic variation of Brownian motion?",
+          "answer": "[W,W](t) = t. The sum of squared increments converges to t as partitions refine. This is why (dW)² = dt.",
+          "hint": "Key reason Itô calculus differs from ordinary calculus"
+        },
+        {
+          "question": "How does Monte Carlo simulation work for option pricing?",
+          "answer": "Simulate many paths of underlying asset under risk-neutral measure, compute payoff for each path, average and discount: price = e^(-rT) × E[payoff].",
+          "hint": "Works for any payoff. Convergence is O(1/√n). Variance reduction helps."
+        },
+        {
+          "question": "What is the Ornstein-Uhlenbeck process?",
+          "answer": "dX = θ(μ - X)dt + σdW. Mean-reverting process — pulls toward μ. Used for interest rates, volatility.",
+          "hint": "Vasicek model for interest rates is an OU process"
+        },
+        {
+          "question": "What is Itô vs Stratonovich integral?",
+          "answer": "Itô: non-anticipative, uses left endpoint (standard in finance). Stratonovich: uses midpoint, obeys ordinary chain rule but is anticipative.",
+          "hint": "Itô integral has zero expectation. Stratonovich is more intuitive but harder to compute."
+        },
+        {
+          "question": "What is the Radon-Nikodym derivative in finance?",
+          "answer": "dQ/dP — density of measure Q w.r.t. P. Used to change from real-world to risk-neutral measure. Discounted price processes are martingales under Q.",
+          "hint": "E_Q[X] = E_P[X × dQ/dP]. The change-of-measure density."
+        }
+      ]
+    },
+    {
+      "id": "system-design",
+      "title": "System Design",
+      "icon": "Server",
+      "color": "text-orange-500",
+      "questions": [
+        {
+          "question": "How would you design a trading system?",
+          "answer": "Components: market data feed handler, order management system (OMS), matching engine, risk checks, position management, P&L. Separate hot path (order flow) from cold path (reporting).",
+          "hint": "Low latency on hot path. Use lock-free data structures, kernel bypass networking."
+        },
+        {
+          "question": "How does an order book work?",
+          "answer": "Sorted bids (descending) and asks (ascending). Matching engine pairs best bid/ask. Price-time priority. Data structure: sorted map or price level array.",
+          "hint": "Needs O(1) cancel, O(log n) insert. Consider hash map + sorted structure."
+        },
+        {
+          "question": "How would you design a risk engine?",
+          "answer": "Real-time position aggregation, Greeks computation, P&L attribution, limit checking (per-trader, per-asset, total). Pre-trade checks before order submission, post-trade monitoring.",
+          "hint": "Pre-trade risk must be fast (<1μs). Use precomputed risk matrices."
+        },
+        {
+          "question": "How would you design a market data pipeline?",
+          "answer": "Feed handlers decode exchange protocols → normalize → publish to internal bus (UDP multicast or Kafka). Consumers: pricing, risk, algo strategies, storage. Handle gaps with sequence numbers.",
+          "hint": "Use multicast for lowest latency. Kafka for durable replay."
+        },
+        {
+          "question": "How to achieve low latency in a trading system?",
+          "answer": "Kernel bypass (DPDK/Solarflare), lock-free queues, memory pooling, co-location, FPGA for hot path, avoid syscalls, cache-line alignment, avoid NUMA-crossing.",
+          "hint": "Measure with hardware timestamps. Nanosecond-level optimizations."
+        },
+        {
+          "question": "What is FIX protocol?",
+          "answer": "Financial Information eXchange. Standard protocol for order submission, execution reports, market data. Tag=value pairs over TCP.",
+          "hint": "FIX 4.4 is common. Binary versions (FAST, SBE) for market data."
+        },
+        {
+          "question": "How do you handle exchange connectivity failures?",
+          "answer": "Heartbeat monitoring, automatic reconnection, sequence number gap detection, order state reconciliation, kill switches for stale positions, redundant connections.",
+          "hint": "Always know your last confirmed position. Implement 'drop copy' feeds."
+        },
+        {
+          "question": "What is a matching engine and how does it match orders?",
+          "answer": "Maintains order book, matches incoming orders against resting orders. Price-time priority. Aggressive orders cross the spread. Supports limit, market, IOC, FOK order types.",
+          "hint": "Core component of any exchange. Must be deterministic and auditable."
+        }
+      ]
+    }
+  ]
+}

@@ -6,7 +6,9 @@
       "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["linear-algebra"],
+      "skills": [
+        "linear-algebra"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "The legendary MIT linear algebra course by Gilbert Strang",
@@ -21,7 +23,12 @@
         "lectures": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/",
         "problemSets": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/problem-sets/",
         "exams": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/exams/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        3
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "mit-1801",
@@ -29,7 +36,9 @@
       "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["calculus"],
+      "skills": [
+        "calculus"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "MIT's introductory calculus course",
@@ -43,7 +52,12 @@
       "specificLinks": {
         "lectures": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/syllabus/",
         "problemSets": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/pages/problem-sets/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        4
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "mit-1802",
@@ -51,7 +65,9 @@
       "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["calculus"],
+      "skills": [
+        "calculus"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Multivariable calculus - gradients, divergence, Stokes' theorem",
@@ -65,7 +81,10 @@
       "specificLinks": {
         "lectures": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/syllabus/",
         "problemSets": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/pages/problem-sets/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "khan-linear-algebra",
@@ -73,7 +92,9 @@
       "url": "https://www.khanacademy.org/math/linear-algebra",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["linear-algebra"],
+      "skills": [
+        "linear-algebra"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Interactive linear algebra course with practice problems",
@@ -84,7 +105,10 @@
         "Use for quick review and practice"
       ],
       "nuclearRelevance": "Good supplement to MIT course",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "khan-calculus",
@@ -92,7 +116,9 @@
       "url": "https://www.khanacademy.org/math/calculus-1",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["calculus"],
+      "skills": [
+        "calculus"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Interactive calculus course with practice problems",
@@ -103,7 +129,10 @@
         "Use for quick review and practice"
       ],
       "nuclearRelevance": "Good supplement to MIT course",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "khan-probability",
@@ -111,7 +140,10 @@
       "url": "https://www.khanacademy.org/math/statistics-probability",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["probability", "statistics"],
+      "skills": [
+        "probability",
+        "statistics"
+      ],
       "estimatedHours": 25,
       "free": true,
       "description": "Interactive probability and statistics course",
@@ -122,7 +154,12 @@
         "Use for quick review and practice"
       ],
       "nuclearRelevance": "Foundation for risk modeling",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        5
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "3b1b-linear-algebra",
@@ -130,7 +167,9 @@
       "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
       "type": "video",
       "difficulty": "beginner",
-      "skills": ["linear-algebra"],
+      "skills": [
+        "linear-algebra"
+      ],
       "estimatedHours": 8,
       "free": true,
       "description": "Visual intuition for linear algebra concepts",
@@ -141,7 +180,12 @@
         "Build intuition before formal proofs"
       ],
       "nuclearRelevance": "Builds geometric intuition for vector spaces",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        3
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "3b1b-calculus",
@@ -149,7 +193,9 @@
       "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr",
       "type": "video",
       "difficulty": "beginner",
-      "skills": ["calculus"],
+      "skills": [
+        "calculus"
+      ],
       "estimatedHours": 8,
       "free": true,
       "description": "Visual intuition for calculus concepts",
@@ -160,7 +206,10 @@
         "Build intuition before formal proofs"
       ],
       "nuclearRelevance": "Builds geometric intuition for continuous mathematics",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-6041",
@@ -168,7 +217,9 @@
       "url": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["probability"],
+      "skills": [
+        "probability"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "MIT's probability course - rigorous treatment",
@@ -182,7 +233,12 @@
       "specificLinks": {
         "lectures": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/pages/video-lectures/",
         "problemSets": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/pages/assignments/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        5
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "harvard-stat110",
@@ -190,7 +246,9 @@
       "url": "https://projects.iq.harvard.edu/stat110",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["probability"],
+      "skills": [
+        "probability"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Joe Blitzstein's famous probability course",
@@ -204,7 +262,13 @@
       "specificLinks": {
         "youtube": "https://www.youtube.com/playlist?list=PLLVplP8M_VPYK63J7jyHHQr428_SS360N",
         "textbook": "https://projects.iq.harvard.edu/files/stat110/files/selected_solutions_blitzstein_hwang.pdf"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        5,
+        6
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "mit-1805",
@@ -212,7 +276,10 @@
       "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["probability", "statistics"],
+      "skills": [
+        "probability",
+        "statistics"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "MIT's probability and statistics course",
@@ -223,7 +290,10 @@
         "Apply to data analysis"
       ],
       "nuclearRelevance": "Foundation for statistical modeling",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "statquest",
@@ -231,7 +301,10 @@
       "url": "https://www.youtube.com/@statquest",
       "type": "video",
       "difficulty": "beginner",
-      "skills": ["statistics", "supervised-learning"],
+      "skills": [
+        "statistics",
+        "supervised-learning"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Clear explanations of statistics and ML concepts",
@@ -244,7 +317,10 @@
       "nuclearRelevance": "Clear explanations build strong intuition",
       "specificLinks": {
         "playlists": "https://www.youtube.com/@statquest/playlists"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-18065",
@@ -252,7 +328,10 @@
       "url": "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["linear-algebra", "optimization"],
+      "skills": [
+        "linear-algebra",
+        "optimization"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Gilbert Strang's course on matrix methods for data science",
@@ -263,7 +342,10 @@
         "Apply to dimensionality reduction"
       ],
       "nuclearRelevance": "Advanced linear algebra for data analysis",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "convex-optimization",
@@ -271,21 +353,33 @@
       "url": "https://web.stanford.edu/~boyd/cvxbook/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["optimization"],
+      "skills": [
+        "optimization"
+      ],
       "estimatedHours": 50,
       "free": true,
-      "description": "Boyd's legendary convex optimization course",
+      "description": "Boyd's convex optimization book. Free PDF and code on GitHub.",
       "actionSteps": [
         "Read the textbook (free PDF)",
         "Watch Stanford lectures on YouTube",
         "Complete exercises",
-        "Apply to portfolio optimization"
+        "Apply to portfolio optimization",
+        "Read all chapters",
+        "Complete all exercises",
+        "Implement optimization algorithms"
       ],
-      "nuclearRelevance": "Optimization techniques for resource allocation",
+      "nuclearRelevance": "Optimization methods for portfolio and resource allocation",
       "specificLinks": {
         "textbook": "https://stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
-        "lectures": "https://www.youtube.com/playlist?list=PL3940DD956CDF0622"
-      }
+        "lectures": "https://www.youtube.com/playlist?list=PL3940DD956CDF0622",
+        "pdf": "https://stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        4,
+        18
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "mit-numerical-methods",
@@ -293,7 +387,9 @@
       "url": "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["numerical-methods"],
+      "skills": [
+        "numerical-methods"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Numerical methods for scientific computing",
@@ -304,7 +400,12 @@
         "Apply to financial calculations"
       ],
       "nuclearRelevance": "Core numerical methods you use in nuclear engineering",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        4
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "stochastic-calculus-mit",
@@ -312,7 +413,9 @@
       "url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["stochastic-calculus"],
+      "skills": [
+        "stochastic-calculus"
+      ],
       "estimatedHours": 50,
       "free": true,
       "description": "Stochastic calculus applied to finance",
@@ -323,7 +426,10 @@
         "Apply to options pricing"
       ],
       "nuclearRelevance": "Monte Carlo methods familiar from nuclear engineering",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "linear-algebra-done-right",
@@ -331,7 +437,9 @@
       "url": "https://linear.axler.net/",
       "type": "book",
       "difficulty": "intermediate",
-      "skills": ["linear-algebra"],
+      "skills": [
+        "linear-algebra"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Axler's approach to linear algebra - proof-based",
@@ -342,7 +450,10 @@
         "Build mathematical maturity"
       ],
       "nuclearRelevance": "Rigorous mathematical thinking",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "think-stats",
@@ -350,20 +461,33 @@
       "url": "https://greenteapress.com/thinkstats2/",
       "type": "book",
       "difficulty": "intermediate",
-      "skills": ["statistics"],
+      "skills": [
+        "statistics",
+        "python"
+      ],
       "estimatedHours": 20,
       "free": true,
-      "description": "Statistics for Python programmers",
+      "description": "Statistics for programmers. Free book and code on GitHub.",
       "actionSteps": [
         "Read all chapters",
         "Complete all exercises in Python",
         "Focus on: exploratory data analysis, hypothesis testing",
-        "Apply to real data sets"
+        "Apply to real data sets",
+        "Complete all exercises",
+        "Implement statistical tests",
+        "Apply to real data"
       ],
-      "nuclearRelevance": "Practical statistics with Python",
+      "nuclearRelevance": "Practical statistics for data analysis",
       "specificLinks": {
-        "pdf": "https://greenteapress.com/thinkstats2/thinkstats2.pdf"
-      }
+        "pdf": "https://greenteapress.com/thinkstats2/thinkstats2.pdf",
+        "repository": "https://github.com/AllenDowney/ThinkStats2",
+        "alternate": "https://github.com/AllenDowney/ThinkStats2"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        6
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "think-bayes",
@@ -371,20 +495,34 @@
       "url": "https://greenteapress.com/thinkbayes/",
       "type": "book",
       "difficulty": "intermediate",
-      "skills": ["probability", "statistics"],
+      "skills": [
+        "probability",
+        "statistics",
+        "python"
+      ],
       "estimatedHours": 20,
       "free": true,
-      "description": "Bayesian statistics for Python programmers",
+      "description": "Bayesian statistics for programmers. Free book on GitHub.",
       "actionSteps": [
         "Read all chapters",
         "Complete all exercises in Python",
         "Focus on: Bayesian inference, posterior distributions",
-        "Apply to updating beliefs with data"
+        "Apply to updating beliefs with data",
+        "Complete all exercises",
+        "Implement Bayesian models",
+        "Apply to decision making"
       ],
       "nuclearRelevance": "Bayesian methods for uncertainty quantification",
       "specificLinks": {
-        "pdf": "https://greenteapress.com/thinkbayes/thinkbayes.pdf"
-      }
+        "pdf": "https://greenteapress.com/thinkbayes/thinkbayes.pdf",
+        "repository": "https://github.com/AllenDowney/ThinkBayes",
+        "alternate": "https://github.com/AllenDowney/ThinkBayes"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        8
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "math-for-ml",
@@ -392,7 +530,11 @@
       "url": "https://mml-book.github.io/",
       "type": "book",
       "difficulty": "intermediate",
-      "skills": ["linear-algebra", "calculus", "probability"],
+      "skills": [
+        "linear-algebra",
+        "calculus",
+        "probability"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Mathematical foundations for ML",
@@ -405,7 +547,10 @@
       "nuclearRelevance": "Bridge between engineering math and ML math",
       "specificLinks": {
         "pdf": "https://mml-book.github.io/book/mml-book.pdf"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "pauls-math-notes",
@@ -413,7 +558,10 @@
       "url": "https://tutorial.math.lamar.edu/",
       "type": "reference",
       "difficulty": "beginner",
-      "skills": ["calculus", "linear-algebra"],
+      "skills": [
+        "calculus",
+        "linear-algebra"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Quick reference for calculus and algebra",
@@ -424,7 +572,10 @@
         "Supplement main courses"
       ],
       "nuclearRelevance": "Quick reference for math review",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "python-official",
@@ -432,7 +583,9 @@
       "url": "https://docs.python.org/3/tutorial/",
       "type": "documentation",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Official Python documentation and tutorial",
@@ -443,7 +596,12 @@
         "Use as reference"
       ],
       "nuclearRelevance": "Official reference for Python",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        1
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "automate-boring-stuff",
@@ -451,7 +609,9 @@
       "url": "https://automatetheboringstuff.com/",
       "type": "book",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Practical Python programming for beginners",
@@ -462,7 +622,12 @@
         "Build practical scripts"
       ],
       "nuclearRelevance": "Practical Python skills for data processing",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        1
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "python-for-everybody",
@@ -470,7 +635,9 @@
       "url": "https://www.py4e.com/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Complete Python course for beginners",
@@ -483,7 +650,10 @@
       "nuclearRelevance": "Solid Python foundation",
       "specificLinks": {
         "lectures": "https://www.py4e.com/lectures"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "real-python",
@@ -491,7 +661,9 @@
       "url": "https://realpython.com/",
       "type": "tutorial",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "High-quality Python tutorials and articles",
@@ -502,15 +674,20 @@
         "Apply to real projects"
       ],
       "nuclearRelevance": "Practical Python skills",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "corey-schafer",
       "title": "Corey Schafer Python YouTube",
-      "url": "https://www.youtube.com/user/schaaborern",
+      "url": "https://www.youtube.com/@coreyms",
       "type": "video",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "Clear Python tutorials on YouTube",
@@ -523,7 +700,10 @@
       "nuclearRelevance": "Clear explanations build strong foundation",
       "specificLinks": {
         "playlists": "https://www.youtube.com/@coreyms/playlists"
-      }
+      },
+      "verified": false,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-60001",
@@ -531,7 +711,9 @@
       "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "MIT's introductory CS course with Python",
@@ -542,7 +724,12 @@
         "Build programming foundation"
       ],
       "nuclearRelevance": "Solid CS foundation",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        1
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "mit-60002",
@@ -550,7 +737,10 @@
       "url": "https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["python", "optimization"],
+      "skills": [
+        "python",
+        "optimization"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Data science and computational thinking with Python",
@@ -561,7 +751,10 @@
         "Apply to real problems"
       ],
       "nuclearRelevance": "Computational thinking for engineering problems",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "cs50",
@@ -569,7 +762,10 @@
       "url": "https://cs50.harvard.edu/x/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["python", "data-structures"],
+      "skills": [
+        "python",
+        "data-structures"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Harvard's famous CS course",
@@ -580,7 +776,10 @@
         "Build complete applications"
       ],
       "nuclearRelevance": "Comprehensive CS foundation",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "leetcode",
@@ -588,7 +787,10 @@
       "url": "https://leetcode.com/",
       "type": "practice",
       "difficulty": "intermediate",
-      "skills": ["python", "data-structures"],
+      "skills": [
+        "python",
+        "data-structures"
+      ],
       "estimatedHours": 50,
       "free": true,
       "description": "Coding interview preparation platform",
@@ -601,7 +803,14 @@
       "nuclearRelevance": "Essential for coding interviews",
       "specificLinks": {
         "studyPlans": "https://leetcode.com/study-plan/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        2,
+        26,
+        30
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "hackerrank",
@@ -609,7 +818,10 @@
       "url": "https://www.hackerrank.com/",
       "type": "practice",
       "difficulty": "beginner",
-      "skills": ["python", "sql"],
+      "skills": [
+        "python",
+        "sql"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Coding practice and interview preparation",
@@ -620,7 +832,10 @@
         "Build profile with certifications"
       ],
       "nuclearRelevance": "Good for building coding confidence",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "codewars",
@@ -628,7 +843,9 @@
       "url": "https://www.codewars.com/",
       "type": "practice",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "Coding challenges in multiple languages",
@@ -639,7 +856,10 @@
         "Practice regularly"
       ],
       "nuclearRelevance": "Build coding fluency",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "exercism-python",
@@ -647,7 +867,9 @@
       "url": "https://exercism.org/tracks/python",
       "type": "practice",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Mentored Python learning with exercises",
@@ -658,7 +880,10 @@
         "Build strong Python habits"
       ],
       "nuclearRelevance": "High-quality Python learning",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "learncpp",
@@ -666,18 +891,34 @@
       "url": "https://www.learncpp.com/",
       "type": "tutorial",
       "difficulty": "beginner",
-      "skills": ["cpp"],
-      "estimatedHours": 40,
+      "skills": [
+        "cpp"
+      ],
+      "estimatedHours": 60,
       "free": true,
-      "description": "Comprehensive C++ tutorial",
+      "description": "Comprehensive free C++ tutorial. Covers everything from basics to advanced topics.",
       "actionSteps": [
         "Read all chapters",
         "Complete all quizzes",
         "Focus on: memory management, templates, STL",
-        "Build solid C++ foundation"
+        "Build solid C++ foundation",
+        "Read all chapters sequentially",
+        "Complete all quizzes and exercises",
+        "Practice with small C++ projects",
+        "Move to LeetCode C++ problems"
       ],
-      "nuclearRelevance": "C++ for performance-critical systems",
-      "specificLinks": {}
+      "nuclearRelevance": "C++ is essential for HFT and quant trading systems",
+      "specificLinks": {
+        "website": "https://www.learncpp.com/"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        10,
+        11,
+        26,
+        30
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "cppreference",
@@ -685,7 +926,9 @@
       "url": "https://en.cppreference.com/",
       "type": "reference",
       "difficulty": "intermediate",
-      "skills": ["cpp"],
+      "skills": [
+        "cpp"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Official C++ reference documentation",
@@ -696,7 +939,10 @@
         "Keep bookmarked for quick access"
       ],
       "nuclearRelevance": "Essential C++ reference",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "cppcon",
@@ -704,7 +950,9 @@
       "url": "https://www.youtube.com/@CppCon",
       "type": "video",
       "difficulty": "intermediate",
-      "skills": ["cpp"],
+      "skills": [
+        "cpp"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "C++ conference talks and tutorials",
@@ -715,7 +963,10 @@
         "Apply to your code"
       ],
       "nuclearRelevance": "Modern C++ practices",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-6172",
@@ -723,7 +974,10 @@
       "url": "https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["cpp", "data-structures"],
+      "skills": [
+        "cpp",
+        "data-structures"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Performance optimization and systems programming",
@@ -734,7 +988,10 @@
         "Build high-performance code"
       ],
       "nuclearRelevance": "Performance engineering for trading systems",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "sqlbolt",
@@ -742,7 +999,9 @@
       "url": "https://sqlbolt.com/",
       "type": "interactive",
       "difficulty": "beginner",
-      "skills": ["sql"],
+      "skills": [
+        "sql"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Interactive SQL tutorial",
@@ -753,7 +1012,10 @@
         "Build SQL fluency"
       ],
       "nuclearRelevance": "Essential for data extraction",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mode-sql",
@@ -761,7 +1023,9 @@
       "url": "https://mode.com/sql-tutorial/",
       "type": "tutorial",
       "difficulty": "beginner",
-      "skills": ["sql"],
+      "skills": [
+        "sql"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Practical SQL tutorial with real data",
@@ -772,7 +1036,10 @@
         "Apply to real datasets"
       ],
       "nuclearRelevance": "Practical SQL for data analysis",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "sqlzoo",
@@ -780,7 +1047,9 @@
       "url": "https://sqlzoo.net/",
       "type": "interactive",
       "difficulty": "beginner",
-      "skills": ["sql"],
+      "skills": [
+        "sql"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Interactive SQL exercises",
@@ -791,7 +1060,10 @@
         "Build SQL confidence"
       ],
       "nuclearRelevance": "SQL practice for data work",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "postgresql-tutorial",
@@ -799,7 +1071,9 @@
       "url": "https://www.postgresqltutorial.com/",
       "type": "tutorial",
       "difficulty": "beginner",
-      "skills": ["sql"],
+      "skills": [
+        "sql"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "Complete PostgreSQL tutorial",
@@ -810,7 +1084,10 @@
         "Build production SQL skills"
       ],
       "nuclearRelevance": "Production database skills",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "git-immersion",
@@ -818,7 +1095,9 @@
       "url": "https://gitimmersion.com/",
       "type": "tutorial",
       "difficulty": "beginner",
-      "skills": ["git"],
+      "skills": [
+        "git"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Hands-on Git tutorial",
@@ -829,7 +1108,10 @@
         "Build Git fluency"
       ],
       "nuclearRelevance": "Version control for all projects",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "pro-git",
@@ -837,7 +1119,9 @@
       "url": "https://git-scm.com/book/en/v2",
       "type": "book",
       "difficulty": "beginner",
-      "skills": ["git"],
+      "skills": [
+        "git"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "Comprehensive Git reference",
@@ -848,7 +1132,12 @@
         "Build Git mastery"
       ],
       "nuclearRelevance": "Complete Git reference",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        2
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "github-skills",
@@ -856,7 +1145,9 @@
       "url": "https://skills.github.com/",
       "type": "interactive",
       "difficulty": "beginner",
-      "skills": ["git"],
+      "skills": [
+        "git"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Interactive GitHub tutorials",
@@ -867,7 +1158,10 @@
         "Build GitHub workflow"
       ],
       "nuclearRelevance": "GitHub for collaboration",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-6006",
@@ -875,7 +1169,9 @@
       "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["data-structures"],
+      "skills": [
+        "data-structures"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "MIT's algorithms course",
@@ -886,7 +1182,10 @@
         "Build algorithmic thinking"
       ],
       "nuclearRelevance": "Algorithmic thinking for problem solving",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "algorithms-princeton",
@@ -894,7 +1193,9 @@
       "url": "https://www.coursera.org/learn/algorithms-part1",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["data-structures"],
+      "skills": [
+        "data-structures"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Robert Sedgewick's algorithms course",
@@ -907,7 +1208,10 @@
       "nuclearRelevance": "Essential algorithms for technical interviews",
       "specificLinks": {
         "part2": "https://www.coursera.org/learn/algorithms-part2"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "visualgo",
@@ -915,7 +1219,9 @@
       "url": "https://visualgo.net/",
       "type": "interactive",
       "difficulty": "beginner",
-      "skills": ["data-structures"],
+      "skills": [
+        "data-structures"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Visualize algorithms and data structures",
@@ -926,7 +1232,10 @@
         "Build visual intuition"
       ],
       "nuclearRelevance": "Visual learning for algorithms",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-15401",
@@ -934,7 +1243,9 @@
       "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["financial-markets"],
+      "skills": [
+        "financial-markets"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "MIT's finance theory course",
@@ -945,7 +1256,13 @@
         "Build finance foundation"
       ],
       "nuclearRelevance": "Introduction to financial thinking",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        9,
+        10
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "yale-financial-markets",
@@ -953,7 +1270,9 @@
       "url": "https://www.coursera.org/learn/financial-markets-global",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["financial-markets"],
+      "skills": [
+        "financial-markets"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Comprehensive overview of financial markets",
@@ -964,7 +1283,12 @@
         "Build market knowledge"
       ],
       "nuclearRelevance": "Broad market understanding",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        9
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "khan-finance",
@@ -972,7 +1296,9 @@
       "url": "https://www.khanacademy.org/economics-finance-domain",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["financial-markets"],
+      "skills": [
+        "financial-markets"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "Finance fundamentals on Khan Academy",
@@ -983,7 +1309,10 @@
         "Build finance basics"
       ],
       "nuclearRelevance": "Quick finance fundamentals",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "investopedia",
@@ -991,7 +1320,10 @@
       "url": "https://www.investopedia.com/",
       "type": "reference",
       "difficulty": "beginner",
-      "skills": ["financial-markets", "derivatives"],
+      "skills": [
+        "financial-markets",
+        "derivatives"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Financial education and dictionary",
@@ -1002,7 +1334,10 @@
         "Use as reference"
       ],
       "nuclearRelevance": "Quick reference for financial terms",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "bloomberg-mc",
@@ -1010,7 +1345,9 @@
       "url": "https://www.bloomberg.com/professional/product/bloomberg-market-concepts/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["financial-markets"],
+      "skills": [
+        "financial-markets"
+      ],
       "estimatedHours": 8,
       "free": true,
       "description": "Free Bloomberg certification course",
@@ -1021,7 +1358,10 @@
         "Add to resume"
       ],
       "nuclearRelevance": "Industry-recognized certification",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-15433",
@@ -1029,7 +1369,9 @@
       "url": "https://ocw.mit.edu/courses/15-433-investments-spring-2003/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["portfolio-theory"],
+      "skills": [
+        "portfolio-theory"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "MIT's investments course",
@@ -1040,7 +1382,10 @@
         "Apply to portfolio construction"
       ],
       "nuclearRelevance": "Portfolio theory fundamentals",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-15450",
@@ -1048,7 +1393,10 @@
       "url": "https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["derivatives", "risk-management"],
+      "skills": [
+        "derivatives",
+        "risk-management"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Quantitative finance analytics",
@@ -1059,72 +1407,119 @@
         "Apply to financial engineering"
       ],
       "nuclearRelevance": "Quantitative finance methods",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "coursera-fe-1",
-      "title": "Coursera Financial Engineering and Risk Management",
+      "title": "Financial Engineering and Risk Management Part 1 (Columbia)",
       "url": "https://www.coursera.org/learn/financial-engineering-1",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["derivatives"],
-      "estimatedHours": 25,
-      "free": true,
-      "description": "Columbia's financial engineering course",
+      "skills": [
+        "derivatives",
+        "probability",
+        "risk-management"
+      ],
+      "estimatedHours": 40,
+      "free": false,
+      "description": "Columbia's legendary FE course. Covers derivatives, fixed income, Black-Scholes. Coursera Plus included.",
       "actionSteps": [
         "Watch all lectures",
         "Complete all assignments",
         "Focus on: options pricing, fixed income",
-        "Apply to derivatives"
+        "Apply to derivatives",
+        "Complete all modules",
+        "Do all math assignments",
+        "Implement pricing models in Python",
+        "Understand risk-neutral pricing deeply"
       ],
-      "nuclearRelevance": "Financial engineering fundamentals",
-      "specificLinks": {}
+      "nuclearRelevance": "Same mathematical foundations as nuclear engineering - stochastic processes, numerical methods",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/financial-engineering-1"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        17
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "coursera-portfolio",
-      "title": "Coursera Portfolio Selection and Risk Management",
+      "title": "Portfolio Selection and Risk Management (Johns Hopkins)",
       "url": "https://www.coursera.org/learn/portfolio-selection-risk-management",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["portfolio-theory", "risk-management"],
-      "estimatedHours": 20,
-      "free": true,
-      "description": "Portfolio construction and risk management",
+      "skills": [
+        "portfolio-theory",
+        "risk-management",
+        "optimization"
+      ],
+      "estimatedHours": 25,
+      "free": false,
+      "description": "Portfolio theory, CAPM, factor models, risk management. Coursera Plus included.",
       "actionSteps": [
         "Watch all lectures",
         "Complete all assignments",
         "Focus on: Markowitz, factor models, risk measures",
-        "Apply to portfolio optimization"
+        "Apply to portfolio optimization",
+        "Complete all modules",
+        "Implement Markowitz optimization",
+        "Build factor models",
+        "Apply to real portfolio construction"
       ],
-      "nuclearRelevance": "Portfolio optimization methods",
-      "specificLinks": {}
+      "nuclearRelevance": "Optimization under uncertainty - same framework as nuclear safety analysis",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/portfolio-selection-risk-management"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        18
+      ],
+      "curriculumRole": "specialization"
     },
     {
       "id": "coursera-risk-mgmt",
       "title": "Coursera Financial Risk Management",
-      "url": "https://www.coursera.org/learn/financial-risk-management",
+      "url": "https://www.coursera.org/learn/financial-risk-management-with-r",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["risk-management"],
-      "estimatedHours": 20,
-      "free": true,
-      "description": "Risk management with R",
+      "skills": [
+        "risk-management",
+        "statistics",
+        "probability"
+      ],
+      "estimatedHours": 25,
+      "free": false,
+      "description": "Risk management frameworks, VaR, stress testing. Coursera Plus included.",
       "actionSteps": [
         "Watch all lectures",
         "Complete all assignments",
         "Focus on: VaR, CVaR, stress testing",
-        "Apply to risk measurement"
+        "Apply to risk measurement",
+        "Complete all modules",
+        "Implement VaR calculations",
+        "Build stress testing scenarios",
+        "Apply to portfolio risk analysis"
       ],
-      "nuclearRelevance": "Risk management methods",
-      "specificLinks": {}
+      "nuclearRelevance": "Risk assessment methodology directly applicable to nuclear safety",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "mit-15480",
       "title": "MIT 15.480 Quantitative Finance",
-      "url": "https://ocw.mit.edu/courses/15-480-quantitative-finance-spring-2013/",
+      "url": "https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["stochastic-calculus", "derivatives"],
+      "skills": [
+        "stochastic-calculus",
+        "derivatives"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Advanced quantitative finance",
@@ -1135,7 +1530,10 @@
         "Apply to complex derivatives"
       ],
       "nuclearRelevance": "Advanced quantitative methods",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "quantconnect-tutorials",
@@ -1143,7 +1541,10 @@
       "url": "https://www.quantconnect.com/tutorials/",
       "type": "tutorial",
       "difficulty": "intermediate",
-      "skills": ["financial-markets", "python"],
+      "skills": [
+        "financial-markets",
+        "python"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Algorithmic trading tutorials",
@@ -1154,7 +1555,13 @@
         "Apply to paper trading"
       ],
       "nuclearRelevance": "Practical trading skills",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        21,
+        24
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "yfinance",
@@ -1162,7 +1569,10 @@
       "url": "https://pypi.org/project/yfinance/",
       "type": "api",
       "difficulty": "beginner",
-      "skills": ["python", "financial-markets"],
+      "skills": [
+        "python",
+        "financial-markets"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Python library for Yahoo Finance data",
@@ -1176,7 +1586,12 @@
       "specificLinks": {
         "documentation": "https://pypi.org/project/yfinance/",
         "github": "https://github.com/ranaroussi/yfinance"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        21
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "alpha-vantage",
@@ -1184,7 +1599,10 @@
       "url": "https://www.alphavantage.co/",
       "type": "api",
       "difficulty": "beginner",
-      "skills": ["python", "financial-markets"],
+      "skills": [
+        "python",
+        "financial-markets"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Free stock market data API",
@@ -1197,7 +1615,10 @@
       "nuclearRelevance": "Free market data for analysis",
       "specificLinks": {
         "documentation": "https://www.alphavantage.co/documentation/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "fred-api",
@@ -1205,7 +1626,10 @@
       "url": "https://fred.stlouisfed.org/",
       "type": "api",
       "difficulty": "beginner",
-      "skills": ["python", "financial-markets"],
+      "skills": [
+        "python",
+        "financial-markets"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Federal Reserve Economic Data API",
@@ -1218,7 +1642,12 @@
       "nuclearRelevance": "Economic data for macro analysis",
       "specificLinks": {
         "api": "https://fred.stlouisfed.org/docs/api/fred/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        23
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "andrew-ng-ml",
@@ -1226,7 +1655,9 @@
       "url": "https://www.coursera.org/learn/machine-learning",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["supervised-learning"],
+      "skills": [
+        "supervised-learning"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "The legendary ML course by Andrew Ng",
@@ -1237,7 +1668,12 @@
         "Build ML foundation"
       ],
       "nuclearRelevance": "ML fundamentals for quantitative work",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        13
+      ],
+      "curriculumRole": "specialization"
     },
     {
       "id": "andrew-ng-dl",
@@ -1245,7 +1681,9 @@
       "url": "https://www.coursera.org/specializations/deep-learning",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["deep-learning"],
+      "skills": [
+        "deep-learning"
+      ],
       "estimatedHours": 50,
       "free": true,
       "description": "Comprehensive deep learning course",
@@ -1256,7 +1694,10 @@
         "Build deep learning skills"
       ],
       "nuclearRelevance": "Deep learning for complex patterns",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "fast-ai",
@@ -1264,7 +1705,9 @@
       "url": "https://course.fast.ai/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["deep-learning"],
+      "skills": [
+        "deep-learning"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Top-down approach to deep learning",
@@ -1275,7 +1718,10 @@
         "Build real projects"
       ],
       "nuclearRelevance": "Practical deep learning skills",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "stanford-cs229",
@@ -1283,7 +1729,9 @@
       "url": "https://cs229.stanford.edu/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["supervised-learning"],
+      "skills": [
+        "supervised-learning"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Stanford's machine learning course",
@@ -1294,7 +1742,10 @@
         "Build theoretical foundation"
       ],
       "nuclearRelevance": "Rigorous ML theory",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-6036",
@@ -1302,7 +1753,9 @@
       "url": "https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["supervised-learning"],
+      "skills": [
+        "supervised-learning"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "MIT's introductory ML course",
@@ -1313,7 +1766,10 @@
         "Build ML foundation"
       ],
       "nuclearRelevance": "ML fundamentals",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "kaggle-learn",
@@ -1321,7 +1777,10 @@
       "url": "https://www.kaggle.com/learn",
       "type": "interactive",
       "difficulty": "beginner",
-      "skills": ["python", "supervised-learning"],
+      "skills": [
+        "python",
+        "supervised-learning"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Free micro-courses on data science",
@@ -1332,7 +1791,12 @@
         "Build practical skills"
       ],
       "nuclearRelevance": "Practical data science skills",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        13
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "kaggle-competitions",
@@ -1340,7 +1804,10 @@
       "url": "https://www.kaggle.com/competitions",
       "type": "practice",
       "difficulty": "intermediate",
-      "skills": ["supervised-learning", "deep-learning"],
+      "skills": [
+        "supervised-learning",
+        "deep-learning"
+      ],
       "estimatedHours": 50,
       "free": true,
       "description": "Data science competitions",
@@ -1351,15 +1818,23 @@
         "Learn from top solutions"
       ],
       "nuclearRelevance": "Real-world ML practice",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        14,
+        24
+      ],
+      "curriculumRole": "specialization"
     },
     {
       "id": "scikit-learn-docs",
       "title": "Scikit-learn Documentation",
-      "url": "https://scikit-learn.org/stable/",
+      "url": "https://scikit-learn.org/stable/getting_started.html",
       "type": "documentation",
       "difficulty": "intermediate",
-      "skills": ["supervised-learning"],
+      "skills": [
+        "supervised-learning"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Official scikit-learn documentation",
@@ -1371,9 +1846,15 @@
       ],
       "nuclearRelevance": "Essential ML library reference",
       "specificLinks": {
-        "userGuide": "https://scikit-learn.org/stable/user_guide.html",
-        "tutorials": "https://scikit-learn.org/stable/tutorial/"
-      }
+        "userGuide": "https://scikit-learn.org/stable/user_guide.html"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        11,
+        13,
+        14
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "pytorch-tutorials",
@@ -1381,7 +1862,10 @@
       "url": "https://pytorch.org/tutorials/",
       "type": "tutorial",
       "difficulty": "intermediate",
-      "skills": ["deep-learning", "pytorch"],
+      "skills": [
+        "deep-learning",
+        "pytorch"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Official PyTorch tutorials",
@@ -1392,7 +1876,12 @@
         "Apply to real problems"
       ],
       "nuclearRelevance": "Deep learning framework",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        19
+      ],
+      "curriculumRole": "specialization"
     },
     {
       "id": "pytorch-docs",
@@ -1400,7 +1889,10 @@
       "url": "https://pytorch.org/docs/stable/",
       "type": "documentation",
       "difficulty": "intermediate",
-      "skills": ["deep-learning", "pytorch"],
+      "skills": [
+        "deep-learning",
+        "pytorch"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Official PyTorch documentation",
@@ -1411,7 +1903,10 @@
         "Keep bookmarked"
       ],
       "nuclearRelevance": "Essential PyTorch reference",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "tensorflow-tutorials",
@@ -1419,7 +1914,9 @@
       "url": "https://www.tensorflow.org/tutorials",
       "type": "tutorial",
       "difficulty": "intermediate",
-      "skills": ["deep-learning"],
+      "skills": [
+        "deep-learning"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Official TensorFlow tutorials",
@@ -1430,7 +1927,10 @@
         "Apply to real problems"
       ],
       "nuclearRelevance": "Alternative deep learning framework",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "huggingface-courses",
@@ -1438,7 +1938,10 @@
       "url": "https://huggingface.co/learn",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["nlp", "deep-learning"],
+      "skills": [
+        "nlp",
+        "deep-learning"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "NLP and transformer courses",
@@ -1449,7 +1952,12 @@
         "Apply to text analysis"
       ],
       "nuclearRelevance": "NLP for sentiment analysis",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        19
+      ],
+      "curriculumRole": "specialization"
     },
     {
       "id": "mit-6s191",
@@ -1457,7 +1965,9 @@
       "url": "https://introtodeeplearning.com/",
       "type": "course",
       "difficulty": "intermediate",
-      "skills": ["deep-learning"],
+      "skills": [
+        "deep-learning"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "MIT's deep learning course",
@@ -1468,15 +1978,20 @@
         "Build DL foundation"
       ],
       "nuclearRelevance": "Deep learning fundamentals",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "stanford-cs231n",
       "title": "Stanford CS231n CNN for Visual Recognition",
-      "url": "http://cs231n.stanford.edu/",
+      "url": "https://cs231n.stanford.edu/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["deep-learning"],
+      "skills": [
+        "deep-learning"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Stanford's computer vision course",
@@ -1487,15 +2002,21 @@
         "Build CV skills"
       ],
       "nuclearRelevance": "Computer vision for image analysis",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "stanford-cs224n",
       "title": "Stanford CS224n NLP with Deep Learning",
-      "url": "http://web.stanford.edu/class/cs224n/",
+      "url": "https://web.stanford.edu/class/cs224n/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["nlp", "deep-learning"],
+      "skills": [
+        "nlp",
+        "deep-learning"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Stanford's NLP course",
@@ -1506,15 +2027,20 @@
         "Build NLP skills"
       ],
       "nuclearRelevance": "NLP for text analysis",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "sutton-barto",
       "title": "Reinforcement Learning: An Introduction (Free)",
-      "url": "http://incompleteideas.net/book/the-book-2nd.html",
+      "url": "https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf",
       "type": "book",
       "difficulty": "advanced",
-      "skills": ["reinforcement-learning"],
+      "skills": [
+        "reinforcement-learning"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "The RL bible by Sutton and Barto",
@@ -1526,8 +2052,11 @@
       ],
       "nuclearRelevance": "Sequential decision making",
       "specificLinks": {
-        "pdf": "http://incompleteideas.net/book/RLbook2020.pdf"
-      }
+        "pdf": "https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "mit-6s094",
@@ -1535,7 +2064,9 @@
       "url": "https://rail.eecs.berkeley.edu/deeprlcourse/",
       "type": "course",
       "difficulty": "advanced",
-      "skills": ["reinforcement-learning"],
+      "skills": [
+        "reinforcement-learning"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Deep RL course from UC Berkeley",
@@ -1546,7 +2077,10 @@
         "Apply to trading"
       ],
       "nuclearRelevance": "RL for sequential decisions",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "statsmodels-ts",
@@ -1554,7 +2088,9 @@
       "url": "https://www.statsmodels.org/stable/tsa.html",
       "type": "documentation",
       "difficulty": "intermediate",
-      "skills": ["time-series"],
+      "skills": [
+        "time-series"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Statsmodels time series documentation",
@@ -1565,7 +2101,13 @@
         "Apply to financial time series"
       ],
       "nuclearRelevance": "Time series for financial data",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        12,
+        15
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "prophet",
@@ -1573,7 +2115,9 @@
       "url": "https://facebook.github.io/prophet/",
       "type": "tool",
       "difficulty": "intermediate",
-      "skills": ["time-series"],
+      "skills": [
+        "time-series"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Time series forecasting library",
@@ -1584,7 +2128,12 @@
         "Build forecasting models"
       ],
       "nuclearRelevance": "Easy time series forecasting",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        15
+      ],
+      "curriculumRole": "specialization"
     },
     {
       "id": "machinelearningmastery",
@@ -1592,7 +2141,10 @@
       "url": "https://machinelearningmastery.com/",
       "type": "tutorial",
       "difficulty": "beginner",
-      "skills": ["supervised-learning", "time-series"],
+      "skills": [
+        "supervised-learning",
+        "time-series"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "Practical ML tutorials and guides",
@@ -1603,7 +2155,10 @@
         "Apply to real problems"
       ],
       "nuclearRelevance": "Practical ML guides",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "jalammar-transformer",
@@ -1611,7 +2166,10 @@
       "url": "https://jalammar.github.io/illustrated-transformer/",
       "type": "article",
       "difficulty": "intermediate",
-      "skills": ["deep-learning", "nlp"],
+      "skills": [
+        "deep-learning",
+        "nlp"
+      ],
       "estimatedHours": 2,
       "free": true,
       "description": "Visual explanation of transformers",
@@ -1622,7 +2180,10 @@
         "Apply to NLP tasks"
       ],
       "nuclearRelevance": "Understanding modern AI",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "pandas-docs",
@@ -1630,7 +2191,9 @@
       "url": "https://pandas.pydata.org/docs/",
       "type": "documentation",
       "difficulty": "beginner",
-      "skills": ["pandas-numpy"],
+      "skills": [
+        "pandas-numpy"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Official Pandas documentation",
@@ -1643,7 +2206,10 @@
       "nuclearRelevance": "Essential data library",
       "specificLinks": {
         "gettingStarted": "https://pandas.pydata.org/docs/getting_started/index.html"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "numpy-docs",
@@ -1651,7 +2217,9 @@
       "url": "https://numpy.org/doc/",
       "type": "documentation",
       "difficulty": "beginner",
-      "skills": ["pandas-numpy"],
+      "skills": [
+        "pandas-numpy"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Official NumPy documentation",
@@ -1664,7 +2232,12 @@
       "nuclearRelevance": "Numerical computing foundation",
       "specificLinks": {
         "userGuide": "https://numpy.org/doc/stable/user/index.html"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        3
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "matplotlib-docs",
@@ -1672,7 +2245,9 @@
       "url": "https://matplotlib.org/stable/",
       "type": "documentation",
       "difficulty": "beginner",
-      "skills": ["matplotlib-seaborn"],
+      "skills": [
+        "matplotlib-seaborn"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Official Matplotlib documentation",
@@ -1685,7 +2260,10 @@
       "nuclearRelevance": "Data visualization",
       "specificLinks": {
         "tutorials": "https://matplotlib.org/stable/tutorials/index.html"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "seaborn-docs",
@@ -1693,7 +2271,9 @@
       "url": "https://seaborn.pydata.org/",
       "type": "documentation",
       "difficulty": "beginner",
-      "skills": ["matplotlib-seaborn"],
+      "skills": [
+        "matplotlib-seaborn"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Official Seaborn documentation",
@@ -1706,7 +2286,10 @@
       "nuclearRelevance": "Statistical visualization",
       "specificLinks": {
         "tutorial": "https://seaborn.pydata.org/tutorial.html"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "plotly-docs",
@@ -1714,7 +2297,9 @@
       "url": "https://plotly.com/python/",
       "type": "documentation",
       "difficulty": "intermediate",
-      "skills": ["matplotlib-seaborn"],
+      "skills": [
+        "matplotlib-seaborn"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Interactive visualization library",
@@ -1725,7 +2310,10 @@
         "Build interactive visualizations"
       ],
       "nuclearRelevance": "Interactive data visualization",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "jupyter-docs",
@@ -1733,7 +2321,9 @@
       "url": "https://jupyter.readthedocs.io/",
       "type": "documentation",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 3,
       "free": true,
       "description": "Jupyter notebook documentation",
@@ -1744,7 +2334,10 @@
         "Use for data analysis"
       ],
       "nuclearRelevance": "Essential data science tool",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "google-colab",
@@ -1752,7 +2345,10 @@
       "url": "https://colab.research.google.com/",
       "type": "tool",
       "difficulty": "beginner",
-      "skills": ["python", "deep-learning"],
+      "skills": [
+        "python",
+        "deep-learning"
+      ],
       "estimatedHours": 2,
       "free": true,
       "description": "Free cloud Jupyter notebooks with GPU",
@@ -1763,7 +2359,10 @@
         "Access free GPU"
       ],
       "nuclearRelevance": "Free GPU for deep learning",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "vscode-python",
@@ -1771,7 +2370,9 @@
       "url": "https://code.visualstudio.com/docs/python/python-tutorial",
       "type": "tool",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 3,
       "free": true,
       "description": "Python development in VS Code",
@@ -1782,7 +2383,10 @@
         "Use for all Python work"
       ],
       "nuclearRelevance": "Primary development environment",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "streamlit",
@@ -1790,7 +2394,9 @@
       "url": "https://streamlit.io/",
       "type": "tool",
       "difficulty": "beginner",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Build data apps quickly",
@@ -1803,7 +2409,10 @@
       "nuclearRelevance": "Quick dashboard creation",
       "specificLinks": {
         "docs": "https://docs.streamlit.io/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "docker-tutorial",
@@ -1811,7 +2420,9 @@
       "url": "https://docs.docker.com/get-started/",
       "type": "tutorial",
       "difficulty": "intermediate",
-      "skills": ["python"],
+      "skills": [
+        "python"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Docker containerization tutorial",
@@ -1822,7 +2433,10 @@
         "Containerize applications"
       ],
       "nuclearRelevance": "Deployment and reproducibility",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "mit-2201",
@@ -1830,7 +2444,9 @@
       "url": "https://ocw.mit.edu/courses/22-01-introduction-to-nuclear-engineering-and-ionizing-radiation-fall-2016/",
       "type": "course",
       "difficulty": "beginner",
-      "skills": ["numerical-methods"],
+      "skills": [
+        "numerical-methods"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "MIT's nuclear engineering introduction",
@@ -1841,7 +2457,10 @@
         "Bridge to quant finance"
       ],
       "nuclearRelevance": "Your core background - leverage it",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "openmc",
@@ -1849,7 +2468,9 @@
       "url": "https://openmc.org/",
       "type": "tool",
       "difficulty": "advanced",
-      "skills": ["numerical-methods"],
+      "skills": [
+        "numerical-methods"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "Open-source Monte Carlo particle transport",
@@ -1862,7 +2483,12 @@
       "nuclearRelevance": "Monte Carlo methods you know",
       "specificLinks": {
         "docs": "https://docs.openmc.org/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        23
+      ],
+      "curriculumRole": "specialization"
     },
     {
       "id": "pymc",
@@ -1870,7 +2496,10 @@
       "url": "https://pymc.io/",
       "type": "tool",
       "difficulty": "intermediate",
-      "skills": ["probability", "statistics"],
+      "skills": [
+        "probability",
+        "statistics"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Bayesian modeling in Python",
@@ -1883,7 +2512,12 @@
       "nuclearRelevance": "Bayesian methods for uncertainty",
       "specificLinks": {
         "docs": "https://www.pymc.io/projects/docs/en/stable/"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        8
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "quantguide",
@@ -1891,18 +2525,39 @@
       "url": "https://www.quantguide.io/",
       "type": "practice",
       "difficulty": "intermediate",
-      "skills": ["probability", "statistics"],
-      "estimatedHours": 20,
-      "free": true,
-      "description": "Quant interview preparation",
+      "skills": [
+        "probability",
+        "statistics",
+        "interview-prep"
+      ],
+      "estimatedHours": 40,
+      "free": false,
+      "description": "Online quant interview question bank with solutions and explanations.",
       "actionSteps": [
         "Practice probability questions",
         "Practice statistics questions",
         "Practice brain teasers",
-        "Prepare for interviews"
+        "Prepare for interviews",
+        "Practice 5 questions daily",
+        "Focus on probability and statistics",
+        "Track your accuracy rate",
+        "Review failed questions weekly"
       ],
-      "nuclearRelevance": "Interview preparation",
-      "specificLinks": {}
+      "nuclearRelevance": "Systematic interview preparation for quant roles",
+      "specificLinks": {
+        "website": "https://quantguide.io/",
+        "alternate": "https://quantguide.io/"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        24,
+        25,
+        27,
+        29,
+        31,
+        32
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "quantstart",
@@ -1910,7 +2565,10 @@
       "url": "https://www.quantstart.com/articles/",
       "type": "reference",
       "difficulty": "intermediate",
-      "skills": ["financial-markets", "python"],
+      "skills": [
+        "financial-markets",
+        "python"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Quantitative finance articles and guides",
@@ -1921,7 +2579,10 @@
         "Apply to your journey"
       ],
       "nuclearRelevance": "Career guidance for quants",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "arxiv-qfin",
@@ -1929,7 +2590,9 @@
       "url": "https://arxiv.org/list/q-fin/recent",
       "type": "reference",
       "difficulty": "advanced",
-      "skills": ["financial-markets"],
+      "skills": [
+        "financial-markets"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Latest quant finance research papers",
@@ -1940,7 +2603,10 @@
         "Stay current with research"
       ],
       "nuclearRelevance": "Research awareness",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "risk-net",
@@ -1948,7 +2614,9 @@
       "url": "https://www.risk.net/",
       "type": "reference",
       "difficulty": "intermediate",
-      "skills": ["risk-management"],
+      "skills": [
+        "risk-management"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Risk management news and analysis",
@@ -1959,7 +2627,10 @@
         "Build industry knowledge"
       ],
       "nuclearRelevance": "Industry awareness",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "quantocracy",
@@ -1967,7 +2638,9 @@
       "url": "https://quantocracy.com/",
       "type": "reference",
       "difficulty": "intermediate",
-      "skills": ["financial-markets"],
+      "skills": [
+        "financial-markets"
+      ],
       "estimatedHours": 5,
       "free": true,
       "description": "Quant finance blog aggregator",
@@ -1978,7 +2651,10 @@
         "Stay informed"
       ],
       "nuclearRelevance": "Community and learning",
-      "specificLinks": {}
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
     },
     {
       "id": "cfa-investment-foundations",
@@ -1986,7 +2662,10 @@
       "url": "https://www.cfainstitute.org/programs/investment-foundations",
       "type": "certification",
       "difficulty": "beginner",
-      "skills": ["financial-markets", "portfolio-theory"],
+      "skills": [
+        "financial-markets",
+        "portfolio-theory"
+      ],
       "estimatedHours": 60,
       "free": true,
       "description": "Free self-study program covering investment fundamentals - recognized globally",
@@ -2000,7 +2679,10 @@
       "specificLinks": {
         "registration": "https://www.cfainstitute.org/programs/investment-foundations",
         "curriculum": "https://www.cfainstitute.org/programs/investment-foundations/curriculum"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "google-ai-for-everyone",
@@ -2008,7 +2690,9 @@
       "url": "https://www.coursera.org/learn/ai-for-everyone",
       "type": "certification",
       "difficulty": "beginner",
-      "skills": ["supervised-learning"],
+      "skills": [
+        "supervised-learning"
+      ],
       "estimatedHours": 10,
       "free": true,
       "description": "Free Coursera course by Andrew Ng - perfect introduction to AI concepts",
@@ -2021,7 +2705,10 @@
       "nuclearRelevance": "AI fundamentals applicable to nuclear data analysis",
       "specificLinks": {
         "enroll": "https://www.coursera.org/learn/ai-for-everyone"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "ibm-ai-engineering",
@@ -2029,7 +2716,11 @@
       "url": "https://www.coursera.org/professional-certificates/ai-engineer",
       "type": "certification",
       "difficulty": "intermediate",
-      "skills": ["deep-learning", "supervised-learning", "python"],
+      "skills": [
+        "deep-learning",
+        "supervised-learning",
+        "python"
+      ],
       "estimatedHours": 120,
       "free": true,
       "description": "Comprehensive AI engineering program - audit individual courses for free",
@@ -2043,7 +2734,10 @@
       "nuclearRelevance": "ML engineering skills for quantitative work",
       "specificLinks": {
         "courses": "https://www.coursera.org/professional-certificates/ai-engineer"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "tensorflow-developer",
@@ -2051,7 +2745,10 @@
       "url": "https://www.coursera.org/professional-certificates/tensorflow-in-practice",
       "type": "certification",
       "difficulty": "intermediate",
-      "skills": ["deep-learning", "pytorch"],
+      "skills": [
+        "deep-learning",
+        "pytorch"
+      ],
       "estimatedHours": 60,
       "free": true,
       "description": "Free TensorFlow practice course - prepare for official certification",
@@ -2064,7 +2761,10 @@
       "nuclearRelevance": "Deep learning for complex pattern recognition",
       "specificLinks": {
         "enroll": "https://www.coursera.org/professional-certificates/tensorflow-in-practice"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "deeplearning-ai-specialization",
@@ -2072,7 +2772,10 @@
       "url": "https://www.coursera.org/specializations/deep-learning",
       "type": "certification",
       "difficulty": "intermediate",
-      "skills": ["deep-learning", "neural-networks"],
+      "skills": [
+        "deep-learning",
+        "neural-networks"
+      ],
       "estimatedHours": 100,
       "free": true,
       "description": "Andrew Ng's deep learning specialization - audit for free",
@@ -2086,7 +2789,10 @@
       "nuclearRelevance": "Advanced ML for financial modeling",
       "specificLinks": {
         "courses": "https://www.coursera.org/specializations/deep-learning"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "iaea-nuclear-fundamentals",
@@ -2094,7 +2800,9 @@
       "url": "https://www.iaea.org/services/training",
       "type": "certification",
       "difficulty": "beginner",
-      "skills": ["numerical-methods"],
+      "skills": [
+        "numerical-methods"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "IAEA free online courses on nuclear science and technology",
@@ -2107,15 +2815,20 @@
       "nuclearRelevance": "Official nuclear engineering credential",
       "specificLinks": {
         "courses": "https://www.iaea.org/services/training"
-      }
+      },
+      "verified": false,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "ans-nuclear-basics",
       "title": "American Nuclear Society Nuclear Basics",
-      "url": "https://www.ans.org/education/",
+      "url": "https://www.ans.org/nuclear/",
       "type": "certification",
       "difficulty": "beginner",
-      "skills": ["numerical-methods"],
+      "skills": [
+        "numerical-methods"
+      ],
       "estimatedHours": 20,
       "free": true,
       "description": "ANS free educational resources on nuclear science",
@@ -2127,8 +2840,11 @@
       ],
       "nuclearRelevance": "Nuclear engineering fundamentals",
       "specificLinks": {
-        "education": "https://www.ans.org/education/"
-      }
+        "education": "https://www.ans.org/nuclear/"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
     },
     {
       "id": "nrc-training",
@@ -2136,7 +2852,10 @@
       "url": "https://www.nrc.gov/reading-rm/basic-ref/students.html",
       "type": "certification",
       "difficulty": "beginner",
-      "skills": ["risk-management", "probability"],
+      "skills": [
+        "risk-management",
+        "probability"
+      ],
       "estimatedHours": 15,
       "free": true,
       "description": "NRC free training materials on nuclear safety and risk",
@@ -2149,7 +2868,10 @@
       "nuclearRelevance": "Risk assessment skills transferable to finance",
       "specificLinks": {
         "students": "https://www.nrc.gov/reading-rm/basic-ref/students.html"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "kaggle-certificates",
@@ -2157,7 +2879,11 @@
       "url": "https://www.kaggle.com/learn",
       "type": "certification",
       "difficulty": "beginner",
-      "skills": ["python", "supervised-learning", "deep-learning"],
+      "skills": [
+        "python",
+        "supervised-learning",
+        "deep-learning"
+      ],
       "estimatedHours": 30,
       "free": true,
       "description": "Free micro-courses with certificates - Python, ML, Deep Learning, SQL, Pandas",
@@ -2171,7 +2897,10 @@
       "nuclearRelevance": "Practical data science skills",
       "specificLinks": {
         "courses": "https://www.kaggle.com/learn"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "quantconnect-bootcamp",
@@ -2179,7 +2908,10 @@
       "url": "https://www.quantconnect.com/bootcamp",
       "type": "certification",
       "difficulty": "intermediate",
-      "skills": ["python", "financial-markets"],
+      "skills": [
+        "python",
+        "financial-markets"
+      ],
       "estimatedHours": 40,
       "free": true,
       "description": "Free algorithmic trading bootcamp with certificate",
@@ -2192,28 +2924,44 @@
       "nuclearRelevance": "Algorithmic trading skills",
       "specificLinks": {
         "bootcamp": "https://www.quantconnect.com/bootcamp"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
     },
     {
       "id": "coursera-financial-markets",
-      "title": "Coursera Financial Markets Certificate",
+      "title": "Financial Markets (Yale / Robert Shiller)",
       "url": "https://www.coursera.org/learn/financial-markets-global",
       "type": "certification",
       "difficulty": "beginner",
-      "skills": ["financial-markets"],
+      "skills": [
+        "financial-markets",
+        "portfolio-theory"
+      ],
       "estimatedHours": 30,
-      "free": true,
-      "description": "Yale's Financial Markets course with free certificate in audit mode",
+      "free": false,
+      "description": "Nobel laureate Robert Shiller's overview of financial markets. Coursera Plus included.",
       "actionSteps": [
         "Enroll in audit mode (free)",
         "Watch all lectures",
         "Complete all quizzes",
-        "Get certificate of completion"
+        "Get certificate of completion",
+        "Complete all modules",
+        "Understand market structure and instruments",
+        "Learn about behavioral finance",
+        "Apply to market analysis"
       ],
-      "nuclearRelevance": "Financial markets fundamentals",
+      "nuclearRelevance": "Broad financial markets understanding from a top economist",
       "specificLinks": {
-        "enroll": "https://www.coursera.org/learn/financial-markets-global"
-      }
+        "enroll": "https://www.coursera.org/learn/financial-markets-global",
+        "course": "https://www.coursera.org/learn/financial-markets-global"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        9
+      ],
+      "curriculumRole": "core"
     },
     {
       "id": "stanford-cs229-certificate",
@@ -2221,7 +2969,9 @@
       "url": "https://online.stanford.edu/courses/cs229-machine-learning",
       "type": "certification",
       "difficulty": "intermediate",
-      "skills": ["supervised-learning"],
+      "skills": [
+        "supervised-learning"
+      ],
       "estimatedHours": 60,
       "free": true,
       "description": "Stanford's ML course available free online",
@@ -2234,7 +2984,1459 @@
       "nuclearRelevance": "Rigorous ML theory for quantitative work",
       "specificLinks": {
         "course": "https://online.stanford.edu/courses/cs229-machine-learning"
-      }
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
+    },
+    {
+      "id": "hands-on-ml",
+      "title": "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+      "url": "https://github.com/ageron/handson-ml3",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "supervised-learning",
+        "deep-learning",
+        "python"
+      ],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Comprehensive ML book with Jupyter notebooks. Free on GitHub.",
+      "actionSteps": [
+        "Clone the repository",
+        "Read chapters sequentially",
+        "Run all Jupyter notebooks",
+        "Complete exercises"
+      ],
+      "nuclearRelevance": "Best practical ML book - essential for quant career",
+      "specificLinks": {
+        "repository": "https://github.com/ageron/handson-ml3",
+        "notebooks": "https://github.com/ageron/handson-ml3/tree/main"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        14
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "deep-learning-book",
+      "title": "Deep Learning (Ian Goodfellow)",
+      "url": "https://www.deeplearningbook.org/",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "deep-learning"
+      ],
+      "estimatedHours": 60,
+      "free": true,
+      "description": "The deep learning bible. Free PDF and lecture notes on GitHub.",
+      "actionSteps": [
+        "Read Part I: Applied Math and ML Basics",
+        "Read Part II: Deep Networks",
+        "Read Part III: Deep Learning Research",
+        "Complete exercises"
+      ],
+      "nuclearRelevance": "Deep theoretical foundation for deep learning",
+      "specificLinks": {
+        "repository": "https://github.com/janishar/mit-deep-learning-book"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "pattern-recognition",
+      "title": "Pattern Recognition and Machine Learning (Bishop)",
+      "url": "https://github.com/ctgk/PRML",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "supervised-learning",
+        "probability"
+      ],
+      "estimatedHours": 60,
+      "free": true,
+      "description": "Classic ML textbook. Free PDF and Python implementations on GitHub.",
+      "actionSteps": [
+        "Read chapters on probability and distributions",
+        "Study Bayesian methods",
+        "Implement algorithms in Python",
+        "Complete exercises"
+      ],
+      "nuclearRelevance": "Rigorous ML theory for quantitative analysis",
+      "specificLinks": {
+        "repository": "https://github.com/ctgk/PRML",
+        "implementations": "https://github.com/ctgk/PRML/tree/main/notebooks"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "isl",
+      "title": "An Introduction to Statistical Learning (ISLR)",
+      "url": "https://www.statlearning.com/",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "supervised-learning",
+        "statistics"
+      ],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Accessible introduction to statistical learning. Free PDF and R/Python labs.",
+      "actionSteps": [
+        "Download free PDF from website",
+        "Read chapters on regression, classification, resampling",
+        "Complete lab exercises",
+        "Apply to financial data"
+      ],
+      "nuclearRelevance": "Statistical learning foundations for quant work",
+      "specificLinks": {
+        "website": "https://www.statlearning.com/"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "mathematics-for-ml",
+      "title": "Mathematics for Machine Learning",
+      "url": "https://github.com/mml-book/mml-book.github.io",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "linear-algebra",
+        "calculus",
+        "optimization"
+      ],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Essential math for ML. Free PDF and code on GitHub.",
+      "actionSteps": [
+        "Read chapters on linear algebra",
+        "Study calculus and optimization",
+        "Complete exercises",
+        "Apply to ML algorithms"
+      ],
+      "nuclearRelevance": "Mathematical foundations you already have from nuclear engineering",
+      "specificLinks": {
+        "repository": "https://github.com/mml-book/mml-book.github.io",
+        "pdf": "https://mml-book.github.io/book/mml-book.pdf"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "probabilistic-programming",
+      "title": "Probabilistic Programming & Bayesian Methods",
+      "url": "https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "probability",
+        "statistics",
+        "python"
+      ],
+      "estimatedHours": 25,
+      "free": true,
+      "description": "Bayesian methods with Python. Free book on GitHub.",
+      "actionSteps": [
+        "Read all chapters",
+        "Run all Jupyter notebooks",
+        "Implement Bayesian models",
+        "Apply to financial data"
+      ],
+      "nuclearRelevance": "Bayesian methods for uncertainty quantification",
+      "specificLinks": {
+        "repository": "https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "natural-language-processing-with-pytorch",
+      "title": "Natural Language Processing with PyTorch",
+      "url": "https://github.com/joosthub/PyTorchNLPBook",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "deep-learning",
+        "nlp",
+        "python"
+      ],
+      "estimatedHours": 25,
+      "free": true,
+      "description": "NLP with PyTorch. Free book and code on GitHub.",
+      "actionSteps": [
+        "Read all chapters",
+        "Run all code examples",
+        "Implement NLP models",
+        "Apply to text analysis"
+      ],
+      "nuclearRelevance": "NLP for financial text analysis",
+      "specificLinks": {
+        "repository": "https://github.com/joosthub/PyTorchNLPBook"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "reinforcement-learning-an-introduction",
+      "title": "Reinforcement Learning: An Introduction",
+      "url": "https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "reinforcement-learning"
+      ],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "The RL bible by Sutton and Barto. Free online version.",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete all exercises",
+        "Implement RL algorithms",
+        "Apply to trading strategies"
+      ],
+      "nuclearRelevance": "Sequential decision making for trading",
+      "specificLinks": {
+        "website": "https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf",
+        "pdf": "https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "deep-learning-for-coders",
+      "title": "Deep Learning for Coders with fastai and PyTorch",
+      "url": "https://github.com/fastai/fastbook",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "deep-learning",
+        "python"
+      ],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Practical deep learning with fastai. Free book and notebooks on GitHub.",
+      "actionSteps": [
+        "Read all chapters",
+        "Run all Jupyter notebooks",
+        "Complete all exercises",
+        "Build deep learning models"
+      ],
+      "nuclearRelevance": "Practical deep learning for real-world applications",
+      "specificLinks": {
+        "repository": "https://github.com/fastai/fastbook",
+        "website": "https://course.fast.ai/"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "python-data-science-handbook",
+      "title": "Python Data Science Handbook",
+      "url": "https://github.com/jakevdp/PythonDataScienceHandbook",
+      "type": "book",
+      "difficulty": "beginner",
+      "skills": [
+        "python",
+        "pandas-numpy",
+        "matplotlib-seaborn"
+      ],
+      "estimatedHours": 25,
+      "free": true,
+      "description": "Essential Python tools for data science. Free book and notebooks on GitHub.",
+      "actionSteps": [
+        "Read all chapters",
+        "Run all Jupyter notebooks",
+        "Practice with real datasets",
+        "Build data analysis skills"
+      ],
+      "nuclearRelevance": "Essential Python skills for quantitative work",
+      "specificLinks": {
+        "repository": "https://github.com/jakevdp/PythonDataScienceHandbook"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "statistical-learning-with-sparsity",
+      "title": "Statistical Learning with Sparsity",
+      "url": "https://hastie.su.domains/StatLearnSparsity/",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "supervised-learning",
+        "statistics"
+      ],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Advanced statistical learning methods. Free book on GitHub.",
+      "actionSteps": [
+        "Read chapters on LASSO, ridge regression",
+        "Study sparsity methods",
+        "Implement algorithms",
+        "Apply to feature selection"
+      ],
+      "nuclearRelevance": "Advanced methods for feature selection in financial models",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "bayesian-data-analysis",
+      "title": "Bayesian Data Analysis",
+      "url": "https://github.com/avehtari/BDA_course_Aalto",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "probability",
+        "statistics"
+      ],
+      "estimatedHours": 40,
+      "free": true,
+      "description": "Comprehensive Bayesian analysis. Free course materials on GitHub.",
+      "actionSteps": [
+        "Read all chapters",
+        "Complete all exercises",
+        "Implement Bayesian models",
+        "Apply to uncertainty quantification"
+      ],
+      "nuclearRelevance": "Bayesian methods for risk and uncertainty",
+      "specificLinks": {
+        "repository": "https://github.com/avehtari/BDA_course_Aalto"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        8
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "coursera-ml-ng",
+      "title": "Machine Learning Specialization (Andrew Ng)",
+      "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": [
+        "supervised-learning",
+        "python",
+        "optimization"
+      ],
+      "estimatedHours": 80,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Andrew Ng's updated ML course with Python. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all 3 courses in the specialization",
+        "Do all programming assignments",
+        "Apply to financial prediction problems",
+        "Build portfolio projects from course material"
+      ],
+      "nuclearRelevance": "Foundation ML skills for quantitative analysis",
+      "specificLinks": {
+        "course": "https://www.coursera.org/specializations/machine-learning-introduction"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        11
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "coursera-dl-specialization",
+      "title": "Deep Learning Specialization (Andrew Ng)",
+      "url": "https://www.coursera.org/specializations/deep-learning",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "deep-learning",
+        "python",
+        "nlp"
+      ],
+      "estimatedHours": 120,
+      "free": false,
+      "courseraPlus": true,
+      "description": "5-course deep learning specialization. Covers CNNs, RNNs, transformers. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all 5 courses",
+        "Focus on Sequence Models (Course 5) for time series",
+        "Do all programming assignments",
+        "Apply LSTM/Transformer to financial data"
+      ],
+      "nuclearRelevance": "Deep learning for complex pattern recognition in financial data",
+      "specificLinks": {
+        "course": "https://www.coursera.org/specializations/deep-learning"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        19
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "coursera-fe-2",
+      "title": "Financial Engineering and Risk Management Part 2 (Columbia)",
+      "url": "https://www.coursera.org/learn/financial-engineering-2",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": [
+        "derivatives",
+        "risk-management",
+        "stochastic-calculus"
+      ],
+      "estimatedHours": 40,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Advanced FE: credit risk, term structure models, mortgage-backed securities. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Focus on term structure models",
+        "Implement interest rate models",
+        "Understand credit derivatives"
+      ],
+      "nuclearRelevance": "Advanced stochastic modeling applicable to both finance and nuclear systems",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/financial-engineering-2"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        18
+      ],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "coursera-ts-forecasting",
+      "title": "Practical Time Series Analysis",
+      "url": "https://www.coursera.org/learn/practical-time-series-analysis",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "time-series",
+        "statistics",
+        "python"
+      ],
+      "estimatedHours": 30,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Time series analysis with Python: ARIMA, exponential smoothing, forecasting. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Implement ARIMA models",
+        "Learn model selection (AIC/BIC)",
+        "Apply to financial time series"
+      ],
+      "nuclearRelevance": "Time series analysis for sensor data and financial data",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/practical-time-series-analysis"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
+    },
+    {
+      "id": "coursera-ts-econometrics",
+      "title": "Introduction to Econometrics (University of London)",
+      "url": "https://www.coursera.org/learn/erasmus-econometrics",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "time-series",
+        "statistics",
+        "financial-markets"
+      ],
+      "estimatedHours": 30,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Econometrics fundamentals: regression, time series, panel data. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Learn OLS, IV, GMM estimation",
+        "Understand stationarity and cointegration",
+        "Apply to financial data analysis"
+      ],
+      "nuclearRelevance": "Statistical inference for quantitative research",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        12
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "coursera-cpp",
+      "title": "C++ for C Programmers (UC Santa Cruz)",
+      "url": "https://www.coursera.org/learn/c-plus-plus-a",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "cpp",
+        "data-structures"
+      ],
+      "estimatedHours": 30,
+      "free": false,
+      "courseraPlus": true,
+      "description": "C++ fundamentals for programmers. OOP, STL, templates. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Do all programming assignments",
+        "Practice on LeetCode with C++",
+        "Build small C++ projects"
+      ],
+      "nuclearRelevance": "C++ is the backbone of HFT and quant trading systems",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/c-plus-plus-a"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        10
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "coursera-sql",
+      "title": "SQL for Data Science (UC Davis)",
+      "url": "https://www.coursera.org/learn/sql-for-data-science",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": [
+        "sql",
+        "python"
+      ],
+      "estimatedHours": 15,
+      "free": false,
+      "courseraPlus": true,
+      "description": "SQL fundamentals for data analysis. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Practice with real datasets",
+        "Learn window functions and CTEs",
+        "Apply to financial data queries"
+      ],
+      "nuclearRelevance": "SQL is the universal data access language in finance",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/sql-for-data-science"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        2
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "coursera-dl-ng",
+      "title": "Deep Learning (Andrew Ng) - Neural Networks",
+      "url": "https://www.coursera.org/learn/neural-networks-deep-learning",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "deep-learning",
+        "python"
+      ],
+      "estimatedHours": 25,
+      "free": false,
+      "courseraPlus": true,
+      "description": "First course of DL specialization. Neural network fundamentals. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Implement neural network from scratch",
+        "Understand backpropagation deeply",
+        "Apply to financial prediction"
+      ],
+      "nuclearRelevance": "Neural networks for complex nonlinear modeling",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/neural-networks-deep-learning"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
+    },
+    {
+      "id": "coursera-nlp-dl",
+      "title": "Natural Language Processing with Deep Learning",
+      "url": "https://www.coursera.org/learn/nlp-sequence-models",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": [
+        "nlp",
+        "deep-learning",
+        "python"
+      ],
+      "estimatedHours": 35,
+      "free": false,
+      "courseraPlus": true,
+      "description": "NLP with deep learning: word embeddings, RNNs, transformers, attention. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Implement word2vec and attention",
+        "Build sentiment analysis for financial news",
+        "Apply transformers to text analysis"
+      ],
+      "nuclearRelevance": "NLP for processing financial reports, news, and research papers",
+      "specificLinks": {
+        "course": "https://www.coursera.org/learn/nlp-sequence-models"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "coursera-math-ml",
+      "title": "Mathematics for Machine Learning Specialization",
+      "url": "https://www.coursera.org/specializations/mathematics-machine-learning",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "linear-algebra",
+        "calculus",
+        "optimization",
+        "probability"
+      ],
+      "estimatedHours": 60,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Math foundations for ML: linear algebra, multivariate calculus, PCA. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all 3 courses",
+        "Focus on PCA and optimization",
+        "Apply math to ML algorithms",
+        "Build mathematical intuition"
+      ],
+      "nuclearRelevance": "Solidifies math foundations you already have from nuclear engineering",
+      "specificLinks": {
+        "course": "https://www.coursera.org/specializations/mathematics-machine-learning"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "coursera-ibm-ds",
+      "title": "IBM Data Science Professional Certificate",
+      "url": "https://www.coursera.org/professional-certificates/ibm-data-science",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": [
+        "python",
+        "sql",
+        "pandas-numpy",
+        "supervised-learning"
+      ],
+      "estimatedHours": 180,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Comprehensive data science program. Python, SQL, ML, data viz. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all 12 courses",
+        "Do the final capstone project",
+        "Build portfolio projects",
+        "Earn the professional certificate"
+      ],
+      "nuclearRelevance": "Comprehensive data science skills for quantitative work",
+      "specificLinks": {
+        "course": "https://www.coursera.org/professional-certificates/ibm-data-science"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
+    },
+    {
+      "id": "coursera-google-da",
+      "title": "Google Data Analytics Professional Certificate",
+      "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": [
+        "sql",
+        "python",
+        "pandas-numpy"
+      ],
+      "estimatedHours": 180,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Google's data analytics program. SQL, R, spreadsheets, data viz. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all 8 courses",
+        "Do the capstone project",
+        "Earn Google certificate",
+        "Apply to data analysis tasks"
+      ],
+      "nuclearRelevance": "Data analytics fundamentals applicable to financial data",
+      "specificLinks": {
+        "course": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      },
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
+    },
+    {
+      "id": "coursera-quantitative-methods",
+      "title": "Quantitative Methods (Wharton)",
+      "url": "https://www.coursera.org/learn/wharton-quantitative-modeling",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": [
+        "statistics",
+        "probability",
+        "optimization"
+      ],
+      "estimatedHours": 20,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Wharton's quantitative methods: statistics, probability, regression. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Practice with financial examples",
+        "Understand hypothesis testing",
+        "Apply to portfolio analysis"
+      ],
+      "nuclearRelevance": "Quantitative foundations from a top business school",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "supplemental"
+    },
+    {
+      "id": "coursera-stochastic-calculus",
+      "title": "Stochastic Processes (National Research University)",
+      "url": "https://ocw.mit.edu/courses/6-262-discrete-stochastic-processes-spring-2011/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": [
+        "stochastic-calculus",
+        "probability"
+      ],
+      "estimatedHours": 30,
+      "free": false,
+      "courseraPlus": true,
+      "description": "Stochastic processes: Poisson, Markov, Brownian motion. Coursera Plus included.",
+      "actionSteps": [
+        "Complete all modules",
+        "Understand Brownian motion deeply",
+        "Learn Ito calculus",
+        "Apply to derivatives pricing"
+      ],
+      "nuclearRelevance": "Stochastic processes used in both nuclear physics and finance",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "shreve-stochastic",
+      "title": "Stochastic Calculus for Finance (Shreve)",
+      "url": "https://www.amazon.com/Stochastic-Calculus-Finance-II-Continuous-Time/dp/0387401016",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "stochastic-calculus",
+        "derivatives"
+      ],
+      "estimatedHours": 60,
+      "free": false,
+      "description": "The gold standard textbook for stochastic calculus in finance. Two volumes.",
+      "actionSteps": [
+        "Start with Volume I (discrete time)",
+        "Move to Volume II (continuous time)",
+        "Focus on Ito's lemma and Girsanov theorem",
+        "Practice with options pricing examples"
+      ],
+      "nuclearRelevance": "Same mathematical rigor as nuclear engineering textbooks",
+      "specificLinks": {
+        "volume1": "https://www.amazon.com/Stochastic-Calculus-Finance-I-Binomial/dp/0387249680",
+        "volume2": "https://www.amazon.com/Stochastic-Calculus-Finance-II-Continuous-Time/dp/0387401016"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        16
+      ],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "cpp-quant",
+      "title": "C++ Design Patterns and Derivatives Pricing",
+      "url": "https://www.amazon.com/Design-Patterns-Derivatives-Pricing/dp/0521721628",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "cpp",
+        "derivatives"
+      ],
+      "estimatedHours": 40,
+      "free": false,
+      "description": "C++ applied to derivatives pricing. Design patterns for quant systems.",
+      "actionSteps": [
+        "Read all chapters",
+        "Implement all pricing models in C++",
+        "Study design patterns (Strategy, Factory, Observer)",
+        "Build a small derivatives pricing library"
+      ],
+      "nuclearRelevance": "Bridge between C++ programming and financial engineering",
+      "specificLinks": {
+        "book": "https://www.amazon.com/Design-Patterns-Derivatives-Pricing/dp/0521721628"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        22
+      ],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "green-book",
+      "title": "Heard on the Street (Timothy Crack)",
+      "url": "https://www.amazon.com/Heard-Street-Quantitative-Questions-15th/dp/1734477601",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "probability",
+        "statistics",
+        "interview-prep"
+      ],
+      "estimatedHours": 30,
+      "free": false,
+      "description": "Classic quant interview prep book. Probability puzzles and brainteasers.",
+      "actionSteps": [
+        "Solve all probability puzzles",
+        "Practice brainteasers daily",
+        "Time yourself on each problem",
+        "Review solutions and patterns"
+      ],
+      "nuclearRelevance": "Problem-solving skills honed in nuclear engineering apply directly",
+      "specificLinks": {
+        "book": "https://www.amazon.com/Heard-Street-Quantitative-Questions-15th/dp/1734477601"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        25,
+        29
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "green-book-practical",
+      "title": "A Practical Guide to Quantitative Finance Interviews",
+      "url": "https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662",
+      "type": "book",
+      "difficulty": "intermediate",
+      "skills": [
+        "probability",
+        "statistics",
+        "interview-prep"
+      ],
+      "estimatedHours": 25,
+      "free": false,
+      "description": "The 'Green Book' - essential quant interview prep with 150+ questions.",
+      "actionSteps": [
+        "Solve all probability and statistics questions",
+        "Practice mental math drills",
+        "Study the brainteaser section",
+        "Mock interview with friends"
+      ],
+      "nuclearRelevance": "Mathematical problem-solving from nuclear engineering transfers directly",
+      "specificLinks": {
+        "book": "https://www.amazon.com/Practical-Guide-Quantitative-Finance-Interviews/dp/1438236662"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        25,
+        29
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "kaggle-sql",
+      "title": "Kaggle Intro to SQL",
+      "url": "https://www.kaggle.com/learn/intro-to-sql",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": [
+        "sql"
+      ],
+      "estimatedHours": 4,
+      "free": true,
+      "description": "Free SQL fundamentals course with BigQuery. Quick and practical.",
+      "actionSteps": [
+        "Complete all lessons",
+        "Do all exercises",
+        "Practice with BigQuery public datasets",
+        "Move to advanced SQL"
+      ],
+      "nuclearRelevance": "SQL is the universal data access language in finance",
+      "specificLinks": {
+        "course": "https://www.kaggle.com/learn/intro-to-sql"
+      },
+      "verified": true,
+      "scheduledWeeks": [
+        2
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "mit-18-s096",
+      "title": "MIT 18.S096 Mathematics with Applications in Finance",
+      "url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/",
+      "type": "course",
+      "difficulty": "advanced",
+      "skills": [
+        "linear-algebra",
+        "optimization",
+        "stochastic-calculus",
+        "financial-markets"
+      ],
+      "estimatedHours": 40,
+      "free": true,
+      "verified": true,
+      "description": "MIT course on mathematical concepts and techniques used in finance. Covers optimization, probability, stochastic calculus, and portfolio theory. Taught by MIT mathematicians and industry professionals.",
+      "nuclearRelevance": "Advanced mathematical methods directly applicable to quantitative finance",
+      "actionSteps": [
+        "Complete all lectures",
+        "Do all problem sets",
+        "Apply concepts to finance problems"
+      ],
+      "specificLinks": {},
+      "scheduledWeeks": [
+        16,
+        20
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "mit-6-041",
+      "title": "MIT 6.041 Probabilistic Systems Analysis",
+      "url": "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "probability",
+        "statistics"
+      ],
+      "estimatedHours": 40,
+      "free": true,
+      "verified": true,
+      "description": "MIT probability course by Prof. John Tsitsiklis. Covers random phenomena, statistical inference, and probabilistic modeling. Essential foundation for quant work.",
+      "nuclearRelevance": "Core probability skills for risk modeling and quantitative analysis",
+      "actionSteps": [
+        "Complete all lectures",
+        "Do all problem sets",
+        "Apply concepts to finance problems"
+      ],
+      "specificLinks": {},
+      "scheduledWeeks": [
+        6
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "mit-18-650",
+      "title": "MIT 18.650 Statistics for Applications",
+      "url": "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "statistics",
+        "probability"
+      ],
+      "estimatedHours": 35,
+      "free": true,
+      "verified": true,
+      "description": "MIT statistics course by Prof. Philippe Rigollet. In-depth theoretical foundations for statistical methods. Covers hypothesis testing, regression, and resampling.",
+      "nuclearRelevance": "Statistical foundations for data analysis and quantitative research",
+      "actionSteps": [
+        "Complete all lectures",
+        "Do all problem sets",
+        "Apply concepts to finance problems"
+      ],
+      "specificLinks": {},
+      "scheduledWeeks": [
+        7
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "stanford-intro-statistics",
+      "title": "Stanford Introduction to Statistics",
+      "url": "https://www.coursera.org/learn/stanford-statistics",
+      "type": "course",
+      "difficulty": "beginner",
+      "skills": [
+        "statistics",
+        "probability"
+      ],
+      "estimatedHours": 20,
+      "free": false,
+      "courseraPlus": true,
+      "verified": true,
+      "description": "Stanford statistics course by Prof. Guenther Walther on Coursera. Covers descriptive statistics, probability, sampling, regression, hypothesis testing. Included with Coursera Plus.",
+      "nuclearRelevance": "Foundation statistics from a top university",
+      "actionSteps": [
+        "Complete all lectures",
+        "Do all problem sets",
+        "Apply concepts to finance problems"
+      ],
+      "specificLinks": {},
+      "scheduledWeeks": [
+        7
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "quantconnect-strategies",
+      "title": "QuantConnect Strategy Library",
+      "url": "https://www.quantconnect.com/tutorials/strategy-library/",
+      "type": "course",
+      "difficulty": "intermediate",
+      "skills": [
+        "python",
+        "financial-markets",
+        "supervised-learning"
+      ],
+      "estimatedHours": 50,
+      "free": true,
+      "verified": true,
+      "description": "83 algorithmic trading strategies with full implementations. Covers momentum, mean-reversion, pairs trading, factor models, ML strategies. Free on QuantConnect.",
+      "nuclearRelevance": "Practical algorithmic trading strategies with real code",
+      "actionSteps": [
+        "Complete all lectures",
+        "Do all problem sets",
+        "Apply concepts to finance problems"
+      ],
+      "specificLinks": {},
+      "scheduledWeeks": [
+        21
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "avellaneda-stoikov-paper",
+      "title": "Avellaneda–Stoikov Market Making Paper",
+      "url": "https://arxiv.org/abs/0805.2736",
+      "type": "article",
+      "difficulty": "advanced",
+      "skills": [
+        "market-microstructure",
+        "probability"
+      ],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Core market-making model and inventory-risk framework.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        22
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "boost-asio",
+      "title": "Boost.Asio Documentation",
+      "url": "https://www.boost.org/doc/libs/release/doc/html/boost_asio.html",
+      "type": "documentation",
+      "difficulty": "advanced",
+      "skills": [
+        "cpp",
+        "data-structures"
+      ],
+      "estimatedHours": 12,
+      "free": true,
+      "description": "Asynchronous networking primitives for production C++ systems.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        26,
+        30
+      ],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "cvxpy-docs",
+      "title": "CVXPY Documentation",
+      "url": "https://www.cvxpy.org/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": [
+        "optimization",
+        "python"
+      ],
+      "estimatedHours": 12,
+      "free": true,
+      "description": "Convex optimization modeling in Python.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "eia-api",
+      "title": "U.S. EIA Open Data API",
+      "url": "https://www.eia.gov/opendata/",
+      "type": "api",
+      "difficulty": "intermediate",
+      "skills": [
+        "financial-markets",
+        "time-series"
+      ],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Official electricity, fuel, generation, and energy-market data.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "Energy and nuclear systems bridge",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        23
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "hmmlearn-docs",
+      "title": "hmmlearn Documentation",
+      "url": "https://hmmlearn.readthedocs.io/en/latest/",
+      "type": "documentation",
+      "difficulty": "advanced",
+      "skills": [
+        "time-series",
+        "supervised-learning"
+      ],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Hidden Markov models for market-regime research.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "nrc-docs",
+      "title": "NRC Document Collections",
+      "url": "https://www.nrc.gov/reading-rm/doc-collections/",
+      "type": "reference",
+      "difficulty": "intermediate",
+      "skills": [
+        "risk-management",
+        "probability"
+      ],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Primary nuclear safety, operating, and regulatory references.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "Energy and nuclear systems bridge",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "specialization"
+    },
+    {
+      "id": "prophet-docs",
+      "title": "Prophet Documentation",
+      "url": "https://facebook.github.io/prophet/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": [
+        "time-series",
+        "python"
+      ],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Trend and seasonality forecasting reference.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        12
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "pulp-docs",
+      "title": "PuLP Documentation",
+      "url": "https://coin-or.github.io/pulp/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": [
+        "optimization",
+        "python"
+      ],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Linear and mixed-integer optimization modeling.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [],
+      "curriculumRole": "reference"
+    },
+    {
+      "id": "pytest-docs",
+      "title": "pytest Documentation",
+      "url": "https://docs.pytest.org/en/stable/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": [
+        "python"
+      ],
+      "estimatedHours": 10,
+      "free": true,
+      "description": "Testing foundation for research and pricing code.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        20,
+        28,
+        32
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "quantlib-python",
+      "title": "QuantLib Python Documentation",
+      "url": "https://quantlib-python-docs.readthedocs.io/",
+      "type": "documentation",
+      "difficulty": "advanced",
+      "skills": [
+        "derivatives",
+        "risk-management",
+        "python"
+      ],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Production-grade pricing and risk library reference.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        17
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "scipy-docs",
+      "title": "SciPy Documentation",
+      "url": "https://docs.scipy.org/doc/scipy/",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": [
+        "python",
+        "numerical-methods",
+        "optimization"
+      ],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Numerical integration, optimization, statistics, and solvers.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        4,
+        16
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "statsmodels-docs",
+      "title": "statsmodels Documentation",
+      "url": "https://www.statsmodels.org/stable/index.html",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": [
+        "statistics",
+        "time-series",
+        "python"
+      ],
+      "estimatedHours": 15,
+      "free": true,
+      "description": "Econometrics, statistical tests, and time-series models.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        7,
+        15
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "websocket-docs",
+      "title": "websockets Documentation",
+      "url": "https://websockets.readthedocs.io/en/stable/",
+      "type": "documentation",
+      "difficulty": "advanced",
+      "skills": [
+        "python",
+        "market-microstructure"
+      ],
+      "estimatedHours": 8,
+      "free": true,
+      "description": "Real-time market-data streaming and network I/O.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        22
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "glasserman-monte-carlo",
+      "title": "Monte Carlo Methods in Financial Engineering",
+      "url": "https://www.columbia.edu/~pg20/",
+      "type": "book",
+      "difficulty": "advanced",
+      "skills": [
+        "probability",
+        "derivatives",
+        "numerical-methods"
+      ],
+      "estimatedHours": 30,
+      "free": true,
+      "description": "Variance reduction and simulation methods for pricing and risk.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        17
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "github-actions-docs",
+      "title": "GitHub Actions Documentation",
+      "url": "https://docs.github.com/en/actions",
+      "type": "documentation",
+      "difficulty": "intermediate",
+      "skills": [
+        "git",
+        "python"
+      ],
+      "estimatedHours": 6,
+      "free": true,
+      "description": "Continuous integration for tests, linting, and reproducible builds.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        20,
+        27,
+        28,
+        30
+      ],
+      "curriculumRole": "core"
+    },
+    {
+      "id": "power-market-fundamentals",
+      "title": "PJM Learning Center — Energy Markets",
+      "url": "https://learn.pjm.com/three-priorities/buying-and-selling-energy/energy-markets",
+      "type": "reference",
+      "difficulty": "advanced",
+      "skills": [
+        "financial-markets",
+        "optimization",
+        "time-series"
+      ],
+      "estimatedHours": 12,
+      "free": true,
+      "description": "Day-ahead/real-time markets, LMP, congestion, and grid settlement.",
+      "actionSteps": [
+        "Read the relevant sections for the scheduled week",
+        "Implement one worked example",
+        "Record findings in the weekly deliverable"
+      ],
+      "nuclearRelevance": "Energy and nuclear systems bridge",
+      "specificLinks": {},
+      "verified": true,
+      "scheduledWeeks": [
+        23,
+        32
+      ],
+      "curriculumRole": "core"
     }
   ]
 }

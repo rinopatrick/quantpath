@@ -1,0 +1,16 @@
+{
+  "name": "QuantPath",
+  "short_name": "QuantPath",
+  "description": "Your personal learning companion for transitioning from Nuclear Engineering to Quantitative Finance",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#0b0f19",
+  "background_color": "#0b0f19",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230b0f19' stroke='%233b82f6' stroke-width='4'/%3E%3Ctext x='50' y='50' text-anchor='middle' dominant-baseline='central' fill='%233b82f6' font-family='system-ui,sans-serif' font-weight='700' font-size='48'%3EQ%3C/text%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

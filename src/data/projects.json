@@ -1,404 +1,659 @@
 {
   "projects": [
     {
-      "id": "stock-price-predictor",
-      "title": "Stock Price Predictor",
-      "difficulty": "beginner",
-      "cvImpact": 3,
-      "skills": ["python", "supervised-learning", "pandas-numpy"],
-      "estimatedHours": 20,
-      "description": "Build a machine learning model to predict stock prices using historical data",
-      "actionSteps": [
-        "Download stock data using yfinance",
-        "Perform exploratory data analysis",
-        "Engineer features (moving averages, RSI, MACD)",
-        "Train regression models (Linear, Random Forest, XGBoost)",
-        "Evaluate with proper time series cross-validation",
-        "Create visualizations of predictions vs actual"
-      ],
-      "starterResources": ["yfinance", "scikit-learn-docs", "pandas-docs"],
-      "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "portfolio-optimizer",
-      "title": "Portfolio Optimizer (Markowitz)",
-      "difficulty": "intermediate",
-      "cvImpact": 4,
-      "skills": ["python", "optimization", "portfolio-theory"],
-      "estimatedHours": 25,
-      "description": "Implement Markowitz portfolio optimization with efficient frontier visualization",
-      "actionSteps": [
-        "Download historical returns for multiple assets",
-        "Calculate covariance matrix and expected returns",
-        "Implement mean-variance optimization",
-        "Plot efficient frontier",
-        "Add constraints (max allocation, sector limits)",
-        "Compare with equal-weight portfolio"
-      ],
-      "starterResources": ["yfinance", "scipy-docs", "coursera-portfolio"],
-      "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "options-pricing",
-      "title": "Options Pricing Calculator (Black-Scholes)",
-      "difficulty": "intermediate",
-      "cvImpact": 4,
-      "skills": ["python", "probability", "derivatives"],
-      "estimatedHours": 20,
-      "description": "Implement Black-Scholes model and compare with Monte Carlo simulation",
-      "actionSteps": [
-        "Implement Black-Scholes formula",
-        "Calculate Greeks (Delta, Gamma, Theta, Vega, Rho)",
-        "Implement Monte Carlo simulation for option pricing",
-        "Compare analytical vs numerical results",
-        "Build interactive visualization",
-        "Extend to American options"
-      ],
-      "starterResources": ["mit-15480", "scipy-docs", "coursera-fe-1"],
-      "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "trading-backtester",
-      "title": "Algorithmic Trading Backtester",
-      "difficulty": "intermediate",
+      "id": "ml-trading-strategy",
+      "title": "ML-Based Trading Strategy (Flagship Project)",
+      "difficulty": "advanced",
       "cvImpact": 5,
-      "skills": ["python", "financial-markets", "pandas-numpy"],
-      "estimatedHours": 30,
-      "description": "Build a backtesting framework to test trading strategies",
-      "actionSteps": [
-        "Design backtesting engine architecture",
-        "Implement data handling and order management",
-        "Create common strategy templates (moving average, momentum)",
-        "Add performance metrics (Sharpe, drawdown, win rate)",
-        "Visualize equity curve and trade analysis",
-        "Compare multiple strategies"
+      "skills": [
+        "python",
+        "supervised-learning",
+        "financial-markets",
+        "time-series"
       ],
-      "starterResources": ["quantconnect-tutorials", "yfinance", "pandas-docs"],
+      "estimatedHours": 60,
+      "description": "Build, backtest, and evaluate a machine learning trading strategy with proper methodology. This is your #1 portfolio project.",
+      "actionSteps": [
+        "Write alpha thesis: WHY should this strategy work? What market inefficiency are you exploiting?",
+        "Collect data: OHLCV, fundamentals, macro indicators, sentiment scores",
+        "Feature engineering: 50+ features, each with financial justification (momentum, mean-reversion, volatility, volume)",
+        "Implement proper walk-forward validation: train on 2 years, test on 6 months, roll forward",
+        "Train multiple models: XGBoost, LightGBM, Neural Network — compare with statistical tests",
+        "Implement position sizing with Kelly criterion or fractional Kelly",
+        "Model transaction costs: commission, slippage, market impact",
+        "Add regime detection: strategy adapts based on volatility regime (HMM or clustering)",
+        "Calculate all metrics: Sharpe, Sortino, max drawdown, Calmar, win rate, profit factor",
+        "Create professional visualizations: equity curve, drawdown chart, monthly returns heatmap",
+        "Write 5-10 page research report with methodology, results, and honest limitations",
+        "Add unit tests for core logic, document everything in README"
+      ],
+      "starterResources": [
+        "yfinance",
+        "scikit-learn-docs",
+        "quantconnect-tutorials",
+        "coursera-ml-ng"
+      ],
       "nuclearNiche": false,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Alpha thesis shows you think about WHY, not just HOW",
+        "Walk-forward validation proves you understand time series pitfalls",
+        "Transaction cost modeling shows production awareness",
+        "Regime detection shows sophistication",
+        "Research report shows communication skills",
+        "Unit tests show engineering maturity"
+      ],
+      "portfolioRole": "flagship",
+      "scheduledWeeks": [
+        20,
+        31,
+        32
+      ]
     },
     {
-      "id": "risk-dashboard",
-      "title": "Risk Management Dashboard",
-      "difficulty": "intermediate",
-      "cvImpact": 4,
-      "skills": ["python", "risk-management", "matplotlib-seaborn"],
-      "estimatedHours": 25,
-      "description": "Build a risk dashboard with VaR, CVaR, and stress testing",
-      "actionSteps": [
-        "Download portfolio data",
-        "Calculate VaR (Historical, Parametric, Monte Carlo)",
-        "Calculate CVaR/Expected Shortfall",
-        "Implement stress testing scenarios",
-        "Create interactive dashboard with Streamlit",
-        "Add risk decomposition by asset"
+      "id": "market-microstructure-simulator",
+      "title": "Market Microstructure Simulator",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": [
+        "python",
+        "market-microstructure",
+        "probability",
+        "cpp"
       ],
-      "starterResources": ["coursera-risk-mgmt", "streamlit", "yfinance"],
+      "estimatedHours": 50,
+      "description": "Simulate order book dynamics, market making, and execution algorithms. Rare project that shows deep market understanding.",
+      "actionSteps": [
+        "Implement order book data structure (price-time priority matching engine)",
+        "Simulate order types: limit, market, iceberg, hidden",
+        "Implement Avellaneda-Stoikov market making model",
+        "Model bid-ask spread dynamics and liquidity provision",
+        "Simulate order flow toxicity (VPIN metric)",
+        "Analyze execution quality: implementation shortfall, VWAP slippage",
+        "Visualize order book depth, trade flow, spread evolution",
+        "Compare market maker PnL under different volatility regimes",
+        "Write research report on microstructure findings",
+        "Optional: rebuild matching engine in C++ for performance comparison"
+      ],
+      "starterResources": [
+        "mit-15433",
+        "pandas-docs",
+        "avellaneda-stoikov-paper"
+      ],
       "nuclearNiche": false,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Very few candidates understand market microstructure at this depth",
+        "Shows you understand how markets ACTUALLY work",
+        "Avellaneda-Stoikov model is used by real market makers",
+        "C++ version shows low-latency awareness"
+      ],
+      "portfolioRole": "flagship",
+      "scheduledWeeks": [
+        22,
+        32
+      ]
     },
     {
       "id": "energy-market-analyzer",
       "title": "Energy Market Analyzer (Nuclear Niche)",
       "difficulty": "advanced",
       "cvImpact": 5,
-      "skills": ["python", "financial-markets", "time-series"],
-      "estimatedHours": 35,
-      "description": "Analyze energy markets with focus on nuclear power economics",
-      "actionSteps": [
-        "Collect energy market data (electricity, natural gas, uranium)",
-        "Analyze price correlations and seasonality",
-        "Build time series forecasting models",
-        "Model nuclear plant economics",
-        "Create energy market dashboard",
-        "Write analysis report"
+      "skills": [
+        "python",
+        "financial-markets",
+        "time-series",
+        "optimization"
       ],
-      "starterResources": ["fred-api", "yfinance", "prophet"],
+      "estimatedHours": 50,
+      "description": "Analyze energy markets with focus on nuclear power economics. Your unique differentiator from nuclear engineering background.",
+      "actionSteps": [
+        "Collect data: electricity prices, natural gas, uranium, carbon credits (EIA, FRED, ICE)",
+        "Analyze price correlations and seasonality patterns",
+        "Build time series forecasting models for electricity prices",
+        "Model nuclear plant economics: capacity factor, fuel costs, O&M, decommissioning",
+        "Analyze impact of renewable penetration on baseload economics",
+        "Build merit order model and simulate price formation",
+        "Create interactive energy market dashboard (Streamlit or Dash)",
+        "Write research report connecting nuclear engineering to energy finance",
+        "Apply optimization to nuclear fleet dispatch problem",
+        "Backtest energy trading strategy using your models"
+      ],
+      "starterResources": [
+        "fred-api",
+        "yfinance",
+        "eia-api",
+        "coursera-ts-forecasting"
+      ],
       "nuclearNiche": true,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Nuclear + finance intersection is extremely rare",
+        "Shows domain expertise that other candidates don't have",
+        "Merit order model shows understanding of electricity markets",
+        "Directly connects your nuclear engineering background to quant finance"
+      ],
+      "portfolioRole": "flagship",
+      "scheduledWeeks": [
+        23,
+        31,
+        32
+      ]
     },
     {
-      "id": "sentiment-analysis",
-      "title": "Sentiment Analysis for Trading",
+      "id": "trading-backtester",
+      "title": "Algorithmic Trading Backtester",
       "difficulty": "advanced",
-      "cvImpact": 4,
-      "skills": ["python", "nlp", "supervised-learning"],
-      "estimatedHours": 30,
-      "description": "Build sentiment analysis model for financial news and social media",
-      "actionSteps": [
-        "Collect financial news data (RSS, APIs)",
-        "Preprocess text data",
-        "Train sentiment classification model",
-        "Analyze sentiment trends",
-        "Backtest sentiment-based trading strategy",
-        "Create sentiment dashboard"
+      "cvImpact": 5,
+      "skills": [
+        "python",
+        "financial-markets",
+        "pandas-numpy",
+        "data-structures"
       ],
-      "starterResources": ["huggingface-courses", "nlp-docs", "stanford-cs224n"],
-      "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "time-series-forecasting",
-      "title": "Time Series Forecasting",
-      "difficulty": "intermediate",
-      "cvImpact": 4,
-      "skills": ["python", "time-series", "supervised-learning"],
-      "estimatedHours": 25,
-      "description": "Compare multiple time series forecasting methods on financial data",
+      "estimatedHours": 50,
+      "description": "Build a professional-grade backtesting framework with realistic assumptions. Shows systems thinking.",
       "actionSteps": [
-        "Download financial time series data",
-        "Implement ARIMA/SARIMA models",
-        "Implement Prophet model",
-        "Implement LSTM model",
-        "Compare forecasting accuracy",
-        "Create visualization of forecasts"
+        "Design event-driven architecture (not vectorized — show you understand production systems)",
+        "Implement data handler: multiple timeframes, corporate actions handling",
+        "Implement order management: limit, market, stop orders with partial fills",
+        "Model transaction costs: commission, slippage (volume-dependent), market impact",
+        "Handle survivorship bias: include delisted stocks",
+        "Implement performance analytics: Sharpe, Sortino, max drawdown, Calmar, information ratio",
+        "Add risk management: position limits, drawdown circuit breakers",
+        "Implement 3 strategies: momentum, mean-reversion, pairs trading",
+        "Compare strategies with statistical significance tests",
+        "Add visualization: equity curve, drawdown, monthly returns, rolling Sharpe",
+        "Write comprehensive tests (pytest), document with Sphinx-style docstrings",
+        "Publish as pip-installable package with proper setup.py"
       ],
-      "starterResources": ["statsmodels-ts", "prophet", "machinelearningmastery"],
+      "starterResources": [
+        "quantconnect-tutorials",
+        "yfinance",
+        "pandas-docs",
+        "pytest-docs"
+      ],
       "nuclearNiche": false,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Event-driven architecture shows production-level thinking",
+        "Survivorship bias handling shows statistical rigor",
+        "Pip-installable package shows engineering maturity",
+        "Multiple strategies show breadth of knowledge"
+      ],
+      "portfolioRole": "supporting",
+      "scheduledWeeks": [
+        20
+      ]
     },
     {
       "id": "monte-carlo-radiation",
-      "title": "Monte Carlo Radiation Transport Simulator (Nuclear Niche)",
+      "title": "Monte Carlo Radiation Transport → Finance Bridge",
       "difficulty": "advanced",
       "cvImpact": 5,
-      "skills": ["python", "numerical-methods", "probability"],
-      "estimatedHours": 40,
-      "description": "Build simplified Monte Carlo particle transport code - same math as options pricing",
-      "actionSteps": [
-        "Implement 1D neutron transport",
-        "Extend to 2D/3D geometry",
-        "Add material cross-sections",
-        "Implement variance reduction techniques",
-        "Visualize particle tracks",
-        "Compare with deterministic methods"
+      "skills": [
+        "python",
+        "numerical-methods",
+        "probability",
+        "optimization"
       ],
-      "starterResources": ["openmc", "mit-numerical-methods", "pymc"],
+      "estimatedHours": 50,
+      "description": "Build Monte Carlo particle transport code, then BRIDGE to finance by applying same methods to options pricing and portfolio simulation.",
+      "actionSteps": [
+        "Implement 1D neutron transport with collision estimator",
+        "Extend to 2D geometry with reflecting boundaries",
+        "Add material cross-sections and energy groups",
+        "Implement variance reduction: importance sampling, Russian roulette, splitting",
+        "Visualize particle tracks and flux distributions",
+        "BRIDGE TO FINANCE: Apply same MC framework to options pricing",
+        "Compare MC options pricing vs Black-Scholes analytical solution",
+        "Apply variance reduction techniques to reduce MC error in finance",
+        "Portfolio simulation: Monte Carlo for portfolio VaR/CVaR",
+        "Write research report showing the mathematical bridge between nuclear and finance",
+        "Benchmark: Python vs C++ performance comparison"
+      ],
+      "starterResources": [
+        "openmc",
+        "mit-numerical-methods",
+        "pymc",
+        "scipy-docs"
+      ],
       "nuclearNiche": true,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Shows deep mathematical understanding (Monte Carlo is the same math in both fields)",
+        "Variance reduction techniques show sophistication",
+        "Bridge narrative shows you can transfer skills across domains",
+        "C++ benchmark shows performance awareness"
+      ],
+      "portfolioRole": "specialization",
+      "scheduledWeeks": [
+        23
+      ]
+    },
+    {
+      "id": "options-volatility-surface",
+      "title": "Options Volatility Surface Builder",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": [
+        "python",
+        "derivatives",
+        "stochastic-calculus",
+        "optimization"
+      ],
+      "estimatedHours": 40,
+      "description": "Build implied volatility surface from market data. Shows deep derivatives understanding.",
+      "actionSteps": [
+        "Collect options chain data (CBOE, Yahoo Finance, or OptionMetrics)",
+        "Implement Black-Scholes implied volatility solver (Newton-Raphson + bisection fallback)",
+        "Build volatility surface: strike vs expiry interpolation",
+        "Implement SVI (Stochastic Volatility Inspired) parameterization",
+        "Apply smoothing algorithms to raw IV data",
+        "Calculate and visualize Greeks surface (delta, gamma, vega vs strike/expiry)",
+        "Detect volatility smile/skew patterns across expiries",
+        "Implement local volatility model (Dupire's formula)",
+        "Backtest volatility trading strategy (vol arb, dispersion trading)",
+        "Write research report on volatility surface dynamics"
+      ],
+      "starterResources": [
+        "coursera-fe-1",
+        "scipy-docs",
+        "quantlib-python"
+      ],
+      "nuclearNiche": false,
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Volatility surface is a core quant skill — few candidates can build one",
+        "SVI parameterization shows you know industry standards",
+        "Dupire's formula shows stochastic calculus depth",
+        "Vol trading strategy shows practical application"
+      ],
+      "portfolioRole": "supporting",
+      "scheduledWeeks": [
+        16
+      ]
+    },
+    {
+      "id": "pairs-trading-cointegration",
+      "title": "Pairs Trading with Cointegration",
+      "difficulty": "advanced",
+      "cvImpact": 4,
+      "skills": [
+        "python",
+        "time-series",
+        "statistics",
+        "financial-markets"
+      ],
+      "estimatedHours": 35,
+      "description": "Implement statistically rigorous pairs trading using cointegration. Shows econometrics depth.",
+      "actionSteps": [
+        "Implement cointegration testing: Engle-Granger and Johansen methods",
+        "Screen universe of stocks for cointegrated pairs",
+        "Implement Ornstein-Uhlenbeck process for mean-reversion modeling",
+        "Calculate half-life of mean reversion",
+        "Build trading signals: z-score entry/exit with dynamic thresholds",
+        "Implement position sizing based on cointegration strength",
+        "Backtest with realistic transaction costs and slippage",
+        "Analyze performance across different market regimes",
+        "Compare with naive correlation-based pairs trading",
+        "Write research report with statistical significance tests"
+      ],
+      "starterResources": [
+        "statsmodels-docs",
+        "coursera-ts-econometrics",
+        "yfinance"
+      ],
+      "nuclearNiche": false,
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Cointegration vs correlation shows statistical sophistication",
+        "Ornstein-Uhlenbeck shows stochastic calculus application",
+        "Half-life calculation shows practical implementation skill",
+        "Regime analysis shows awareness of non-stationarity"
+      ],
+      "portfolioRole": "specialization",
+      "scheduledWeeks": []
+    },
+    {
+      "id": "risk-dashboard",
+      "title": "Risk Management Dashboard",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": [
+        "python",
+        "risk-management",
+        "statistics",
+        "matplotlib-seaborn"
+      ],
+      "estimatedHours": 35,
+      "description": "Build comprehensive risk dashboard with multiple VaR methods and stress testing.",
+      "actionSteps": [
+        "Implement VaR: Historical, Parametric (Cornish-Fisher), Monte Carlo",
+        "Implement CVaR/Expected Shortfall",
+        "Add stress testing: historical scenarios (2008, COVID, 2022 rate hikes)",
+        "Implement marginal and component VaR decomposition",
+        "Add backtesting: Kupiec test, Christoffersen test for VaR accuracy",
+        "Build interactive dashboard with Streamlit or Dash",
+        "Add real-time data feed integration",
+        "Create risk reporting: daily, weekly, monthly risk summaries",
+        "Implement correlation breakdown analysis during stress periods",
+        "Write documentation explaining each risk metric"
+      ],
+      "starterResources": [
+        "coursera-risk-mgmt",
+        "streamlit",
+        "yfinance",
+        "scipy-docs"
+      ],
+      "nuclearNiche": false,
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Multiple VaR methods shows depth",
+        "Kupiec/Christoffersen tests shows statistical rigor",
+        "Stress testing shows practical risk awareness",
+        "Component VaR shows portfolio-level thinking"
+      ],
+      "portfolioRole": "supporting",
+      "scheduledWeeks": [
+        8
+      ]
+    },
+    {
+      "id": "portfolio-optimizer",
+      "title": "Portfolio Optimizer (Markowitz+)",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": [
+        "python",
+        "optimization",
+        "portfolio-theory",
+        "linear-algebra"
+      ],
+      "estimatedHours": 35,
+      "description": "Implement portfolio optimization beyond basic Markowitz. Shows optimization and linear algebra skills.",
+      "actionSteps": [
+        "Implement Markowitz mean-variance optimization",
+        "Plot efficient frontier with Monte Carlo sampling",
+        "Add Black-Litterman model for incorporating views",
+        "Implement risk parity portfolio",
+        "Add constraints: sector limits, max position, turnover limits",
+        "Implement shrinkage estimators (Ledoit-Wolf) for covariance matrix",
+        "Compare: equal-weight vs min-variance vs risk-parity vs Black-Litterman",
+        "Out-of-sample backtest with rolling rebalancing",
+        "Analyze sensitivity to estimation error",
+        "Build interactive dashboard for portfolio construction"
+      ],
+      "starterResources": [
+        "coursera-portfolio",
+        "cvxpy-docs",
+        "scipy-docs",
+        "yfinance"
+      ],
+      "nuclearNiche": false,
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Black-Litterman shows you know industry-standard methods",
+        "Ledoit-Wolf shrinkage shows statistical sophistication",
+        "Out-of-sample backtest shows rigor",
+        "Sensitivity analysis shows awareness of model limitations"
+      ],
+      "portfolioRole": "supporting",
+      "scheduledWeeks": [
+        4
+      ]
     },
     {
       "id": "nuclear-reactor-sim",
-      "title": "Nuclear Reactor Simulation (Nuclear Niche)",
+      "title": "Nuclear Reactor Simulation",
       "difficulty": "advanced",
       "cvImpact": 5,
-      "skills": ["python", "numerical-methods", "calculus"],
-      "estimatedHours": 35,
-      "description": "Simulate nuclear reactor using point kinetics equations",
-      "actionSteps": [
-        "Implement point kinetics equations",
-        "Add temperature feedback",
-        "Model control rod insertion",
-        "Simulate transient scenarios",
-        "Visualize power and temperature evolution",
-        "Apply to reactor safety analysis"
+      "skills": [
+        "python",
+        "numerical-methods",
+        "calculus",
+        "optimization"
       ],
-      "starterResources": ["mit-2201", "scipy-docs", "matplotlib-docs"],
+      "estimatedHours": 45,
+      "description": "Simulate nuclear reactor using point kinetics equations. Pure nuclear niche that demonstrates numerical methods mastery.",
+      "actionSteps": [
+        "Implement point kinetics equations (6 delayed neutron groups)",
+        "Add temperature reactivity feedback (Doppler, moderator)",
+        "Model control rod insertion with reactivity worth curves",
+        "Simulate transient scenarios: startup, shutdown, reactivity insertion",
+        "Implement stiff ODE solver (implicit methods for stability)",
+        "Visualize power, temperature, reactivity evolution",
+        "Validate against analytical solutions where available",
+        "Apply sensitivity analysis to uncertain parameters",
+        "Connect to finance: same SDEs used in interest rate models",
+        "Write research report with safety analysis implications"
+      ],
+      "starterResources": [
+        "mit-2201",
+        "scipy-docs",
+        "matplotlib-docs"
+      ],
       "nuclearNiche": true,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Stiff ODE solver shows numerical methods expertise",
+        "Multi-group delayed neutrons shows nuclear physics depth",
+        "Sensitivity analysis shows uncertainty quantification skills",
+        "Bridge to finance (same math as Hull-White model) shows transferable skills"
+      ],
+      "portfolioRole": "specialization",
+      "scheduledWeeks": [
+        28
+      ]
     },
     {
-      "id": "thermal-hydraulics",
-      "title": "Thermal Hydraulics Modeling (Nuclear Niche)",
+      "id": "realtime-orderbook",
+      "title": "Real-Time Order Book Visualizer (C++)",
       "difficulty": "advanced",
       "cvImpact": 5,
-      "skills": ["python", "numerical-methods", "calculus"],
-      "estimatedHours": 35,
-      "description": "Model heat transfer and fluid flow in nuclear reactor core",
-      "actionSteps": [
-        "Implement 1D heat conduction",
-        "Add convective heat transfer",
-        "Model single-phase flow",
-        "Implement simple CFD solver",
-        "Visualize temperature and velocity profiles",
-        "Apply to reactor cooling analysis"
+      "skills": [
+        "cpp",
+        "market-microstructure",
+        "data-structures"
       ],
-      "starterResources": ["mit-2201", "scipy-docs", "numpy-docs"],
-      "nuclearNiche": true,
-      "githubTemplate": null
-    },
-    {
-      "id": "fuel-cycle-optimizer",
-      "title": "Nuclear Fuel Cycle Optimizer (Nuclear Niche)",
-      "difficulty": "advanced",
-      "cvImpact": 5,
-      "skills": ["python", "optimization", "linear-algebra"],
-      "estimatedHours": 30,
-      "description": "Optimize nuclear fuel cycle using linear programming",
+      "estimatedHours": 45,
+      "description": "Build a real-time order book visualizer in C++. Shows low-latency systems thinking.",
       "actionSteps": [
-        "Model fuel cycle stages",
-        "Define objective function (minimize waste, maximize utilization)",
-        "Add constraints (safety, economics, logistics)",
-        "Implement optimization solver",
-        "Analyze optimal fuel cycle configurations",
-        "Apply to portfolio optimization (same math)"
+        "Implement order book in C++ with price-time priority matching",
+        "Use WebSocket to stream real-time market data (Binance or Coinbase crypto feed)",
+        "Implement efficient data structures: sorted map for price levels",
+        "Add latency measurement: order-to-update time",
+        "Visualize order book depth in real-time (ASCII or terminal UI)",
+        "Implement basic market making algorithm",
+        "Measure and optimize for low latency: avoid heap allocations, cache-friendly code",
+        "Compare performance: C++ vs Python implementation",
+        "Add order flow analysis: large order detection, toxicity metrics",
+        "Document architecture decisions and performance benchmarks"
       ],
-      "starterResources": ["convex-optimization", "scipy-docs", "pandas-docs"],
-      "nuclearNiche": true,
-      "githubTemplate": null
-    },
-    {
-      "id": "nuclear-risk-dashboard",
-      "title": "Nuclear Risk Assessment Dashboard (Nuclear Niche)",
-      "difficulty": "intermediate",
-      "cvImpact": 4,
-      "skills": ["python", "risk-management", "matplotlib-seaborn"],
-      "estimatedHours": 25,
-      "description": "Build risk dashboard for nuclear plant operations",
-      "actionSteps": [
-        "Define risk metrics for nuclear operations",
-        "Collect/simulate failure probability data",
-        "Calculate risk measures (probability of accident, consequence)",
-        "Create risk visualization dashboard",
-        "Add safety margin indicators",
-        "Apply to financial risk management"
+      "starterResources": [
+        "learncpp",
+        "boost-asio",
+        "websocket-docs"
       ],
-      "starterResources": ["streamlit", "pandas-docs", "coursera-risk-mgmt"],
-      "nuclearNiche": true,
-      "githubTemplate": null
-    },
-    {
-      "id": "ml-trading-strategy",
-      "title": "ML-Based Trading Strategy",
-      "difficulty": "advanced",
-      "cvImpact": 5,
-      "skills": ["python", "supervised-learning", "financial-markets"],
-      "estimatedHours": 40,
-      "description": "Build and backtest a machine learning trading strategy",
-      "actionSteps": [
-        "Collect and preprocess market data",
-        "Engineer alpha features",
-        "Train ML models for signal generation",
-        "Implement position sizing and risk management",
-        "Backtest with realistic assumptions",
-        "Analyze performance and optimize"
-      ],
-      "starterResources": ["quantconnect-tutorials", "kaggle-competitions", "scikit-learn-docs"],
       "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "market-microstructure",
-      "title": "Market Microstructure Simulator",
-      "difficulty": "advanced",
-      "cvImpact": 5,
-      "skills": ["python", "market-microstructure", "probability"],
-      "estimatedHours": 35,
-      "description": "Simulate order book dynamics and market making",
-      "actionSteps": [
-        "Implement order book data structure",
-        "Simulate order matching engine",
-        "Model market maker strategies",
-        "Analyze spread and liquidity dynamics",
-        "Visualize order flow",
-        "Apply to HFT strategies"
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "C++ implementation shows you can work at HFT level",
+        "Real-time streaming shows systems thinking",
+        "Latency optimization shows production awareness",
+        "Performance comparison shows engineering rigor"
       ],
-      "starterResources": ["mit-15433", "pandas-docs", "matplotlib-docs"],
-      "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "correlation-visualizer",
-      "title": "Correlation Matrix Visualizer",
-      "difficulty": "beginner",
-      "cvImpact": 3,
-      "skills": ["python", "pandas-numpy", "matplotlib-seaborn"],
-      "estimatedHours": 10,
-      "description": "Build interactive correlation matrix visualization for financial assets",
-      "actionSteps": [
-        "Download returns data for multiple assets",
-        "Calculate correlation matrix",
-        "Create heatmap visualization",
-        "Add interactive features",
-        "Analyze rolling correlations",
-        "Identify diversification opportunities"
-      ],
-      "starterResources": ["yfinance", "seaborn-docs", "pandas-docs"],
-      "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "var-calculator",
-      "title": "VaR Calculator",
-      "difficulty": "intermediate",
-      "cvImpact": 4,
-      "skills": ["python", "risk-management", "probability"],
-      "estimatedHours": 15,
-      "description": "Implement multiple VaR calculation methods",
-      "actionSteps": [
-        "Implement Historical VaR",
-        "Implement Parametric VaR",
-        "Implement Monte Carlo VaR",
-        "Compare methods and accuracy",
-        "Add backtesting framework",
-        "Create visualization dashboard"
-      ],
-      "starterResources": ["coursera-risk-mgmt", "scipy-docs", "yfinance"],
-      "nuclearNiche": false,
-      "githubTemplate": null
-    },
-    {
-      "id": "greeks-calculator",
-      "title": "Options Greeks Calculator",
-      "difficulty": "intermediate",
-      "cvImpact": 4,
-      "skills": ["python", "derivatives", "probability"],
-      "estimatedHours": 15,
-      "description": "Calculate and visualize options Greeks",
-      "actionSteps": [
-        "Implement Black-Scholes Greeks",
-        "Calculate Delta, Gamma, Theta, Vega, Rho",
-        "Visualize Greeks vs spot price",
-        "Add implied volatility calculator",
-        "Create interactive dashboard",
-        "Apply to hedging strategies"
-      ],
-      "starterResources": ["options-pricing", "scipy-docs", "streamlit"],
-      "nuclearNiche": false,
-      "githubTemplate": null
+      "portfolioRole": "specialization",
+      "scheduledWeeks": [
+        22
+      ]
     },
     {
       "id": "regime-detector",
       "title": "Market Regime Detector",
       "difficulty": "advanced",
-      "cvImpact": 5,
-      "skills": ["python", "supervised-learning", "time-series"],
-      "estimatedHours": 30,
-      "description": "Detect market regimes (bull, bear, sideways) using ML",
-      "actionSteps": [
-        "Download market data",
-        "Implement Hidden Markov Models",
-        "Implement clustering-based regime detection",
-        "Compare methods",
-        "Analyze regime transitions",
-        "Apply to adaptive trading strategies"
+      "cvImpact": 4,
+      "skills": [
+        "python",
+        "supervised-learning",
+        "time-series",
+        "statistics"
       ],
-      "starterResources": ["scikit-learn-docs", "statsmodels-ts", "pandas-docs"],
+      "estimatedHours": 35,
+      "description": "Detect market regimes using Hidden Markov Models and clustering. Shows time series sophistication.",
+      "actionSteps": [
+        "Implement Hidden Markov Model for regime detection (bull/bear/sideways)",
+        "Implement clustering-based regime detection (K-means, GMM)",
+        "Compare HMM vs clustering approaches with proper metrics",
+        "Analyze regime transition probabilities and durations",
+        "Build regime-conditional trading strategy",
+        "Test regime detection on multiple asset classes",
+        "Implement online (real-time) regime detection",
+        "Visualize regime timeline overlaid on price chart",
+        "Write research report on regime dynamics",
+        "Apply to portfolio allocation: adjust exposure by regime"
+      ],
+      "starterResources": [
+        "hmmlearn-docs",
+        "scikit-learn-docs",
+        "statsmodels-docs"
+      ],
       "nuclearNiche": false,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "HMM shows advanced statistical modeling skill",
+        "Online detection shows production thinking",
+        "Multi-asset testing shows generalization ability",
+        "Regime-conditional strategy shows practical application"
+      ],
+      "portfolioRole": "supporting",
+      "scheduledWeeks": [
+        24
+      ]
     },
     {
-      "id": "rebalancing-engine",
-      "title": "Portfolio Rebalancing Engine",
+      "id": "time-series-forecasting",
+      "title": "Time Series Forecasting Comparison",
       "difficulty": "intermediate",
       "cvImpact": 4,
-      "skills": ["python", "portfolio-theory", "optimization"],
-      "estimatedHours": 20,
-      "description": "Build automated portfolio rebalancing system",
-      "actionSteps": [
-        "Define target portfolio allocation",
-        "Implement rebalancing triggers (calendar, threshold)",
-        "Calculate transaction costs",
-        "Optimize rebalancing trades",
-        "Backtest rebalancing strategies",
-        "Create monitoring dashboard"
+      "skills": [
+        "python",
+        "time-series",
+        "supervised-learning",
+        "statistics"
       ],
-      "starterResources": ["coursera-portfolio", "scipy-docs", "yfinance"],
+      "estimatedHours": 35,
+      "description": "Compare multiple time series forecasting methods with proper econometric methodology.",
+      "actionSteps": [
+        "Implement ARIMA/SARIMA with proper order selection (AIC/BIC)",
+        "Implement GARCH for volatility forecasting",
+        "Implement Prophet (Facebook) for trend/seasonality decomposition",
+        "Implement LSTM/Transformer for sequence prediction",
+        "Proper walk-forward validation for all models",
+        "Statistical tests: Diebold-Mariano test for forecast comparison",
+        "Analyze which model works best in which regime",
+        "Implement ensemble/combination forecasts",
+        "Create visualization of all forecasts vs actual",
+        "Write research report with honest model comparison"
+      ],
+      "starterResources": [
+        "statsmodels-docs",
+        "prophet-docs",
+        "coursera-ts-forecasting"
+      ],
       "nuclearNiche": false,
-      "githubTemplate": null
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "Diebold-Mariano test shows econometric rigor",
+        "Walk-forward validation shows proper methodology",
+        "Ensemble approach shows sophistication",
+        "Honest comparison shows intellectual honesty"
+      ],
+      "portfolioRole": "supporting",
+      "scheduledWeeks": [
+        12
+      ]
+    },
+    {
+      "id": "nuclear-risk-dashboard",
+      "title": "Nuclear Risk Assessment Dashboard",
+      "difficulty": "intermediate",
+      "cvImpact": 4,
+      "skills": [
+        "python",
+        "risk-management",
+        "probability",
+        "optimization"
+      ],
+      "estimatedHours": 30,
+      "description": "Build risk dashboard for nuclear operations. Bridge between nuclear safety and financial risk.",
+      "actionSteps": [
+        "Define risk metrics for nuclear operations (core damage frequency, large early release frequency)",
+        "Collect/simulate failure probability data from NRC",
+        "Implement probabilistic risk assessment (PRA) calculations",
+        "Create risk visualization dashboard",
+        "Add safety margin indicators and uncertainty bands",
+        "Apply same framework to financial portfolio risk",
+        "Compare nuclear PRA methodology with financial VaR",
+        "Write research report on cross-domain risk methodology"
+      ],
+      "starterResources": [
+        "streamlit",
+        "pandas-docs",
+        "nrc-docs"
+      ],
+      "nuclearNiche": true,
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "PRA methodology is directly transferable to finance",
+        "Cross-domain comparison shows systems thinking",
+        "Nuclear safety rigor applied to financial risk"
+      ],
+      "portfolioRole": "specialization",
+      "scheduledWeeks": []
+    },
+    {
+      "id": "fuel-cycle-optimizer",
+      "title": "Nuclear Fuel Cycle Optimizer",
+      "difficulty": "advanced",
+      "cvImpact": 5,
+      "skills": [
+        "python",
+        "optimization",
+        "linear-algebra",
+        "numerical-methods"
+      ],
+      "estimatedHours": 40,
+      "description": "Optimize nuclear fuel cycle using linear programming. Same math as portfolio optimization.",
+      "actionSteps": [
+        "Model fuel cycle stages: mining, conversion, enrichment, fabrication, reactor, reprocessing, disposal",
+        "Define objective function: minimize cost, waste, or proliferation risk",
+        "Add constraints: safety limits, capacity, logistics, regulatory",
+        "Implement LP/MILP solver (PuLP or CVXPY)",
+        "Analyze optimal fuel cycle configurations under different scenarios",
+        "Sensitivity analysis on key parameters",
+        "Apply same optimization framework to portfolio construction",
+        "Compare nuclear optimization vs portfolio optimization methodology",
+        "Build interactive dashboard for scenario analysis",
+        "Write research report connecting nuclear and finance optimization"
+      ],
+      "starterResources": [
+        "cvxpy-docs",
+        "pulp-docs",
+        "scipy-docs"
+      ],
+      "nuclearNiche": true,
+      "githubTemplate": null,
+      "whatMakesItImpressive": [
+        "LP/MILP optimization is a core quant skill",
+        "Multi-objective optimization shows mathematical maturity",
+        "Cross-domain bridge shows transferable thinking",
+        "Scenario analysis shows practical optimization experience"
+      ],
+      "portfolioRole": "specialization",
+      "scheduledWeeks": [
+        28
+      ]
     }
   ]
 }

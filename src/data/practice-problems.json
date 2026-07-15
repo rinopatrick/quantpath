@@ -1,0 +1,96 @@
+{
+  "categories": [
+    {
+      "id": "probability",
+      "name": "Probability",
+      "icon": "TrendingUp",
+      "color": "text-blue-500",
+      "problems": [
+        {"id": "p1", "title": "Expected value of dice roll", "difficulty": "easy", "source": "Green Book"},
+        {"id": "p2", "title": "Variance of Bernoulli distribution", "difficulty": "easy", "source": "Green Book"},
+        {"id": "p3", "title": "Central Limit Theorem application", "difficulty": "medium", "source": "Green Book"},
+        {"id": "p4", "title": "Bayes' theorem - disease testing", "difficulty": "medium", "source": "Green Book"},
+        {"id": "p5", "title": "Conditional probability - card problems", "difficulty": "medium", "source": "Green Book"},
+        {"id": "p6", "title": "Expected value of coin flips until HH", "difficulty": "hard", "source": "Green Book"},
+        {"id": "p7", "title": "Poisson process - arrivals", "difficulty": "medium", "source": "Green Book"},
+        {"id": "p8", "title": "Markov chain steady state", "difficulty": "hard", "source": "Green Book"},
+        {"id": "p9", "title": "Random walk probability", "difficulty": "medium", "source": "Green Book"},
+        {"id": "p10", "title": "Coupon collector problem", "difficulty": "hard", "source": "Green Book"},
+        {"id": "p11", "title": "Birthday paradox", "difficulty": "easy", "source": "Heard on the Street"},
+        {"id": "p12", "title": "Monty Hall problem", "difficulty": "medium", "source": "Heard on the Street"},
+        {"id": "p13", "title": "Two envelopes paradox", "difficulty": "hard", "source": "Heard on the Street"},
+        {"id": "p14", "title": "Probability of flush in poker", "difficulty": "medium", "source": "Green Book"},
+        {"id": "p15", "title": "Expected number of rolls to see all faces", "difficulty": "hard", "source": "Green Book"},
+        {"id": "p16", "title": "Binomial distribution application", "difficulty": "easy", "source": "QuantGuide"},
+        {"id": "p17", "title": "Normal distribution - 68-95-99.7 rule", "difficulty": "easy", "source": "QuantGuide"},
+        {"id": "p18", "title": "Joint probability - multiple events", "difficulty": "medium", "source": "QuantGuide"},
+        {"id": "p19", "title": "Law of total probability", "difficulty": "medium", "source": "QuantGuide"},
+        {"id": "p20", "title": "Memoryless property of exponential", "difficulty": "hard", "source": "Green Book"}
+      ]
+    },
+    {
+      "id": "brainteasers",
+      "name": "Brainteasers",
+      "icon": "Brain",
+      "color": "text-purple-500",
+      "problems": [
+        {"id": "b1", "title": "How many golf balls fit in a bus?", "difficulty": "medium", "source": "Green Book"},
+        {"id": "b2", "title": "8 balls, one heavier - 2 weighings", "difficulty": "medium", "source": "Green Book"},
+        {"id": "b3", "title": "100 lockers problem", "difficulty": "medium", "source": "Green Book"},
+        {"id": "b4", "title": "Two ropes burn in 1 hour", "difficulty": "medium", "source": "Heard on the Street"},
+        {"id": "b5", "title": "3 light bulbs and 3 switches", "difficulty": "easy", "source": "Heard on the Street"},
+        {"id": "b6", "title": "Blue eyes puzzle (island)", "difficulty": "hard", "source": "Green Book"},
+        {"id": "b7", "title": "100 prisoners and light bulb", "difficulty": "hard", "source": "Green Book"},
+        {"id": "b8", "title": "Ants on a triangle", "difficulty": "medium", "source": "Heard on the Street"},
+        {"id": "b9", "title": "Clock hands overlap", "difficulty": "easy", "source": "Heard on the Street"},
+        {"id": "b10", "title": "Bridge crossing at night", "difficulty": "medium", "source": "Green Book"},
+        {"id": "b11", "title": "Water jug problem", "difficulty": "easy", "source": "QuantGuide"},
+        {"id": "b12", "title": "Pirates and gold coins", "difficulty": "hard", "source": "Green Book"},
+        {"id": "b13", "title": "Hat puzzle (prisoners)", "difficulty": "hard", "source": "Green Book"},
+        {"id": "b14", "title": "Fermi estimation - piano tuners", "difficulty": "medium", "source": "Heard on the Street"},
+        {"id": "b15", "title": "Fermi estimation - gas stations in US", "difficulty": "medium", "source": "Heard on the Street"}
+      ]
+    },
+    {
+      "id": "numerical",
+      "name": "Numerical & Mental Math",
+      "icon": "Calculator",
+      "color": "text-green-500",
+      "problems": [
+        {"id": "n1", "title": "Calculate 17 × 23 in your head", "difficulty": "easy", "source": "Mental Math"},
+        {"id": "n2", "title": "Square root of 2 to 3 decimal places", "difficulty": "medium", "source": "Mental Math"},
+        {"id": "n3", "title": "Sum of 1 to 100", "difficulty": "easy", "source": "Mental Math"},
+        {"id": "n4", "title": "2^10 without calculator", "difficulty": "easy", "source": "Mental Math"},
+        {"id": "n5", "title": "Percentage change: 80 to 100", "difficulty": "easy", "source": "Mental Math"},
+        {"id": "n6", "title": "Compound interest: 10% for 7 years", "difficulty": "medium", "source": "Finance"},
+        {"id": "n7", "title": "Bond price from yield", "difficulty": "medium", "source": "Finance"},
+        {"id": "n8", "title": "Black-Scholes call price (given inputs)", "difficulty": "hard", "source": "Finance"},
+        {"id": "n9", "title": "Portfolio variance (2 assets)", "difficulty": "medium", "source": "Finance"},
+        {"id": "n10", "title": "Sharpe ratio calculation", "difficulty": "easy", "source": "Finance"},
+        {"id": "n11", "title": "VaR at 95% confidence", "difficulty": "medium", "source": "Finance"},
+        {"id": "n12", "title": "Greeks: Delta of ATM call", "difficulty": "medium", "source": "Finance"},
+        {"id": "n13", "title": "Matrix multiplication (2x2)", "difficulty": "medium", "source": "Linear Algebra"},
+        {"id": "n14", "title": "Eigenvalues of 2x2 matrix", "difficulty": "hard", "source": "Linear Algebra"},
+        {"id": "n15", "title": "Derivative of x^x", "difficulty": "medium", "source": "Calculus"}
+      ]
+    },
+    {
+      "id": "market-making",
+      "name": "Market Making Games",
+      "icon": "TrendingUp",
+      "color": "text-yellow-500",
+      "problems": [
+        {"id": "m1", "title": "Fair price for dice game", "difficulty": "easy", "source": "Green Book"},
+        {"id": "m2", "title": "Bid-ask spread estimation", "difficulty": "medium", "source": "Heard on the Street"},
+        {"id": "m3", "title": "Optimal bidding strategy", "difficulty": "hard", "source": "Green Book"},
+        {"id": "m4", "title": "Kelly criterion application", "difficulty": "medium", "source": "Green Book"},
+        {"id": "m5", "title": "Arbitrage detection", "difficulty": "medium", "source": "Heard on the Street"},
+        {"id": "m6", "title": "Pricing a new product", "difficulty": "medium", "source": "QuantGuide"},
+        {"id": "m7", "title": "Risk-neutral pricing", "difficulty": "hard", "source": "Green Book"},
+        {"id": "m8", "title": "Expected profit from market making", "difficulty": "medium", "source": "Heard on the Street"},
+        {"id": "m9", "title": "Inventory management problem", "difficulty": "hard", "source": "Green Book"},
+        {"id": "m10", "title": "Optimal execution strategy", "difficulty": "hard", "source": "QuantGuide"}
+      ]
+    }
+  ]
+}

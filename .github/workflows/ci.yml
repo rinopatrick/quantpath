@@ -14,6 +14,8 @@ jobs:
           cache: npm
       - name: Install
         run: npm ci
+      - name: Validate curriculum data
+        run: npm run validate:data
       - name: Lint (optional)
         run: npm run lint --if-present
       - name: Test (optional)

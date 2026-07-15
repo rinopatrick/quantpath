@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
+import { SkillAssessor } from '@/components/ai/SkillAssessor';
 import { 
   User, 
   BookOpen, 
@@ -13,13 +14,18 @@ import {
   Calendar,
   Download,
   Upload,
+  RotateCcw,
   Sigma,
   Code,
   DollarSign,
   Brain,
   Wrench,
   Clock,
-  CheckCircle
+  CheckCircle,
+  Sparkles,
+  Share2,
+  Copy,
+  Check
 } from 'lucide-react';
 import skillsData from '@/data/skills.json';
 import resourcesData from '@/data/resources.json';
@@ -93,6 +99,17 @@ export default function ProfilePage() {
     reader.readAsText(file);
   };
 
+  // Reset progress
+  const resetProgress = () => {
+    if (!confirm('Are you sure you want to reset ALL progress? This cannot be undone.')) return;
+    if (!confirm('This will delete all your completed tasks, resources, projects, and streak data. Continue?')) return;
+    
+    localStorage.removeItem('quantpath-progress');
+    localStorage.removeItem('quantpath-practice');
+    localStorage.removeItem('quantpath-flashcards');
+    window.location.reload();
+  };
+
   // Calculate skill progress
   const skillProgress = skillsData.categories.map((category) => {
     const totalSkills = category.skills.length;
@@ -117,6 +134,25 @@ export default function ProfilePage() {
   const projectProgress = (progress.projectsCompleted.length / totalProjects) * 100;
   const competitionProgress = (Object.keys(progress.competitions).length / totalCompetitions) * 100;
   const weekProgress = (progress.currentWeek / totalWeeks) * 100;
+
+  // Progress sharing
+  const [copied, setCopied] = useState(false);
+
+  const shareText = `I completed ${progress.resourcesCompleted.length}/${totalResources} resources and ${progress.projectsCompleted.length}/${totalProjects} projects on QuantPath! 🚀 #QuantFinance #Learning`;
+
+  const copyToClipboard = async () => {
+    await navigator.clipboard.writeText(shareText);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const shareToLinkedIn = () => {
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://quantpath.dev')}&summary=${encodeURIComponent(shareText)}`, '_blank');
+  };
+
+  const shareToTwitter = () => {
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`, '_blank');
+  };
 
   return (
     <div className="space-y-6">
@@ -159,7 +195,40 @@ export default function ProfilePage() {
           <Download className="h-4 w-4 mr-2" />
           Export PDF
         </Button>
+        <Button 
+          variant="outline" 
+          onClick={resetProgress}
+          className="border-red-700 text-red-400 hover:bg-red-500/10"
+        >
+          <RotateCcw className="h-4 w-4 mr-2" />
+          Reset Progress
+        </Button>
       </div>
+
+      {/* Share Progress */}
+      <Card className="bg-slate-900 border-slate-800">
+        <CardHeader>
+          <CardTitle className="text-lg text-white flex items-center gap-2">
+            <Share2 className="h-5 w-5 text-blue-400" />
+            Share Progress
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-slate-300 mb-4">{shareText}</p>
+          <div className="flex gap-3">
+            <Button variant="outline" onClick={copyToClipboard} className="border-slate-700 text-slate-400">
+              {copied ? <Check className="h-4 w-4 mr-2 text-green-400" /> : <Copy className="h-4 w-4 mr-2" />}
+              {copied ? 'Copied!' : 'Copy to Clipboard'}
+            </Button>
+            <Button variant="outline" onClick={shareToLinkedIn} className="border-blue-700 text-blue-400 hover:bg-blue-500/10">
+              Share on LinkedIn
+            </Button>
+            <Button variant="outline" onClick={shareToTwitter} className="border-slate-700 text-slate-400 hover:bg-slate-500/10">
+              Share on X
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Overall Progress */}
       <div className="grid gap-4 md:grid-cols-4">
@@ -216,7 +285,10 @@ export default function ProfilePage() {
       {/* Skill Progress */}
       <Card className="bg-slate-900 border-slate-800">
         <CardHeader>
-          <CardTitle className="text-lg text-white">Skill Progress</CardTitle>
+          <CardTitle className="text-lg text-white flex items-center gap-2">
+            <Sparkles className="h-5 w-5 text-purple-400" />
+            Skill Progress
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
@@ -257,6 +329,12 @@ export default function ProfilePage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* AI Skill Assessment */}
+      <SkillAssessor 
+        skillName="Python"
+        currentLevel={progress.skills?.['python'] || 0}
+      />
 
       {/* 24-Week Timeline */}
       <Card className="bg-slate-900 border-slate-800">

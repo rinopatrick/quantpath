@@ -1,205 +1,1282 @@
 {
-  "weeks": 24,
+  "weeks": 32,
+  "version": "3.0",
+  "description": "Canonical 32-week, evidence-driven path from nuclear engineering to Quant Research + Energy Quant, with optional specialist branches.",
   "milestones": [
     {
       "week": 4,
-      "title": "Python & Math Fundamentals",
-      "description": "Master Python basics and review essential mathematics",
-      "skills": ["python", "linear-algebra", "calculus"],
-      "resources": ["mit-60001", "mit-1806", "mit-1801", "3b1b-linear-algebra"],
-      "projects": ["correlation-visualizer"],
-      "competitions": ["alpaca-paper-trading"]
+      "title": "Programming & Math Foundations",
+      "description": "Python, SQL, Linear Algebra, Calculus — the building blocks",
+      "skills": [
+        "python",
+        "sql",
+        "linear-algebra",
+        "calculus"
+      ],
+      "resources": [
+        "python-official",
+        "mit-60001",
+        "automate-boring-stuff",
+        "kaggle-sql",
+        "coursera-sql",
+        "pro-git",
+        "leetcode",
+        "mit-1806",
+        "3b1b-linear-algebra",
+        "numpy-docs",
+        "mit-1801",
+        "mit-numerical-methods",
+        "scipy-docs",
+        "convex-optimization"
+      ],
+      "projects": [
+        "portfolio-optimizer"
+      ],
+      "competitions": [
+        "alpaca-paper-trading"
+      ],
+      "goal": "Numerical-methods notebook and constrained portfolio optimizer"
     },
     {
       "week": 8,
-      "title": "Finance & Statistics",
-      "description": "Learn financial markets and statistical methods",
-      "skills": ["financial-markets", "probability", "statistics"],
-      "resources": ["mit-15401", "yale-financial-markets", "harvard-stat110", "khan-probability"],
-      "projects": ["stock-price-predictor", "var-calculator"],
-      "competitions": ["kaggle-march-mania"]
+      "title": "Probability & Statistics Mastery",
+      "description": "Deep probability and statistics — the core of quant thinking",
+      "skills": [
+        "probability",
+        "statistics"
+      ],
+      "resources": [
+        "mit-6041",
+        "harvard-stat110",
+        "khan-probability",
+        "mit-6-041",
+        "think-stats",
+        "mit-18-650",
+        "stanford-intro-statistics",
+        "statsmodels-docs",
+        "think-bayes",
+        "bayesian-data-analysis",
+        "pymc"
+      ],
+      "projects": [
+        "risk-dashboard"
+      ],
+      "competitions": [
+        "alpaca-paper-trading"
+      ],
+      "goal": "Bayesian updating notebook and risk case study"
     },
     {
       "week": 12,
-      "title": "Data Analysis & ML Basics",
-      "description": "Master data analysis tools and introductory machine learning",
-      "skills": ["pandas-numpy", "matplotlib-seaborn", "supervised-learning"],
-      "resources": ["kaggle-learn", "scikit-learn-docs", "andrew-ng-ml", "pandas-docs"],
-      "projects": ["portfolio-optimizer", "time-series-forecasting"],
-      "competitions": ["numerai", "kaggle-financial-engineering"]
+      "title": "Financial Markets & C++ Fundamentals",
+      "description": "Understand how markets work and start building C++ skills",
+      "skills": [
+        "financial-markets",
+        "cpp",
+        "data-structures"
+      ],
+      "resources": [
+        "mit-15401",
+        "yale-financial-markets",
+        "coursera-financial-markets",
+        "coursera-cpp",
+        "learncpp",
+        "coursera-ml-ng",
+        "scikit-learn-docs",
+        "statsmodels-ts",
+        "coursera-ts-econometrics",
+        "prophet-docs"
+      ],
+      "projects": [
+        "time-series-forecasting"
+      ],
+      "competitions": [
+        "kaggle-financial"
+      ],
+      "goal": "ARIMA/GARCH forecasting comparison with walk-forward evaluation"
     },
     {
       "week": 16,
-      "title": "Derivatives & Advanced Topics",
-      "description": "Learn derivatives pricing and advanced quantitative methods",
-      "skills": ["derivatives", "risk-management", "optimization"],
-      "resources": ["coursera-fe-1", "coursera-risk-mgmt", "convex-optimization", "mit-15480"],
-      "projects": ["options-pricing", "risk-dashboard", "greeks-calculator"],
-      "competitions": ["worldquant-brain", "quantconnect-alpha"]
+      "title": "Machine Learning & Time Series",
+      "description": "ML fundamentals and proper time series econometrics",
+      "skills": [
+        "supervised-learning",
+        "time-series",
+        "pandas-numpy"
+      ],
+      "resources": [
+        "andrew-ng-ml",
+        "scikit-learn-docs",
+        "kaggle-learn",
+        "hands-on-ml",
+        "kaggle-competitions",
+        "statsmodels-docs",
+        "statsmodels-ts",
+        "prophet",
+        "shreve-stochastic",
+        "mit-18-s096",
+        "scipy-docs"
+      ],
+      "projects": [
+        "ml-trading-strategy",
+        "regime-detector"
+      ],
+      "competitions": [
+        "numerai"
+      ],
+      "goal": "Black–Scholes derivation, Greeks, and implied-volatility surface"
     },
     {
       "week": 20,
-      "title": "Deep Learning & Advanced Projects",
-      "description": "Deep learning for finance and building advanced projects",
-      "skills": ["deep-learning", "time-series", "nlp"],
-      "resources": ["fast-ai", "andrew-ng-dl", "huggingface-courses", "mit-6s191"],
-      "projects": ["trading-backtester", "sentiment-analysis", "energy-market-analyzer"],
-      "competitions": ["kaggle-jane-street", "kaggle-two-sigma"]
+      "title": "Stochastic Calculus & Derivatives",
+      "description": "The mathematical engine of quantitative finance",
+      "skills": [
+        "stochastic-calculus",
+        "derivatives",
+        "risk-management"
+      ],
+      "resources": [
+        "coursera-fe-1",
+        "glasserman-monte-carlo",
+        "quantlib-python",
+        "coursera-fe-2",
+        "coursera-portfolio",
+        "convex-optimization",
+        "coursera-dl-specialization",
+        "pytorch-tutorials",
+        "huggingface-courses",
+        "mit-18-s096",
+        "pytest-docs",
+        "github-actions-docs"
+      ],
+      "projects": [
+        "options-volatility-surface",
+        "risk-dashboard"
+      ],
+      "competitions": [
+        "worldquant-brain",
+        "quantconnect-alpha"
+      ],
+      "goal": "Tested pricing/research package with CI and reproducible environment"
     },
     {
       "week": 24,
-      "title": "Competitions & Job Applications",
-      "description": "Enter competitions, complete portfolio, and apply for jobs",
-      "skills": ["market-microstructure", "reinforcement-learning"],
-      "resources": ["stanford-cs224n", "sutton-barto", "quantguide"],
-      "projects": ["monte-carlo-radiation", "nuclear-reactor-sim", "thermal-hydraulics", "fuel-cycle-optimizer", "ml-trading-strategy"],
-      "competitions": ["optiver-trading", "imc-prosperity", "citadel-datathon"]
+      "title": "Advanced Math & Deep Learning",
+      "description": "Mathematics in finance applications and deep learning for markets",
+      "skills": [
+        "deep-learning",
+        "nlp",
+        "optimization",
+        "cpp"
+      ],
+      "resources": [
+        "quantconnect-strategies",
+        "quantconnect-tutorials",
+        "yfinance",
+        "avellaneda-stoikov-paper",
+        "websocket-docs",
+        "cpp-quant",
+        "power-market-fundamentals",
+        "eia-api",
+        "fred-api",
+        "openmc",
+        "kaggle-competitions",
+        "quantguide"
+      ],
+      "projects": [
+        "trading-backtester",
+        "energy-market-analyzer"
+      ],
+      "competitions": [
+        "numerai-signals",
+        "quantiacs"
+      ],
+      "goal": "Competition submission and polished portfolio evidence"
+    },
+    {
+      "week": 28,
+      "title": "Algorithmic Trading & Nuclear Niche",
+      "description": "Build real trading systems and leverage nuclear engineering expertise",
+      "skills": [
+        "reinforcement-learning",
+        "market-microstructure",
+        "numerical-methods"
+      ],
+      "resources": [
+        "green-book",
+        "green-book-practical",
+        "quantguide",
+        "leetcode",
+        "learncpp",
+        "boost-asio",
+        "github-actions-docs",
+        "pytest-docs"
+      ],
+      "projects": [
+        "market-microstructure-simulator",
+        "monte-carlo-radiation"
+      ],
+      "competitions": [
+        "optiver-trading",
+        "imc-prosperity"
+      ],
+      "goal": "Three portfolio candidates passed through quality gates"
+    },
+    {
+      "week": 32,
+      "title": "Job Ready — Portfolio, Interview & Applications",
+      "description": "Polish everything, practice interviews, and start applying",
+      "skills": [
+        "interview-prep",
+        "brainteasers",
+        "system-design"
+      ],
+      "resources": [
+        "green-book",
+        "green-book-practical",
+        "quantguide",
+        "leetcode",
+        "learncpp",
+        "boost-asio",
+        "github-actions-docs",
+        "pytest-docs",
+        "power-market-fundamentals"
+      ],
+      "projects": [
+        "ml-trading-strategy",
+        "energy-market-analyzer",
+        "market-microstructure-simulator"
+      ],
+      "competitions": [
+        "citadel-datathon"
+      ],
+      "goal": "Job-ready portfolio: three repos, two reports, mocks, and active pipeline"
     }
   ],
   "weeklySchedule": [
     {
       "week": 1,
-      "focus": "Python Setup & Basics",
-      "tasks": ["Set up Python environment", "Complete Python tutorial", "Start MIT 6.0001"],
-      "hours": 15
+      "focus": "Python Setup & Fundamentals",
+      "tasks": [
+        "Install Python 3.12",
+        "Install VS Code + Python Extension",
+        "Python Official Tutorial: Introduction",
+        "MIT 6.0001 Lecture 1: What is Computation?",
+        "Practice: Hello World + Simple Calculator"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Python setup repo with tested scripts and a learning log",
+      "resourceIds": [
+        "python-official",
+        "mit-60001",
+        "automate-boring-stuff"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-1",
+        "lc-20"
+      ]
     },
     {
       "week": 2,
-      "focus": "Python Proficiency",
-      "tasks": ["Continue MIT 6.0001", "Practice on LeetCode", "Learn Git basics"],
-      "hours": 15
+      "focus": "Python Advanced & SQL Mastery",
+      "tasks": [
+        "MIT 6.0001 Lecture 6: Recursion",
+        "Python: List/Dict/Set Comprehensions",
+        "Python: Generators & Iterators",
+        "Kaggle SQL: GROUP BY & HAVING",
+        "Kaggle SQL: JOINs"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "SQL market-data notebook plus clean Git history",
+      "resourceIds": [
+        "kaggle-sql",
+        "coursera-sql",
+        "pro-git",
+        "leetcode"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-21",
+        "lc-121"
+      ]
     },
     {
       "week": 3,
-      "focus": "Linear Algebra",
-      "tasks": ["Start MIT 18.06", "Watch 3Blue1Brown", "Practice matrix operations"],
-      "hours": 15
+      "focus": "Linear Algebra Deep Dive",
+      "tasks": [
+        "3Blue1Brown: Essence of Linear Algebra (Videos 1-4)",
+        "MIT 18.06 Lecture 1: Geometry of Linear Equations",
+        "Practice: Matrix Operations in NumPy",
+        "MIT 18.06 Lecture 2: Elimination with Matrices",
+        "MIT 18.06 Lecture 3: Multiplication and Inverse"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Covariance, PCA, and eigen-analysis notebook",
+      "resourceIds": [
+        "mit-1806",
+        "3b1b-linear-algebra",
+        "numpy-docs"
+      ],
+      "projectIds": [],
+      "paperIds": [
+        "markowitz-1952"
+      ],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-125",
+        "lc-206"
+      ]
     },
     {
       "week": 4,
-      "focus": "Calculus Review",
-      "tasks": ["Start MIT 18.01", "Review derivatives and integrals", "Build correlation visualizer"],
-      "hours": 15
+      "focus": "Calculus Review & Foundations Complete",
+      "tasks": [
+        "MIT 18.01 Lecture 1: Derivatives",
+        "Khan Academy: Derivatives Review",
+        "Practice: Derivative Problems",
+        "MIT 18.01: Integration",
+        "Khan Academy: Integrals"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Numerical-methods notebook and constrained portfolio optimizer",
+      "resourceIds": [
+        "mit-1801",
+        "mit-numerical-methods",
+        "scipy-docs",
+        "convex-optimization"
+      ],
+      "projectIds": [
+        "portfolio-optimizer"
+      ],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-217",
+        "lc-226"
+      ]
     },
     {
       "week": 5,
-      "focus": "Probability Foundations",
-      "tasks": ["Start Harvard Stat 110", "Learn probability distributions", "Practice problems"],
-      "hours": 15
+      "focus": "Probability Foundations — MIT 6.041",
+      "tasks": [
+        "MIT 6.041 Lecture 1: Probability Models",
+        "3Blue1Brown: Binomial Distribution",
+        "Practice: Sample Space Problems",
+        "QuantGuide: 5 Easy Probability",
+        "MIT 6.041 Lecture 2: Conditioning"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Discrete-probability problem set and simulations",
+      "resourceIds": [
+        "mit-6041",
+        "harvard-stat110",
+        "khan-probability"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-242",
+        "lc-704"
+      ]
     },
     {
       "week": 6,
-      "focus": "Statistics Methods",
-      "tasks": ["Continue Stat 110", "Learn hypothesis testing", "Start Khan Academy Statistics"],
-      "hours": 15
+      "focus": "Probability — Continuous Distributions & CLT",
+      "tasks": [
+        "MIT 6.041 Lecture 7: Continuous Random Variables",
+        "Central Limit Theorem",
+        "Python: CLT Simulation",
+        "Practice: Normal Distribution Problems",
+        "MIT 6.041 Lecture 8: MGFs"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Distribution, expectation, CLT, and Monte Carlo notebook",
+      "resourceIds": [
+        "mit-6-041",
+        "harvard-stat110",
+        "think-stats"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-733",
+        "lc-104"
+      ]
     },
     {
       "week": 7,
-      "focus": "Financial Markets",
-      "tasks": ["Start MIT 15.401", "Learn market structure", "Explore Investopedia"],
-      "hours": 15
+      "focus": "Statistics — Inference & Hypothesis Testing",
+      "tasks": [
+        "MIT 18.650 Lecture 1: Estimation",
+        "Stanford Statistics: Confidence Intervals",
+        "Practice: MLE Problems",
+        "Python: Confidence Intervals",
+        "MIT 18.650: Hypothesis Testing"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Inference report with hypothesis tests and diagnostics",
+      "resourceIds": [
+        "mit-18-650",
+        "stanford-intro-statistics",
+        "statsmodels-docs"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-141",
+        "lc-53"
+      ]
     },
     {
       "week": 8,
-      "focus": "Finance & Data",
-      "tasks": ["Continue MIT 15.401", "Learn Pandas/NumPy", "Build stock predictor"],
-      "hours": 15
+      "focus": "Probability & Statistics — Mastery & Application",
+      "tasks": [
+        "Harvard Stat 110: Bayesian Inference",
+        "Bayesian vs Frequentist",
+        "Python: Bayesian Updating",
+        "Finance: Bayesian Portfolio Estimation",
+        "Time Series: Stationarity & Autocorrelation"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Bayesian updating notebook and risk case study",
+      "resourceIds": [
+        "think-bayes",
+        "bayesian-data-analysis",
+        "pymc"
+      ],
+      "projectIds": [
+        "risk-dashboard"
+      ],
+      "paperIds": [],
+      "competitionIds": [
+        "alpaca-paper-trading"
+      ],
+      "leetcodeIds": [
+        "lc-100",
+        "lc-15"
+      ]
     },
     {
       "week": 9,
-      "focus": "Data Visualization",
-      "tasks": ["Learn Matplotlib/Seaborn", "Create financial charts", "Download market data"],
-      "hours": 15
+      "focus": "Financial Markets — MIT 15.401 Start",
+      "tasks": [
+        "MIT 15.401 Lecture 1: Introduction",
+        "Investopedia: Financial Markets Overview",
+        "Coursera: Financial Markets (Yale) Module 1",
+        "Practice: Identify Market Instruments",
+        "MIT 15.401 Lecture 2: Present Value Relations"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Financial-markets primer with data-backed examples",
+      "resourceIds": [
+        "mit-15401",
+        "yale-financial-markets",
+        "coursera-financial-markets"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-11",
+        "lc-3"
+      ]
     },
     {
       "week": 10,
-      "focus": "ML Fundamentals",
-      "tasks": ["Start Andrew Ng ML", "Learn regression", "Learn classification"],
-      "hours": 15
+      "focus": "Portfolio Theory & C++ Functions",
+      "tasks": [
+        "MIT 15.401 Lecture 8: Portfolio Theory",
+        "MIT 15.401 Lecture 9: CAPM",
+        "Practice: CAPM Problems",
+        "MIT 15.401 Lecture 10: APT",
+        "MIT 15.401 Lecture 11: Efficient Markets"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "Portfolio model plus C++ financial-functions library",
+      "resourceIds": [
+        "mit-15401",
+        "coursera-cpp",
+        "learncpp"
+      ],
+      "projectIds": [],
+      "paperIds": [
+        "kelly-1956"
+      ],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-49",
+        "lc-347"
+      ]
     },
     {
       "week": 11,
-      "focus": "ML Practice",
-      "tasks": ["Continue ML course", "Practice on Kaggle", "Build portfolio optimizer"],
-      "hours": 15
+      "focus": "C++ STL & ML Fundamentals Start",
+      "tasks": [
+        "learncpp.com: STL Containers",
+        "learncpp.com: Associative Containers",
+        "Practice: STL for Finance",
+        "LeetCode: Hash Map in C++",
+        "learncpp.com: STL Algorithms"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "C++ STL exercises and first ML baseline",
+      "resourceIds": [
+        "coursera-ml-ng",
+        "scikit-learn-docs",
+        "learncpp"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-19",
+        "lc-33"
+      ]
     },
     {
       "week": 12,
-      "focus": "Time Series",
-      "tasks": ["Learn time series basics", "Implement ARIMA", "Build forecasting model"],
-      "hours": 15
+      "focus": "Time Series Econometrics Deep Dive",
+      "tasks": [
+        "Coursera: Practical Time Series Analysis",
+        "ARIMA: AR, MA, ARIMA Components",
+        "Python: Fit ARIMA to Stock Data",
+        "Practice: ARIMA Order Selection",
+        "Coursera: Seasonal Models"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "core"
+      ],
+      "deliverable": "ARIMA/GARCH forecasting comparison with walk-forward evaluation",
+      "resourceIds": [
+        "statsmodels-ts",
+        "coursera-ts-econometrics",
+        "prophet-docs"
+      ],
+      "projectIds": [
+        "time-series-forecasting"
+      ],
+      "paperIds": [
+        "engle-1982",
+        "bollerslev-1986"
+      ],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-39",
+        "lc-46"
+      ]
     },
     {
       "week": 13,
-      "focus": "Derivatives Introduction",
-      "tasks": ["Start Coursera FE", "Learn options basics", "Understand Black-Scholes"],
-      "hours": 15
+      "focus": "Machine Learning — Coursera ML Specialization",
+      "tasks": [
+        "Coursera ML: Linear Regression Review",
+        "Coursera ML: Multiple Linear Regression",
+        "Python: Implement Linear Regression",
+        "Kaggle Learn: Intro to ML",
+        "Coursera ML: Logistic Regression"
+      ],
+      "hours": 18.5,
+      "tracks": [
+        "quant-research"
+      ],
+      "deliverable": "Leakage-safe ML research pipeline with purged validation",
+      "resourceIds": [
+        "andrew-ng-ml",
+        "scikit-learn-docs",
+        "kaggle-learn"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-48",
+        "lc-56"
+      ]
     },
     {
       "week": 14,
-      "focus": "Options Pricing",
-      "tasks": ["Implement Black-Scholes", "Calculate Greeks", "Build options pricer"],
-      "hours": 15
+      "focus": "Advanced ML & Kaggle Competitions",
+      "tasks": [
+        "Feature Engineering: Technical Indicators",
+        "Feature Engineering: Fundamental",
+        "Feature Engineering: Macro",
+        "Python: Build Feature Matrix",
+        "Grid Search & Random Search"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "quant-research"
+      ],
+      "deliverable": "Kaggle baseline, model comparison, and error analysis",
+      "resourceIds": [
+        "hands-on-ml",
+        "kaggle-competitions",
+        "scikit-learn-docs"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [
+        "kaggle-financial"
+      ],
+      "leetcodeIds": [
+        "lc-73",
+        "lc-102"
+      ]
     },
     {
       "week": 15,
-      "focus": "Risk Management",
-      "tasks": ["Start risk management course", "Learn VaR", "Build risk dashboard"],
-      "hours": 15
+      "focus": "Time Series Econometrics — Advanced",
+      "tasks": [
+        "Coursera: Econometrics Module 1",
+        "Coursera: Econometrics Module 2",
+        "Python: Test OLS Assumptions",
+        "Practice: Econometrics Problems",
+        "Coursera: Panel Data Methods"
+      ],
+      "hours": 17.75,
+      "tracks": [
+        "quant-research"
+      ],
+      "deliverable": "Econometrics report with multiple-testing controls",
+      "resourceIds": [
+        "statsmodels-docs",
+        "statsmodels-ts",
+        "prophet"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-133",
+        "lc-152"
+      ]
     },
     {
       "week": 16,
-      "focus": "Optimization",
-      "tasks": ["Learn convex optimization", "Apply to portfolio", "Build optimizer"],
-      "hours": 15
+      "focus": "Stochastic Calculus & Derivatives Introduction",
+      "tasks": [
+        "Shreve Stochastic Calculus Vol 1: Ch 1-2",
+        "Brownian Motion Properties",
+        "Python: Simulate Brownian Motion",
+        "Practice: BM Problems",
+        "Shreve: Ito's Lemma"
+      ],
+      "hours": 17.75,
+      "tracks": [
+        "derivatives-risk"
+      ],
+      "deliverable": "Black–Scholes derivation, Greeks, and implied-volatility surface",
+      "resourceIds": [
+        "shreve-stochastic",
+        "mit-18-s096",
+        "scipy-docs"
+      ],
+      "projectIds": [
+        "options-volatility-surface"
+      ],
+      "paperIds": [
+        "black-scholes-1973",
+        "merton-1973"
+      ],
+      "competitionIds": [
+        "numerai"
+      ],
+      "leetcodeIds": [
+        "lc-200",
+        "lc-207"
+      ]
     },
     {
       "week": 17,
-      "focus": "Deep Learning Basics",
-      "tasks": ["Start Fast.ai course", "Build first neural network", "Learn PyTorch"],
-      "hours": 15
+      "focus": "Columbia Financial Engineering Part 1",
+      "tasks": [
+        "Coursera FE Part 1: Module 1",
+        "Binomial Asset Pricing Model",
+        "Python: Binomial Tree Pricer",
+        "Practice: Binomial Problems",
+        "Coursera FE Part 1: Module 2"
+      ],
+      "hours": 17.75,
+      "tracks": [
+        "derivatives-risk"
+      ],
+      "deliverable": "Monte Carlo option pricer with variance reduction and model comparison",
+      "resourceIds": [
+        "coursera-fe-1",
+        "glasserman-monte-carlo",
+        "quantlib-python"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-238",
+        "lc-271"
+      ]
     },
     {
       "week": 18,
-      "focus": "Deep Learning Practice",
-      "tasks": ["Continue DL course", "Apply to financial data", "Build trading backtester"],
-      "hours": 15
+      "focus": "Columbia FE Part 2 & Portfolio Theory",
+      "tasks": [
+        "Coursera FE Part 2: Module 1",
+        "Vasicek & CIR Deep Dive",
+        "Python: Simulate Interest Rates",
+        "Practice: Term Structure Problems",
+        "Coursera FE Part 2: Module 2"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "derivatives-risk",
+        "quant-research"
+      ],
+      "deliverable": "Rates, credit, and portfolio-risk notebook",
+      "resourceIds": [
+        "coursera-fe-2",
+        "coursera-portfolio",
+        "convex-optimization"
+      ],
+      "projectIds": [],
+      "paperIds": [
+        "hull-white-1990",
+        "black-litterman-1992"
+      ],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-300",
+        "lc-322"
+      ]
     },
     {
       "week": 19,
-      "focus": "NLP for Finance",
-      "tasks": ["Learn NLP basics", "Build sentiment analyzer", "Process financial news"],
-      "hours": 15
+      "focus": "Deep Learning — Coursera DL Specialization",
+      "tasks": [
+        "Coursera DL: Neural Networks Course 1",
+        "Coursera DL: Shallow Networks",
+        "Python: NN from Scratch",
+        "Practice: Backpropagation",
+        "Coursera DL: Deep Networks"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "quant-research"
+      ],
+      "deliverable": "Deep-learning experiment with honest out-of-sample benchmark",
+      "resourceIds": [
+        "coursera-dl-specialization",
+        "pytorch-tutorials",
+        "huggingface-courses"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-416",
+        "lc-417"
+      ]
     },
     {
       "week": 20,
-      "focus": "Advanced Projects",
-      "tasks": ["Build energy market analyzer", "Work on nuclear projects", "Enter Kaggle competition"],
-      "hours": 15
+      "focus": "MIT Mathematics in Finance & Advanced Projects",
+      "tasks": [
+        "MIT 18.S096: Lecture 1-2",
+        "MIT 18.S096: Lecture 3-4",
+        "Practice: PCA for Portfolio Risk",
+        "MIT 18.S096: Lecture 5-6",
+        "MIT 18.S096: Lecture 7-8"
+      ],
+      "hours": 17.75,
+      "tracks": [
+        "quant-research",
+        "quant-dev"
+      ],
+      "deliverable": "Tested pricing/research package with CI and reproducible environment",
+      "resourceIds": [
+        "mit-18-s096",
+        "pytest-docs",
+        "github-actions-docs"
+      ],
+      "projectIds": [
+        "ml-trading-strategy",
+        "trading-backtester"
+      ],
+      "paperIds": [],
+      "competitionIds": [
+        "worldquant-brain",
+        "quantconnect-alpha"
+      ],
+      "leetcodeIds": [
+        "lc-424",
+        "lc-5"
+      ]
     },
     {
       "week": 21,
-      "focus": "Nuclear Niche Projects",
-      "tasks": ["Build Monte Carlo simulator", "Apply to finance", "Document projects"],
-      "hours": 15
+      "focus": "QuantConnect Strategy Library",
+      "tasks": [
+        "QuantConnect: Create Account",
+        "QuantConnect: Bootcamp Start",
+        "QuantConnect: First Algorithm",
+        "QuantConnect: First Backtest",
+        "Study: Momentum Strategies"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "quant-research"
+      ],
+      "deliverable": "Bias-safe strategy research report and backtest",
+      "resourceIds": [
+        "quantconnect-strategies",
+        "quantconnect-tutorials",
+        "yfinance"
+      ],
+      "projectIds": [],
+      "paperIds": [
+        "fama-french-1993",
+        "fama-french-2015",
+        "lopez-de-prado-2018"
+      ],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-42",
+        "lc-23"
+      ]
     },
     {
       "week": 22,
-      "focus": "Trading Strategies",
-      "tasks": ["Build ML trading strategy", "Backtest thoroughly", "Analyze performance"],
-      "hours": 15
+      "focus": "Market Microstructure & Order Book",
+      "tasks": [
+        "Order Book Dynamics",
+        "Bid-Ask Spread Analysis",
+        "Python: Order Book Data Structure",
+        "Practice: Microstructure Problems",
+        "Build: Matching Engine"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "quant-trader",
+        "quant-dev"
+      ],
+      "deliverable": "Order-book simulator with market-making and execution analysis",
+      "resourceIds": [
+        "avellaneda-stoikov-paper",
+        "websocket-docs",
+        "cpp-quant"
+      ],
+      "projectIds": [
+        "market-microstructure-simulator",
+        "realtime-orderbook"
+      ],
+      "paperIds": [
+        "avellaneda-stoikov-2008",
+        "bouchaud-2009"
+      ],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-10",
+        "lc-76"
+      ]
     },
     {
       "week": 23,
-      "focus": "Competition Preparation",
-      "tasks": ["Enter Numerai/Kaggle", "Optimize submissions", "Practice interview questions"],
-      "hours": 15
+      "focus": "Nuclear Niche Projects & Regime Detection",
+      "tasks": [
+        "MC: 1D Neutron Transport",
+        "MC: 2D Extension",
+        "MC: Variance Reduction",
+        "MC: Visualize Particle Tracks",
+        "MC: Apply to Options Pricing"
+      ],
+      "hours": 18.5,
+      "tracks": [
+        "energy-quant",
+        "quant-research"
+      ],
+      "deliverable": "Energy-market analyzer using EIA/FRED/market data",
+      "resourceIds": [
+        "power-market-fundamentals",
+        "eia-api",
+        "fred-api",
+        "openmc"
+      ],
+      "projectIds": [
+        "energy-market-analyzer",
+        "monte-carlo-radiation"
+      ],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-124",
+        "lc-127"
+      ]
     },
     {
       "week": 24,
-      "focus": "Portfolio & Applications",
-      "tasks": ["Complete all projects", "Polish CV", "Apply for quant jobs"],
-      "hours": 15
+      "focus": "Competition Push & Portfolio Polish",
+      "tasks": [
+        "Kaggle: Feature Engineering Iteration",
+        "Kaggle: Model Ensemble",
+        "Kaggle: Submit",
+        "Kaggle: Analyze Leaderboard",
+        "Numerai: Optimize Model"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "quant-research"
+      ],
+      "deliverable": "Competition submission and polished portfolio evidence",
+      "resourceIds": [
+        "kaggle-competitions",
+        "quantconnect-tutorials",
+        "quantguide"
+      ],
+      "projectIds": [
+        "regime-detector"
+      ],
+      "paperIds": [
+        "de-prado-2018-advances",
+        "lopez-de-prado-2020"
+      ],
+      "competitionIds": [
+        "numerai-signals",
+        "quantiacs"
+      ],
+      "leetcodeIds": [
+        "lc-239",
+        "lc-295"
+      ]
+    },
+    {
+      "week": 25,
+      "focus": "Interview Prep — Probability & Brainteasers",
+      "tasks": [
+        "Green Book: 15 Probability Problems",
+        "Heard on the Street: 10 Problems",
+        "QuantGuide: 10 Easy/Medium",
+        "Review Mistakes",
+        "Green Book: 15 Brainteasers"
+      ],
+      "hours": 17.0,
+      "tracks": [
+        "career"
+      ],
+      "deliverable": "Probability, finance, and brainteaser error log",
+      "resourceIds": [
+        "green-book",
+        "green-book-practical",
+        "quantguide"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": [
+        "lc-297",
+        "lc-312"
+      ]
+    },
+    {
+      "week": 26,
+      "focus": "Interview Prep — Coding & System Design",
+      "tasks": [
+        "LeetCode: 10 Medium (Arrays)",
+        "LeetCode: 5 Medium (Strings)",
+        "LeetCode: 3 Hard",
+        "Review: Optimal Solutions",
+        "LeetCode: 8 Medium (Trees)"
+      ],
+      "hours": 17.75,
+      "tracks": [
+        "quant-dev",
+        "career"
+      ],
+      "deliverable": "C++/coding/system-design interview packet",
+      "resourceIds": [
+        "leetcode",
+        "learncpp",
+        "boost-asio"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": []
+    },
+    {
+      "week": 27,
+      "focus": "Job Applications & Networking",
+      "tasks": [
+        "CV: Quant-Focused Resume",
+        "LinkedIn: Optimization",
+        "Portfolio Website",
+        "Export Progress Report",
+        "Apply: Jane Street"
+      ],
+      "hours": 14.5,
+      "tracks": [
+        "career"
+      ],
+      "deliverable": "Quant resume, portfolio site, and application pipeline",
+      "resourceIds": [
+        "quantguide",
+        "github-actions-docs"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": []
+    },
+    {
+      "week": 28,
+      "focus": "Final Push — Polish & Apply",
+      "tasks": [
+        "Apply: Remaining Firms",
+        "Customize Applications",
+        "Update Pipeline",
+        "GitHub: Final Review",
+        "Research Reports: Final"
+      ],
+      "hours": 11.5,
+      "tracks": [
+        "career"
+      ],
+      "deliverable": "Three portfolio candidates passed through quality gates",
+      "resourceIds": [
+        "pytest-docs",
+        "github-actions-docs"
+      ],
+      "projectIds": [
+        "nuclear-reactor-sim",
+        "fuel-cycle-optimizer"
+      ],
+      "paperIds": [],
+      "competitionIds": [
+        "optiver-trading",
+        "imc-prosperity",
+        "citadel-datathon"
+      ],
+      "leetcodeIds": []
+    },
+    {
+      "week": 29,
+      "focus": "Interview Prep — Probability & Brainteasers",
+      "tasks": [
+        "Probability Diagnostic",
+        "Create Interview Error Log",
+        "QuantGuide Review",
+        "Green Book Probability Set",
+        "Explain Solutions Aloud"
+      ],
+      "hours": 18.0,
+      "tracks": [
+        "career"
+      ],
+      "deliverable": "Interview error log plus 80% mixed-question retest",
+      "resourceIds": [
+        "green-book",
+        "green-book-practical",
+        "quantguide"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": []
+    },
+    {
+      "week": 30,
+      "focus": "Interview Prep — Coding & System Design",
+      "tasks": [
+        "LeetCode Timed Pair",
+        "Complexity Review",
+        "C++ Reimplementation",
+        "Graph Problem Set",
+        "Dynamic Programming Set"
+      ],
+      "hours": 18.0,
+      "tracks": [
+        "quant-dev",
+        "career"
+      ],
+      "deliverable": "Coding/system-design mock evidence and green CI",
+      "resourceIds": [
+        "leetcode",
+        "learncpp",
+        "boost-asio",
+        "github-actions-docs"
+      ],
+      "projectIds": [],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": []
+    },
+    {
+      "week": 31,
+      "focus": "Job Applications & Networking",
+      "tasks": [
+        "Choose Primary Track",
+        "Quant Resume",
+        "LinkedIn & GitHub",
+        "Package ML Trading Research",
+        "Package Energy Market Analyzer"
+      ],
+      "hours": 15.0,
+      "tracks": [
+        "career"
+      ],
+      "deliverable": "Two flagship projects packaged and ten targeted applications queued/submitted",
+      "resourceIds": [
+        "quantguide"
+      ],
+      "projectIds": [
+        "ml-trading-strategy",
+        "energy-market-analyzer"
+      ],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": []
+    },
+    {
+      "week": 32,
+      "focus": "Final Push — Portfolio, Interviews & Applications",
+      "tasks": [
+        "Run Full Project Tests",
+        "Audit Research Claims",
+        "Repair Critical Findings",
+        "Finalize Two Technical Reports",
+        "Record Project Demo"
+      ],
+      "hours": 15.0,
+      "tracks": [
+        "career",
+        "energy-quant"
+      ],
+      "deliverable": "Job-ready portfolio: three repos, two reports, mocks, and active pipeline",
+      "resourceIds": [
+        "pytest-docs",
+        "power-market-fundamentals",
+        "quantguide"
+      ],
+      "projectIds": [
+        "ml-trading-strategy",
+        "energy-market-analyzer",
+        "market-microstructure-simulator"
+      ],
+      "paperIds": [],
+      "competitionIds": [],
+      "leetcodeIds": []
+    }
+  ],
+  "tracks": [
+    {
+      "id": "quant-research-energy",
+      "title": "Recommended: Quant Research + Energy Quant",
+      "primary": true,
+      "startsWeek": 13,
+      "competencies": [
+        "Leakage-safe research",
+        "Time-series and ML",
+        "Power-market economics",
+        "Optimization",
+        "Nuclear-finance bridge"
+      ],
+      "projectIds": [
+        "ml-trading-strategy",
+        "energy-market-analyzer",
+        "regime-detector"
+      ]
+    },
+    {
+      "id": "quant-trader",
+      "title": "Quant Trader",
+      "primary": false,
+      "startsWeek": 16,
+      "competencies": [
+        "Probability",
+        "Mental math",
+        "Market making",
+        "Execution",
+        "Market microstructure"
+      ],
+      "projectIds": [
+        "market-microstructure-simulator",
+        "realtime-orderbook"
+      ]
+    },
+    {
+      "id": "quant-dev",
+      "title": "Quant Developer",
+      "primary": false,
+      "startsWeek": 10,
+      "competencies": [
+        "C++",
+        "Algorithms",
+        "Linux",
+        "Concurrency",
+        "Networking",
+        "Testing"
+      ],
+      "projectIds": [
+        "realtime-orderbook",
+        "trading-backtester"
+      ]
+    },
+    {
+      "id": "derivatives-risk",
+      "title": "Derivatives & Risk Quant",
+      "primary": false,
+      "startsWeek": 16,
+      "competencies": [
+        "Stochastic calculus",
+        "Monte Carlo",
+        "Volatility",
+        "Rates",
+        "Credit",
+        "Risk"
+      ],
+      "projectIds": [
+        "options-volatility-surface",
+        "risk-dashboard",
+        "portfolio-optimizer"
+      ]
     }
   ]
 }

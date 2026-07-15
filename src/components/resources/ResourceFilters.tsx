@@ -22,6 +22,8 @@ interface ResourceFiltersProps {
   onDifficultyChange: (difficulty: string | null) => void;
   skillFilter: string;
   onSkillChange: (skill: string | null) => void;
+  roleFilter: string;
+  onRoleChange: (role: string | null) => void;
   showNuclearOnly: boolean;
   onNuclearOnlyChange: (show: boolean) => void;
   onClearFilters: () => void;
@@ -36,12 +38,14 @@ export function ResourceFilters({
   onDifficultyChange,
   skillFilter,
   onSkillChange,
+  roleFilter,
+  onRoleChange,
   showNuclearOnly,
   onNuclearOnlyChange,
   onClearFilters,
 }: ResourceFiltersProps) {
-  const hasFilters = searchQuery || typeFilter !== 'all' || difficultyFilter !== 'all' || 
-                     skillFilter !== 'all' || showNuclearOnly;
+  const hasFilters = searchQuery || typeFilter !== 'all' || difficultyFilter !== 'all' ||
+                     skillFilter !== 'all' || roleFilter !== 'all' || showNuclearOnly;
 
   return (
     <Card className="bg-slate-900 border-slate-800">
@@ -138,6 +142,23 @@ export function ResourceFilters({
           </Select>
         </div>
 
+        {/* Curriculum Role Filter */}
+        <div>
+          <label className="text-xs font-medium text-slate-400 mb-1 block">Curriculum Role</label>
+          <Select value={roleFilter} onValueChange={onRoleChange}>
+            <SelectTrigger className="bg-slate-800 border-slate-700 text-white">
+              <SelectValue placeholder="All Roles" />
+            </SelectTrigger>
+            <SelectContent className="bg-slate-800 border-slate-700">
+              <SelectItem value="all">All Roles</SelectItem>
+              <SelectItem value="core">Core — scheduled</SelectItem>
+              <SelectItem value="supplemental">Supplemental</SelectItem>
+              <SelectItem value="reference">Reference</SelectItem>
+              <SelectItem value="specialization">Specialization</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+
         {/* Nuclear Only */}
         <div className="flex items-center gap-2">
           <input
@@ -175,6 +196,11 @@ export function ResourceFilters({
               {skillFilter !== 'all' && (
                 <Badge variant="secondary" className="bg-slate-800 text-slate-300 text-xs">
                   Skill: {skillFilter}
+                </Badge>
+              )}
+              {roleFilter !== 'all' && (
+                <Badge variant="secondary" className="bg-slate-800 text-slate-300 text-xs capitalize">
+                  Role: {roleFilter}
                 </Badge>
               )}
               {showNuclearOnly && (

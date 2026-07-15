@@ -1,0 +1,244 @@
+{
+  "papers": [
+    {
+      "id": "black-scholes-1973",
+      "title": "The Pricing of Options and Corporate Liabilities",
+      "authors": "Fischer Black, Myron Scholes",
+      "year": 1973,
+      "journal": "Journal of Political Economy",
+      "category": "derivatives",
+      "difficulty": "intermediate",
+      "url": "https://www.cs.princeton.edu/courses/archive/fall09/cos323/papers/black_scholes73.pdf",
+      "description": "The original Black-Scholes paper that revolutionized options pricing.",
+      "whyRead": "Foundation of modern derivatives pricing. Every quant should understand this.",
+      "verified": true,
+      "scheduledWeeks": [
+        16
+      ]
+    },
+    {
+      "id": "merton-1973",
+      "title": "Theory of Rational Option Pricing",
+      "authors": "Robert C. Merton",
+      "year": 1973,
+      "journal": "Bell Journal of Economics",
+      "category": "derivatives",
+      "difficulty": "advanced",
+      "url": "https://doi.org/10.2307/3003143",
+      "description": "Merton's extension of Black-Scholes with continuous-time portfolio theory.",
+      "whyRead": "Extends Black-Scholes, introduces Merton's portfolio problem.",
+      "verified": true,
+      "scheduledWeeks": [
+        16
+      ]
+    },
+    {
+      "id": "markowitz-1952",
+      "title": "Portfolio Selection",
+      "authors": "Harry Markowitz",
+      "year": 1952,
+      "journal": "The Journal of Finance",
+      "category": "portfolio",
+      "difficulty": "intermediate",
+      "url": "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x",
+      "description": "The original paper on mean-variance portfolio optimization.",
+      "whyRead": "Foundation of modern portfolio theory. Won Nobel Prize.",
+      "verified": true,
+      "scheduledWeeks": [
+        3
+      ]
+    },
+    {
+      "id": "fama-french-1993",
+      "title": "Common Risk Factors in the Returns on Stocks and Bonds",
+      "authors": "Eugene Fama, Kenneth French",
+      "year": 1993,
+      "journal": "Journal of Financial Economics",
+      "category": "factor-investing",
+      "difficulty": "intermediate",
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5_factors_2x3.html",
+      "description": "The Fama-French three-factor model: market, size, value.",
+      "whyRead": "Most cited finance paper. Understanding factors is essential for quant work.",
+      "verified": true,
+      "scheduledWeeks": [
+        21
+      ]
+    },
+    {
+      "id": "fama-french-2015",
+      "title": "A Five-Factor Asset Pricing Model",
+      "authors": "Eugene Fama, Kenneth French",
+      "year": 2015,
+      "journal": "Journal of Financial Economics",
+      "category": "factor-investing",
+      "difficulty": "advanced",
+      "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/Data_Library/f-f_5_factors_2x3.html",
+      "description": "Extended five-factor model adding profitability and investment factors.",
+      "whyRead": "Modern factor model used by institutional investors worldwide.",
+      "verified": true,
+      "scheduledWeeks": [
+        21
+      ]
+    },
+    {
+      "id": "avellaneda-stoikov-2008",
+      "title": "High-Frequency Trading in a Limit Order Book",
+      "authors": "Marco Avellaneda, Sasha Stoikov",
+      "year": 2008,
+      "journal": "Quantitative Finance",
+      "category": "market-microstructure",
+      "difficulty": "advanced",
+      "url": "https://arxiv.org/abs/0805.2736",
+      "description": "Optimal market making strategy using stochastic control.",
+      "whyRead": "The go-to paper for market making. Used by real market makers.",
+      "verified": true,
+      "scheduledWeeks": [
+        22
+      ]
+    },
+    {
+      "id": "kelly-1956",
+      "title": "A New Interpretation of Information Rate",
+      "authors": "John L. Kelly Jr.",
+      "year": 1956,
+      "journal": "Bell System Technical Journal",
+      "category": "risk-management",
+      "difficulty": "intermediate",
+      "url": "https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf",
+      "description": "The Kelly criterion for optimal bet sizing.",
+      "whyRead": "Optimal position sizing. Used by traders and gamblers alike.",
+      "verified": true,
+      "scheduledWeeks": [
+        10
+      ]
+    },
+    {
+      "id": "lopez-de-prado-2018",
+      "title": "The 10 Reasons Most Machine Learning Funds Fail",
+      "authors": "Marcos López de Prado",
+      "year": 2018,
+      "journal": "Journal of Portfolio Management",
+      "category": "ml-finance",
+      "difficulty": "intermediate",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3420952",
+      "description": "Common pitfalls in ML-based trading strategies.",
+      "whyRead": "Avoid the mistakes that kill most ML trading strategies.",
+      "verified": true,
+      "scheduledWeeks": [
+        21
+      ]
+    },
+    {
+      "id": "lopez-de-prado-2020",
+      "title": "A Conceptual Introduction to Hamiltonian Monte Carlo",
+      "authors": "Marcos López de Prado",
+      "year": 2020,
+      "journal": "SSRN",
+      "category": "ml-finance",
+      "difficulty": "advanced",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3552818",
+      "description": "HMC for Bayesian inference in financial models.",
+      "whyRead": "Advanced Bayesian methods for quantitative finance.",
+      "verified": true,
+      "scheduledWeeks": [
+        24
+      ]
+    },
+    {
+      "id": "bouchaud-2009",
+      "title": "Financial Markets as Non-equilibrium Systems",
+      "authors": "Jean-Philippe Bouchaud",
+      "year": 2009,
+      "journal": "Physics Reports",
+      "category": "market-microstructure",
+      "difficulty": "advanced",
+      "url": "https://arxiv.org/abs/0902.0124",
+      "description": "Physics perspective on financial markets, order flow, and price formation.",
+      "whyRead": "Shows how physics thinking applies to finance. Very quantitative.",
+      "verified": true,
+      "scheduledWeeks": [
+        22
+      ]
+    },
+    {
+      "id": "hull-white-1990",
+      "title": "Pricing Interest-Rate-Derivative Securities",
+      "authors": "John Hull, Alan White",
+      "year": 1990,
+      "journal": "Review of Financial Studies",
+      "category": "fixed-income",
+      "difficulty": "advanced",
+      "url": "https://doi.org/10.1093/rfs/3.4.573",
+      "description": "The Hull-White model for interest rate derivatives.",
+      "whyRead": "Standard model for interest rate derivatives pricing.",
+      "verified": true,
+      "scheduledWeeks": [
+        18
+      ]
+    },
+    {
+      "id": "black-litterman-1992",
+      "title": "Global Portfolio Optimization",
+      "authors": "Fischer Black, Robert Litterman",
+      "year": 1992,
+      "journal": "Financial Analysts Journal",
+      "category": "portfolio",
+      "difficulty": "advanced",
+      "url": "https://doi.org/10.2469/faj.v48.n5.28",
+      "description": "The Black-Litterman model for combining market equilibrium with investor views.",
+      "whyRead": "Industry standard for portfolio construction at institutional level.",
+      "verified": true,
+      "scheduledWeeks": [
+        18
+      ]
+    },
+    {
+      "id": "engle-1982",
+      "title": "Autoregressive Conditional Heteroscedasticity",
+      "authors": "Robert Engle",
+      "year": 1982,
+      "journal": "Econometrica",
+      "category": "volatility",
+      "difficulty": "advanced",
+      "url": "https://doi.org/10.2307/1912773",
+      "description": "The original ARCH model for volatility clustering.",
+      "whyRead": "Foundation of all GARCH models. Won Nobel Prize.",
+      "verified": true,
+      "scheduledWeeks": [
+        12
+      ]
+    },
+    {
+      "id": "bollerslev-1986",
+      "title": "Generalized Autoregressive Conditional Heteroskedasticity",
+      "authors": "Tim Bollerslev",
+      "year": 1986,
+      "journal": "Journal of Econometrics",
+      "category": "volatility",
+      "difficulty": "advanced",
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jae.3950080304",
+      "description": "The GARCH(1,1) model that became the industry standard.",
+      "whyRead": "Most used volatility model in finance. Every quant knows this.",
+      "verified": true,
+      "scheduledWeeks": [
+        12
+      ]
+    },
+    {
+      "id": "de-prado-2018-advances",
+      "title": "Advances in Financial Machine Learning",
+      "authors": "Marcos López de Prado",
+      "year": 2018,
+      "journal": "Wiley",
+      "category": "ml-finance",
+      "difficulty": "advanced",
+      "url": "https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086",
+      "description": "The definitive book on ML for finance. Walk-forward, meta-labeling, feature importance.",
+      "whyRead": "Best resource on avoiding ML pitfalls in finance. Every quant should read.",
+      "verified": true,
+      "scheduledWeeks": [
+        24
+      ]
+    }
+  ]
+}

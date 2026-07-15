@@ -1,0 +1,454 @@
+{
+  "problems": [
+    {
+      "id": "lc-1",
+      "title": "Two Sum",
+      "difficulty": "easy",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/two-sum/",
+      "notes": "",
+      "scheduledWeek": 1
+    },
+    {
+      "id": "lc-20",
+      "title": "Valid Parentheses",
+      "difficulty": "easy",
+      "category": "stack",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
+      "notes": "",
+      "scheduledWeek": 1
+    },
+    {
+      "id": "lc-21",
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "easy",
+      "category": "linked-list",
+      "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/",
+      "notes": "",
+      "scheduledWeek": 2
+    },
+    {
+      "id": "lc-121",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "easy",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "notes": "",
+      "scheduledWeek": 2
+    },
+    {
+      "id": "lc-125",
+      "title": "Valid Palindrome",
+      "difficulty": "easy",
+      "category": "string",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome/",
+      "notes": "",
+      "scheduledWeek": 3
+    },
+    {
+      "id": "lc-206",
+      "title": "Reverse Linked List",
+      "difficulty": "easy",
+      "category": "linked-list",
+      "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
+      "notes": "",
+      "scheduledWeek": 3
+    },
+    {
+      "id": "lc-217",
+      "title": "Contains Duplicate",
+      "difficulty": "easy",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/",
+      "notes": "",
+      "scheduledWeek": 4
+    },
+    {
+      "id": "lc-226",
+      "title": "Invert Binary Tree",
+      "difficulty": "easy",
+      "category": "tree",
+      "leetcodeUrl": "https://leetcode.com/problems/invert-binary-tree/",
+      "notes": "",
+      "scheduledWeek": 4
+    },
+    {
+      "id": "lc-242",
+      "title": "Valid Anagram",
+      "difficulty": "easy",
+      "category": "string",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/",
+      "notes": "",
+      "scheduledWeek": 5
+    },
+    {
+      "id": "lc-704",
+      "title": "Binary Search",
+      "difficulty": "easy",
+      "category": "binary-search",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-search/",
+      "notes": "",
+      "scheduledWeek": 5
+    },
+    {
+      "id": "lc-733",
+      "title": "Flood Fill",
+      "difficulty": "easy",
+      "category": "graph",
+      "leetcodeUrl": "https://leetcode.com/problems/flood-fill/",
+      "notes": "",
+      "scheduledWeek": 6
+    },
+    {
+      "id": "lc-104",
+      "title": "Maximum Depth of Binary Tree",
+      "difficulty": "easy",
+      "category": "tree",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "notes": "",
+      "scheduledWeek": 6
+    },
+    {
+      "id": "lc-141",
+      "title": "Linked List Cycle",
+      "difficulty": "easy",
+      "category": "linked-list",
+      "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/",
+      "notes": "",
+      "scheduledWeek": 7
+    },
+    {
+      "id": "lc-53",
+      "title": "Maximum Subarray",
+      "difficulty": "easy",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/",
+      "notes": "",
+      "scheduledWeek": 7
+    },
+    {
+      "id": "lc-100",
+      "title": "Same Tree",
+      "difficulty": "easy",
+      "category": "tree",
+      "leetcodeUrl": "https://leetcode.com/problems/same-tree/",
+      "notes": "",
+      "scheduledWeek": 8
+    },
+    {
+      "id": "lc-15",
+      "title": "3Sum",
+      "difficulty": "medium",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/3sum/",
+      "notes": "",
+      "scheduledWeek": 8
+    },
+    {
+      "id": "lc-11",
+      "title": "Container With Most Water",
+      "difficulty": "medium",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/container-with-most-water/",
+      "notes": "",
+      "scheduledWeek": 9
+    },
+    {
+      "id": "lc-3",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "medium",
+      "category": "string",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "notes": "",
+      "scheduledWeek": 9
+    },
+    {
+      "id": "lc-49",
+      "title": "Group Anagrams",
+      "difficulty": "medium",
+      "category": "string",
+      "leetcodeUrl": "https://leetcode.com/problems/group-anagrams/",
+      "notes": "",
+      "scheduledWeek": 10
+    },
+    {
+      "id": "lc-347",
+      "title": "Top K Frequent Elements",
+      "difficulty": "medium",
+      "category": "heap",
+      "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "notes": "",
+      "scheduledWeek": 10
+    },
+    {
+      "id": "lc-19",
+      "title": "Remove Nth Node From End of List",
+      "difficulty": "medium",
+      "category": "linked-list",
+      "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+      "notes": "",
+      "scheduledWeek": 11
+    },
+    {
+      "id": "lc-33",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "medium",
+      "category": "binary-search",
+      "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+      "notes": "",
+      "scheduledWeek": 11
+    },
+    {
+      "id": "lc-39",
+      "title": "Combination Sum",
+      "difficulty": "medium",
+      "category": "backtracking",
+      "leetcodeUrl": "https://leetcode.com/problems/combination-sum/",
+      "notes": "",
+      "scheduledWeek": 12
+    },
+    {
+      "id": "lc-46",
+      "title": "Permutations",
+      "difficulty": "medium",
+      "category": "backtracking",
+      "leetcodeUrl": "https://leetcode.com/problems/permutations/",
+      "notes": "",
+      "scheduledWeek": 12
+    },
+    {
+      "id": "lc-48",
+      "title": "Rotate Image",
+      "difficulty": "medium",
+      "category": "matrix",
+      "leetcodeUrl": "https://leetcode.com/problems/rotate-image/",
+      "notes": "",
+      "scheduledWeek": 13
+    },
+    {
+      "id": "lc-56",
+      "title": "Merge Intervals",
+      "difficulty": "medium",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/",
+      "notes": "",
+      "scheduledWeek": 13
+    },
+    {
+      "id": "lc-73",
+      "title": "Set Matrix Zeroes",
+      "difficulty": "medium",
+      "category": "matrix",
+      "leetcodeUrl": "https://leetcode.com/problems/set-matrix-zeroes/",
+      "notes": "",
+      "scheduledWeek": 14
+    },
+    {
+      "id": "lc-102",
+      "title": "Binary Tree Level Order Traversal",
+      "difficulty": "medium",
+      "category": "tree",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "notes": "",
+      "scheduledWeek": 14
+    },
+    {
+      "id": "lc-133",
+      "title": "Clone Graph",
+      "difficulty": "medium",
+      "category": "graph",
+      "leetcodeUrl": "https://leetcode.com/problems/clone-graph/",
+      "notes": "",
+      "scheduledWeek": 15
+    },
+    {
+      "id": "lc-152",
+      "title": "Maximum Product Subarray",
+      "difficulty": "medium",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-product-subarray/",
+      "notes": "",
+      "scheduledWeek": 15
+    },
+    {
+      "id": "lc-200",
+      "title": "Number of Islands",
+      "difficulty": "medium",
+      "category": "graph",
+      "leetcodeUrl": "https://leetcode.com/problems/number-of-islands/",
+      "notes": "",
+      "scheduledWeek": 16
+    },
+    {
+      "id": "lc-207",
+      "title": "Course Schedule",
+      "difficulty": "medium",
+      "category": "graph",
+      "leetcodeUrl": "https://leetcode.com/problems/course-schedule/",
+      "notes": "",
+      "scheduledWeek": 16
+    },
+    {
+      "id": "lc-238",
+      "title": "Product of Array Except Self",
+      "difficulty": "medium",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/product-of-array-except-self/",
+      "notes": "",
+      "scheduledWeek": 17
+    },
+    {
+      "id": "lc-271",
+      "title": "Encode and Decode Strings",
+      "difficulty": "medium",
+      "category": "string",
+      "leetcodeUrl": "https://leetcode.com/problems/encode-and-decode-strings/",
+      "notes": "",
+      "scheduledWeek": 17
+    },
+    {
+      "id": "lc-300",
+      "title": "Longest Increasing Subsequence",
+      "difficulty": "medium",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-increasing-subsequence/",
+      "notes": "",
+      "scheduledWeek": 18
+    },
+    {
+      "id": "lc-322",
+      "title": "Coin Change",
+      "difficulty": "medium",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/coin-change/",
+      "notes": "",
+      "scheduledWeek": 18
+    },
+    {
+      "id": "lc-416",
+      "title": "Partition Equal Subset Sum",
+      "difficulty": "medium",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/partition-equal-subset-sum/",
+      "notes": "",
+      "scheduledWeek": 19
+    },
+    {
+      "id": "lc-417",
+      "title": "Pacific Atlantic Water Flow",
+      "difficulty": "medium",
+      "category": "graph",
+      "leetcodeUrl": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+      "notes": "",
+      "scheduledWeek": 19
+    },
+    {
+      "id": "lc-424",
+      "title": "Longest Repeating Character Replacement",
+      "difficulty": "medium",
+      "category": "sliding-window",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "notes": "",
+      "scheduledWeek": 20
+    },
+    {
+      "id": "lc-5",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "medium",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-palindromic-substring/",
+      "notes": "",
+      "scheduledWeek": 20
+    },
+    {
+      "id": "lc-42",
+      "title": "Trapping Rain Water",
+      "difficulty": "hard",
+      "category": "array",
+      "leetcodeUrl": "https://leetcode.com/problems/trapping-rain-water/",
+      "notes": "",
+      "scheduledWeek": 21
+    },
+    {
+      "id": "lc-23",
+      "title": "Merge k Sorted Lists",
+      "difficulty": "hard",
+      "category": "linked-list",
+      "leetcodeUrl": "https://leetcode.com/problems/merge-k-sorted-lists/",
+      "notes": "",
+      "scheduledWeek": 21
+    },
+    {
+      "id": "lc-10",
+      "title": "Regular Expression Matching",
+      "difficulty": "hard",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/regular-expression-matching/",
+      "notes": "",
+      "scheduledWeek": 22
+    },
+    {
+      "id": "lc-76",
+      "title": "Minimum Window Substring",
+      "difficulty": "hard",
+      "category": "sliding-window",
+      "leetcodeUrl": "https://leetcode.com/problems/minimum-window-substring/",
+      "notes": "",
+      "scheduledWeek": 22
+    },
+    {
+      "id": "lc-124",
+      "title": "Binary Tree Maximum Path Sum",
+      "difficulty": "hard",
+      "category": "tree",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+      "notes": "",
+      "scheduledWeek": 23
+    },
+    {
+      "id": "lc-127",
+      "title": "Word Ladder",
+      "difficulty": "hard",
+      "category": "graph",
+      "leetcodeUrl": "https://leetcode.com/problems/word-ladder/",
+      "notes": "",
+      "scheduledWeek": 23
+    },
+    {
+      "id": "lc-239",
+      "title": "Sliding Window Maximum",
+      "difficulty": "hard",
+      "category": "sliding-window",
+      "leetcodeUrl": "https://leetcode.com/problems/sliding-window-maximum/",
+      "notes": "",
+      "scheduledWeek": 24
+    },
+    {
+      "id": "lc-295",
+      "title": "Find Median from Data Stream",
+      "difficulty": "hard",
+      "category": "heap",
+      "leetcodeUrl": "https://leetcode.com/problems/find-median-from-data-stream/",
+      "notes": "",
+      "scheduledWeek": 24
+    },
+    {
+      "id": "lc-297",
+      "title": "Serialize and Deserialize Binary Tree",
+      "difficulty": "hard",
+      "category": "tree",
+      "leetcodeUrl": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+      "notes": "",
+      "scheduledWeek": 25
+    },
+    {
+      "id": "lc-312",
+      "title": "Burst Balloons",
+      "difficulty": "hard",
+      "category": "dp",
+      "leetcodeUrl": "https://leetcode.com/problems/burst-balloons/",
+      "notes": "",
+      "scheduledWeek": 25
+    }
+  ]
+}

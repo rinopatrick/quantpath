@@ -7,10 +7,15 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/python",
       "free": true,
+      "certificate": true,
       "difficulty": "beginner",
       "hours": 5,
-      "description": "Learn Python fundamentals with hands-on exercises",
-      "skills": ["python", "programming"]
+      "description": "Learn Python fundamentals with hands-on exercises. FREE certificate included.",
+      "skills": [
+        "python",
+        "programming"
+      ],
+      "verified": true
     },
     {
       "id": "kaggle-intro-ml",
@@ -19,10 +24,15 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/intro-to-machine-learning",
       "free": true,
+      "certificate": true,
       "difficulty": "beginner",
       "hours": 3,
-      "description": "Learn basic ML concepts with scikit-learn",
-      "skills": ["supervised-learning", "python"]
+      "description": "Learn basic ML concepts with scikit-learn. FREE certificate included.",
+      "skills": [
+        "supervised-learning",
+        "python"
+      ],
+      "verified": true
     },
     {
       "id": "kaggle-intermediate-ml",
@@ -31,10 +41,15 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/intermediate-machine-learning",
       "free": true,
+      "certificate": true,
       "difficulty": "intermediate",
       "hours": 4,
-      "description": "Handle missing values, categorical variables, pipelines",
-      "skills": ["supervised-learning", "python"]
+      "description": "Handle missing values, categorical variables, pipelines. FREE certificate included.",
+      "skills": [
+        "supervised-learning",
+        "python"
+      ],
+      "verified": true
     },
     {
       "id": "kaggle-deep-learning",
@@ -43,10 +58,15 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/intro-to-deep-learning",
       "free": true,
+      "certificate": true,
       "difficulty": "intermediate",
       "hours": 4,
-      "description": "Build neural networks with TensorFlow and Keras",
-      "skills": ["deep-learning", "python"]
+      "description": "Build neural networks with TensorFlow and Keras. FREE certificate included.",
+      "skills": [
+        "deep-learning",
+        "python"
+      ],
+      "verified": true
     },
     {
       "id": "kaggle-pandas",
@@ -55,10 +75,15 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/pandas",
       "free": true,
+      "certificate": true,
       "difficulty": "beginner",
       "hours": 4,
-      "description": "Master data manipulation with Pandas",
-      "skills": ["pandas-numpy", "python"]
+      "description": "Master data manipulation with Pandas. FREE certificate included.",
+      "skills": [
+        "pandas-numpy",
+        "python"
+      ],
+      "verified": true
     },
     {
       "id": "kaggle-data-viz",
@@ -67,10 +92,15 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/data-visualization",
       "free": true,
+      "certificate": true,
       "difficulty": "beginner",
       "hours": 4,
-      "description": "Create effective data visualizations",
-      "skills": ["matplotlib-seaborn", "python"]
+      "description": "Create effective data visualizations. FREE certificate included.",
+      "skills": [
+        "matplotlib-seaborn",
+        "python"
+      ],
+      "verified": true
     },
     {
       "id": "kaggle-feature-engineering",
@@ -79,10 +109,15 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/feature-engineering",
       "free": true,
+      "certificate": true,
       "difficulty": "intermediate",
       "hours": 5,
-      "description": "Improve model performance with better features",
-      "skills": ["supervised-learning", "python"]
+      "description": "Improve model performance with better features. FREE certificate included.",
+      "skills": [
+        "supervised-learning",
+        "python"
+      ],
+      "verified": true
     },
     {
       "id": "kaggle-sql",
@@ -91,168 +126,278 @@
       "category": "AI",
       "url": "https://www.kaggle.com/learn/intro-to-sql",
       "free": true,
+      "certificate": true,
       "difficulty": "beginner",
       "hours": 3,
-      "description": "Learn SQL fundamentals for data analysis",
-      "skills": ["sql", "python"]
+      "description": "Learn SQL fundamentals for data analysis. FREE certificate included.",
+      "skills": [
+        "sql",
+        "python"
+      ],
+      "verified": true
     },
     {
-      "id": "google-ai-essentials",
-      "title": "Google AI Essentials",
+      "id": "kaggle-advanced-sql",
+      "title": "Kaggle Advanced SQL",
+      "provider": "Kaggle",
+      "category": "AI",
+      "url": "https://www.kaggle.com/learn/advanced-sql",
+      "free": true,
+      "certificate": true,
+      "difficulty": "intermediate",
+      "hours": 4,
+      "description": "Master advanced SQL techniques. FREE certificate included.",
+      "skills": [
+        "sql"
+      ],
+      "verified": true
+    },
+    {
+      "id": "kaggle-computer-vision",
+      "title": "Kaggle Computer Vision",
+      "provider": "Kaggle",
+      "category": "AI",
+      "url": "https://www.kaggle.com/learn/computer-vision",
+      "free": true,
+      "certificate": true,
+      "difficulty": "intermediate",
+      "hours": 4,
+      "description": "Learn computer vision with TensorFlow. FREE certificate included.",
+      "skills": [
+        "deep-learning",
+        "python"
+      ],
+      "verified": true
+    },
+    {
+      "id": "kaggle-time-series",
+      "title": "Kaggle Time Series",
+      "provider": "Kaggle",
+      "category": "AI",
+      "url": "https://www.kaggle.com/learn/time-series",
+      "free": true,
+      "certificate": true,
+      "difficulty": "intermediate",
+      "hours": 5,
+      "description": "Forecasting with time series data. FREE certificate included.",
+      "skills": [
+        "supervised-learning",
+        "python"
+      ],
+      "verified": true
+    },
+    {
+      "id": "freecodecamp-responsive-web",
+      "title": "freeCodeCamp Responsive Web Design",
+      "provider": "freeCodeCamp",
+      "category": "AI",
+      "url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+      "free": true,
+      "certificate": true,
+      "difficulty": "beginner",
+      "hours": 300,
+      "description": "Learn HTML, CSS, and responsive design. FREE certificate included.",
+      "skills": [
+        "python"
+      ],
+      "verified": true
+    },
+    {
+      "id": "freecodecamp-js-algorithms",
+      "title": "freeCodeCamp JavaScript Algorithms",
+      "provider": "freeCodeCamp",
+      "category": "AI",
+      "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+      "free": true,
+      "certificate": true,
+      "difficulty": "beginner",
+      "hours": 300,
+      "description": "Learn JavaScript and data structures. FREE certificate included.",
+      "skills": [
+        "python",
+        "data-structures"
+      ],
+      "verified": true
+    },
+    {
+      "id": "freecodecamp-data-analysis",
+      "title": "freeCodeCamp Data Analysis with Python",
+      "provider": "freeCodeCamp",
+      "category": "AI",
+      "url": "https://www.freecodecamp.org/learn/data-analysis-with-python/",
+      "free": true,
+      "certificate": true,
+      "difficulty": "intermediate",
+      "hours": 300,
+      "description": "Learn data analysis with Python, Pandas, and NumPy. FREE certificate included.",
+      "skills": [
+        "pandas-numpy",
+        "python"
+      ],
+      "verified": true
+    },
+    {
+      "id": "freecodecamp-machine-learning",
+      "title": "freeCodeCamp Machine Learning with Python",
+      "provider": "freeCodeCamp",
+      "category": "AI",
+      "url": "https://www.freecodecamp.org/learn/machine-learning-with-python/",
+      "free": true,
+      "certificate": true,
+      "difficulty": "intermediate",
+      "hours": 300,
+      "description": "Learn machine learning with TensorFlow. FREE certificate included.",
+      "skills": [
+        "deep-learning",
+        "python"
+      ],
+      "verified": true
+    },
+    {
+      "id": "microsoft-python",
+      "title": "Microsoft Python Certification",
+      "provider": "Microsoft",
+      "category": "AI",
+      "url": "https://learn.microsoft.com/en-us/training/paths/python-language/",
+      "free": true,
+      "certificate": true,
+      "difficulty": "beginner",
+      "hours": 20,
+      "description": "Microsoft's Python learning path with free certificate.",
+      "skills": [
+        "python"
+      ],
+      "verified": true
+    },
+    {
+      "id": "microsoft-azure-ai",
+      "title": "Microsoft Azure AI Fundamentals",
+      "provider": "Microsoft",
+      "category": "AI",
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-with-artificial-intelligence-on-azure/",
+      "free": true,
+      "certificate": true,
+      "difficulty": "beginner",
+      "hours": 10,
+      "description": "Azure AI fundamentals with free certificate.",
+      "skills": [
+        "supervised-learning"
+      ],
+      "verified": true
+    },
+    {
+      "id": "microsoft-data-science",
+      "title": "Microsoft Data Science Fundamentals",
+      "provider": "Microsoft",
+      "category": "AI",
+      "url": "https://learn.microsoft.com/en-us/training/paths/data-science-foundations/",
+      "free": true,
+      "certificate": true,
+      "difficulty": "beginner",
+      "hours": 8,
+      "description": "Data science fundamentals with free certificate.",
+      "skills": [
+        "supervised-learning",
+        "python"
+      ],
+      "verified": false
+    },
+    {
+      "id": "google-data-analytics",
+      "title": "Google Data Analytics Certificate",
       "provider": "Google",
       "category": "AI",
-      "url": "https://www.coursera.org/learn/google-ai-essentials",
-      "free": true,
+      "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+      "free": false,
+      "certificate": true,
+      "courseraPlus": true,
+      "price": "$49/month",
       "difficulty": "beginner",
-      "hours": 10,
-      "description": "Foundational AI concepts from Google",
-      "skills": ["supervised-learning"]
+      "hours": 180,
+      "description": "Professional data analytics certificate. Requires Coursera Plus or payment.",
+      "skills": [
+        "sql",
+        "python",
+        "pandas-numpy"
+      ],
+      "verified": true
     },
     {
-      "id": "google-ai-for-everyone",
-      "title": "AI for Everyone (Andrew Ng)",
-      "provider": "DeepLearning.AI",
+      "id": "google-advanced-data",
+      "title": "Google Advanced Data Analytics Certificate",
+      "provider": "Google",
       "category": "AI",
-      "url": "https://www.coursera.org/learn/ai-for-everyone",
-      "free": true,
-      "difficulty": "beginner",
-      "hours": 10,
-      "description": "Non-technical introduction to AI concepts",
-      "skills": ["supervised-learning"]
+      "url": "https://www.coursera.org/professional-certificates/google-advanced-data-analytics",
+      "free": false,
+      "certificate": true,
+      "courseraPlus": true,
+      "price": "$49/month",
+      "difficulty": "intermediate",
+      "hours": 200,
+      "description": "Advanced data analytics with Python and ML. Requires Coursera Plus or payment.",
+      "skills": [
+        "supervised-learning",
+        "python",
+        "statistics"
+      ],
+      "verified": true
     },
     {
-      "id": "ibm-ai-fundamentals",
-      "title": "IBM AI Foundations",
+      "id": "ibm-data-science",
+      "title": "IBM Data Science Professional Certificate",
       "provider": "IBM",
       "category": "AI",
-      "url": "https://www.coursera.org/learn/ai-fundamentals",
-      "free": true,
+      "url": "https://www.coursera.org/professional-certificates/ibm-data-science",
+      "free": false,
+      "certificate": true,
+      "courseraPlus": true,
+      "price": "$49/month",
       "difficulty": "beginner",
-      "hours": 10,
-      "description": "Introduction to AI concepts and applications",
-      "skills": ["supervised-learning"]
+      "hours": 180,
+      "description": "Comprehensive data science program. Requires Coursera Plus or payment.",
+      "skills": [
+        "python",
+        "pandas-numpy",
+        "supervised-learning"
+      ],
+      "verified": true
     },
     {
-      "id": "stanford-cs229",
-      "title": "Stanford CS229 Machine Learning",
-      "provider": "Stanford",
-      "category": "AI",
-      "url": "https://www.coursera.org/learn/machine-learning",
-      "free": true,
-      "difficulty": "intermediate",
-      "hours": 60,
-      "description": "Andrew Ng's legendary ML course",
-      "skills": ["supervised-learning", "optimization"]
-    },
-    {
-      "id": "deeplearning-ai-nn",
-      "title": "Neural Networks and Deep Learning",
+      "id": "deeplearning-ai-specialization",
+      "title": "DeepLearning.AI Deep Learning Specialization",
       "provider": "DeepLearning.AI",
       "category": "AI",
-      "url": "https://www.coursera.org/learn/neural-networks-deep-learning",
-      "free": true,
-      "difficulty": "intermediate",
-      "hours": 20,
-      "description": "First course in Deep Learning Specialization",
-      "skills": ["deep-learning"]
-    },
-    {
-      "id": "tensorflow-developer",
-      "title": "TensorFlow Developer Certificate",
-      "provider": "Google",
-      "category": "AI",
-      "url": "https://www.tensorflow.org/certificate",
+      "url": "https://www.coursera.org/specializations/deep-learning",
       "free": false,
-      "price": "$100",
+      "certificate": true,
+      "courseraPlus": true,
+      "price": "$49/month",
       "difficulty": "intermediate",
-      "hours": 60,
-      "description": "Official TensorFlow certification",
-      "skills": ["deep-learning", "pytorch"]
-    },
-    {
-      "id": "aws-ml-specialty",
-      "title": "AWS Machine Learning Specialty",
-      "provider": "Amazon",
-      "category": "AI",
-      "url": "https://aws.amazon.com/certification/certified-machine-learning-specialty/",
-      "free": false,
-      "price": "$300",
-      "difficulty": "advanced",
       "hours": 100,
-      "description": "AWS ML certification for cloud-based ML",
-      "skills": ["deep-learning", "supervised-learning"]
+      "description": "Andrew Ng's deep learning specialization. Requires Coursera Plus or payment.",
+      "skills": [
+        "deep-learning",
+        "python"
+      ],
+      "verified": true
     },
     {
       "id": "cfa-investment-foundations",
-      "title": "CFA Investment Foundations",
+      "title": "CFA Investment Foundations Certificate",
       "provider": "CFA Institute",
       "category": "Quant",
       "url": "https://www.cfainstitute.org/programs/investment-foundations",
-      "free": true,
+      "free": false,
+      "certificate": true,
+      "price": "$350",
       "difficulty": "beginner",
       "hours": 60,
-      "description": "Free self-study program covering investment fundamentals",
-      "skills": ["financial-markets", "portfolio-theory"]
-    },
-    {
-      "id": "coursera-financial-markets",
-      "title": "Financial Markets (Yale)",
-      "provider": "Yale / Coursera",
-      "category": "Quant",
-      "url": "https://www.coursera.org/learn/financial-markets-global",
-      "free": true,
-      "difficulty": "beginner",
-      "hours": 30,
-      "description": "Comprehensive overview of financial markets",
-      "skills": ["financial-markets"]
-    },
-    {
-      "id": "coursera-quant-methods",
-      "title": "Quantitative Methods",
-      "provider": "Coursera",
-      "category": "Quant",
-      "url": "https://www.coursera.org/learn/wharton-quantitative-methods",
-      "free": true,
-      "difficulty": "beginner",
-      "hours": 15,
-      "description": "Quantitative analysis fundamentals from Wharton",
-      "skills": ["statistics", "probability"]
-    },
-    {
-      "id": "coursera-financial-engineering",
-      "title": "Financial Engineering and Risk Management",
-      "provider": "Columbia / Coursera",
-      "category": "Quant",
-      "url": "https://www.coursera.org/learn/financial-engineering-1",
-      "free": true,
-      "difficulty": "intermediate",
-      "hours": 25,
-      "description": "Introduction to financial engineering concepts",
-      "skills": ["derivatives", "risk-management"]
-    },
-    {
-      "id": "coursera-portfolio-selection",
-      "title": "Portfolio Selection and Risk Management",
-      "provider": "Coursera",
-      "category": "Quant",
-      "url": "https://www.coursera.org/learn/portfolio-selection-risk-management",
-      "free": true,
-      "difficulty": "intermediate",
-      "hours": 20,
-      "description": "Portfolio theory and risk management",
-      "skills": ["portfolio-theory", "risk-management"]
-    },
-    {
-      "id": "quantconnect-bootcamp",
-      "title": "QuantConnect Bootcamp",
-      "provider": "QuantConnect",
-      "category": "Quant",
-      "url": "https://www.quantconnect.com/bootcamp",
-      "free": true,
-      "difficulty": "intermediate",
-      "hours": 40,
-      "description": "Free algorithmic trading bootcamp",
-      "skills": ["python", "financial-markets"]
+      "description": "Investment fundamentals from CFA Institute. Now costs $350 (was previously free).",
+      "skills": [
+        "financial-markets",
+        "portfolio-theory"
+      ],
+      "verified": true
     },
     {
       "id": "bloomberg-market-concepts",
@@ -261,10 +406,87 @@
       "category": "Quant",
       "url": "https://www.bloomberg.com/professional/product/bloomberg-market-concepts/",
       "free": true,
+      "certificate": true,
       "difficulty": "beginner",
       "hours": 8,
-      "description": "Free Bloomberg certification on market fundamentals",
-      "skills": ["financial-markets"]
+      "description": "Free Bloomberg certification on market fundamentals. FREE certificate included.",
+      "skills": [
+        "financial-markets"
+      ],
+      "verified": true
+    },
+    {
+      "id": "quantconnect-bootcamp",
+      "title": "QuantConnect Bootcamp",
+      "provider": "QuantConnect",
+      "category": "Quant",
+      "url": "https://www.quantconnect.com/bootcamp",
+      "free": true,
+      "certificate": true,
+      "difficulty": "intermediate",
+      "hours": 40,
+      "description": "Free algorithmic trading bootcamp. FREE certificate included.",
+      "skills": [
+        "python",
+        "financial-markets"
+      ],
+      "verified": true
+    },
+    {
+      "id": "coursera-financial-markets",
+      "title": "Financial Markets (Yale)",
+      "provider": "Yale / Coursera",
+      "category": "Quant",
+      "url": "https://www.coursera.org/learn/financial-markets-global",
+      "free": false,
+      "certificate": true,
+      "courseraPlus": true,
+      "price": "$49/month",
+      "difficulty": "beginner",
+      "hours": 30,
+      "description": "Comprehensive overview of financial markets. Requires Coursera Plus or payment.",
+      "skills": [
+        "financial-markets"
+      ],
+      "verified": true
+    },
+    {
+      "id": "coursera-financial-engineering",
+      "title": "Financial Engineering and Risk Management",
+      "provider": "Columbia / Coursera",
+      "category": "Quant",
+      "url": "https://www.coursera.org/learn/financial-engineering-1",
+      "free": false,
+      "certificate": true,
+      "courseraPlus": true,
+      "price": "$49/month",
+      "difficulty": "intermediate",
+      "hours": 25,
+      "description": "Introduction to financial engineering concepts. Requires Coursera Plus or payment.",
+      "skills": [
+        "derivatives",
+        "risk-management"
+      ],
+      "verified": true
+    },
+    {
+      "id": "coursera-portfolio-selection",
+      "title": "Portfolio Selection and Risk Management",
+      "provider": "Coursera",
+      "category": "Quant",
+      "url": "https://www.coursera.org/learn/portfolio-selection-risk-management",
+      "free": false,
+      "certificate": true,
+      "courseraPlus": true,
+      "price": "$49/month",
+      "difficulty": "intermediate",
+      "hours": 20,
+      "description": "Portfolio theory and risk management. Requires Coursera Plus or payment.",
+      "skills": [
+        "portfolio-theory",
+        "risk-management"
+      ],
+      "verified": true
     },
     {
       "id": "frm-prep",
@@ -273,11 +495,16 @@
       "category": "Quant",
       "url": "https://www.garp.org/frm",
       "free": false,
+      "certificate": true,
       "price": "$1000+",
       "difficulty": "advanced",
       "hours": 200,
-      "description": "Professional risk management certification",
-      "skills": ["risk-management", "derivatives"]
+      "description": "Professional risk management certification. Paid certification.",
+      "skills": [
+        "risk-management",
+        "derivatives"
+      ],
+      "verified": true
     },
     {
       "id": "cfa-level-1",
@@ -286,35 +513,50 @@
       "category": "Quant",
       "url": "https://www.cfainstitute.org/programs/cfa",
       "free": false,
+      "certificate": true,
       "price": "$2400+",
       "difficulty": "advanced",
       "hours": 300,
-      "description": "Gold standard for finance professionals",
-      "skills": ["financial-markets", "portfolio-theory", "derivatives"]
+      "description": "Gold standard for finance professionals. Paid certification.",
+      "skills": [
+        "financial-markets",
+        "portfolio-theory",
+        "derivatives"
+      ],
+      "verified": true
     },
     {
       "id": "iaea-nuclear-basics",
       "title": "IAEA Nuclear Basics",
       "provider": "IAEA",
       "category": "Nuclear",
-      "url": "https://www.iaea.org/services/training/nuclear-basics",
+      "url": "https://www.iaea.org/about/overview",
       "free": true,
+      "certificate": false,
       "difficulty": "beginner",
       "hours": 20,
-      "description": "Fundamentals of nuclear science and technology",
-      "skills": ["numerical-methods"]
+      "description": "Fundamentals of nuclear science and technology. Free educational resources.",
+      "skills": [
+        "numerical-methods"
+      ],
+      "verified": false
     },
     {
-      "id": "iaea-online-courses",
-      "title": "IAEA Online Courses",
+      "id": "iaea-education",
+      "title": "IAEA Education & Training",
       "provider": "IAEA",
       "category": "Nuclear",
-      "url": "https://nucleus.iaea.org/online-courses",
+      "url": "https://www.iaea.org/about/overview",
       "free": true,
+      "certificate": false,
       "difficulty": "intermediate",
       "hours": 30,
-      "description": "Various nuclear engineering courses",
-      "skills": ["numerical-methods", "risk-management"]
+      "description": "IAEA training programs and resources. Free educational materials.",
+      "skills": [
+        "numerical-methods",
+        "risk-management"
+      ],
+      "verified": false
     },
     {
       "id": "mit-2201",
@@ -323,94 +565,114 @@
       "category": "Nuclear",
       "url": "https://ocw.mit.edu/courses/22-01-introduction-to-nuclear-engineering-and-ionizing-radiation-fall-2016/",
       "free": true,
+      "certificate": false,
       "difficulty": "beginner",
       "hours": 40,
-      "description": "Introduction to nuclear engineering",
-      "skills": ["numerical-methods"]
+      "description": "Introduction to nuclear engineering. Free course, no certificate (OCW policy).",
+      "skills": [
+        "numerical-methods"
+      ],
+      "verified": true
     },
     {
-      "id": "ans-education",
-      "title": "American Nuclear Society Resources",
-      "provider": "ANS",
+      "id": "mit-18-330",
+      "title": "MIT 18.330 Numerical Analysis",
+      "provider": "MIT OCW",
       "category": "Nuclear",
-      "url": "https://www.ans.org/education/",
+      "url": "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/",
       "free": true,
-      "difficulty": "beginner",
-      "hours": 15,
-      "description": "Nuclear science educational resources",
-      "skills": ["numerical-methods"]
+      "certificate": false,
+      "difficulty": "intermediate",
+      "hours": 40,
+      "verified": true,
+      "description": "Numerical methods for science and engineering. Root finding, interpolation, integration, ODEs. Free course, no certificate (OCW policy).",
+      "skills": [
+        "numerical-methods",
+        "python"
+      ]
     },
     {
-      "id": "nrc-student-resources",
+      "id": "nrc-reading-room",
+      "title": "NRC Technical Library",
+      "provider": "NRC",
+      "category": "Nuclear",
+      "url": "https://www.nrc.gov/reading-rm.html",
+      "free": true,
+      "certificate": false,
+      "difficulty": "intermediate",
+      "hours": 20,
+      "description": "NRC technical documents and educational materials. Free resources.",
+      "skills": [
+        "risk-management",
+        "probability"
+      ],
+      "verified": true
+    },
+    {
+      "id": "nrc-students",
       "title": "NRC Student Resources",
       "provider": "NRC",
       "category": "Nuclear",
       "url": "https://www.nrc.gov/reading-rm/basic-ref/students.html",
       "free": true,
+      "certificate": false,
       "difficulty": "beginner",
       "hours": 10,
-      "description": "Nuclear regulatory commission educational materials",
-      "skills": ["risk-management", "probability"]
+      "description": "Nuclear regulatory commission educational materials. Free resources.",
+      "skills": [
+        "risk-management",
+        "probability"
+      ],
+      "verified": true
     },
     {
-      "id": "openmc-tutorials",
-      "title": "OpenMC Monte Carlo Tutorials",
+      "id": "openmc-docs",
+      "title": "OpenMC Documentation",
       "provider": "OpenMC",
       "category": "Nuclear",
-      "url": "https://docs.openmc.org/en/stable/usersguide/tutorials.html",
+      "url": "https://docs.openmc.org/en/latest/",
       "free": true,
+      "certificate": false,
       "difficulty": "intermediate",
-      "hours": 20,
-      "description": "Monte Carlo particle transport simulations",
-      "skills": ["numerical-methods", "python"]
+      "hours": 30,
+      "description": "Open-source Monte Carlo particle transport code. Free documentation.",
+      "skills": [
+        "numerical-methods",
+        "python"
+      ],
+      "verified": true
     },
     {
-      "id": "nuclear-engineering-coursera",
-      "title": "Nuclear Engineering Fundamentals",
-      "provider": "Coursera",
+      "id": "nuclear-engineering-handbook",
+      "title": "Nuclear Engineering Handbook",
+      "provider": "Various",
       "category": "Nuclear",
-      "url": "https://www.coursera.org/learn/nuclear-engineering",
+      "url": "https://www.nuclear-power.com/nuclear-engineering/",
       "free": true,
-      "difficulty": "beginner",
-      "hours": 25,
-      "description": "Introduction to nuclear engineering concepts",
-      "skills": ["numerical-methods"]
-    },
-    {
-      "id": "coursera-nuclear-power",
-      "title": "Nuclear Power Plant Dynamics",
-      "provider": "Coursera",
-      "category": "Nuclear",
-      "url": "https://www.coursera.org/learn/nuclear-power-plant-dynamics",
-      "free": true,
-      "difficulty": "intermediate",
-      "hours": 20,
-      "description": "Dynamics and control of nuclear power plants",
-      "skills": ["numerical-methods", "optimization"]
-    },
-    {
-      "id": "stanford-nuclear-future",
-      "title": "The Nuclear Future",
-      "provider": "Stanford",
-      "category": "Nuclear",
-      "url": "https://www.edx.org/learn/nuclear-energy/stanford-university-the-nuclear-future",
-      "free": true,
+      "certificate": false,
       "difficulty": "beginner",
       "hours": 15,
-      "description": "Overview of nuclear energy's role in the future",
-      "skills": ["numerical-methods"]
+      "description": "Comprehensive nuclear engineering reference. Free online handbook.",
+      "skills": [
+        "numerical-methods"
+      ],
+      "verified": true
     },
     {
-      "id": "nei-nuclear-basics",
-      "title": "Nuclear Energy Institute Basics",
-      "provider": "NEI",
+      "id": "world-nuclear-education",
+      "title": "World Nuclear Association Education",
+      "provider": "WNA",
       "category": "Nuclear",
-      "url": "https://www.nei.org/resources/fact-sheets",
+      "url": "https://world-nuclear.org/information-library/",
       "free": true,
+      "certificate": false,
       "difficulty": "beginner",
-      "hours": 5,
-      "description": "Nuclear energy industry facts and fundamentals",
-      "skills": ["numerical-methods"]
+      "hours": 20,
+      "description": "Comprehensive nuclear information library. Free educational resources.",
+      "skills": [
+        "numerical-methods"
+      ],
+      "verified": true
     }
   ]
 }

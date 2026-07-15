@@ -1,0 +1,312 @@
+{
+  "categories": [
+    {
+      "id": "python",
+      "title": "Python Basics",
+      "icon": "Code",
+      "color": "text-blue-500",
+      "items": [
+        {
+          "title": "Variables & Types",
+          "code": "x = 10          # int\ny = 3.14        # float\nname = 'John'   # string\nis_valid = True # bool"
+        },
+        {
+          "title": "Lists",
+          "code": "arr = [1, 2, 3, 4, 5]\narr.append(6)       # Add to end\narr.pop()           # Remove last\narr[0]              # First element\narr[-1]             # Last element\narr[1:3]            # Slice\nlen(arr)            # Length"
+        },
+        {
+          "title": "Dictionaries",
+          "code": "person = {\n    'name': 'John',\n    'age': 25,\n    'skills': ['Python', 'ML']\n}\nperson['name']      # Access value\nperson.get('email', 'N/A')  # Default\nperson.keys()       # All keys\nperson.values()     # All values"
+        },
+        {
+          "title": "Functions",
+          "code": "def add(a, b=0):\n    \"\"\"Add two numbers\"\"\"\n    return a + b\n\nresult = add(5, 3)  # 8\n\n# Lambda\nsquare = lambda x: x ** 2\nsquare(5)  # 25"
+        },
+        {
+          "title": "List Comprehension",
+          "code": "squares = [x**2 for x in range(10)]\nevens = [x for x in range(10) if x % 2 == 0]\n\n# Dict comprehension\nword_len = {w: len(w) for w in ['hello', 'world']}"
+        },
+        {
+          "title": "Classes",
+          "code": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n    \n    def greet(self):\n        return f'Hi, I am {self.name}'\n\np = Person('John', 25)\np.greet()"
+        }
+      ]
+    },
+    {
+      "id": "numpy",
+      "title": "NumPy",
+      "icon": "Database",
+      "color": "text-green-500",
+      "items": [
+        {
+          "title": "Arrays",
+          "code": "import numpy as np\n\narr = np.array([1, 2, 3, 4, 5])\narr = np.zeros((3, 3))      # 3x3 zeros\narr = np.ones((2, 4))       # 2x4 ones\narr = np.random.rand(3, 3)  # Random"
+        },
+        {
+          "title": "Operations",
+          "code": "arr = np.array([1, 2, 3, 4, 5])\narr.mean()       # Average\narr.std()        # Standard deviation\narr.sum()        # Sum\narr.min()        # Minimum\narr.max()        # Maximum\nnp.dot(a, b)     # Dot product"
+        },
+        {
+          "title": "Matrix Operations",
+          "code": "A = np.array([[1, 2], [3, 4]])\nB = np.array([[5, 6], [7, 8]])\n\nA @ B            # Matrix multiply\nA.T              # Transpose\nnp.linalg.inv(A) # Inverse\nnp.linalg.det(A) # Determinant\neigenvalues, eigenvectors = np.linalg.eig(A)"
+        }
+      ]
+    },
+    {
+      "id": "pandas",
+      "title": "Pandas",
+      "icon": "Table",
+      "color": "text-purple-500",
+      "items": [
+        {
+          "title": "DataFrames",
+          "code": "import pandas as pd\n\ndf = pd.DataFrame({\n    'name': ['Alice', 'Bob'],\n    'age': [25, 30]\n})\n\ndf.head()         # First 5 rows\ndf.info()         # Summary\ndf.describe()     # Statistics"
+        },
+        {
+          "title": "Selection",
+          "code": "df['name']           # Single column\ndf[['name', 'age']] # Multiple columns\ndf.iloc[0]          # First row by index\ndf.loc[0]           # First row by label\ndf[df['age'] > 25]  # Filter rows"
+        },
+        {
+          "title": "Data Manipulation",
+          "code": "df.groupby('name').mean()  # Group by\ndf.sort_values('age')      # Sort\ndf.dropna()                # Drop NaN\ndf.fillna(0)               # Fill NaN\ndf.merge(df2, on='id')     # Join\ndf.pivot_table(values='x', index='y')"
+        }
+      ]
+    },
+    {
+      "id": "matplotlib",
+      "title": "Matplotlib",
+      "icon": "BarChart",
+      "color": "text-orange-500",
+      "items": [
+        {
+          "title": "Basic Plots",
+          "code": "import matplotlib.pyplot as plt\n\nplt.plot([1, 2, 3, 4], [1, 4, 9, 16])\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('My Plot')\nplt.show()"
+        },
+        {
+          "title": "Subplots",
+          "code": "fig, axes = plt.subplots(2, 2, figsize=(10, 8))\naxes[0, 0].plot(x, y)\naxes[0, 1].bar(x, y)\naxes[1, 0].hist(data)\naxes[1, 1].scatter(x, y)\nplt.tight_layout()"
+        }
+      ]
+    },
+    {
+      "id": "linear-algebra",
+      "title": "Linear Algebra",
+      "icon": "Sigma",
+      "color": "text-blue-500",
+      "items": [
+        {
+          "title": "Vectors",
+          "code": "# Vector operations\nv1 = np.array([1, 2, 3])\nv2 = np.array([4, 5, 6])\n\nv1 + v2          # Addition\nv1 * 2           # Scalar multiply\nnp.dot(v1, v2)   # Dot product\nnp.cross(v1, v2) # Cross product\nnp.linalg.norm(v1) # Magnitude"
+        },
+        {
+          "title": "Matrix Properties",
+          "code": "# Key concepts\n# - Eigenvalues: Av = λv\n# - Determinant: scaling factor\n# - Inverse: A * A^-1 = I\n# - Transpose: flip rows/cols\n# - Rank: number of independent rows/cols\n\n# In Python:\nnp.linalg.eig(A)    # Eigenvalues\neigvals, eigvecs = np.linalg.eig(A)"
+        }
+      ]
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics",
+      "icon": "TrendingUp",
+      "color": "text-green-500",
+      "items": [
+        {
+          "title": "Descriptive Stats",
+          "code": "from scipy import stats\nimport numpy as np\n\ndata = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\n\nnp.mean(data)      # Mean\nnp.median(data)    # Median\nnp.std(data)       # Standard deviation\nnp.var(data)       # Variance\nstats.mode(data)   # Mode\nnp.percentile(data, 25)  # Q1"
+        },
+        {
+          "title": "Distributions",
+          "code": "from scipy.stats import norm, t, chi2\n\n# Normal distribution\nnorm.pdf(x, mu, sigma)   # PDF\nnorm.cdf(x, mu, sigma)   # CDF\nnorm.ppf(0.95, mu, sigma) # Inverse CDF\n\n# T-distribution\nt.pdf(x, df)\nt.cdf(x, df)"
+        },
+        {
+          "title": "Hypothesis Testing",
+          "code": "from scipy import stats\n\n# T-test\nt_stat, p_value = stats.ttest_ind(group1, group2)\n\n# Chi-square\nchi2, p_value = stats.chisquare(observed)\n\n# Correlation\ncorr, p_value = stats.pearsonr(x, y)\n\n# Interpretation: p < 0.05 → reject null"
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "Finance Formulas",
+      "icon": "DollarSign",
+      "color": "text-yellow-500",
+      "items": [
+        {
+          "title": "Time Value of Money",
+          "code": "# Present Value\nPV = FV / (1 + r)^n\n\n# Future Value\nFV = PV * (1 + r)^n\n\n# NPV\nNPV = sum(CF_t / (1 + r)^t)\n\n# IRR: rate where NPV = 0"
+        },
+        {
+          "title": "Portfolio Theory",
+          "code": "# Expected Return\nE(R_p) = sum(w_i * E(R_i))\n\n# Portfolio Variance\nVar_p = w^T * Cov * w\n\n# Sharpe Ratio\nSR = (E(R) - R_f) / sigma\n\n# CAPM\nE(R_i) = R_f + beta_i * (E(R_m) - R_f)"
+        },
+        {
+          "title": "Options (Black-Scholes)",
+          "code": "from scipy.stats import norm\nimport numpy as np\n\ndef black_scholes(S, K, T, r, sigma, option='call'):\n    d1 = (np.log(S/K) + (r + sigma**2/2)*T) / (sigma*np.sqrt(T))\n    d2 = d1 - sigma*np.sqrt(T)\n    \n    if option == 'call':\n        return S*norm.cdf(d1) - K*np.exp(-r*T)*norm.cdf(d2)\n    else:\n        return K*np.exp(-r*T)*norm.cdf(-d2) - S*norm.cdf(-d1)"
+        }
+      ]
+    },
+    {
+      "id": "ml",
+      "title": "Machine Learning",
+      "icon": "Brain",
+      "color": "text-purple-500",
+      "items": [
+        {
+          "title": "Scikit-learn Basics",
+          "code": "from sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import mean_squared_error\n\n# Split data\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n\n# Train model\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n\n# Predict\npredictions = model.predict(X_test)"
+        },
+        {
+          "title": "Model Evaluation",
+          "code": "from sklearn.metrics import (\n    accuracy_score, precision_score,\n    recall_score, f1_score,\n    confusion_matrix, classification_report\n)\n\n# Classification metrics\naccuracy_score(y_true, y_pred)\nprecision_score(y_true, y_pred)\nrecall_score(y_true, y_pred)\nf1_score(y_true, y_pred)\n\n# Full report\nprint(classification_report(y_true, y_pred))"
+        },
+        {
+          "title": "Feature Scaling",
+          "code": "from sklearn.preprocessing import (\n    StandardScaler, MinMaxScaler\n)\n\n# Standardization (mean=0, std=1)\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n\n# Normalization (0 to 1)\nscaler = MinMaxScaler()\nX_scaled = scaler.fit_transform(X)"
+        }
+      ]
+    },
+    {
+      "id": "cpp",
+      "title": "C++ Basics",
+      "icon": "Code",
+      "color": "text-green-500",
+      "items": [
+        {
+          "title": "Variables & Types",
+          "code": "int x = 10;\ndouble y = 3.14;\nstd::string name = \"John\";\nbool is_valid = true;\nauto z = 42;  // type deduction\nconst int MAX = 100;"
+        },
+        {
+          "title": "Smart Pointers",
+          "code": "#include <memory>\n\nauto p = std::make_unique<int>(42);\nauto sp = std::make_shared<std::vector<int>>();\n\n// Unique ownership\nstd::unique_ptr<int> up = std::move(p);\n\n// Shared ownership (ref counted)\nstd::shared_ptr<int> sp2 = sp;\nsp.use_count();  // 2"
+        },
+        {
+          "title": "STL Containers",
+          "code": "#include <vector>\n#include <map>\n#include <unordered_map>\n#include <set>\n\nstd::vector<int> v = {1, 2, 3};\nv.push_back(4);\nv[0];  // 1\n\nstd::map<std::string, int> m;\nm[\"key\"] = 42;\n\nstd::set<int> s = {3, 1, 2};  // sorted"
+        },
+        {
+          "title": "Functions",
+          "code": "// Pass by reference\nvoid increment(int& x) { x++; }\n\n// Const reference (no copy)\nvoid print(const std::string& s);\n\n// Templates\ntemplate<typename T>\nT max_val(T a, T b) { return a > b ? a : b; }\n\n// Lambda\nauto add = [](int a, int b) { return a + b; };"
+        },
+        {
+          "title": "Classes",
+          "code": "class Animal {\npublic:\n    Animal(std::string n) : name(std::move(n)) {}\n    virtual ~Animal() = default;\n    virtual void speak() const = 0;  // pure virtual\nprotected:\n    std::string name;\n};\n\nclass Dog : public Animal {\npublic:\n    using Animal::Animal;\n    void speak() const override { std::cout << \"Woof\"; }\n};"
+        },
+        {
+          "title": "RAII",
+          "code": "// Resource Acquisition Is Initialization\nclass FileHandle {\n    FILE* fp;\npublic:\n    FileHandle(const char* path) : fp(fopen(path, \"r\")) {}\n    ~FileHandle() { if (fp) fclose(fp); }\n    // No copy, allow move\n    FileHandle(const FileHandle&) = delete;\n    FileHandle& operator=(const FileHandle&) = delete;\n    FileHandle(FileHandle&& other) noexcept : fp(other.fp) { other.fp = nullptr; }\n};"
+        },
+        {
+          "title": "Move Semantics",
+          "code": "class Buffer {\n    int* data;\n    size_t size;\npublic:\n    // Move constructor\n    Buffer(Buffer&& other) noexcept\n        : data(other.data), size(other.size) {\n        other.data = nullptr;\n        other.size = 0;\n    }\n    // Move assignment\n    Buffer& operator=(Buffer&& other) noexcept {\n        delete[] data;\n        data = other.data; size = other.size;\n        other.data = nullptr; other.size = 0;\n        return *this;\n    }\n};"
+        },
+        {
+          "title": "Common Patterns",
+          "code": "// Range-based for\nfor (const auto& item : vec) { ... }\n\n// Structured bindings (C++17)\nauto [key, value] = *map.begin();\n\n// Optional (C++17)\nstd::optional<int> find(int x);\n\n// Variant (C++17)\nstd::variant<int, std::string> v;\n\n// std::format (C++20)\nauto s = std::format(\"Hello {}\", name);"
+        }
+      ]
+    },
+    {
+      "id": "sql",
+      "title": "SQL Queries",
+      "icon": "Database",
+      "color": "text-orange-500",
+      "items": [
+        {
+          "title": "Basic SELECT",
+          "code": "SELECT col1, col2\nFROM table_name\nWHERE condition\nORDER BY col1 DESC\nLIMIT 10;\n\n-- Aliases\nSELECT price * 1.1 AS price_with_tax\nFROM products;"
+        },
+        {
+          "title": "JOINs",
+          "code": "-- Inner join\nSELECT o.id, c.name\nFROM orders o\nJOIN customers c ON o.customer_id = c.id;\n\n-- Left join (keep all left rows)\nSELECT e.name, d.dept_name\nFROM employees e\nLEFT JOIN departments d ON e.dept_id = d.id;\n\n-- Full outer, cross, self joins also available"
+        },
+        {
+          "title": "Aggregation",
+          "code": "SELECT department,\n       COUNT(*) AS cnt,\n       AVG(salary) AS avg_sal,\n       SUM(revenue) AS total\nFROM employees\nGROUP BY department\nHAVING AVG(salary) > 50000\nORDER BY avg_sal DESC;"
+        },
+        {
+          "title": "Window Functions",
+          "code": "SELECT name, salary, department,\n  ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rank,\n  SUM(salary) OVER (PARTITION BY department) AS dept_total,\n  LAG(salary) OVER (ORDER BY hire_date) AS prev_salary,\n  salary - LAG(salary) OVER (ORDER BY hire_date) AS delta\nFROM employees;"
+        },
+        {
+          "title": "CTEs",
+          "code": "WITH monthly_rev AS (\n    SELECT DATE_TRUNC('month', order_date) AS month,\n           SUM(amount) AS revenue\n    FROM orders\n    GROUP BY 1\n)\nSELECT month, revenue,\n       revenue - LAG(revenue) OVER (ORDER BY month) AS growth\nFROM monthly_rev;"
+        },
+        {
+          "title": "Subqueries",
+          "code": "-- Scalar subquery\nSELECT name, salary,\n       salary - (SELECT AVG(salary) FROM employees) AS diff\nFROM employees;\n\n-- EXISTS\nSELECT * FROM customers c\nWHERE EXISTS (\n    SELECT 1 FROM orders o WHERE o.cust_id = c.id\n);\n\n-- IN / ANY / ALL"
+        },
+        {
+          "title": "Financial Queries",
+          "code": "-- Running total\nSELECT date, amount,\n  SUM(amount) OVER (ORDER BY date) AS cumulative\nFROM transactions;\n\n-- VWAP\nSELECT ticker,\n  SUM(price * volume) / SUM(volume) AS vwap\nFROM trades\nGROUP BY ticker;\n\n-- Moving average\nSELECT date, close,\n  AVG(close) OVER (ORDER BY date ROWS 19 PRECEDING) AS ma20\nFROM prices;"
+        },
+        {
+          "title": "Performance",
+          "code": "-- Use EXPLAIN to check query plan\nEXPLAIN ANALYZE SELECT ...;\n\n-- Key optimizations:\n-- 1. Index on WHERE/JOIN columns\nCREATE INDEX idx_orders_cust ON orders(customer_id);\n-- 2. Avoid SELECT * in production\n-- 3. Use LIMIT for large result sets\n-- 4. Prefer EXISTS over IN for subqueries\n-- 5. Partition large tables by date"
+        }
+      ]
+    },
+    {
+      "id": "stochastic",
+      "title": "Stochastic Calculus",
+      "icon": "TrendingUp",
+      "color": "text-red-500",
+      "items": [
+        {
+          "title": "Brownian Motion",
+          "code": "import numpy as np\n\ndef simulate_brownian(T=1.0, N=1000, paths=5):\n    dt = T / N\n    dW = np.random.normal(0, np.sqrt(dt), (paths, N))\n    W = np.cumsum(dW, axis=1)\n    W = np.hstack([np.zeros((paths, 1)), W])\n    return W\n\n# Properties: W(0)=0, independent increments,\n# W(t)-W(s) ~ N(0, t-s)"
+        },
+        {
+          "title": "Ito's Lemma",
+          "code": "# If dX = mu*dt + sigma*dW\n# and f(X,t) is twice-differentiable:\n#\n# df = (df/dt + mu*df/dX + 0.5*sigma^2*d2f/dX2)*dt\n#      + sigma*df/dX * dW\n#\n# Key example: f(X) = X^2\n# d(X^2) = (2*mu*X + sigma^2)*dt + 2*sigma*X*dW\n#\n# The 0.5*sigma^2*d2f/dX2 term is the Ito correction"
+        },
+        {
+          "title": "Geometric Brownian Motion",
+          "code": "import numpy as np\n\ndef simulate_gbm(S0, mu, sigma, T=1.0, N=252, paths=10000):\n    dt = T / N\n    Z = np.random.standard_normal((paths, N))\n    increments = (mu - 0.5*sigma**2)*dt + sigma*np.sqrt(dt)*Z\n    log_returns = np.cumsum(increments, axis=1)\n    S = S0 * np.exp(np.hstack([np.zeros((paths, 1)), log_returns]))\n    return S\n\n# dS = mu*S*dt + sigma*S*dW\n# Solution: S(t) = S(0)*exp((mu-sigma^2/2)*t + sigma*W(t))"
+        },
+        {
+          "title": "Black-Scholes PDE",
+          "code": "# PDE: dV/dt + 0.5*sigma^2*S^2*d2V/dS2 + r*S*dV/dS - r*V = 0\n#\n# Boundary conditions:\n#   Call: V(S,T) = max(S-K, 0), V(0,t)=0, V->S as S->inf\n#   Put:  V(S,T) = max(K-S, 0), V(0,t)=K*exp(-r*(T-t))\n#\n# Risk-neutral pricing:\n#   V(S,t) = exp(-r*(T-t)) * E_Q[max(S(T)-K, 0)]\n# where Q is the risk-neutral measure"
+        },
+        {
+          "title": "Greeks Formulas",
+          "code": "from scipy.stats import norm\nimport numpy as np\n\ndef greeks(S, K, T, r, sigma):\n    d1 = (np.log(S/K) + (r+sigma**2/2)*T) / (sigma*np.sqrt(T))\n    d2 = d1 - sigma*np.sqrt(T)\n    return {\n        'delta': norm.cdf(d1),                      # dV/dS\n        'gamma': norm.pdf(d1)/(S*sigma*np.sqrt(T)),  # d2V/dS2\n        'theta': -(S*norm.pdf(d1)*sigma)/(2*np.sqrt(T)) - r*K*np.exp(-r*T)*norm.cdf(d2),\n        'vega':  S*np.sqrt(T)*norm.pdf(d1),          # dV/dsigma\n        'rho':   K*T*np.exp(-r*T)*norm.cdf(d2)       # dV/dr\n    }"
+        },
+        {
+          "title": "Monte Carlo",
+          "code": "import numpy as np\n\ndef mc_option_price(S0, K, T, r, sigma, paths=100000, option='call'):\n    Z = np.random.standard_normal(paths)\n    ST = S0 * np.exp((r - 0.5*sigma**2)*T + sigma*np.sqrt(T)*Z)\n    \n    if option == 'call':\n        payoffs = np.maximum(ST - K, 0)\n    else:\n        payoffs = np.maximum(K - ST, 0)\n    \n    price = np.exp(-r*T) * np.mean(payoffs)\n    se = np.exp(-r*T) * np.std(payoffs) / np.sqrt(paths)\n    return price, se  # price + standard error"
+        }
+      ]
+    },
+    {
+      "id": "derivatives",
+      "title": "Derivatives",
+      "icon": "DollarSign",
+      "color": "text-yellow-500",
+      "items": [
+        {
+          "title": "Options Payoff",
+          "code": "import numpy as np\n\ndef option_payoff(S, K, premium, option='call', position='long'):\n    if option == 'call':\n        payoff = np.maximum(S - K, 0)\n    else:\n        payoff = np.maximum(K - S, 0)\n    \n    if position == 'long':\n        return payoff - premium\n    else:\n        return -payoff + premium\n\n# Long call: unlimited upside, loss capped at premium\n# Long put:  upside up to K, loss capped at premium"
+        },
+        {
+          "title": "Put-Call Parity",
+          "code": "# C - P = S - K*exp(-r*T)\n# Rearranged: C + K*exp(-r*T) = P + S\n#\n# If violated, arbitrage exists:\n#   If C - P > S - K*exp(-r*T):\n#     Sell call, buy put, buy stock, borrow K*exp(-r*T)\n#   If C - P < S - K*exp(-r*T):\n#     Buy call, sell put, short stock, lend K*exp(-r*T)\n#\n# European options only (American may violate)"
+        },
+        {
+          "title": "Black-Scholes",
+          "code": "from scipy.stats import norm\nimport numpy as np\n\ndef bs_price(S, K, T, r, sigma, option='call'):\n    d1 = (np.log(S/K) + (r + sigma**2/2)*T) / (sigma*np.sqrt(T))\n    d2 = d1 - sigma*np.sqrt(T)\n    \n    if option == 'call':\n        return S*norm.cdf(d1) - K*np.exp(-r*T)*norm.cdf(d2)\n    else:\n        return K*np.exp(-r*T)*norm.cdf(-d2) - S*norm.cdf(-d1)\n\n# Assumptions: constant vol, no dividends,\n# European exercise, log-normal returns"
+        },
+        {
+          "title": "Greeks Table",
+          "code": "# Greek    | Measures        | Call    | Put\n# ---------|-----------------|---------|--------\n# Delta    | dV/dS           | +       | -\n# Gamma    | d2V/dS2         | +       | +\n# Theta    | dV/dt (decay)   | -       | -\n# Vega     | dV/d(vol)       | +       | +\n# Rho      | dV/d(rate)      | +       | -\n#\n# Delta-hedged portfolio: hold -delta shares\n# Gamma scalping: profit from rehedging as S moves"
+        },
+        {
+          "title": "Implied Volatility",
+          "code": "from scipy.optimize import brentq\nfrom scipy.stats import norm\nimport numpy as np\n\ndef implied_vol(price, S, K, T, r, option='call'):\n    def objective(sigma):\n        d1 = (np.log(S/K) + (r+sigma**2/2)*T) / (sigma*np.sqrt(T))\n        d2 = d1 - sigma*np.sqrt(T)\n        if option == 'call':\n            model = S*norm.cdf(d1) - K*np.exp(-r*T)*norm.cdf(d2)\n        else:\n            model = K*np.exp(-r*T)*norm.cdf(-d2) - S*norm.cdf(-d1)\n        return model - price\n    \n    return brentq(objective, 0.01, 5.0)\n\n# IV is the vol that makes BS price = market price"
+        },
+        {
+          "title": "Exotic Options",
+          "code": "# Barrier options (knock-in/out)\n#   Up-and-out: worthless if S hits barrier H\n#   Down-and-in: activates if S drops to H\n#\n# Asian options: payoff depends on average price\n#   payoff = max(avg(S) - K, 0)\n#\n# Lookback options: payoff uses max/min of path\n#   payoff = max(max(S_path) - K, 0)\n#\n# Digital/binary: fixed payout if condition met\n#   payoff = 1 if S > K else 0"
+        }
+      ]
+    }
+  ]
+}

@@ -4,17 +4,19 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
-import { 
-  ExternalLink, 
-  Clock, 
-  BookOpen, 
-  Video, 
-  Code, 
+import {
+  ExternalLink,
+  Clock,
+  BookOpen,
+  Video,
+  Code,
   Database,
   Wrench,
   FileText,
   Zap,
-  Lightbulb
+  Lightbulb,
+  CheckCircle,
+  AlertCircle
 } from 'lucide-react';
 
 interface Resource {
@@ -30,6 +32,9 @@ interface Resource {
   actionSteps: string[];
   nuclearRelevance: string;
   specificLinks: Record<string, string | undefined>;
+  verified?: boolean;
+  curriculumRole: string;
+  scheduledWeeks: number[];
 }
 
 interface ResourceCardProps {
@@ -58,6 +63,13 @@ const difficultyColors: Record<string, string> = {
   advanced: 'bg-red-600',
 };
 
+const roleColors: Record<string, string> = {
+  core: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
+  supplemental: 'bg-sky-500/10 text-sky-400 border-sky-500/30',
+  reference: 'bg-slate-500/10 text-slate-300 border-slate-500/30',
+  specialization: 'bg-purple-500/10 text-purple-400 border-purple-500/30',
+};
+
 export function ResourceCard({ resource, isCompleted, onToggleComplete }: ResourceCardProps) {
   const Icon = typeIcons[resource.type] || BookOpen;
 
@@ -73,7 +85,10 @@ export function ResourceCard({ resource, isCompleted, onToggleComplete }: Resour
             />
             <Icon className="h-4 w-4 text-blue-400" />
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap justify-end gap-2">
+            <Badge variant="outline" className={`capitalize ${roleColors[resource.curriculumRole]}`}>
+              {resource.curriculumRole}
+            </Badge>
             <Badge 
               variant="secondary" 
               className={difficultyColors[resource.difficulty]}
@@ -85,7 +100,20 @@ export function ResourceCard({ resource, isCompleted, onToggleComplete }: Resour
             </Badge>
           </div>
         </div>
-        <CardTitle className="text-sm text-white mt-2">{resource.title}</CardTitle>
+        <CardTitle className="text-sm text-white mt-2 flex items-center gap-2">
+          {resource.title}
+          {resource.verified ? (
+            <Badge variant="outline" className="text-green-400 border-green-500/30 bg-green-500/10 text-[10px] h-4 px-1.5 gap-0.5">
+              <CheckCircle className="h-2.5 w-2.5" />
+              Verified
+            </Badge>
+          ) : (
+            <Badge variant="outline" className="text-yellow-400 border-yellow-500/30 bg-yellow-500/10 text-[10px] h-4 px-1.5 gap-0.5">
+              <AlertCircle className="h-2.5 w-2.5" />
+              Needs Verification
+            </Badge>
+          )}
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <p className="text-xs text-slate-400 mb-3">{resource.description}</p>
@@ -109,6 +137,12 @@ export function ResourceCard({ resource, isCompleted, onToggleComplete }: Resour
             <Clock className="h-3 w-3" />
             <span>{resource.estimatedHours} hours</span>
           </div>
+
+          {resource.scheduledWeeks.length > 0 && (
+            <p className="text-xs text-emerald-400">
+              Scheduled: {resource.scheduledWeeks.map((week) => `W${week}`).join(', ')}
+            </p>
+          )}
 
           {/* Nuclear Relevance */}
           {resource.nuclearRelevance && (

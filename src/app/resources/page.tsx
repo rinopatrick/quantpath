@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 import { ResourceCard } from '@/components/resources/ResourceCard';
 import { ResourceFilters } from '@/components/resources/ResourceFilters';
+import { ResourceExplainer } from '@/components/ai/ResourceExplainer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { BookOpen, Grid, List } from 'lucide-react';
+import { BookOpen, Grid, List, Sparkles } from 'lucide-react';
 import resourcesData from '@/data/resources.json';
 
 export default function ResourcesPage() {
@@ -14,6 +15,7 @@ export default function ResourcesPage() {
   const [typeFilter, setTypeFilter] = useState('all');
   const [difficultyFilter, setDifficultyFilter] = useState('all');
   const [skillFilter, setSkillFilter] = useState('all');
+  const [roleFilter, setRoleFilter] = useState('all');
   const [showNuclearOnly, setShowNuclearOnly] = useState(false);
   const [completedResources, setCompletedResources] = useState<string[]>([]);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -46,6 +48,7 @@ export default function ResourcesPage() {
     setTypeFilter('all');
     setDifficultyFilter('all');
     setSkillFilter('all');
+    setRoleFilter('all');
     setShowNuclearOnly(false);
   };
 
@@ -59,6 +62,10 @@ export default function ResourcesPage() {
 
   const handleSkillChange = (value: string | null) => {
     setSkillFilter(value || 'all');
+  };
+
+  const handleRoleChange = (value: string | null) => {
+    setRoleFilter(value || 'all');
   };
 
   // Filter resources
@@ -89,6 +96,10 @@ export default function ResourcesPage() {
       return false;
     }
 
+    if (roleFilter !== 'all' && resource.curriculumRole !== roleFilter) {
+      return false;
+    }
+
     // Nuclear only
     if (showNuclearOnly && !resource.nuclearRelevance) {
       return false;
@@ -103,8 +114,7 @@ export default function ResourcesPage() {
       <div className="p-6 rounded-lg bg-gradient-to-r from-blue-900 to-slate-900 border border-blue-800">
         <h1 className="text-2xl font-bold text-white">Resource Library</h1>
         <p className="text-slate-300 mt-2">
-          {resourcesData.resources.length} free resources for your quant learning journey.
-          Filter by type, difficulty, or skill to find what you need.
+          {resourcesData.resources.length} curated resources: {resourcesData.resources.filter((resource) => resource.curriculumRole === 'core').length} scheduled core items, plus supplemental, reference, and specialization material.
         </p>
       </div>
 
@@ -161,7 +171,7 @@ export default function ResourcesPage() {
       {/* Main Content */}
       <div className="grid gap-6 lg:grid-cols-4">
         {/* Filters Sidebar */}
-        <div className="lg:col-span-1">
+        <div className="lg:col-span-1 space-y-4">
           <ResourceFilters
             searchQuery={searchQuery}
             onSearchChange={setSearchQuery}
@@ -171,9 +181,17 @@ export default function ResourcesPage() {
             onDifficultyChange={handleDifficultyChange}
             skillFilter={skillFilter}
             onSkillChange={handleSkillChange}
+            roleFilter={roleFilter}
+            onRoleChange={handleRoleChange}
             showNuclearOnly={showNuclearOnly}
             onNuclearOnlyChange={setShowNuclearOnly}
             onClearFilters={clearFilters}
+          />
+          
+          {/* AI Resource Explainer */}
+          <ResourceExplainer 
+            resourceTitle="Learning Resources"
+            resourceDescription="Get AI-powered explanations of any resource and how it fits your learning path."
           />
         </div>
 

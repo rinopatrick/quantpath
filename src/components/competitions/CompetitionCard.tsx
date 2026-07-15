@@ -3,13 +3,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { 
-  Trophy, 
-  Calendar, 
-  Clock, 
+import {
+  Trophy,
+  Calendar,
+  Clock,
   ExternalLink,
   DollarSign,
-  Zap
+  Zap,
+  CheckCircle,
+  AlertCircle
 } from 'lucide-react';
 
 interface Competition {
@@ -26,6 +28,7 @@ interface Competition {
   timeCommitment: string;
   registrationOpen: boolean;
   status: string;
+  verified?: boolean;
 }
 
 interface CompetitionCardProps {
@@ -53,7 +56,20 @@ export function CompetitionCard({ competition, status, onStatusChange }: Competi
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-2">
             <Trophy className="h-4 w-4 text-yellow-400" />
-            <CardTitle className="text-sm text-white">{competition.name}</CardTitle>
+            <CardTitle className="text-sm text-white flex items-center gap-2">
+              {competition.name}
+              {competition.verified ? (
+                <Badge variant="outline" className="text-green-400 border-green-500/30 bg-green-500/10 text-[10px] h-4 px-1.5 gap-0.5">
+                  <CheckCircle className="h-2.5 w-2.5" />
+                  Verified
+                </Badge>
+              ) : (
+                <Badge variant="outline" className="text-yellow-400 border-yellow-500/30 bg-yellow-500/10 text-[10px] h-4 px-1.5 gap-0.5">
+                  <AlertCircle className="h-2.5 w-2.5" />
+                  Needs Verification
+                </Badge>
+              )}
+            </CardTitle>
           </div>
           <div className="flex gap-2">
             <Badge 

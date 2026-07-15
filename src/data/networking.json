@@ -1,0 +1,428 @@
+{
+  "pipeline": {
+    "stages": [
+      "researching",
+      "applied",
+      "phone-screen",
+      "technical-interview",
+      "final-round",
+      "offer",
+      "rejected"
+    ],
+    "applications": [],
+    "contacts": [],
+    "coffeeChats": [],
+    "weeklyGoals": {
+      "applications": 5,
+      "linkedinConnections": 10,
+      "coffeeChats": 2,
+      "competitionSubmissions": 1
+    }
+  },
+  "targetFirms": [
+    {
+      "id": "jane-street",
+      "name": "Jane Street",
+      "type": "prop-trading",
+      "tier": "top",
+      "locations": [
+        "New York",
+        "London",
+        "Hong Kong",
+        "Singapore"
+      ],
+      "roles": [
+        "Quantitative Trader",
+        "Quantitative Researcher",
+        "Software Engineer"
+      ],
+      "difficulty": "extreme",
+      "focusAreas": [
+        "probability",
+        "market-microstructure",
+        "cpp"
+      ],
+      "applicationUrl": "https://www.janestreet.com/join-jane-street/",
+      "notes": "Heavy on probability brainteasers and market-making games",
+      "verified": true
+    },
+    {
+      "id": "citadel",
+      "name": "Citadel / Citadel Securities",
+      "type": "hedge-fund",
+      "tier": "top",
+      "locations": [
+        "Chicago",
+        "New York",
+        "London",
+        "Hong Kong"
+      ],
+      "roles": [
+        "Quantitative Researcher",
+        "Quantitative Developer",
+        "Portfolio Manager"
+      ],
+      "difficulty": "extreme",
+      "focusAreas": [
+        "ml",
+        "statistics",
+        "financial-markets"
+      ],
+      "applicationUrl": "https://www.citadel.com/careers/",
+      "notes": "Strong ML focus, data-driven approach",
+      "verified": true
+    },
+    {
+      "id": "two-sigma",
+      "name": "Two Sigma",
+      "type": "hedge-fund",
+      "tier": "top",
+      "locations": [
+        "New York",
+        "Houston",
+        "London"
+      ],
+      "roles": [
+        "Quantitative Researcher",
+        "Software Engineer",
+        "Data Engineer"
+      ],
+      "difficulty": "extreme",
+      "focusAreas": [
+        "ml",
+        "data-science",
+        "python"
+      ],
+      "applicationUrl": "https://www.twosigma.com/careers/",
+      "notes": "Tech-heavy, strong software engineering culture",
+      "verified": true
+    },
+    {
+      "id": "jump-trading",
+      "name": "Jump Trading",
+      "type": "prop-trading",
+      "tier": "top",
+      "locations": [
+        "Chicago",
+        "New York",
+        "London",
+        "Singapore"
+      ],
+      "roles": [
+        "Quantitative Trader",
+        "Quantitative Researcher",
+        "Software Engineer"
+      ],
+      "difficulty": "extreme",
+      "focusAreas": [
+        "cpp",
+        "market-microstructure",
+        "low-latency"
+      ],
+      "applicationUrl": "https://www.jumptrading.com/careers/",
+      "notes": "Heavy C++ focus, low-latency systems",
+      "verified": true
+    },
+    {
+      "id": "imc",
+      "name": "IMC Trading",
+      "type": "prop-trading",
+      "tier": "top",
+      "locations": [
+        "Chicago",
+        "Amsterdam",
+        "Sydney"
+      ],
+      "roles": [
+        "Quantitative Trader",
+        "Quantitative Researcher",
+        "Software Engineer"
+      ],
+      "difficulty": "very-hard",
+      "focusAreas": [
+        "probability",
+        "market-microstructure",
+        "python"
+      ],
+      "applicationUrl": "https://www.imc.com/careers/",
+      "notes": "Market making focus, strong probability questions",
+      "verified": true
+    },
+    {
+      "id": "optiver",
+      "name": "Optiver",
+      "type": "prop-trading",
+      "tier": "top",
+      "locations": [
+        "Chicago",
+        "Amsterdam",
+        "Sydney",
+        "Singapore"
+      ],
+      "roles": [
+        "Quantitative Trader",
+        "Quantitative Researcher",
+        "Software Engineer"
+      ],
+      "difficulty": "very-hard",
+      "focusAreas": [
+        "probability",
+        "market-microstructure",
+        "cpp"
+      ],
+      "applicationUrl": "https://optiver.com/working-at-optiver/",
+      "notes": "Market making, heavy probability and mental math",
+      "verified": true
+    },
+    {
+      "id": "deshaw",
+      "name": "D.E. Shaw",
+      "type": "hedge-fund",
+      "tier": "top",
+      "locations": [
+        "New York",
+        "London",
+        "Hong Kong"
+      ],
+      "roles": [
+        "Quantitative Analyst",
+        "Software Developer",
+        "Systematic Trading"
+      ],
+      "difficulty": "extreme",
+      "focusAreas": [
+        "ml",
+        "statistics",
+        "cpp"
+      ],
+      "applicationUrl": "https://www.deshaw.com/careers",
+      "notes": "Systematic approach, strong tech culture",
+      "verified": true
+    },
+    {
+      "id": "renaissance",
+      "name": "Renaissance Technologies",
+      "type": "hedge-fund",
+      "tier": "elite",
+      "locations": [
+        "New York"
+      ],
+      "roles": [
+        "Research Scientist",
+        "Quantitative Analyst"
+      ],
+      "difficulty": "legendary",
+      "focusAreas": [
+        "statistics",
+        "ml",
+        "signal-processing"
+      ],
+      "applicationUrl": "https://www.rentec.com/careers",
+      "notes": "Extremely selective, PhD preferred, signal processing focus",
+      "verified": true
+    },
+    {
+      "id": "millennium",
+      "name": "Millennium Management",
+      "type": "hedge-fund",
+      "tier": "top",
+      "locations": [
+        "New York",
+        "London",
+        "Singapore",
+        "Hong Kong"
+      ],
+      "roles": [
+        "Quantitative Researcher",
+        "Portfolio Manager",
+        "Developer"
+      ],
+      "difficulty": "very-hard",
+      "focusAreas": [
+        "ml",
+        "statistics",
+        "financial-markets"
+      ],
+      "applicationUrl": "https://www.mlp.com/careers/",
+      "notes": "Multi-strategy fund, pod structure",
+      "verified": true
+    },
+    {
+      "id": "worldquant",
+      "name": "WorldQuant",
+      "type": "hedge-fund",
+      "tier": "high",
+      "locations": [
+        "New York",
+        "Greenwich",
+        "Singapore",
+        "Mumbai"
+      ],
+      "roles": [
+        "Quantitative Researcher",
+        "Alpha Researcher",
+        "Developer"
+      ],
+      "difficulty": "hard",
+      "focusAreas": [
+        "statistics",
+        "ml",
+        "alpha-research"
+      ],
+      "applicationUrl": "https://www.worldquant.com/careers/",
+      "notes": "Alpha research platform, consulting opportunities via BRAIN",
+      "verified": true
+    },
+    {
+      "id": "goldman",
+      "name": "Goldman Sachs",
+      "type": "bank",
+      "tier": "high",
+      "locations": [
+        "New York",
+        "London",
+        "Hong Kong",
+        "Singapore"
+      ],
+      "roles": [
+        "Strats",
+        "Quantitative Researcher",
+        "Risk Analyst"
+      ],
+      "difficulty": "hard",
+      "focusAreas": [
+        "derivatives",
+        "risk-management",
+        "financial-markets"
+      ],
+      "applicationUrl": "https://www.goldmansachs.com/careers/",
+      "notes": "Strats division, derivatives and risk focus",
+      "verified": true
+    },
+    {
+      "id": "jpmorgan",
+      "name": "JPMorgan Chase",
+      "type": "bank",
+      "tier": "high",
+      "locations": [
+        "New York",
+        "London",
+        "Hong Kong",
+        "Singapore"
+      ],
+      "roles": [
+        "Quantitative Research",
+        "Model Risk",
+        "Algo Trading"
+      ],
+      "difficulty": "hard",
+      "focusAreas": [
+        "derivatives",
+        "risk-management",
+        "ml"
+      ],
+      "applicationUrl": "https://careers.jpmorgan.com/",
+      "notes": "Global markets quant roles, strong training programs",
+      "verified": true
+    },
+    {
+      "id": "akuna",
+      "name": "Akuna Capital",
+      "type": "prop-trading",
+      "tier": "mid",
+      "locations": [
+        "Chicago",
+        "Sydney"
+      ],
+      "roles": [
+        "Quantitative Trader",
+        "Quantitative Developer",
+        "Junior Trader"
+      ],
+      "difficulty": "hard",
+      "focusAreas": [
+        "probability",
+        "options",
+        "python"
+      ],
+      "applicationUrl": "https://www.akunacapital.com/careers",
+      "notes": "Options market making, good entry point for junior quants",
+      "verified": true
+    },
+    {
+      "id": "hudson-river",
+      "name": "Hudson River Trading",
+      "type": "prop-trading",
+      "tier": "top",
+      "locations": [
+        "New York",
+        "London",
+        "Singapore"
+      ],
+      "roles": [
+        "Quantitative Researcher",
+        "Algorithm Developer",
+        "Software Engineer"
+      ],
+      "difficulty": "very-hard",
+      "focusAreas": [
+        "cpp",
+        "ml",
+        "low-latency"
+      ],
+      "applicationUrl": "https://www.hudsonrivertrading.com/careers",
+      "notes": "Algorithmic trading, strong C++ focus",
+      "verified": true
+    }
+  ],
+  "interviewTypes": [
+    {
+      "type": "probability-brainteaser",
+      "description": "Mental math, probability puzzles, expected value calculations",
+      "preparation": [
+        "Green Book",
+        "Heard on the Street",
+        "QuantGuide.io"
+      ],
+      "timeToPrepare": "4-6 weeks"
+    },
+    {
+      "type": "coding",
+      "description": "LeetCode-style problems, usually in Python or C++",
+      "preparation": [
+        "LeetCode",
+        "NeetCode",
+        "HackerRank"
+      ],
+      "timeToPrepare": "6-8 weeks"
+    },
+    {
+      "type": "quantitative-finance",
+      "description": "Options pricing, risk management, portfolio theory questions",
+      "preparation": [
+        "Hull's Options Futures",
+        "Shreve",
+        "Coursework"
+      ],
+      "timeToPrepare": "4-6 weeks"
+    },
+    {
+      "type": "system-design",
+      "description": "Design trading systems, market data pipelines, risk engines",
+      "preparation": [
+        "Designing Data-Intensive Applications",
+        "Practice problems"
+      ],
+      "timeToPrepare": "4-6 weeks"
+    },
+    {
+      "type": "market-making-game",
+      "description": "Simulated market making, pricing games, trading simulations",
+      "preparation": [
+        "Practice on QuantConnect",
+        "Ready Trader Go"
+      ],
+      "timeToPrepare": "2-4 weeks"
+    }
+  ]
+}

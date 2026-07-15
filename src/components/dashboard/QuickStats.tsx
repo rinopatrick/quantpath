@@ -1,18 +1,8 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Badge } from '@/components/ui/badge';
-import { 
-  BookOpen, 
-  Lightbulb, 
-  Trophy, 
-  Calendar,
-  TrendingUp,
-  Clock,
-  Target,
-  Zap
-} from 'lucide-react';
+import { BookOpen, Lightbulb, Trophy, Calendar } from 'lucide-react';
 
 interface QuickStatsProps {
   resourcesCompleted: number;
@@ -35,76 +25,62 @@ export function QuickStats({
   currentWeek,
   totalWeeks,
 }: QuickStatsProps) {
-  const resourceProgress = (resourcesCompleted / totalResources) * 100;
-  const projectProgress = (projectsCompleted / totalProjects) * 100;
-  const competitionProgress = (competitionsEntered / totalCompetitions) * 100;
-  const weekProgress = (currentWeek / totalWeeks) * 100;
+  const items = [
+    {
+      label: 'Resources',
+      value: resourcesCompleted,
+      total: totalResources,
+      progress: (resourcesCompleted / totalResources) * 100,
+      icon: BookOpen,
+      color: 'text-blue-500',
+    },
+    {
+      label: 'Projects',
+      value: projectsCompleted,
+      total: totalProjects,
+      progress: (projectsCompleted / totalProjects) * 100,
+      icon: Lightbulb,
+      color: 'text-amber-500',
+    },
+    {
+      label: 'Competitions',
+      value: competitionsEntered,
+      total: totalCompetitions,
+      progress: (competitionsEntered / totalCompetitions) * 100,
+      icon: Trophy,
+      color: 'text-emerald-500',
+    },
+    {
+      label: 'Week',
+      value: currentWeek,
+      total: totalWeeks,
+      progress: (currentWeek / totalWeeks) * 100,
+      icon: Calendar,
+      color: 'text-violet-500',
+      prefix: 'W',
+    },
+  ];
 
   return (
-    <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-      <Card className="bg-slate-900 border-slate-800">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium text-slate-400">
-            Resources Completed
-          </CardTitle>
-          <BookOpen className="h-4 w-4 text-blue-400" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-2xl font-bold text-white">{resourcesCompleted}</div>
-          <p className="text-xs text-slate-500">
-            of {totalResources} total
-          </p>
-          <Progress value={resourceProgress} className="mt-2" />
-        </CardContent>
-      </Card>
-
-      <Card className="bg-slate-900 border-slate-800">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium text-slate-400">
-            Projects Done
-          </CardTitle>
-          <Lightbulb className="h-4 w-4 text-yellow-400" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-2xl font-bold text-white">{projectsCompleted}</div>
-          <p className="text-xs text-slate-500">
-            of {totalProjects} total
-          </p>
-          <Progress value={projectProgress} className="mt-2" />
-        </CardContent>
-      </Card>
-
-      <Card className="bg-slate-900 border-slate-800">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium text-slate-400">
-            Competitions
-          </CardTitle>
-          <Trophy className="h-4 w-4 text-green-400" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-2xl font-bold text-white">{competitionsEntered}</div>
-          <p className="text-xs text-slate-500">
-            of {totalCompetitions} total
-          </p>
-          <Progress value={competitionProgress} className="mt-2" />
-        </CardContent>
-      </Card>
-
-      <Card className="bg-slate-900 border-slate-800">
-        <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium text-slate-400">
-            Timeline Progress
-          </CardTitle>
-          <Calendar className="h-4 w-4 text-purple-400" />
-        </CardHeader>
-        <CardContent>
-          <div className="text-2xl font-bold text-white">Week {currentWeek}</div>
-          <p className="text-xs text-slate-500">
-            of {totalWeeks} weeks
-          </p>
-          <Progress value={weekProgress} className="mt-2" />
-        </CardContent>
-      </Card>
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+      {items.map((item) => {
+        const Icon = item.icon;
+        return (
+          <Card key={item.label}>
+            <CardContent className="p-4">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-sm text-muted-foreground">{item.label}</span>
+                <Icon className={`h-4 w-4 ${item.color}`} />
+              </div>
+              <div className="text-2xl font-bold">
+                {item.prefix || ''}{item.value}
+                <span className="text-sm font-normal text-muted-foreground ml-1">/ {item.total}</span>
+              </div>
+              <Progress value={item.progress} className="mt-2 h-1.5" />
+            </CardContent>
+          </Card>
+        );
+      })}
     </div>
   );
 }

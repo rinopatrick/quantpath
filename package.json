@@ -4,18 +4,23 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "validate:data": "node scripts/validate-data.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "prebuild": "npm run validate:data",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@base-ui/react": "^1.4.1",
+    "@supabase/supabase-js": "^2.109.0",
     "@xyflow/react": "^12.10.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "jspdf": "^4.2.1",
     "lucide-react": "^1.14.0",
     "next": "16.2.6",
+    "qrcode.react": "^4.2.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "recharts": "^3.8.1",
@@ -32,5 +37,10 @@
     "eslint-config-next": "16.2.6",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.19"
+    }
   }
 }

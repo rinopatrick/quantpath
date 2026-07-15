@@ -7,6 +7,9 @@ import { SkillRadar } from '@/components/dashboard/SkillRadar';
 import { UpcomingCompetitions } from '@/components/dashboard/UpcomingCompetitions';
 import { RecommendedNext } from '@/components/dashboard/RecommendedNext';
 import { DailyTasks } from '@/components/dashboard/DailyTasks';
+import { StreakCounter } from '@/components/dashboard/StreakCounter';
+import { StudyTimer } from '@/components/dashboard/StudyTimer';
+import { DailyQuote } from '@/components/dashboard/DailyQuote';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { 
@@ -15,7 +18,10 @@ import {
   Clock, 
   ArrowRight,
   Zap,
-  Calendar
+  Calendar,
+  Cloud,
+  CloudOff,
+  LogIn
 } from 'lucide-react';
 import resourcesData from '@/data/resources.json';
 import projectsData from '@/data/projects.json';
@@ -23,6 +29,8 @@ import competitionsData from '@/data/competitions.json';
 import roadmapData from '@/data/roadmap.json';
 import skillsData from '@/data/skills.json';
 import dailyScheduleData from '@/data/daily-schedule.json';
+import { useAuth } from '@/lib/auth-context';
+import { syncProgress, saveLocalProgress, saveServerProgress, getLocalProgress, ProgressData } from '@/lib/progress-sync';
 
 interface Progress {
   resourcesCompleted: string[];
@@ -31,6 +39,12 @@ interface Progress {
   currentWeek: number;
   completedTasks: string[];
   startDate: string;
+  skills: Record<string, number>;
+  currentStreak: number;
+  longestStreak: number;
+  lastActiveDate: string;
+  activeDays: string[];
+  totalStudyMinutes?: number;
 }
 
 function calculateSkills(progress: Progress) {
@@ -75,7 +89,7 @@ function getCurrentWeek(startDate: string): number {
   const now = new Date();
   const diffTime = Math.abs(now.getTime() - start.getTime());
   const diffWeeks = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 7));
-  return Math.min(diffWeeks, 24);
+  return Math.min(diffWeeks, 32);
 }
 
 function getCurrentDay(startDate: string): number {
@@ -85,6 +99,77 @@ function getCurrentDay(startDate: string): number {
   const diffTime = Math.abs(now.getTime() - start.getTime());
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
   return ((diffDays - 1) % 7) + 1;
+}
+
+function getTaskDateMap(): Record<string, string> {
+  const map: Record<string, string> = {};
+  dailyScheduleData.weeks.forEach((week) => {
+    week.days.forEach((day) => {
+      day.tasks.forEach((task) => {
+        map[task.id] = `w${week.week}-d${day.day}`;
+      });
+    });
+  });
+  return map;
+}
+
+function calculateActiveDays(completedTasks: string[], startDate: string): string[] {
+  if (!startDate || completedTasks.length === 0) return [];
+  const taskDateMap = getTaskDateMap();
+  const start = new Date(startDate);
+  const dateSet = new Set<string>();
+
+  completedTasks.forEach((taskId) => {
+    const key = taskDateMap[taskId];
+    if (!key) return;
+    const match = key.match(/w(\d+)-d(\d+)/);
+    if (!match) return;
+    const week = parseInt(match[1], 10);
+    const day = parseInt(match[2], 10);
+    const offset = (week - 1) * 7 + (day - 1);
+    const d = new Date(start);
+    d.setDate(d.getDate() + offset);
+    dateSet.add(d.toISOString().split('T')[0]);
+  });
+
+  return Array.from(dateSet).sort();
+}
+
+function calculateStreak(activeDays: string[]): { currentStreak: number; longestStreak: number } {
+  if (activeDays.length === 0) return { currentStreak: 0, longestStreak: 0 };
+
+  const sorted = [...activeDays].sort();
+  const today = new Date().toISOString().split('T')[0];
+  const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+  let streak = 0;
+  if (sorted.includes(today) || sorted.includes(yesterday)) {
+    let checkDate = sorted.includes(today) ? today : yesterday;
+    const activeSet = new Set(sorted);
+    while (activeSet.has(checkDate)) {
+      streak++;
+      const d = new Date(checkDate);
+      d.setDate(d.getDate() - 1);
+      checkDate = d.toISOString().split('T')[0];
+    }
+  }
+
+  let longest = 0;
+  let current = 1;
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = new Date(sorted[i - 1]);
+    const curr = new Date(sorted[i]);
+    const diff = (curr.getTime() - prev.getTime()) / 86400000;
+    if (diff === 1) {
+      current++;
+    } else {
+      longest = Math.max(longest, current);
+      current = 1;
+    }
+  }
+  longest = Math.max(longest, current);
+
+  return { currentStreak: streak, longestStreak: Math.max(longest, streak) };
 }
 
 function generateRecommendations(progress: Progress) {
@@ -151,6 +236,7 @@ const quickResources = [
 ];
 
 export default function Dashboard() {
+  const { user, loading: authLoading } = useAuth();
   const [progress, setProgress] = useState<Progress>({
     resourcesCompleted: [],
     projectsCompleted: [],
@@ -158,44 +244,128 @@ export default function Dashboard() {
     currentWeek: 1,
     completedTasks: [],
     startDate: '',
+    skills: {},
+    currentStreak: 0,
+    longestStreak: 0,
+    lastActiveDate: '',
+    activeDays: [],
   });
   const [mounted, setMounted] = useState(false);
+  const [viewingWeek, setViewingWeek] = useState<number>(1);
+  const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'offline'>('idle');
 
   useEffect(() => {
-    const saved = localStorage.getItem('quantpath-progress');
-    if (saved) {
-      const parsed = JSON.parse(saved);
-      const startDate = parsed.startDate || new Date().toISOString().split('T')[0];
-      const currentWeek = getCurrentWeek(startDate);
-      setProgress({ ...parsed, currentWeek, startDate, completedTasks: parsed.completedTasks || [] });
-    } else {
-      const startDate = new Date().toISOString().split('T')[0];
-      const newProgress = {
-        resourcesCompleted: [],
-        projectsCompleted: [],
-        competitions: {},
-        currentWeek: 1,
-        completedTasks: [],
-        startDate,
-      };
-      setProgress(newProgress);
-      localStorage.setItem('quantpath-progress', JSON.stringify(newProgress));
+    const loadProgress = async () => {
+      let loadedData: ProgressData | null = null;
+
+      if (user) {
+        setSyncStatus('syncing');
+        try {
+          loadedData = await syncProgress(user.id);
+          setSyncStatus('synced');
+        } catch {
+          setSyncStatus('offline');
+          loadedData = getLocalProgress();
+        }
+      } else {
+        loadedData = getLocalProgress();
+        setSyncStatus('offline');
+      }
+
+      if (loadedData) {
+        const startDate = loadedData.startDate || new Date().toISOString().split('T')[0];
+        const dateWeek = getCurrentWeek(startDate);
+        const completedTasks = loadedData.completedTasks || [];
+
+        let activeWeek = 1;
+        for (let w = 1; w <= dateWeek; w++) {
+          const weekData = dailyScheduleData.weeks.find((wk) => wk.week === w);
+          if (weekData) {
+            const totalTasks = weekData.days.reduce((sum, day) => sum + day.tasks.length, 0);
+            const completed = weekData.days.reduce((sum, day) => sum + day.tasks.filter((task) => completedTasks.includes(task.id)).length, 0);
+            if (completed < totalTasks) {
+              activeWeek = w;
+              break;
+            }
+            activeWeek = w + 1;
+          }
+        }
+        activeWeek = Math.min(activeWeek, 32);
+
+        setProgress({ ...loadedData, currentWeek: dateWeek, startDate, completedTasks } as Progress);
+        setViewingWeek(activeWeek);
+
+        const activeDays = calculateActiveDays(completedTasks, startDate);
+        const { currentStreak, longestStreak } = calculateStreak(activeDays);
+        setProgress((prev) => ({ ...prev, currentStreak, longestStreak, lastActiveDate: activeDays[activeDays.length - 1] || '', activeDays }));
+      } else {
+        const startDate = new Date().toISOString().split('T')[0];
+        const newProgress = {
+          resourcesCompleted: [],
+          projectsCompleted: [],
+          competitions: {},
+          currentWeek: 1,
+          completedTasks: [],
+          startDate,
+          skills: {},
+          currentStreak: 0,
+          longestStreak: 0,
+          lastActiveDate: '',
+          activeDays: [],
+          totalStudyMinutes: 0,
+        };
+        setProgress(newProgress);
+        saveLocalProgress(newProgress as ProgressData);
+        if (user) {
+          await saveServerProgress(user.id, newProgress as ProgressData);
+        }
+      }
+      setMounted(true);
+    };
+
+    if (!authLoading) {
+      loadProgress();
     }
-    setMounted(true);
-  }, []);
+  }, [user, authLoading]);
 
   useEffect(() => {
     if (mounted) {
-      localStorage.setItem('quantpath-progress', JSON.stringify(progress));
+      saveLocalProgress(progress as ProgressData);
+      if (user) {
+        saveServerProgress(user.id, progress as ProgressData);
+      }
     }
-  }, [progress, mounted]);
+  }, [progress, mounted, user]);
 
   const skills = useMemo(() => calculateSkills(progress), [progress]);
   const recommendations = useMemo(() => generateRecommendations(progress), [progress]);
   const currentDay = useMemo(() => getCurrentDay(progress.startDate), [progress.startDate]);
 
+  useEffect(() => {
+    if (!mounted) return;
+    setProgress((prev) => {
+      if (!prev.startDate) return prev;
+      const activeDays = calculateActiveDays(prev.completedTasks, prev.startDate);
+      const { currentStreak, longestStreak } = calculateStreak(activeDays);
+      if (
+        currentStreak === prev.currentStreak &&
+        longestStreak === prev.longestStreak &&
+        activeDays.length === prev.activeDays.length
+      ) {
+        return prev;
+      }
+      return {
+        ...prev,
+        currentStreak,
+        longestStreak,
+        lastActiveDate: activeDays[activeDays.length - 1] || '',
+        activeDays,
+      };
+    });
+  }, [progress.completedTasks, mounted]);
+
   const upcomingCompetitions = competitionsData.competitions
-    .filter((c) => c.status === 'upcoming' || c.status === 'active')
+    .filter((c) => c.status === 'active')
     .slice(0, 3)
     .map((c) => ({
       id: c.id,
@@ -207,7 +377,22 @@ export default function Dashboard() {
       url: c.url,
     }));
 
-  const weekSchedule = dailyScheduleData.weeks.find((w) => w.week === progress.currentWeek);
+  const weekSchedule = dailyScheduleData.weeks.find((w) => w.week === viewingWeek);
+
+  // Check if previous weeks are incomplete
+  const getFirstIncompleteWeek = () => {
+    for (let w = 1; w <= 32; w++) {
+      const weekData = dailyScheduleData.weeks.find((wk) => wk.week === w);
+      if (weekData) {
+        const totalTasks = weekData.days.reduce((sum, day) => sum + day.tasks.length, 0);
+        const completed = weekData.days.reduce((sum, day) => sum + day.tasks.filter((task) => progress.completedTasks.includes(task.id)).length, 0);
+        if (completed < totalTasks) return w;
+      }
+    }
+    return 32;
+  };
+  const firstIncompleteWeek = getFirstIncompleteWeek();
+  const isSkippingAhead = viewingWeek > firstIncompleteWeek;
 
   const handleToggleTask = (taskId: string) => {
     const newCompletedTasks = progress.completedTasks.includes(taskId)
@@ -215,6 +400,14 @@ export default function Dashboard() {
       : [...progress.completedTasks, taskId];
     
     setProgress({ ...progress, completedTasks: newCompletedTasks });
+  };
+
+  const handleWeekChange = (week: number) => {
+    const target = Math.max(1, Math.min(32, week));
+    // Can only go to weeks up to and including the first incomplete week
+    if (target <= firstIncompleteWeek) {
+      setViewingWeek(target);
+    }
   };
 
   if (!mounted) {
@@ -226,69 +419,45 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 page-enter">
       {/* Welcome Header */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 p-6 md:p-8">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950 p-6 md:p-8 border border-slate-700/50">
         <div className="relative z-10">
-          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
-            Welcome to QuantPath
-          </h1>
-          <p className="text-blue-100 text-sm md:text-base max-w-2xl">
-            Your personal learning companion for transitioning from Nuclear Engineering to Quantitative Finance. 
-            You&apos;re on <span className="font-semibold text-white">Week {progress.currentWeek}</span> of 24, 
-            <span className="font-semibold text-white"> Day {currentDay}</span> of 7.
-          </p>
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <h1 className="text-2xl md:text-3xl font-bold text-white">
+                Week {firstIncompleteWeek} · Day {currentDay}
+              </h1>
+              <p className="text-slate-400 mt-1 text-sm">
+                {firstIncompleteWeek < progress.currentWeek
+                  ? `Behind schedule — Week ${firstIncompleteWeek} not yet complete`
+                  : 'On track — keep going'}
+              </p>
+            </div>
+            <div className="text-right">
+              <div className="text-3xl font-bold text-white">{progress.currentStreak}</div>
+              <p className="text-xs text-slate-400">day streak</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Daily Tasks - Most Important */}
-      <DailyTasks 
-        weekSchedule={weekSchedule}
-        completedTasks={progress.completedTasks}
-        onToggleTask={handleToggleTask}
-        currentDay={currentDay}
-      />
+      {/* Skip Ahead Warning */}
+      {isSkippingAhead && (
+        <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20">
+          <p className="text-sm text-amber-500">
+            Selesaikan Week {firstIncompleteWeek} dulu sebelum lanjut ke Week {viewingWeek}.
+            <button 
+              onClick={() => setViewingWeek(firstIncompleteWeek)}
+              className="ml-2 text-primary hover:underline font-medium"
+            >
+              Kembali ke Week {firstIncompleteWeek}
+            </button>
+          </p>
+        </div>
+      )}
 
-      {/* Quick Access Resources */}
-      <Card>
-        <CardHeader className="pb-3">
-          <CardTitle className="text-lg font-bold flex items-center gap-2">
-            <BookOpen className="h-5 w-5 text-blue-500" />
-            Quick Access Resources
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {quickResources.map((resource) => (
-              <a
-                key={resource.id}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-start gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all duration-200"
-              >
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
-                  <ExternalLink className="h-5 w-5 text-blue-500" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h4 className="font-semibold text-foreground text-sm group-hover:text-primary transition-colors">
-                    {resource.title}
-                  </h4>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    {resource.description}
-                  </p>
-                  <div className="flex items-center gap-2 mt-2">
-                    <Clock className="h-3 w-3 text-muted-foreground" />
-                    <span className="text-xs text-muted-foreground">{resource.time}</span>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Stats Grid */}
+      {/* Stats */}
       <QuickStats
         resourcesCompleted={progress.resourcesCompleted.length}
         totalResources={resourcesData.resources.length}
@@ -300,51 +469,27 @@ export default function Dashboard() {
         totalWeeks={roadmapData.weeks}
       />
 
-      {/* Main Content Grid */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        {/* Skill Radar */}
+      {/* Daily Tasks */}
+      <DailyTasks 
+        weekSchedule={weekSchedule}
+        completedTasks={progress.completedTasks}
+        onToggleTask={handleToggleTask}
+        currentDay={currentDay}
+        allWeeks={dailyScheduleData.weeks}
+        currentWeek={viewingWeek}
+        onWeekChange={handleWeekChange}
+        maxAllowedWeek={firstIncompleteWeek}
+      />
+
+      {/* Bottom Grid */}
+      <div className="grid gap-4 md:grid-cols-2">
         <SkillRadar skills={skills} />
+        <StudyTimer />
+      </div>
 
-        {/* Upcoming Competitions */}
+      <div className="grid gap-4 md:grid-cols-2">
+        <DailyQuote />
         <UpcomingCompetitions competitions={upcomingCompetitions} />
-
-        {/* Recommended Next Steps */}
-        <RecommendedNext recommendations={recommendations} />
-
-        {/* Quick Links */}
-        <Card>
-          <CardHeader className="pb-3">
-            <CardTitle className="text-lg font-bold">Quick Navigation</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-3">
-              <Link href="/roadmap" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
-                <Calendar className="h-5 w-5 text-purple-500" />
-                <div>
-                  <p className="font-semibold text-sm">Learning Roadmap</p>
-                  <p className="text-xs text-muted-foreground">View full skill tree</p>
-                </div>
-                <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
-              </Link>
-              <Link href="/resources" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
-                <BookOpen className="h-5 w-5 text-green-500" />
-                <div>
-                  <p className="font-semibold text-sm">Resources</p>
-                  <p className="text-xs text-muted-foreground">200+ learning materials</p>
-                </div>
-                <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
-              </Link>
-              <Link href="/projects" className="group flex items-center gap-3 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-all">
-                <Zap className="h-5 w-5 text-yellow-500" />
-                <div>
-                  <p className="font-semibold text-sm">Projects</p>
-                  <p className="text-xs text-muted-foreground">Build your CV</p>
-                </div>
-                <ArrowRight className="h-4 w-4 ml-auto text-muted-foreground group-hover:text-primary transition-colors" />
-              </Link>
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </div>
   );

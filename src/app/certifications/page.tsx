@@ -14,7 +14,8 @@ import {
   TrendingUp,
   Sparkles,
   CheckCircle,
-  DollarSign
+  DollarSign,
+  AlertCircle
 } from 'lucide-react';
 import certificationsData from '@/data/certifications.json';
 
@@ -42,17 +43,19 @@ const difficultyColors: Record<string, string> = {
 export default function CertificationsPage() {
   const [categoryFilter, setCategoryFilter] = useState<Category>('all');
   const [difficultyFilter, setDifficultyFilter] = useState<Difficulty>('all');
-  const [showFreeOnly, setShowFreeOnly] = useState(true);
+  const [showFreeOnly, setShowFreeOnly] = useState(false);
+  const [showCourseraPlus, setShowCourseraPlus] = useState(false);
 
   const filteredCerts = certificationsData.certifications.filter((cert) => {
     if (categoryFilter !== 'all' && cert.category !== categoryFilter) return false;
     if (difficultyFilter !== 'all' && cert.difficulty !== difficultyFilter) return false;
     if (showFreeOnly && !cert.free) return false;
+    if (showCourseraPlus && !cert.courseraPlus) return false;
     return true;
   });
 
-  const freeCount = certificationsData.certifications.filter((c) => c.free).length;
-  const paidCount = certificationsData.certifications.filter((c) => !c.free).length;
+  const freeWithCertCount = certificationsData.certifications.filter((c) => c.free && c.certificate).length;
+  const courseraPlusCount = certificationsData.certifications.filter((c) => c.courseraPlus).length;
 
   return (
     <div className="space-y-6 page-enter">
@@ -70,17 +73,38 @@ export default function CertificationsPage() {
             </div>
           </div>
           <div className="flex gap-4 mt-4">
-            <Badge variant="secondary" className="bg-white/20 text-white border-0">
+            <Badge variant="secondary" className="bg-green-500/20 text-white border-0">
               <CheckCircle className="h-3 w-3 mr-1" />
-              {freeCount} Free
+              {freeWithCertCount} Free with Certificate
             </Badge>
-            <Badge variant="secondary" className="bg-white/10 text-white/80 border-0">
+            <Badge variant="secondary" className="bg-yellow-500/20 text-white border-0">
               <DollarSign className="h-3 w-3 mr-1" />
-              {paidCount} Paid
+              {courseraPlusCount} Coursera Plus
             </Badge>
           </div>
         </div>
       </div>
+
+      {/* Info Banner */}
+      <Card className="border-blue-500/20 bg-blue-500/5">
+        <CardContent className="p-4">
+          <div className="flex items-start gap-3">
+            <AlertCircle className="h-5 w-5 text-blue-500 mt-0.5 flex-shrink-0" />
+            <div>
+              <p className="text-sm font-medium text-blue-500">About Free Certificates</p>
+              <p className="text-xs text-muted-foreground mt-1">
+                <strong>Truly Free + Certificate:</strong> Kaggle Learn (12 courses), freeCodeCamp (4 courses), Microsoft Learn (3 courses), QuantConnect Bootcamp
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                <strong>Coursera Plus:</strong> You have Coursera Plus — all Coursera courses below are included in your subscription ($0 extra).
+              </p>
+              <p className="text-xs text-muted-foreground mt-1">
+                <strong>Paid:</strong> CFA Investment Foundations ($350), FRM ($1000+), CFA Program ($2400+), Bloomberg MC (requires terminal access)
+              </p>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Filters */}
       <Card>
@@ -125,11 +149,22 @@ export default function CertificationsPage() {
             <Button
               variant={showFreeOnly ? 'default' : 'outline'}
               size="sm"
-              onClick={() => setShowFreeOnly(!showFreeOnly)}
+              onClick={() => { setShowFreeOnly(!showFreeOnly); setShowCourseraPlus(false); }}
               className="text-xs"
             >
               <CheckCircle className="h-3 w-3 mr-1" />
               Free Only
+            </Button>
+
+            {/* Coursera Plus Toggle */}
+            <Button
+              variant={showCourseraPlus ? 'default' : 'outline'}
+              size="sm"
+              onClick={() => { setShowCourseraPlus(!showCourseraPlus); setShowFreeOnly(false); }}
+              className="text-xs"
+            >
+              <DollarSign className="h-3 w-3 mr-1" />
+              Coursera Plus
             </Button>
           </div>
         </CardContent>
@@ -199,9 +234,19 @@ export default function CertificationsPage() {
                     <Badge variant="secondary" className={difficultyColor}>
                       {cert.difficulty}
                     </Badge>
-                    {cert.free ? (
+                    {cert.free && cert.certificate ? (
                       <Badge variant="secondary" className="bg-green-500/10 text-green-500">
-                        Free
+                        <CheckCircle className="h-3 w-3 mr-1" />
+                        Free + Cert
+                      </Badge>
+                    ) : cert.courseraPlus ? (
+                      <Badge variant="secondary" className="bg-yellow-500/10 text-yellow-500">
+                        <DollarSign className="h-3 w-3 mr-1" />
+                        Coursera Plus
+                      </Badge>
+                    ) : cert.free ? (
+                      <Badge variant="secondary" className="bg-blue-500/10 text-blue-500">
+                        Free (No Cert)
                       </Badge>
                     ) : (
                       <Badge variant="secondary" className="bg-yellow-500/10 text-yellow-500">
@@ -244,7 +289,9 @@ export default function CertificationsPage() {
                   className="inline-flex items-center justify-center w-full h-9 px-4 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
                 >
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  {cert.free ? 'Start Free Course' : 'View Details'}
+                  {cert.free && cert.certificate ? 'Start Free Course' : 
+                   cert.courseraPlus ? 'View on Coursera' : 
+                   cert.free ? 'Start Free Course' : 'View Details'}
                 </a>
               </CardContent>
             </Card>
