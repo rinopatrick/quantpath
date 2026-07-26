@@ -20,6 +20,7 @@ export const beatTheOdds: PracticeModule = {
   questions: [
     {
       id: 'bto-1',
+      topic: 'ev',
       type: 'mcq',
       prompt:
         'Bankroll $63. Taruhan martingale: mulai $1, kalah → gandakan ($2, $4, $8, …) sampai menang atau bangkrut. Menang/kalah 50-50 tiap ronde, menang dibayar 1:1. Expected profit?',
@@ -29,6 +30,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-2',
+      topic: 'random-walk',
       type: 'mcq',
       prompt:
         '100 koin fair dilempar. Setiap pasangan (1 Head, 1 Tail) dibuang. Kamu dapat sisa koinnya. Fair value jumlah koin yang kamu terima?',
@@ -38,6 +40,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-3',
+      topic: 'dice',
       type: 'mcq',
       prompt: 'Dua dadu fair dilempar. Probabilitas jumlahnya 7?',
       options: ['1/12', '1/9', '1/6', '1/4'],
@@ -46,6 +49,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-4',
+      topic: 'ev',
       type: 'mcq',
       prompt: 'Lempar dadu fair berulang sampai keluar angka 6. Expected jumlah lemparan?',
       options: ['3', '3.5', '6', '9'],
@@ -54,6 +58,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-5',
+      topic: 'bayes',
       type: 'mcq',
       prompt:
         'Penyakit menjangkiti 1% populasi. Tes 99% akurat (sensitivitas 99%, spesifisitas 99%). Kamu positif. Probabilitas benar-benar sakit?',
@@ -64,6 +69,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-6',
+      topic: 'birthday',
       type: 'mcq',
       prompt: 'Berapa orang minimal dalam satu ruangan agar P(ada dua orang berulang tahun sama) > 50%?',
       options: ['15', '23', '57', '183'],
@@ -72,6 +78,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-7',
+      topic: 'ev',
       type: 'mcq',
       prompt: 'Koin fair. Expected jumlah lemparan sampai muncul pola HH (dua head berturut-turut)?',
       options: ['4', '5', '6', '8'],
@@ -80,6 +87,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-8',
+      topic: 'ev',
       type: 'mcq',
       prompt: 'Koin fair. Expected jumlah lemparan sampai muncul pola HT?',
       options: ['3', '4', '5', '6'],
@@ -88,6 +96,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-9',
+      topic: 'random-walk',
       type: 'mcq',
       prompt:
         "Gambler's ruin: modal $1, target $3, berhenti kalau bangkrut ($0). Koin fair, taruhan $1 per ronde. Probabilitas mencapai $3?",
@@ -97,6 +106,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-10',
+      topic: 'coupon',
       type: 'mcq',
       prompt:
         'Coupon collector: kotak sereal berisi 1 dari 6 mainan (uniform). Expected jumlah kotak untuk koleksi lengkap?',
@@ -106,6 +116,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-11',
+      topic: 'cards',
       type: 'mcq',
       prompt: 'Tarik 2 kartu dari deck 52 tanpa pengembalian. Probabilitas keduanya As?',
       options: ['1/169', '1/221', '1/256', '1/121'],
@@ -114,6 +125,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-12',
+      topic: 'complement',
       type: 'mcq',
       prompt: 'Lempar dadu 4 kali. Probabilitas keluar minimal satu angka 6?',
       options: ['0.42', '0.52', '0.60', '0.67'],
@@ -122,6 +134,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-13',
+      topic: 'bayes',
       type: 'mcq',
       prompt: 'Monty Hall: 3 pintu, 1 mobil. Kamu pilih satu, host buka pintu kambing, tawarkan switch. P(menang jika switch)?',
       options: ['1/3', '1/2', '2/3', '3/4'],
@@ -130,6 +143,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-14',
+      topic: 'binomial',
       type: 'mcq',
       prompt: 'Lempar 5 koin fair. Probabilitas tepat 3 head?',
       options: ['0.16', '0.25', '0.31', '0.38'],
@@ -138,6 +152,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-15',
+      topic: 'ev',
       type: 'mcq',
       prompt: 'Dua dadu dilempar. Expected value dari MAX kedua dadu?',
       options: ['3.5', '4.0', '4.5', '5.0'],
@@ -146,6 +161,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-16',
+      topic: 'geometry-prob',
       type: 'mcq',
       prompt: 'X, Y ~ Uniform(0,1) independen. P(X + Y > 1)?',
       options: ['1/4', '1/3', '1/2', '2/3'],
@@ -154,6 +170,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-17',
+      topic: 'ev',
       type: 'mcq',
       prompt:
         'Game: lempar dadu sekali. Boleh terima hasilnya, atau reroll SEKALI dan wajib terima. Dengan strategi optimal, expected value game?',
@@ -163,6 +180,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-18',
+      topic: 'ev',
       type: 'mcq',
       prompt: 'Sama seperti sebelumnya tapi boleh reroll DUA kali. Expected value optimal?',
       options: ['4.25', '4.47', '4.67', '5.0'],
@@ -171,6 +189,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-19',
+      topic: 'ev',
       type: 'mcq',
       prompt: 'Lempar dadu 6 kali. Expected jumlah angka BERBEDA yang muncul?',
       options: ['3.0', '3.5', '4.0', '5.0'],
@@ -179,6 +198,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-20',
+      topic: 'geometry-prob',
       type: 'mcq',
       prompt: 'Tongkat dipatahkan di 2 titik uniform acak. Probabilitas ketiga potongan bisa membentuk segitiga?',
       options: ['1/8', '1/4', '1/3', '1/2'],
@@ -187,6 +207,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-21',
+      topic: 'geometry-prob',
       type: 'mcq',
       prompt: 'Dua titik dipilih uniform acak di [0,1]. Expected jarak antara keduanya?',
       options: ['1/4', '1/3', '1/2', '2/5'],
@@ -195,6 +216,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-22',
+      topic: 'symmetry',
       type: 'mcq',
       prompt: 'Turnamen knockout 8 tim, semua tim sama kuat, bracket acak. Probabilitas dua tim TERTENTU bertemu?',
       options: ['1/7', '1/4', '2/7', '1/2'],
@@ -203,6 +225,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-23',
+      topic: 'symmetry',
       type: 'mcq',
       prompt: 'Deck 52 dikocok. Expected posisi kartu As PERTAMA dari atas?',
       options: ['9.2', '10.6', '13.0', '13.5'],
@@ -211,6 +234,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-24',
+      topic: 'random-walk',
       type: 'mcq',
       prompt: 'Random walk simetris 10 langkah (±1). Probabilitas berakhir tepat di 0?',
       options: ['0.12', '0.18', '0.25', '0.31'],
@@ -219,6 +243,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-25',
+      topic: 'kelly',
       type: 'mcq',
       prompt: 'Taruhan even-money, kamu menang dengan p = 0.6. Kelly fraction (porsi bankroll optimal per taruhan)?',
       options: ['10%', '20%', '40%', '60%'],
@@ -227,6 +252,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-26',
+      topic: 'symmetry',
       type: 'mcq',
       prompt: 'Deck 52 dikocok. Probabilitas kartu KEDUA dari atas adalah As?',
       options: ['3/51', '1/13', '4/51', 'tergantung kartu pertama'],
@@ -235,6 +261,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-27',
+      topic: 'binomial',
       type: 'mcq',
       prompt: 'Lempar dadu dua kali. Probabilitas tepat SATU angka 6?',
       options: ['0.17', '0.28', '0.31', '0.33'],
@@ -243,6 +270,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-28',
+      topic: 'conditional',
       type: 'mcq',
       prompt: 'Keluarga punya 2 anak. Diketahui minimal satu laki-laki. Probabilitas keduanya laki-laki?',
       options: ['1/4', '1/3', '1/2', '2/3'],
@@ -251,6 +279,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-29',
+      topic: 'cards',
       type: 'mcq',
       prompt: 'Urn berisi 5 merah, 5 biru. Tarik 2 tanpa pengembalian. Probabilitas keduanya merah?',
       options: ['1/5', '2/9', '1/4', '5/18'],
@@ -259,6 +288,7 @@ export const beatTheOdds: PracticeModule = {
     },
     {
       id: 'bto-30',
+      topic: 'dice',
       type: 'mcq',
       prompt: 'Lempar 3 dadu. Probabilitas jumlahnya 18?',
       options: ['1/72', '1/108', '1/216', '1/36'],

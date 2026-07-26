@@ -20,7 +20,7 @@ export const orderbooks: PracticeModule = {
   questions: [
     {
       id: 'ob-1',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Aset sama diperdagangkan di dua exchange. Ada arbitrage? Jika ada, berapa profit maksimal?',
       books: [
         { label: 'Exchange A', bids: [{ price: 101, size: 50 }, { price: 100, size: 80 }], asks: [{ price: 103, size: 40 }] },
@@ -32,7 +32,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-2',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Ada arbitrage antara kedua book ini?',
       books: [
         { label: 'Exchange A', bids: [{ price: 98, size: 100 }], asks: [{ price: 99, size: 100 }] },
@@ -44,7 +44,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-3',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Berapa profit arbitrage maksimal (boleh pakai beberapa level)?',
       books: [
         { label: 'Exchange A', bids: [{ price: 105, size: 20 }, { price: 104, size: 30 }], asks: [{ price: 106, size: 50 }] },
@@ -57,7 +57,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-4',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'ETF = 1 saham X + 1 saham Y. Ada arbitrage?',
       books: [
         { label: 'Saham X', bids: [{ price: 50, size: 100 }], asks: [{ price: 51, size: 100 }] },
@@ -70,7 +70,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-5',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Kamu HARUS beli 50 unit sekarang di Exchange A. Berapa biaya total?',
       books: [
         { label: 'Exchange A', bids: [{ price: 99, size: 200 }], asks: [{ price: 100, size: 30 }, { price: 101, size: 40 }] },
@@ -81,7 +81,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-6',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Mid price book ini berapa?',
       books: [
         { label: 'Exchange A', bids: [{ price: 47, size: 10 }, { price: 46, size: 50 }], asks: [{ price: 49, size: 5 }, { price: 50, size: 80 }] },
@@ -92,7 +92,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-7',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Futures fair value = spot + 2 (carry). Ada arbitrage?',
       books: [
         { label: 'Spot', bids: [{ price: 100, size: 50 }], asks: [{ price: 101, size: 50 }] },
@@ -104,7 +104,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-8',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Order book satu exchange. Ada yang aneh?',
       books: [
         { label: 'Exchange A', bids: [{ price: 102, size: 10 }, { price: 100, size: 40 }], asks: [{ price: 101, size: 25 }] },
@@ -115,7 +115,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-9',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Kamu jual 60 unit market order di book ini. Berapa yang kamu terima?',
       books: [
         { label: 'Exchange A', bids: [{ price: 80, size: 25 }, { price: 79, size: 25 }, { price: 78, size: 50 }], asks: [{ price: 82, size: 100 }] },
@@ -126,7 +126,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-10',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Dua book mata uang: EUR/USD dan USD/EUR (inverse). EUR/USD ask = 1.25. Agar TIDAK ada arbitrage, bid USD/EUR maksimal?',
       books: [
         { label: 'EUR/USD', bids: [{ price: 1.24, size: 100 }], asks: [{ price: 1.25, size: 100 }] },
@@ -138,7 +138,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-11',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Basket = 2 saham X. Ada arbitrage?',
       books: [
         { label: 'Saham X', bids: [{ price: 40, size: 100 }], asks: [{ price: 41, size: 100 }] },
@@ -150,7 +150,7 @@ export const orderbooks: PracticeModule = {
     },
     {
       id: 'ob-12',
-      type: 'orderbook-mcq',
+      type: 'orderbook-mcq', topic: 'orderbook',
       prompt: 'Spread book ini dan siapa yang membayarnya?',
       books: [
         { label: 'Exchange A', bids: [{ price: 19.5, size: 500 }], asks: [{ price: 20, size: 500 }] },

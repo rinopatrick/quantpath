@@ -14,9 +14,12 @@ import {
   CandlestickChart,
   TrendingUp,
   History,
+  Calculator,
+  Infinity as InfinityIcon,
 } from 'lucide-react';
 import { practiceModules } from '@/data/practice';
 import { loadAttempts, type PracticeAttempt } from '@/lib/practice-types';
+import { PracticeAnalytics } from '@/components/practice/PracticeAnalytics';
 
 const moduleIcons: Record<string, React.ElementType> = {
   'beat-the-odds': Dices,
@@ -24,6 +27,7 @@ const moduleIcons: Record<string, React.ElementType> = {
   'likelihood-list': ListOrdered,
   intervals: Ruler,
   orderbooks: CandlestickChart,
+  'mental-math': Calculator,
 };
 
 const generalTips = [
@@ -80,8 +84,9 @@ export default function PracticePage() {
           Test Practice
         </h2>
         <p className="text-sm text-muted-foreground mt-1">
-          Simulasi 5 modul assessment ala Optiver: probabilitas, deret angka, ranking likelihood,
-          estimasi interval, dan order book. Timer dan scoring meniru format asli.
+          Simulasi 6 modul assessment ala trading firm: probabilitas, deret angka, ranking
+          likelihood, estimasi interval, order book, dan mental math. Timer dan scoring meniru
+          format asli. Modul dengan ikon ∞ men-generate soal baru tiap attempt.
         </p>
       </div>
 
@@ -113,6 +118,12 @@ export default function PracticePage() {
                   <Badge variant="secondary" className="text-[10px]">
                     {mod.allowBack ? 'bisa kembali' : 'satu arah'}
                   </Badge>
+                  {mod.generator && (
+                    <Badge variant="secondary" className="text-[10px] text-primary flex items-center gap-0.5">
+                      <InfinityIcon className="w-3 h-3" />
+                      soal baru tiap attempt
+                    </Badge>
+                  )}
                 </div>
                 {(best || last) && (
                   <div className="flex items-center gap-3 text-xs text-muted-foreground">
@@ -142,6 +153,9 @@ export default function PracticePage() {
           );
         })}
       </div>
+
+      {/* Analytics */}
+      <PracticeAnalytics attempts={attempts} />
 
       {/* General strategy */}
       <Card>

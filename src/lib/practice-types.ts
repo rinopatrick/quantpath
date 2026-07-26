@@ -18,6 +18,8 @@ export interface BaseQuestion {
   type: PracticeQuestionType;
   prompt: string;
   explanation: string;
+  /** Topic tag for weak-spot analytics (e.g. 'bayes', 'sequences', 'mental-math'). */
+  topic?: string;
 }
 
 export interface McqQuestion extends BaseQuestion {
@@ -70,6 +72,8 @@ export interface PracticeModule {
   scoring: { correct: number; wrong: number; skip: number };
   tips: string[];
   questions: PracticeQuestion[];
+  /** When set, fresh questions are generated for every attempt (infinite practice). */
+  generator?: () => PracticeQuestion[];
 }
 
 export type AnswerRecord =
@@ -82,6 +86,7 @@ export interface QuestionResult {
   questionId: string;
   outcome: 'correct' | 'wrong' | 'skip';
   timeSec: number;
+  topic?: string;
 }
 
 export interface PracticeAttempt {

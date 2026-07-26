@@ -19,13 +19,13 @@ import {
   Flag,
 } from 'lucide-react';
 import type {
-  PracticeModule,
   PracticeQuestion,
   AnswerRecord,
   OrderBookData,
   RankingQuestion,
 } from '@/lib/practice-types';
 import { gradeQuestion, isAnswered, saveAttempt } from '@/lib/practice-types';
+import { getModule } from '@/data/practice';
 
 // ---------- Order book display ----------
 
@@ -120,7 +120,8 @@ function RankingInput({
 
 type Phase = 'intro' | 'running' | 'results';
 
-export function TestRunner({ module: mod }: { module: PracticeModule }) {
+export function TestRunner({ moduleId }: { moduleId: string }) {
+  const mod = getModule(moduleId)!;
   const [phase, setPhase] = useState<Phase>('intro');
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Record<string, AnswerRecord>>({});
@@ -131,8 +132,10 @@ export function TestRunner({ module: mod }: { module: PracticeModule }) {
   const [numericInput, setNumericInput] = useState('');
   const [lowerInput, setLowerInput] = useState('');
   const [upperInput, setUpperInput] = useState('');
+  // Freshly generated questions per attempt when module has a generator
+  const [generated, setGenerated] = useState<PracticeQuestion[] | null>(null);
 
-  const questions = mod.questions;
+  const questions = generated ?? mod.questions;
   const q: PracticeQuestion = questions[current];
   const perQuestion = mod.timerMode === 'perQuestion';
 
@@ -254,6 +257,7 @@ export function TestRunner({ module: mod }: { module: PracticeModule }) {
   }, [timeLeft, phase]);
 
   const start = () => {
+    if (mod.generator) setGenerated(mod.generator());
     setAnswers({});
     setLocked(new Set());
     setQuestionTimes({});
@@ -306,6 +310,7 @@ export function TestRunner({ module: mod }: { module: PracticeModule }) {
           questionId: d.question.id,
           outcome: d.outcome,
           timeSec: Math.round(questionTimes[d.question.id] ?? 0),
+          topic: d.question.topic,
         })),
       });
     }

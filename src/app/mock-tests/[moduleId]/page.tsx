@@ -26,7 +26,7 @@ export default async function PracticeModulePage({
         <ArrowLeft className="w-4 h-4" />
         Semua modul
       </Link>
-      <TestRunner module={mod} />
+      <TestRunner moduleId={mod.id} />
     </div>
   );
 }
