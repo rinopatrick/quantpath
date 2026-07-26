@@ -21,6 +21,7 @@ const pageTitles: Record<string, { title: string; description: string }> = {
   '/interview': { title: 'Interview', description: '90+ quant questions' },
   '/flashcards': { title: 'Flashcards', description: 'Spaced repetition practice' },
   '/practice': { title: 'Practice Tracker', description: 'Brainteasers & numerical problems' },
+  '/mock-tests': { title: 'Mock Tests', description: 'Optiver-style timed assessment simulators' },
   '/leetcode': { title: 'LeetCode Tracker', description: '50 curated algorithm problems' },
   '/research': { title: 'Research Reports', description: 'Templates & guides' },
   '/review': { title: 'Weekly Review', description: 'Reflect & plan your progress' },
@@ -37,7 +38,11 @@ const pageTitles: Record<string, { title: string; description: string }> = {
 
 export function Header() {
   const pathname = usePathname();
-  const page = pageTitles[pathname] || { title: 'QuantPath', description: '' };
+  const page =
+    pageTitles[pathname] ||
+    (pathname.startsWith('/mock-tests/')
+      ? { title: 'Mock Tests', description: 'Optiver-style timed assessment simulators' }
+      : { title: 'QuantPath', description: '' });
   const [isDark, setIsDark] = useState(true);
   const { user, signOut } = useAuth();
 

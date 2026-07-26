@@ -39,6 +39,7 @@ const navItems = [
   { title: 'Pipeline', href: '/pipeline', icon: Target },
   { title: 'Interview', href: '/interview', icon: Brain },
   { title: 'Practice', href: '/practice', icon: Target },
+  { title: 'Mock Tests', href: '/mock-tests', icon: Layers },
   { title: 'LeetCode', href: '/leetcode', icon: Code },
   { title: 'Analytics', href: '/analytics', icon: BarChart3 },
   { title: 'Profile', href: '/profile', icon: User },
